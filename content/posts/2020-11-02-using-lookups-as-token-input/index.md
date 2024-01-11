@@ -11,7 +11,7 @@ tags:
 #   Running Splunk Saved Searches Powered by Tokens From Lookups
 comments: true
 cover:
-  image: images/2020-11-02-using-lookups-as-token-input/featured.jpg
+  image: images/featured.jpg
   alt: Excel sheet with numbers
   responsiveImages: true
 ---
@@ -35,16 +35,14 @@ Let's start with a simple search listing all source types in the index `_interna
 index=_internal | top limit=0 sourcetype
 ```
 
-![All source types](/images/2020-11-02-using-lookups-as-token-input/2020-11-02-search-1.png)
-
-{{< figure src="images/featured.jpg" title="An elephant at sunset" >}}
+![All source types](images/2020-11-02-search-1.png)
 
 Do the same but output only source types with a count greater than 1000.
 ```
 index=_internal | top limit=0 sourcetype | where count>1000
 ```
 
-![Count greater 1000 source types](@assets/images/2020-11-02-using-lookups-as-token-input/2020-11-02-search-2.png)
+![Count greater 1000 source types](images/2020-11-02-search-2.png)
 
 The 1000 is the part you want to be configurable. Hence create the following saved search:
 ```ini
