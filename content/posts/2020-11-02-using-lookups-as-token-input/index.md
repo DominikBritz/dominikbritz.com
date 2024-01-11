@@ -14,6 +14,7 @@ cover:
   image: images/featured.jpg
   alt: Excel sheet with numbers
   responsiveImages: true
+  relative: true
 ---
 
 For a new feature in version 6.0 of uberAgent, we needed to run a few saved searches to do some calculations but let users modify input values.

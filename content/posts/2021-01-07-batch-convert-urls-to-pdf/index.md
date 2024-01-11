@@ -14,6 +14,7 @@ cover:
   image: images/featured.jpg
   alt: Arrow pointing right
   responsiveImages: true
+  relative: true
 ---
 
 There are lots and lots of articles on the web describing how to save a whole webpage as PDF. They all use, more or less, the browser's ability to print to PDF. 
