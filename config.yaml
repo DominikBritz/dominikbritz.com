@@ -6,6 +6,8 @@ keywords: ["Dominik Britz", "Blog", "Automation", "PowerShell"]
 
 paginate: 5
 
+
+
 menu:
   main:
     - name: Search
@@ -34,6 +36,19 @@ markup:
     style: monokai
 
 params:
+  giscus:
+    repo: "DominikBritz/dominikbritz.com"
+    repoID: "R_kgDOLDj0-Q"
+    category: "Announcements"
+    categoryID: "DIC_kwDOLDj0-c4CcWbV"
+    mapping: "pathname"
+    reactionsEnabled: "1"
+    emitMetadata: "0"
+    inputPosition: "bottom"
+    theme: "transparent_dark"
+    lang: "en"
+    loading: "lazy"
+
   env: production
   assets:
     favicon: "/favicon.svg"
