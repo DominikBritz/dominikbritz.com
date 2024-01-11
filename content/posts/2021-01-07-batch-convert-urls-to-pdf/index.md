@@ -11,7 +11,7 @@ tags:
 #   PowerShell – Batch Convert URLs to PDF
 comments: true
 cover:
-  image: images/2021-01-07-batch-convert-urls-to-pdf/featured.jpg
+  image: images/featured.jpg
   alt: Arrow pointing right
   responsiveImages: true
 ---
