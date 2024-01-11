@@ -10,6 +10,7 @@ tags:
   - euc
 # description:
 #   Deploy Applications With PowerShell Remotely
+comments: true
 cover:
   image: images/2020-03-17-introducing-vldeploy/featured2.png
   alt: PowerShell console

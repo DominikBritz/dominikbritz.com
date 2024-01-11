@@ -9,6 +9,7 @@ tags:
   - splunk
 # description:
 #   Running Splunk Saved Searches Powered by Tokens From Lookups
+comments: true
 cover:
   image: images/2020-11-02-using-lookups-as-token-input/featured.jpg
   alt: Excel sheet with numbers
