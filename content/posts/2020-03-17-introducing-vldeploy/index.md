@@ -15,6 +15,7 @@ cover:
   image: images/featured2.png
   alt: gears
   responsiveImages: true
+  relative: true
 ---
 
 Managing applications on Windows in enterprises is complex and cumbersome. Admins are using a variety of tools to install, uninstall or reconfigure applications silently. The most popular tool is propably Microsoft's ConfigMgr.
