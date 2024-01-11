@@ -102,7 +102,6 @@ $cred = Get-Credential
 Get-vlInstalledApplication -Computer PC1 -Name 'Google Chrome' -Credential $cred | Uninstall-vlApplication -Credential $cred -ValidExitCodes 0,3010,1
 ```
 
-
 Get the uninstall string of an application from a remote machine and uninstall it on multiple machines. Reboot every machine if uninstallation was successful.
 
 ```powershell

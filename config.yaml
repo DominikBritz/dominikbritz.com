@@ -1,7 +1,7 @@
 baseURL: http://dominikbritz.com/
 languageCode: en-us
 title: Dominik Britz
-theme: "PaperMod"
+theme: ["hugo-notice","PaperMod"]
 keywords: ["Dominik Britz", "Blog", "Automation", "PowerShell"]
 
 paginate: 5
