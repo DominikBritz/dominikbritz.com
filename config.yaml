@@ -1,0 +1,76 @@
+baseURL: http://dominikbritz.com/
+languageCode: en-us
+title: Dominik Britz
+theme: "PaperMod"
+keywords: ["Dominik Britz", "Blog", "Automation", "PowerShell"]
+
+paginate: 5
+
+menu:
+  main:
+    - name: Search
+      url: search/
+      weight: 5
+    - identifier: tags
+      name: Tags
+      url: /tags/
+      weight: 20
+    - identifier: archive
+      name: Archive
+      url: /archives/
+      weight: 10
+    - identifier: cv
+      name: CV
+      url: /cv/
+      weight: 30
+
+markup:
+  highlight:
+    # anchorLineNos: true
+    codeFences: true
+    guessSyntax: false
+    lineNos: true
+    # noClasses: true
+    style: monokai
+
+params:
+  env: production
+  assets:
+    favicon: "/favicon.svg"
+    disableHLJS: true
+  images: ["images/me.webp"]
+  ShowPostNavLinks: true
+  ShowCodeCopyButtons: true
+  hideMeta: true
+  showtoc: true
+  tocopen: true
+  hideFooter: false
+  homeInfoParams:
+    # Title: "About"
+    Content: >
+      - I'm an engineer focused on end user computing, cloud technologies, and automation. I'm passionate about learning and sharing my knowledge with others.
+      
+      -
+
+      - Join me in exploring the tech landscape and demystifying its wonders!
+  socialIcons:
+    - name: github
+      title: View Source on Github
+      url: "https://github.com/DominikBritz"
+    - name: linkedin
+      title: Add me on LinkedIn
+      url: "https://www.linkedin.com/in/dominik-britz-329a0060/"
+
+  editPost:
+    URL: "https://github.com/dominikbritz/dominikbritz.com/tree/main/content/posts"
+    Text: "Suggest Changes" # edit text
+    appendFilePath: true # to append file path to Edit link
+
+  label:
+    icon: /images/logo.svg
+
+outputs:
+    home:
+        - HTML
+        - RSS
+        - JSON # is necessary
