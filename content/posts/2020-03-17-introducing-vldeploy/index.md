@@ -12,7 +12,7 @@ tags:
 #   Deploy Applications With PowerShell Remotely
 comments: true
 cover:
-  image: images/featured2.png
+  image: "images/featured2.png"
   alt: gears
   responsiveImages: true
   relative: true
