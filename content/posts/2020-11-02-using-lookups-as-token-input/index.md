@@ -67,19 +67,19 @@ A CSV lookup was the most convenient way we found. Everybody is more or less fam
 
 ### Creating a Lookup
 Add the following to your `transforms.conf`.
-```
+```csv
 [lookup_input_tokens]
 filename = input_tokens.csv
 ```
 
 Create the `input_tokens.csv` with the following content.
-```
+```csv
 token,value
 TokenCount,1000
 ```
 
 If you need more tokens, add them below the `TokenCount` one.
-```
+```csv
 token,value
 TokenCount,1000
 AnotherToken,"ABC"
