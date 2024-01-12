@@ -1,4 +1,4 @@
-baseURL: http://dominikbritz.com/
+baseURL: https://dominikbritz.com/
 languageCode: en-us
 title: Dominik Britz
 theme: ["hugo-notice","PaperMod"]
