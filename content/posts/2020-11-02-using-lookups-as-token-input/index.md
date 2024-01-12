@@ -26,8 +26,6 @@ Our requirements in detail:
 
 I explain below how we achieved that by using Splunk anywhere examples. That's probably easier to understand, and I don't have to explain every bit of uberAgent here 😉
 
-## Table of contents
-
 ## Saved Searches Accept Tokens
 That was not clear to me but saved searches accept tokens. That's awesome as it's the foundation of our solution to our requirements: we can run saved searches configured by tokens, and only Splunk users with access to the disk can change them. Poor man's access control achieved!
 
