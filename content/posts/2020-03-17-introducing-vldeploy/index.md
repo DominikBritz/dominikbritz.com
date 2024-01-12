@@ -12,10 +12,10 @@ tags:
 #   Deploy Applications With PowerShell Remotely
 comments: true
 cover:
-  image: "images/featured2.png"
+  image: "https://dominikbritz.com/posts/2020-03-17-introducing-vldeploy/images/featured2.png"
   alt: gears
-  responsiveImages: true
-  relative: true
+  responsiveImages: false
+  relative: false
 ---
 
 Managing applications on Windows in enterprises is complex and cumbersome. Admins are using a variety of tools to install, uninstall or reconfigure applications silently. The most popular tool is propably Microsoft's ConfigMgr.
