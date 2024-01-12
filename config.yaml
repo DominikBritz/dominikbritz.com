@@ -10,9 +10,10 @@ paginate: 5
 
 menu:
   main:
-    - name: Search
+    - identifier: search
+      name: 🔍
       url: search/
-      weight: 5
+      weight: 40
     - identifier: tags
       name: Tags
       url: /tags/
@@ -31,11 +32,13 @@ markup:
     # anchorLineNos: true
     codeFences: true
     guessSyntax: false
-    lineNos: true
+    lineNos: false
     # noClasses: true
     style: monokai
 
 params:
+  title: Dominik Britz
+  description: "Engineer focused on end user computing, cloud technologies, and automation"
   giscus:
     repo: "DominikBritz/dominikbritz.com"
     repoID: "R_kgDOLDj0-Q"
@@ -53,7 +56,7 @@ params:
   assets:
     favicon: "/favicon.svg"
     disableHLJS: true
-  images: ["images/me.webp"]
+  images: ["images/logo.png"]
   ShowPostNavLinks: true
   ShowCodeCopyButtons: true
   hideMeta: true
@@ -75,6 +78,8 @@ params:
     - name: linkedin
       title: Add me on LinkedIn
       url: "https://www.linkedin.com/in/dominik-britz-329a0060/"
+    - name: email
+      url: "mailto:info@dominikbritz.com"
 
   editPost:
     URL: "https://github.com/dominikbritz/dominikbritz.com/tree/main/content/posts"
