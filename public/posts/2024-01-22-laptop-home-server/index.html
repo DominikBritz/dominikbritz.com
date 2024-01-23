@@ -607,14 +607,14 @@ Bye Bye Synology, Hello Ubuntu #TL;DR #Synology has a great ecosystem, but one
     <li><a href="#before-you-continue-helgekleincom">Before You Continue: helgeklein.com</a></li>
     <li><a href="#introducing-ansible">Introducing Ansible</a>
       <ul>
-        <li><a href="#create-a-repository-on-github">Create a Repository On Github</a></li>
+        <li><a href="#create-a-repository-on-github">Create a Repository On GitHub</a></li>
         <li><a href="#install-the-windows-subsystem-for-linux">Install the Windows Subsystem For Linux</a></li>
         <li><a href="#git">Git</a>
           <ul>
             <li><a href="#install-git">Install Git</a></li>
             <li><a href="#configure-git">Configure Git</a></li>
             <li><a href="#generate-a-new-ssh-key-for-github">Generate a New SSH Key for GitHub</a></li>
-            <li><a href="#add-key-to-github">Add Key To Github</a></li>
+            <li><a href="#add-key-to-github">Add Key To GitHub</a></li>
             <li><a href="#clone-the-repository">Clone the Repository</a></li>
           </ul>
         </li>
@@ -673,14 +673,14 @@ Bye Bye Synology, Hello Ubuntu #TL;DR #Synology has a great ecosystem, but one
     <li><a href="#before-you-continue-helgekleincom">Before You Continue: helgeklein.com</a></li>
     <li><a href="#introducing-ansible">Introducing Ansible</a>
       <ul>
-        <li><a href="#create-a-repository-on-github">Create a Repository On Github</a></li>
+        <li><a href="#create-a-repository-on-github">Create a Repository On GitHub</a></li>
         <li><a href="#install-the-windows-subsystem-for-linux">Install the Windows Subsystem For Linux</a></li>
         <li><a href="#git">Git</a>
           <ul>
             <li><a href="#install-git">Install Git</a></li>
             <li><a href="#configure-git">Configure Git</a></li>
             <li><a href="#generate-a-new-ssh-key-for-github">Generate a New SSH Key for GitHub</a></li>
-            <li><a href="#add-key-to-github">Add Key To Github</a></li>
+            <li><a href="#add-key-to-github">Add Key To GitHub</a></li>
             <li><a href="#clone-the-repository">Clone the Repository</a></li>
           </ul>
         </li>
@@ -825,7 +825,7 @@ Bye Bye Synology, Hello Ubuntu #TL;DR #Synology has a great ecosystem, but one
 </h1>
 <p>These were my goals for the laptop home server:</p>
 <ul>
-<li><strong>Automated deployment</strong>: do as little as possible manually. In case of a  hardware failure I can immidiatly switch to new hardware and have the exact same configuration.</li>
+<li><strong>Automated deployment</strong>: do as little as possible manually. In case of a hardware failure, I can immediately switch to new hardware and have the exact same configuration.</li>
 <li><strong>Docker</strong>: put as much as possible into Docker containers for easy management and backup</li>
 <li><strong>Single Sign-On</strong>: sign-on with one user identity instead of creating the same user again and again for each service</li>
 <li><strong>HTTPS Everywhere</strong>: work with nice names instead of IPs and ports, even when I&rsquo;m accessing services internally. Adds security, too.</li>
@@ -909,7 +909,7 @@ Bye Bye Synology, Hello Ubuntu #TL;DR #Synology has a great ecosystem, but one
     
 </h1>
 <p>Ansible is a free and open-source software to automate software provisioning, configuration management, and application deployments.</p>
-<p>I use it to to install packages and configure the home server. No steps are done manually, so when the server breaks, I can spin up another, run the deployment there and have the same configuration.</p>
+<p>I use it to install packages and configure the home server. No steps are done manually, so when the server breaks, I can spin up another, run the deployment there and have the same configuration.</p>
 <p>With Ansible, one describes how a target system should look like in YAML. A YAML file is called a playbook. In organizations, there is typically a control server that connects to targets and applies the steps defined in the playbook. That works well but is too complicated for a home lab. You can save the control server and run the playbook directly from GitHub through Ansible pull.</p>
 <p>Below is a diagram of the deployment architecture. I prepare the config of the home server on a client, push the config to GitHub, and execute it via Ansible pull on the home server.</p>
 <div style="background-color:white; padding: 20px">
@@ -924,7 +924,7 @@ flowchart LR
 </div>
 
 </div>
-<h2 class="relative group">Create a Repository On Github 
+<h2 class="relative group">Create a Repository On GitHub 
     <div id="create-a-repository-on-github" class="anchor"></div>
     
     <span
@@ -1039,7 +1039,7 @@ flowchart LR
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nb">alias</span> <span class="nv">gitall</span><span class="o">=</span><span class="s1">&#39;git add * &amp;&amp; git commit --message &#34;commit&#34; &amp;&amp; git push&#39;</span>
 </span></span></code></pre></div><p>Make the aliases permanent by adding the commands to <code>.bashrc</code>. Otherwise, they are gone after you disconnect the session.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">vim ~/.bashrc
-</span></span></code></pre></div><h3 class="relative group">Add Key To Github 
+</span></span></code></pre></div><h3 class="relative group">Add Key To GitHub 
     <div id="add-key-to-github" class="anchor"></div>
     
     <span
@@ -1170,7 +1170,7 @@ flowchart LR
 <li>Creates the <code>dockerlimited</code> user and group for easy file management and Linuxserver.io docker containers.</li>
 </ul>
 <p>I added comments so you can follow along.</p>
-<p>Note the step where it mounts an external drive. I have an external drive connected to my home server as the integrated 1TB disk has not enough storage for my media collection. If you don&rsquo;t have one, you can remove this step.</p>
+<p>Note the step where it mounts an external drive. I have an external drive connected to my home server, as the integrated 1 TB disk has not enough storage for my media collection. If you don&rsquo;t have one, you can remove this step.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">mkdir roles/home/tasks -p
 </span></span><span class="line"><span class="cl">vim roles/home/tasks/main.yml
 </span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yml" data-lang="yml"><span class="line"><span class="cl">- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Disable sleep when closing the lid</span><span class="w">
@@ -1237,7 +1237,7 @@ flowchart LR
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">shell</span><span class="p">:</span><span class="w"> </span><span class="l">resticprofile self-update</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c">###</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c">### Create a dockerlimited user and group that we can reference later in containers so that they don&#39;t run as root</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c">### Create a dockerlimited user and group that we can reference later in containers so that they don&#39;t run as root.</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c">###</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w"></span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Create dockerlimited group</span><span class="w">
@@ -1340,7 +1340,7 @@ flowchart LR
 <p><strong><code>geerlingguy.ntp</code></strong></p>
 <p>Manages NTP.</p>
 <p><strong><code>oefenweb.ufw</code></strong></p>
-<p>Set up the ufw firewall in Ubuntu conveniently through variables. <a href="https://galaxy.ansible.com/ui/standalone/roles/Oefenweb/ufw/"   target="_blank">
+<p>Set up the ufw firewall on Ubuntu conveniently through variables. <a href="https://galaxy.ansible.com/ui/standalone/roles/Oefenweb/ufw/"   target="_blank">
     Documentation</a>.</p>
 <p><strong><code>geerlingguy.node_exporter</code></strong></p>
 <p>Installs node exporter for monitoring your home server. <a href="https://galaxy.ansible.com/ui/standalone/roles/geerlingguy/node_exporter/documentation/"   target="_blank">
@@ -1503,7 +1503,7 @@ flowchart LR
     </span>        
     
 </h2>
-<p>I don&rsquo;t cover the installation of Ubuntu, as there are hundreds of guides on the Internet. Just some aspects:</p>
+<p>I won&rsquo;t cover the installation of Ubuntu, as there are hundreds of guides on the Internet. Just some aspects:</p>
 <ul>
 <li>You want to go with the Ubuntu LTS server edition without a graphical interface for maximum performance and stability.</li>
 <li>Set the hostname to <code>home</code>.</li>
@@ -1519,7 +1519,7 @@ flowchart LR
     
 </h2>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">ssh-keygen -t ed25519 -C <span class="s2">&#34;remote management&#34;</span>
-</span></span></code></pre></div><p>Store the private key in your WSL enviroment on your client. You can now close the lid of your laptop home server and hopefully never touch it again.</p>
+</span></span></code></pre></div><p>Store the private key in your WSL environment on your client. You can now close the lid of your laptop home server and hopefully never touch it again.</p>
 <h2 class="relative group">Run With Ansible Pull 
     <div id="run-with-ansible-pull" class="anchor"></div>
     
@@ -1718,7 +1718,7 @@ flowchart LR
 <li><strong>Backup</strong>: restic and resticprofile backup for Docker mount points and important files like the Unbound configuration</li>
 <li><strong>Remote access</strong>: will be covered in a future article</li>
 </ul>
-<p>I will continue this series with articles on remote acess, Nextcloud for files, Immich for photos, Sonarr/Radarr/Plex for media management, and maybe more.</p>
+<p>I will continue this series with articles on remote access, Nextcloud for files, Immich for photos, Sonarr/Radarr/Plex for media management, and maybe more.</p>
 
         </div>
                 
