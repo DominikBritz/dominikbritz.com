@@ -1,7 +1,0 @@
-Shortcodes
-
-Four notice types are provided: warning, info, note and tip.
-{{< notice tip >}} This is a very good tip. {{< /notice >}}
-
-Update submodules
-git submodule foreach git pull
