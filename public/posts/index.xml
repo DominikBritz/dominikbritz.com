@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on DominikBritz.com</title>
+    <link>https://dominikbritz.com/posts/</link>
+    <description>Recent content in Posts on DominikBritz.com</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>Copyright © 2024</copyright>
+    <lastBuildDate>Mon, 22 Jan 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://dominikbritz.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Laptop Home Server Built</title>
+      <link>https://dominikbritz.com/posts/2024-01-22-laptop-home-server/</link>
+      <pubDate>Mon, 22 Jan 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://dominikbritz.com/posts/2024-01-22-laptop-home-server/</guid>
+      <description>A guide to setting up an old laptop as your new home server, powered by Ubuntu, Ansible, and Docker. It securely hosts videos, files, and photos. Add HTTPS everywhere, cloud backup and performance monitoring.
+Bye Bye Synology, Hello Ubuntu #TL;DR #Synology has a great ecosystem, but one is locked in.</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://dominikbritz.com/posts/2024-01-22-laptop-home-server/featured.jpg" />
+    </item>
+    
+    <item>
+      <title>PowerShell – Batch Convert URLs to PDF</title>
+      <link>https://dominikbritz.com/posts/2021-01-07-batch-convert-urls-to-pdf/</link>
+      <pubDate>Thu, 07 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://dominikbritz.com/posts/2021-01-07-batch-convert-urls-to-pdf/</guid>
+      <description>There are lots and lots of articles on the web describing how to save a whole webpage as PDF. They all use, more or less, the browser&amp;rsquo;s ability to print to PDF.
+I needed to convert many URLs at once. Doing that manually for every URL would have been cumbersome, and that&amp;rsquo;s why I automated the process.</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://dominikbritz.com/posts/2021-01-07-batch-convert-urls-to-pdf/featured.jpg" />
+    </item>
+    
+    <item>
+      <title>Running Splunk Saved Searches Powered by Tokens From Lookups</title>
+      <link>https://dominikbritz.com/posts/2020-11-02-using-lookups-as-token-input/</link>
+      <pubDate>Mon, 02 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://dominikbritz.com/posts/2020-11-02-using-lookups-as-token-input/</guid>
+      <description>For a new feature in version 6.0 of uberAgent, we needed to run a few saved searches to do some calculations but let users modify input values.
+Our requirements in detail:
+Run saved searches to calculate experience scores for machines, user sessions, and applications Provide defaults for thresholds and weights but let users configure them.</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://dominikbritz.com/posts/2020-11-02-using-lookups-as-token-input/featured.jpg" />
+    </item>
+    
+    <item>
+      <title>Introducing vlDeploy - Deploy Applications With PowerShell Remotely</title>
+      <link>https://dominikbritz.com/posts/2020-03-17-introducing-vldeploy/</link>
+      <pubDate>Tue, 17 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://dominikbritz.com/posts/2020-03-17-introducing-vldeploy/</guid>
+      <description>Managing applications on Windows in enterprises is complex and cumbersome. Admins are using a variety of tools to install, uninstall or reconfigure applications silently. The most popular tool is propably Microsoft&amp;rsquo;s ConfigMgr.
+While ConfigMgr (and others) makes sense for mid to large enterprises, the management is too time-consuming for smaller firms.</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://dominikbritz.com/posts/2020-03-17-introducing-vldeploy/featured2.png" />
+    </item>
+    
+  </channel>
+</rss>
