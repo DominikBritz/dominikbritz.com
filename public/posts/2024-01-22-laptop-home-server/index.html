@@ -104,7 +104,7 @@ Bye Bye Synology, Hello Ubuntu #TL;DR #Synology has a great ecosystem, but one
     "keywords": ["homeserver"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "3129"
+    "wordCount": "3002"
   }]
   </script>
 
@@ -503,7 +503,7 @@ Bye Bye Synology, Hello Ubuntu #TL;DR #Synology has a great ecosystem, but one
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2024-01-23 00:00:00 &#43;0000 UTC">23 January 2024</time><span class="px-2 text-primary-500">&middot;</span><span>3129 words</span><span class="px-2 text-primary-500">&middot;</span>
+  <time datetime="2024-01-23 00:00:00 &#43;0000 UTC">23 January 2024</time><span class="px-2 text-primary-500">&middot;</span><span>3002 words</span><span class="px-2 text-primary-500">&middot;</span>
 
 
 <script type="text/javascript" src="/js/zen-mode.min.16f2e42a0014d476212e14c056b26b69bc85cb5de15352a5e3a1a0be498055dc1bf0926cef44baef1cc7fa2dfc5de0052892645cd3766598065f47b15c4bd44d.js" integrity="sha512-FvLkKgAU1HYhLhTAVrJrabyFy13hU1Kl46GgvkmAVdwb8JJs70S67xzH&#43;i38XeAFKJJkXNN2ZZgGX0exXEvUTQ=="></script>
@@ -1167,7 +1167,6 @@ flowchart LR
     Unbound DNS Server Configuration</a>.</li>
 <li>Installs <strong>restic</strong> and <strong>resticprofile</strong> for backups. See <a href="#restic-encrypted-offsite-backup-for-your-homeserver"  >
     restic: Encrypted Offsite Backup for Your Homeserver</a>.</li>
-<li>Creates the <code>dockerlimited</code> user and group for easy file management and Linuxserver.io docker containers.</li>
 </ul>
 <p>I added comments so you can follow along.</p>
 <p>Note the step where it mounts an external drive. I have an external drive connected to my home server, as the integrated 1 TB disk has not enough storage for my media collection. If you don&rsquo;t have one, you can remove this step.</p>
@@ -1235,47 +1234,6 @@ flowchart LR
 </span></span></span><span class="line"><span class="cl"><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w"></span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Run resticprofile self-update</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">shell</span><span class="p">:</span><span class="w"> </span><span class="l">resticprofile self-update</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c">###</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c">### Create a dockerlimited user and group that we can reference later in containers so that they don&#39;t run as root.</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c">###</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Create dockerlimited group</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">group</span><span class="p">:</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">dockerlimited</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">state</span><span class="p">:</span><span class="w"> </span><span class="l">present</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Create dockerlimited user</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">user</span><span class="p">:</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">dockerlimited</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">group</span><span class="p">:</span><span class="w"> </span><span class="l">dockerlimited</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">state</span><span class="p">:</span><span class="w"> </span><span class="l">present</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">createhome</span><span class="p">:</span><span class="w"> </span><span class="kc">yes</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c"># Add myself the the group as well for easy file management</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Add dominik to dockerlimited group</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">user</span><span class="p">:</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">dominik</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">groups</span><span class="p">:</span><span class="w"> </span><span class="l">dockerlimited</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">append</span><span class="p">:</span><span class="w"> </span><span class="kc">yes</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Ensure /usr/local/data/docker exists</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">file</span><span class="p">:</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">path</span><span class="p">:</span><span class="w"> </span><span class="l">/usr/local/data/docker</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">state</span><span class="p">:</span><span class="w"> </span><span class="l">directory</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">owner</span><span class="p">:</span><span class="w"> </span><span class="l">root</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">group</span><span class="p">:</span><span class="w"> </span><span class="l">root</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">mode</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;0755&#39;</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Set permissions for dockerlimited group on /usr/local/data/docker</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">acl</span><span class="p">:</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">path</span><span class="p">:</span><span class="w"> </span><span class="l">/usr/local/data/docker</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">entity</span><span class="p">:</span><span class="w"> </span><span class="l">dockerlimited</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">etype</span><span class="p">:</span><span class="w"> </span><span class="l">group</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">permissions</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;rwx&#39;</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">state</span><span class="p">:</span><span class="w"> </span><span class="l">present</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">recursive</span><span class="p">:</span><span class="w"> </span><span class="kc">yes</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">default</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c">###</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c">### Mount external drive</span><span class="w">
