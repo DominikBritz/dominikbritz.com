@@ -104,7 +104,7 @@ Bye Bye Synology, Hello Ubuntu #TL;DR #Synology has a great ecosystem, but one
     "keywords": ["homeserver"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "3002"
+    "wordCount": "3095"
   }]
   </script>
 
@@ -503,7 +503,7 @@ Bye Bye Synology, Hello Ubuntu #TL;DR #Synology has a great ecosystem, but one
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2024-01-23 00:00:00 &#43;0000 UTC">23 January 2024</time><span class="px-2 text-primary-500">&middot;</span><span>3002 words</span><span class="px-2 text-primary-500">&middot;</span>
+  <time datetime="2024-01-23 00:00:00 &#43;0000 UTC">23 January 2024</time><span class="px-2 text-primary-500">&middot;</span><span>3095 words</span><span class="px-2 text-primary-500">&middot;</span>
 
 
 <script type="text/javascript" src="/js/zen-mode.min.16f2e42a0014d476212e14c056b26b69bc85cb5de15352a5e3a1a0be498055dc1bf0926cef44baef1cc7fa2dfc5de0052892645cd3766598065f47b15c4bd44d.js" integrity="sha512-FvLkKgAU1HYhLhTAVrJrabyFy13hU1Kl46GgvkmAVdwb8JJs70S67xzH&#43;i38XeAFKJJkXNN2ZZgGX0exXEvUTQ=="></script>
@@ -1125,7 +1125,8 @@ flowchart LR
 <p>Updates the system and installs a cron job that updates the systems every Sunday at 02:00 and then reboots.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">mkdir roles/base/tasks -p
 </span></span><span class="line"><span class="cl">vim roles/base/tasks/main.yml
-</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yml" data-lang="yml"><span class="line"><span class="cl">- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Run the equivalent of &#34;apt update&#34; as a separate step</span><span class="w">
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yml" data-lang="yml"><span class="line"><span class="cl"><span class="c"># Before we do anything on the machine, make sure it is up-to-date</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Run the equivalent of &#34;apt update&#34; as a separate step</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">ansible.builtin.apt</span><span class="p">:</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">update_cache</span><span class="p">:</span><span class="w"> </span><span class="kc">yes</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">
@@ -1143,6 +1144,7 @@ flowchart LR
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">ansible.builtin.reboot</span><span class="p">:</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">when</span><span class="p">:</span><span class="w"> </span><span class="l">reboot_required.stat.exists</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c"># Periodically update the OS through a cron job</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w"></span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Create cron job for updates and reboot</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">ansible.builtin.cron</span><span class="p">:</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Perform weekly updates and reboot</span><span class="w">
@@ -1209,7 +1211,7 @@ flowchart LR
 </span></span></span><span class="line"><span class="cl"><span class="w"></span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Run restic self-update</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">command</span><span class="p">:</span><span class="w"> </span><span class="l">restic self-update</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Check if directory /usr/local/bin/resticprofile exists</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Check if directory &#34;/usr/local/bin/resticprofile&#34; exists and store the result in the variable &#34;resticprofile_dir&#34;</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">ansible.builtin.stat</span><span class="p">:</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">path</span><span class="p">:</span><span class="w"> </span><span class="l">/usr/local/bin/resticprofile</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">register</span><span class="p">:</span><span class="w"> </span><span class="l">resticprofile_dir</span><span class="w">
@@ -1218,19 +1220,19 @@ flowchart LR
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">get_url</span><span class="p">:</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">url</span><span class="p">:</span><span class="w"> </span><span class="l">https://raw.githubusercontent.com/creativeprojects/resticprofile/master/install.sh</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">dest</span><span class="p">:</span><span class="w"> </span><span class="l">/tmp/install.sh</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">when</span><span class="p">:</span><span class="w"> </span><span class="l">not resticprofile_dir.stat.exists</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">when</span><span class="p">:</span><span class="w"> </span><span class="l">not resticprofile_dir.stat.exists</span><span class="w"> </span><span class="c"># this ensures we only do this step in case resticprofile is not already installed</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w"></span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Change permissions of install.sh</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">file</span><span class="p">:</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">path</span><span class="p">:</span><span class="w"> </span><span class="l">/tmp/install.sh</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">mode</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;u+x&#39;</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">when</span><span class="p">:</span><span class="w"> </span><span class="l">not resticprofile_dir.stat.exists</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">when</span><span class="p">:</span><span class="w"> </span><span class="l">not resticprofile_dir.stat.exists</span><span class="w"> </span><span class="c"># this ensures we only do this step in case resticprofile is not already installed</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w"></span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Run install.sh script</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">shell</span><span class="p">:</span><span class="w"> </span><span class="l">/tmp/install.sh -b /usr/local/bin</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">args</span><span class="p">:</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">chdir</span><span class="p">:</span><span class="w"> </span><span class="l">/tmp</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">when</span><span class="p">:</span><span class="w"> </span><span class="l">not resticprofile_dir.stat.exists</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">when</span><span class="p">:</span><span class="w"> </span><span class="l">not resticprofile_dir.stat.exists</span><span class="w"> </span><span class="c"># this ensures we only do this step in case resticprofile is not already installed</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w"></span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Run resticprofile self-update</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">shell</span><span class="p">:</span><span class="w"> </span><span class="l">resticprofile self-update</span><span class="w">
@@ -1313,7 +1315,7 @@ flowchart LR
     </span>        
     
 </h3>
-<p>Create a <code>home.yml</code> in <code>vars_file</code> for the home server and then accordingly for each server you want to manage. The files get referenced in playbooks later.</p>
+<p>Create a <code>home.yml</code> in <code>vars_files</code> for the home server and then accordingly for each server you want to manage. The files get referenced in playbooks later.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yml" data-lang="yml"><span class="line"><span class="cl"><span class="c"># ntp</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">ntp_timezone</span><span class="p">:</span><span class="w"> </span><span class="l">Europe/Berlin</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">
@@ -1505,11 +1507,11 @@ flowchart LR
       <img
         class="my-0 rounded-md"
         srcset="
-        /posts/2024-01-22-laptop-home-server/images/githubtoken_hu8ffeff01d508c2033d8ff301d081220f_42736_330x0_resize_box_3.png 330w,
-        /posts/2024-01-22-laptop-home-server/images/githubtoken_hu8ffeff01d508c2033d8ff301d081220f_42736_660x0_resize_box_3.png 660w,
-        /posts/2024-01-22-laptop-home-server/images/githubtoken_hu8ffeff01d508c2033d8ff301d081220f_42736_1024x0_resize_box_3.png 1024w,
-        /posts/2024-01-22-laptop-home-server/images/githubtoken_hu8ffeff01d508c2033d8ff301d081220f_42736_1320x0_resize_box_3.png 2x"
-        src="/posts/2024-01-22-laptop-home-server/images/githubtoken_hu8ffeff01d508c2033d8ff301d081220f_42736_660x0_resize_box_3.png"
+        /posts/2024-01-22-laptop-home-server/images/githubtoken_hu3a7efc09e19220cfadf84b587096918e_87963_330x0_resize_box_3.png 330w,
+        /posts/2024-01-22-laptop-home-server/images/githubtoken_hu3a7efc09e19220cfadf84b587096918e_87963_660x0_resize_box_3.png 660w,
+        /posts/2024-01-22-laptop-home-server/images/githubtoken_hu3a7efc09e19220cfadf84b587096918e_87963_1024x0_resize_box_3.png 1024w,
+        /posts/2024-01-22-laptop-home-server/images/githubtoken_hu3a7efc09e19220cfadf84b587096918e_87963_1320x0_resize_box_3.png 2x"
+        src="/posts/2024-01-22-laptop-home-server/images/githubtoken_hu3a7efc09e19220cfadf84b587096918e_87963_660x0_resize_box_3.png"
         alt="Github token"
       />
       
@@ -1564,7 +1566,12 @@ flowchart LR
   
 
 </p>
-<p>Create the Dockge folder. Adjust the path to your liking.</p>
+<p>Create the Dockge folder. Putting content that is accessed by multiple users in <code>/usr/local</code> is my preference. Other options are:</p>
+<ul>
+<li><code>/opt</code></li>
+<li><code>/etc</code></li>
+<li>Create your own root like <code>/data</code></li>
+</ul>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">mkdir -p /usr/local/data/docker/dockge
 </span></span></code></pre></div><p>Create a Dockge compose file with the custom path from above.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nb">cd</span> /usr/local/data/docker/dockge
