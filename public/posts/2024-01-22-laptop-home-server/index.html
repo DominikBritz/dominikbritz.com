@@ -104,7 +104,7 @@ Bye Bye Synology, Hello Ubuntu #TL;DR #Synology has a great ecosystem, but one
     "keywords": ["homeserver"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "3095"
+    "wordCount": "3130"
   }]
   </script>
 
@@ -503,7 +503,7 @@ Bye Bye Synology, Hello Ubuntu #TL;DR #Synology has a great ecosystem, but one
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2024-01-23 00:00:00 &#43;0000 UTC">23 January 2024</time><span class="px-2 text-primary-500">&middot;</span><span>3095 words</span><span class="px-2 text-primary-500">&middot;</span>
+  <time datetime="2024-01-23 00:00:00 &#43;0000 UTC">23 January 2024</time><span class="px-2 text-primary-500">&middot;</span><span>3130 words</span><span class="px-2 text-primary-500">&middot;</span>
 
 
 <script type="text/javascript" src="/js/zen-mode.min.16f2e42a0014d476212e14c056b26b69bc85cb5de15352a5e3a1a0be498055dc1bf0926cef44baef1cc7fa2dfc5de0052892645cd3766598065f47b15c4bd44d.js" integrity="sha512-FvLkKgAU1HYhLhTAVrJrabyFy13hU1Kl46GgvkmAVdwb8JJs70S67xzH&#43;i38XeAFKJJkXNN2ZZgGX0exXEvUTQ=="></script>
@@ -649,6 +649,7 @@ Bye Bye Synology, Hello Ubuntu #TL;DR #Synology has a great ecosystem, but one
     <li><a href="#automatic-https-certificates-for-services-on-internal-home-network">Automatic HTTPS Certificates for Services on Internal Home Network</a></li>
     <li><a href="#sso--monitoring">SSO &amp; Monitoring</a></li>
     <li><a href="#conclusion-and-next-articles">Conclusion And Next Articles</a></li>
+    <li><a href="#changelog">Changelog</a></li>
   </ul>
 </nav>
   </div>
@@ -715,6 +716,7 @@ Bye Bye Synology, Hello Ubuntu #TL;DR #Synology has a great ecosystem, but one
     <li><a href="#automatic-https-certificates-for-services-on-internal-home-network">Automatic HTTPS Certificates for Services on Internal Home Network</a></li>
     <li><a href="#sso--monitoring">SSO &amp; Monitoring</a></li>
     <li><a href="#conclusion-and-next-articles">Conclusion And Next Articles</a></li>
+    <li><a href="#changelog">Changelog</a></li>
   </ul>
 </nav>
   </div>
@@ -1602,7 +1604,18 @@ flowchart LR
 </h1>
 <p>I followed <a href="https://helgeklein.com/blog/automatic-https-certificates-for-services-on-internal-home-network-without-opening-firewall-port/"   target="_blank">
     Helge&rsquo;s guide</a> and use Caddy for certificates for my internal services. He uses Cloudflare, but I use Netcup. To get it working with Netcup, do the below.</p>
-<p>In your <code>container-vars.env</code>, remove the <code>CLOUDFLARE_API_TOKEN</code> and add Netcup specific variables.</p>
+<p>Edit the <code>Dockerfile</code> in <code>/caddy/dockerfile-dns</code>.</p>
+<pre tabindex="0"><code>ARG VERSION=2
+
+FROM caddy:${VERSION}-builder AS builder
+
+RUN xcaddy build \
+    --with github.com/caddy-dns/netcup
+
+FROM caddy:${VERSION}
+
+COPY --from=builder /usr/bin/caddy /usr/bin/caddy
+</code></pre><p>In your <code>container-vars.env</code>, remove the <code>CLOUDFLARE_API_TOKEN</code> and add Netcup specific variables.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="l">NETCUP_CUSTOMER_NUMBER=12345678                    </span><span class="w"> </span><span class="c"># get the ID from your CCP page</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="l">NETCUP_API_KEY=ABCD                                </span><span class="w"> </span><span class="c"># https://helpcenter.netcup.com/en/wiki/general/our-api</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="l">NETCUP_API_PASSWORD=password                       </span><span class="w"> </span><span class="c"># https://helpcenter.netcup.com/en/wiki/general/our-api</span><span class="w">
@@ -1660,6 +1673,18 @@ flowchart LR
 <li><strong>Remote access</strong>: will be covered in a future article</li>
 </ul>
 <p>I will continue this series with articles on remote access, Nextcloud for files, Immich for photos, Sonarr/Radarr/Plex for media management, and maybe more.</p>
+<h1 class="relative group">Changelog 
+    <div id="changelog" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#changelog" aria-label="Anchor">#</a>
+    </span>        
+    
+</h1>
+<p>-<strong>2024-01-31</strong>: added section about changes to the <a href="#automatic-https-certificates-for-services-on-internal-home-network"  >
+    Dockerfile for Caddy</a></p>
 
         </div>
                 
