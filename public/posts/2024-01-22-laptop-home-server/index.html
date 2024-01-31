@@ -596,60 +596,67 @@ Bye Bye Synology, Hello Ubuntu #TL;DR #Synology has a great ecosystem, but one
     class="min-w-[220px] py-2 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#bye-bye-synology-hello-ubuntu">Bye Bye Synology, Hello Ubuntu</a>
+    <li>
       <ul>
-        <li><a href="#tldr">TL;DR</a></li>
-        <li><a href="#full-story">Full Story</a></li>
-      </ul>
-    </li>
-    <li><a href="#home-server-goals">Home Server Goals</a></li>
-    <li><a href="#home-server-hardware">Home Server Hardware</a></li>
-    <li><a href="#before-you-continue-helgekleincom">Before You Continue: helgeklein.com</a></li>
-    <li><a href="#introducing-ansible">Introducing Ansible</a>
-      <ul>
-        <li><a href="#create-a-repository-on-github">Create a Repository On GitHub</a></li>
-        <li><a href="#install-the-windows-subsystem-for-linux">Install the Windows Subsystem For Linux</a></li>
-        <li><a href="#git">Git</a>
+        <li><a href="#bye-bye-synology-hello-ubuntu">Bye Bye Synology, Hello Ubuntu</a>
           <ul>
-            <li><a href="#install-git">Install Git</a></li>
-            <li><a href="#configure-git">Configure Git</a></li>
-            <li><a href="#generate-a-new-ssh-key-for-github">Generate a New SSH Key for GitHub</a></li>
-            <li><a href="#add-key-to-github">Add Key To GitHub</a></li>
-            <li><a href="#clone-the-repository">Clone the Repository</a></li>
+            <li><a href="#tldr">TL;DR</a></li>
+            <li><a href="#full-story">Full Story</a></li>
           </ul>
         </li>
-        <li><a href="#set-up-ansible">Set Up Ansible</a>
+        <li><a href="#home-server-goals">Home Server Goals</a></li>
+        <li><a href="#home-server-hardware">Home Server Hardware</a></li>
+        <li><a href="#before-you-continue-helgekleincom">Before You Continue: helgeklein.com</a></li>
+        <li><a href="#introducing-ansible">Introducing Ansible</a>
           <ul>
-            <li><a href="#install-ansible">Install Ansible</a></li>
-            <li><a href="#create-ansible-folders-and-files">Create Ansible Folders And Files</a></li>
-            <li><a href="#roles">Roles</a>
+            <li><a href="#create-a-repository-on-github">Create a Repository On GitHub</a></li>
+            <li><a href="#install-the-windows-subsystem-for-linux">Install the Windows Subsystem For Linux</a></li>
+            <li><a href="#git">Git</a>
               <ul>
-                <li><a href="#base">Base</a></li>
-                <li><a href="#home">Home</a></li>
+                <li><a href="#install-git">Install Git</a></li>
+                <li><a href="#configure-git">Configure Git</a></li>
+                <li><a href="#generate-a-new-ssh-key-for-github">Generate a New SSH Key for GitHub</a></li>
+                <li><a href="#add-key-to-github">Add Key To GitHub</a></li>
+                <li><a href="#clone-the-repository">Clone the Repository</a></li>
+              </ul>
+            </li>
+            <li><a href="#set-up-ansible">Set Up Ansible</a>
+              <ul>
+                <li><a href="#install-ansible">Install Ansible</a></li>
+                <li><a href="#create-ansible-folders-and-files">Create Ansible Folders And Files</a></li>
+                <li><a href="#roles">Roles</a>
+                  <ul>
+                    <li><a href="#base">Base</a></li>
+                    <li><a href="#home">Home</a></li>
+                  </ul>
+                </li>
                 <li><a href="#ansible-galaxy-roles">Ansible Galaxy Roles</a></li>
               </ul>
             </li>
-            <li><a href="#variables">Variables</a></li>
-            <li><a href="#root-playbooks">Root Playbooks</a></li>
+            <li><a href="#variables">Variables</a>
+              <ul>
+                <li><a href="#root-playbooks">Root Playbooks</a></li>
+              </ul>
+            </li>
+            <li><a href="#push-to-github">Push to GitHub</a></li>
           </ul>
         </li>
-        <li><a href="#push-to-github">Push to GitHub</a></li>
+        <li><a href="#install-and-configure-the-server">Install And Configure the Server</a>
+          <ul>
+            <li><a href="#operating-system">Operating System</a></li>
+            <li><a href="#generate-a-new-ssh-key-for-remote-management">Generate a New SSH Key For Remote Management</a></li>
+            <li><a href="#run-with-ansible-pull">Run With Ansible Pull</a></li>
+          </ul>
+        </li>
+        <li><a href="#create-docker-containers">Create Docker Containers</a></li>
+        <li><a href="#unbound-dns-server-configuration">Unbound DNS Server Configuration</a></li>
+        <li><a href="#restic-encrypted-offsite-backup-for-your-homeserver">restic: Encrypted Offsite Backup for Your Homeserver</a></li>
+        <li><a href="#automatic-https-certificates-for-services-on-internal-home-network">Automatic HTTPS Certificates for Services on Internal Home Network</a></li>
+        <li><a href="#sso--monitoring">SSO &amp; Monitoring</a></li>
+        <li><a href="#conclusion-and-next-articles">Conclusion And Next Articles</a></li>
+        <li><a href="#changelog">Changelog</a></li>
       </ul>
     </li>
-    <li><a href="#install-and-configure-the-server">Install And Configure the Server</a>
-      <ul>
-        <li><a href="#operating-system">Operating System</a></li>
-        <li><a href="#generate-a-new-ssh-key-for-remote-management">Generate a New SSH Key For Remote Management</a></li>
-        <li><a href="#run-with-ansible-pull">Run With Ansible Pull</a></li>
-      </ul>
-    </li>
-    <li><a href="#create-docker-containers">Create Docker Containers</a></li>
-    <li><a href="#unbound-dns-server-configuration">Unbound DNS Server Configuration</a></li>
-    <li><a href="#restic-encrypted-offsite-backup-for-your-homeserver">restic: Encrypted Offsite Backup for Your Homeserver</a></li>
-    <li><a href="#automatic-https-certificates-for-services-on-internal-home-network">Automatic HTTPS Certificates for Services on Internal Home Network</a></li>
-    <li><a href="#sso--monitoring">SSO &amp; Monitoring</a></li>
-    <li><a href="#conclusion-and-next-articles">Conclusion And Next Articles</a></li>
-    <li><a href="#changelog">Changelog</a></li>
   </ul>
 </nav>
   </div>
@@ -663,60 +670,67 @@ Bye Bye Synology, Hello Ubuntu #TL;DR #Synology has a great ecosystem, but one
     class="py-2 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#bye-bye-synology-hello-ubuntu">Bye Bye Synology, Hello Ubuntu</a>
+    <li>
       <ul>
-        <li><a href="#tldr">TL;DR</a></li>
-        <li><a href="#full-story">Full Story</a></li>
-      </ul>
-    </li>
-    <li><a href="#home-server-goals">Home Server Goals</a></li>
-    <li><a href="#home-server-hardware">Home Server Hardware</a></li>
-    <li><a href="#before-you-continue-helgekleincom">Before You Continue: helgeklein.com</a></li>
-    <li><a href="#introducing-ansible">Introducing Ansible</a>
-      <ul>
-        <li><a href="#create-a-repository-on-github">Create a Repository On GitHub</a></li>
-        <li><a href="#install-the-windows-subsystem-for-linux">Install the Windows Subsystem For Linux</a></li>
-        <li><a href="#git">Git</a>
+        <li><a href="#bye-bye-synology-hello-ubuntu">Bye Bye Synology, Hello Ubuntu</a>
           <ul>
-            <li><a href="#install-git">Install Git</a></li>
-            <li><a href="#configure-git">Configure Git</a></li>
-            <li><a href="#generate-a-new-ssh-key-for-github">Generate a New SSH Key for GitHub</a></li>
-            <li><a href="#add-key-to-github">Add Key To GitHub</a></li>
-            <li><a href="#clone-the-repository">Clone the Repository</a></li>
+            <li><a href="#tldr">TL;DR</a></li>
+            <li><a href="#full-story">Full Story</a></li>
           </ul>
         </li>
-        <li><a href="#set-up-ansible">Set Up Ansible</a>
+        <li><a href="#home-server-goals">Home Server Goals</a></li>
+        <li><a href="#home-server-hardware">Home Server Hardware</a></li>
+        <li><a href="#before-you-continue-helgekleincom">Before You Continue: helgeklein.com</a></li>
+        <li><a href="#introducing-ansible">Introducing Ansible</a>
           <ul>
-            <li><a href="#install-ansible">Install Ansible</a></li>
-            <li><a href="#create-ansible-folders-and-files">Create Ansible Folders And Files</a></li>
-            <li><a href="#roles">Roles</a>
+            <li><a href="#create-a-repository-on-github">Create a Repository On GitHub</a></li>
+            <li><a href="#install-the-windows-subsystem-for-linux">Install the Windows Subsystem For Linux</a></li>
+            <li><a href="#git">Git</a>
               <ul>
-                <li><a href="#base">Base</a></li>
-                <li><a href="#home">Home</a></li>
+                <li><a href="#install-git">Install Git</a></li>
+                <li><a href="#configure-git">Configure Git</a></li>
+                <li><a href="#generate-a-new-ssh-key-for-github">Generate a New SSH Key for GitHub</a></li>
+                <li><a href="#add-key-to-github">Add Key To GitHub</a></li>
+                <li><a href="#clone-the-repository">Clone the Repository</a></li>
+              </ul>
+            </li>
+            <li><a href="#set-up-ansible">Set Up Ansible</a>
+              <ul>
+                <li><a href="#install-ansible">Install Ansible</a></li>
+                <li><a href="#create-ansible-folders-and-files">Create Ansible Folders And Files</a></li>
+                <li><a href="#roles">Roles</a>
+                  <ul>
+                    <li><a href="#base">Base</a></li>
+                    <li><a href="#home">Home</a></li>
+                  </ul>
+                </li>
                 <li><a href="#ansible-galaxy-roles">Ansible Galaxy Roles</a></li>
               </ul>
             </li>
-            <li><a href="#variables">Variables</a></li>
-            <li><a href="#root-playbooks">Root Playbooks</a></li>
+            <li><a href="#variables">Variables</a>
+              <ul>
+                <li><a href="#root-playbooks">Root Playbooks</a></li>
+              </ul>
+            </li>
+            <li><a href="#push-to-github">Push to GitHub</a></li>
           </ul>
         </li>
-        <li><a href="#push-to-github">Push to GitHub</a></li>
+        <li><a href="#install-and-configure-the-server">Install And Configure the Server</a>
+          <ul>
+            <li><a href="#operating-system">Operating System</a></li>
+            <li><a href="#generate-a-new-ssh-key-for-remote-management">Generate a New SSH Key For Remote Management</a></li>
+            <li><a href="#run-with-ansible-pull">Run With Ansible Pull</a></li>
+          </ul>
+        </li>
+        <li><a href="#create-docker-containers">Create Docker Containers</a></li>
+        <li><a href="#unbound-dns-server-configuration">Unbound DNS Server Configuration</a></li>
+        <li><a href="#restic-encrypted-offsite-backup-for-your-homeserver">restic: Encrypted Offsite Backup for Your Homeserver</a></li>
+        <li><a href="#automatic-https-certificates-for-services-on-internal-home-network">Automatic HTTPS Certificates for Services on Internal Home Network</a></li>
+        <li><a href="#sso--monitoring">SSO &amp; Monitoring</a></li>
+        <li><a href="#conclusion-and-next-articles">Conclusion And Next Articles</a></li>
+        <li><a href="#changelog">Changelog</a></li>
       </ul>
     </li>
-    <li><a href="#install-and-configure-the-server">Install And Configure the Server</a>
-      <ul>
-        <li><a href="#operating-system">Operating System</a></li>
-        <li><a href="#generate-a-new-ssh-key-for-remote-management">Generate a New SSH Key For Remote Management</a></li>
-        <li><a href="#run-with-ansible-pull">Run With Ansible Pull</a></li>
-      </ul>
-    </li>
-    <li><a href="#create-docker-containers">Create Docker Containers</a></li>
-    <li><a href="#unbound-dns-server-configuration">Unbound DNS Server Configuration</a></li>
-    <li><a href="#restic-encrypted-offsite-backup-for-your-homeserver">restic: Encrypted Offsite Backup for Your Homeserver</a></li>
-    <li><a href="#automatic-https-certificates-for-services-on-internal-home-network">Automatic HTTPS Certificates for Services on Internal Home Network</a></li>
-    <li><a href="#sso--monitoring">SSO &amp; Monitoring</a></li>
-    <li><a href="#conclusion-and-next-articles">Conclusion And Next Articles</a></li>
-    <li><a href="#changelog">Changelog</a></li>
   </ul>
 </nav>
   </div>
@@ -774,7 +788,7 @@ Bye Bye Synology, Hello Ubuntu #TL;DR #Synology has a great ecosystem, but one
 
         <div class="article-content max-w-prose mb-20">
           <p>A guide to setting up an old laptop as your new home server, powered by Ubuntu, Ansible, and Docker. It securely hosts videos, files, and photos. Add HTTPS everywhere, cloud backup and performance monitoring.</p>
-<h1 class="relative group">Bye Bye Synology, Hello Ubuntu 
+<h2 class="relative group">Bye Bye Synology, Hello Ubuntu 
     <div id="bye-bye-synology-hello-ubuntu" class="anchor"></div>
     
     <span
@@ -783,8 +797,8 @@ Bye Bye Synology, Hello Ubuntu #TL;DR #Synology has a great ecosystem, but one
             style="text-decoration-line: none !important;" href="#bye-bye-synology-hello-ubuntu" aria-label="Anchor">#</a>
     </span>        
     
-</h1>
-<h2 class="relative group">TL;DR 
+</h2>
+<h3 class="relative group">TL;DR 
     <div id="tldr" class="anchor"></div>
     
     <span
@@ -793,9 +807,9 @@ Bye Bye Synology, Hello Ubuntu #TL;DR #Synology has a great ecosystem, but one
             style="text-decoration-line: none !important;" href="#tldr" aria-label="Anchor">#</a>
     </span>        
     
-</h2>
+</h3>
 <p>Synology has a great ecosystem, but one is locked in. I&rsquo;m using Ubuntu LTS server now, as it gives full control and is focused on stability. I chose it over Proxmox for simplicity, as I don&rsquo;t need virtual machines.</p>
-<h2 class="relative group">Full Story 
+<h3 class="relative group">Full Story 
     <div id="full-story" class="anchor"></div>
     
     <span
@@ -804,7 +818,7 @@ Bye Bye Synology, Hello Ubuntu #TL;DR #Synology has a great ecosystem, but one
             style="text-decoration-line: none !important;" href="#full-story" aria-label="Anchor">#</a>
     </span>        
     
-</h2>
+</h3>
 <p>I had a home server for years. I started with a Synology DS210+ thirteen years ago and upgraded to a DS720+ three years ago. The latter allowed running Docker containers and extend the feature set of Synology packages easily. With time, I noticed that I was using only a few Synology packages, namely photos and drive, but the rest was already running in Docker.</p>
 <p>In addition, I have these problems with Synology:</p>
 <ul>
@@ -815,7 +829,7 @@ Bye Bye Synology, Hello Ubuntu #TL;DR #Synology has a great ecosystem, but one
 </ul>
 <p>It&rsquo;s a viable solution, but not for tech enthusiasts like me who like to have full control over their devices.</p>
 <p>I examined alternatives and ended up with Ubuntu. I&rsquo;m used to it, and the LTS server variant has a strong focus on stability. It&rsquo;s also free. Second place was Proxmox. I don&rsquo;t need virtual machines, though, where Proxmox excels in. I also wanted to use Ansible to automatically install and configure everything, and having Proxmox in between just adds complexity.</p>
-<h1 class="relative group">Home Server Goals 
+<h2 class="relative group">Home Server Goals 
     <div id="home-server-goals" class="anchor"></div>
     
     <span
@@ -824,7 +838,7 @@ Bye Bye Synology, Hello Ubuntu #TL;DR #Synology has a great ecosystem, but one
             style="text-decoration-line: none !important;" href="#home-server-goals" aria-label="Anchor">#</a>
     </span>        
     
-</h1>
+</h2>
 <p>These were my goals for the laptop home server:</p>
 <ul>
 <li><strong>Automated deployment</strong>: do as little as possible manually. In case of a hardware failure, I can immediately switch to new hardware and have the exact same configuration.</li>
@@ -834,7 +848,7 @@ Bye Bye Synology, Hello Ubuntu #TL;DR #Synology has a great ecosystem, but one
 <li><strong>Backup</strong>: robust backup for Docker containers and beyond</li>
 <li><strong>Remote access</strong>: secure and easy remote access to selected services</li>
 </ul>
-<h1 class="relative group">Home Server Hardware 
+<h2 class="relative group">Home Server Hardware 
     <div id="home-server-hardware" class="anchor"></div>
     
     <span
@@ -843,7 +857,7 @@ Bye Bye Synology, Hello Ubuntu #TL;DR #Synology has a great ecosystem, but one
             style="text-decoration-line: none !important;" href="#home-server-hardware" aria-label="Anchor">#</a>
     </span>        
     
-</h1>
+</h2>
 <p>When you think about it, laptops are the perfect home servers. The hardware is power efficient, they have an integrated uninterruptible power supply with their batteries and an integrated KVM with mouse, keyboard, and monitor. You can get a modern one on the internet for ~€200-€300. Or even for free if you ask around if someone has a spare one lying around. Just make sure that it is not too old (&gt; Intel 7th generation), as older CPUs don&rsquo;t have great power saving techniques.</p>
 <p>I went with a laptop with</p>
 <ul>
@@ -853,7 +867,7 @@ Bye Bye Synology, Hello Ubuntu #TL;DR #Synology has a great ecosystem, but one
 </ul>
 <p>More than enough to host a few docker containers and handle 2-4 Plex streams.</p>
 <p>I added an external 3,5&quot; drive to store my media collection.</p>
-<h1 class="relative group">Before You Continue: helgeklein.com 
+<h2 class="relative group">Before You Continue: helgeklein.com 
     <div id="before-you-continue-helgekleincom" class="anchor"></div>
     
     <span
@@ -862,7 +876,7 @@ Bye Bye Synology, Hello Ubuntu #TL;DR #Synology has a great ecosystem, but one
             style="text-decoration-line: none !important;" href="#before-you-continue-helgekleincom" aria-label="Anchor">#</a>
     </span>        
     
-</h1>
+</h2>
 <p>My colleague Helge built a similar setup with an Intel NUC and Proxmox. He has a <a href="https://helgeklein.com/blog/category/home-automation/"   target="_blank">
     complete series</a> on building a home lab with SSO and HTTPS certificates for internal services.</p>
 <p>
@@ -892,7 +906,7 @@ Bye Bye Synology, Hello Ubuntu #TL;DR #Synology has a great ecosystem, but one
 <li>Remote access without a full VPN tunnel. (Future article)</li>
 </ul>
 <p>As my set-up is built on top of his, I encourage you to read his whole series, especially the concept of using Caddy for services in the internal network. I link to his articles whenever there are numerous similarities and only note my customizations.</p>
-<h1 class="relative group">Introducing Ansible 
+<h2 class="relative group">Introducing Ansible 
     <div id="introducing-ansible" class="anchor"></div>
     
     <span
@@ -901,7 +915,7 @@ Bye Bye Synology, Hello Ubuntu #TL;DR #Synology has a great ecosystem, but one
             style="text-decoration-line: none !important;" href="#introducing-ansible" aria-label="Anchor">#</a>
     </span>        
     
-</h1>
+</h2>
 <p>Ansible is a free and open-source software to automate software provisioning, configuration management, and application deployments.</p>
 <p>I use it to install packages and configure the home server. No steps are done manually, so when the server breaks, I can spin up another, run the deployment there and have the same configuration.</p>
 <p>With Ansible, one describes how a target system should look like in YAML. A YAML file is called a playbook. In organizations, there is typically a control server that connects to targets and applies the steps defined in the playbook. That works well but is too complicated for a home lab. You can save the control server and run the playbook directly from GitHub through Ansible pull.</p>
@@ -910,7 +924,7 @@ Bye Bye Synology, Hello Ubuntu #TL;DR #Synology has a great ecosystem, but one
 <div class="mermaid" align="center">
   
 flowchart LR
-    a(Windows client\n#8226; WSL\n#8226; Git \n#8226; SSH) -->|Push| c(GitHub) 
+    a(Windows client\n#8226; WSL\n#8226; Git \n#8226; SSH) -->|Push| c(GitHub)
     b("Home server\n#8226; Ansible\n#8226; Docker\n#8226; Unbound DNS\n#8226; restic Backup") -->|Pull| c
     style a text-align:left
     style b text-align:left
@@ -918,7 +932,7 @@ flowchart LR
 </div>
 
 </div>
-<h2 class="relative group">Create a Repository On GitHub 
+<h3 class="relative group">Create a Repository On GitHub 
     <div id="create-a-repository-on-github" class="anchor"></div>
     
     <span
@@ -927,10 +941,10 @@ flowchart LR
             style="text-decoration-line: none !important;" href="#create-a-repository-on-github" aria-label="Anchor">#</a>
     </span>        
     
-</h2>
+</h3>
 <p>Create a git repository on <a href="GitHub.com"  >
     GitHub.com</a>. I use a private one, as I would rather not share the exact config of my servers with the public.</p>
-<h2 class="relative group">Install the Windows Subsystem For Linux 
+<h3 class="relative group">Install the Windows Subsystem For Linux 
     <div id="install-the-windows-subsystem-for-linux" class="anchor"></div>
     
     <span
@@ -939,7 +953,7 @@ flowchart LR
             style="text-decoration-line: none !important;" href="#install-the-windows-subsystem-for-linux" aria-label="Anchor">#</a>
     </span>        
     
-</h2>
+</h3>
 
   
 
@@ -973,7 +987,7 @@ flowchart LR
 
 <p>I&rsquo;m a Windows guy, but I feel that working with git and ssh keys is easier on Linux. Instead of creating a Linux VM dedicated to that purpose, I&rsquo;m using the Windows Subsystem for Linux (WSL) which is integrated on Windows.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-powershell" data-lang="powershell"><span class="line"><span class="cl"><span class="n">wsl</span><span class="p">.</span><span class="py">exe</span> <span class="p">-</span><span class="n">-install</span> <span class="n">-d</span> <span class="n">Ubuntu</span>
-</span></span></code></pre></div><h2 class="relative group">Git 
+</span></span></code></pre></div><h3 class="relative group">Git 
     <div id="git" class="anchor"></div>
     
     <span
@@ -982,8 +996,8 @@ flowchart LR
             style="text-decoration-line: none !important;" href="#git" aria-label="Anchor">#</a>
     </span>        
     
-</h2>
-<h3 class="relative group">Install Git 
+</h3>
+<h4 class="relative group">Install Git 
     <div id="install-git" class="anchor"></div>
     
     <span
@@ -992,10 +1006,10 @@ flowchart LR
             style="text-decoration-line: none !important;" href="#install-git" aria-label="Anchor">#</a>
     </span>        
     
-</h3>
+</h4>
 <p>From here on, we work completely in WSL.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">apt install git
-</span></span></code></pre></div><h3 class="relative group">Configure Git 
+</span></span></code></pre></div><h4 class="relative group">Configure Git 
     <div id="configure-git" class="anchor"></div>
     
     <span
@@ -1004,11 +1018,11 @@ flowchart LR
             style="text-decoration-line: none !important;" href="#configure-git" aria-label="Anchor">#</a>
     </span>        
     
-</h3>
+</h4>
 <p>Add your email and full name for git commits.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git config --global user.email <span class="s2">&#34;info@dominikbritz.com&#34;</span>
 </span></span><span class="line"><span class="cl">git config --global user.name <span class="s2">&#34;Dominik Britz&#34;</span>
-</span></span></code></pre></div><h3 class="relative group">Generate a New SSH Key for GitHub 
+</span></span></code></pre></div><h4 class="relative group">Generate a New SSH Key for GitHub 
     <div id="generate-a-new-ssh-key-for-github" class="anchor"></div>
     
     <span
@@ -1017,7 +1031,7 @@ flowchart LR
             style="text-decoration-line: none !important;" href="#generate-a-new-ssh-key-for-github" aria-label="Anchor">#</a>
     </span>        
     
-</h3>
+</h4>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">ssh-keygen -t ed25519 -C <span class="s2">&#34;GitHub auth&#34;</span>
 </span></span></code></pre></div><p><a href="https://medium.com/risan/upgrade-your-ssh-key-to-ed25519-c6e8d60d3c54"   target="_blank">
     Why ed25519?</a></p>
@@ -1033,7 +1047,7 @@ flowchart LR
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nb">alias</span> <span class="nv">gitall</span><span class="o">=</span><span class="s1">&#39;git add * &amp;&amp; git commit --message &#34;commit&#34; &amp;&amp; git push&#39;</span>
 </span></span></code></pre></div><p>Make the aliases permanent by adding the commands to <code>.bashrc</code>. Otherwise, they are gone after you disconnect the session.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">vim ~/.bashrc
-</span></span></code></pre></div><h3 class="relative group">Add Key To GitHub 
+</span></span></code></pre></div><h4 class="relative group">Add Key To GitHub 
     <div id="add-key-to-github" class="anchor"></div>
     
     <span
@@ -1042,11 +1056,11 @@ flowchart LR
             style="text-decoration-line: none !important;" href="#add-key-to-github" aria-label="Anchor">#</a>
     </span>        
     
-</h3>
+</h4>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">cat ~/.ssh/id_ed25519_github.pub
 </span></span></code></pre></div><p>Go to your <a href="https://github.com/settings/keys"   target="_blank">
     GitHub key settings</a> and enter the output of the <code>cat</code> command as a new authentication key.</p>
-<h3 class="relative group">Clone the Repository 
+<h4 class="relative group">Clone the Repository 
     <div id="clone-the-repository" class="anchor"></div>
     
     <span
@@ -1055,11 +1069,11 @@ flowchart LR
             style="text-decoration-line: none !important;" href="#clone-the-repository" aria-label="Anchor">#</a>
     </span>        
     
-</h3>
+</h4>
 <p>Change with your URL.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nb">cd</span> ~
 </span></span><span class="line"><span class="cl">git clone git@github.com:DominikBritz/ansible-configs.git
-</span></span></code></pre></div><h2 class="relative group">Set Up Ansible 
+</span></span></code></pre></div><h3 class="relative group">Set Up Ansible 
     <div id="set-up-ansible" class="anchor"></div>
     
     <span
@@ -1068,8 +1082,8 @@ flowchart LR
             style="text-decoration-line: none !important;" href="#set-up-ansible" aria-label="Anchor">#</a>
     </span>        
     
-</h2>
-<h3 class="relative group">Install Ansible 
+</h3>
+<h4 class="relative group">Install Ansible 
     <div id="install-ansible" class="anchor"></div>
     
     <span
@@ -1078,10 +1092,10 @@ flowchart LR
             style="text-decoration-line: none !important;" href="#install-ansible" aria-label="Anchor">#</a>
     </span>        
     
-</h3>
+</h4>
 <p>We need Ansible in the WSL environment to install public roles later. We do not manage the WSL environment with Ansible.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">apt install ansible
-</span></span></code></pre></div><h3 class="relative group">Create Ansible Folders And Files 
+</span></span></code></pre></div><h4 class="relative group">Create Ansible Folders And Files 
     <div id="create-ansible-folders-and-files" class="anchor"></div>
     
     <span
@@ -1090,12 +1104,12 @@ flowchart LR
             style="text-decoration-line: none !important;" href="#create-ansible-folders-and-files" aria-label="Anchor">#</a>
     </span>        
     
-</h3>
+</h4>
 <p>Create the Ansible folder structure.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nb">cd</span> ~/ansible-configs
 </span></span><span class="line"><span class="cl">mkdir roles
 </span></span><span class="line"><span class="cl">mkdir vars_files
-</span></span></code></pre></div><h3 class="relative group">Roles 
+</span></span></code></pre></div><h4 class="relative group">Roles 
     <div id="roles" class="anchor"></div>
     
     <span
@@ -1104,9 +1118,9 @@ flowchart LR
             style="text-decoration-line: none !important;" href="#roles" aria-label="Anchor">#</a>
     </span>        
     
-</h3>
+</h4>
 <p>An Ansible role contains all tasks, variables, and files that logically belong together. They also allow easy sharing with others. I use a combination of my roles and public ones.</p>
-<h4 class="relative group">Base 
+<h5 class="relative group">Base 
     <div id="base" class="anchor"></div>
     
     <span
@@ -1115,7 +1129,7 @@ flowchart LR
             style="text-decoration-line: none !important;" href="#base" aria-label="Anchor">#</a>
     </span>        
     
-</h4>
+</h5>
 <p>Updates the system and installs a cron job that updates the systems every Sunday at 02:00 and then reboots.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">mkdir roles/base/tasks -p
 </span></span><span class="line"><span class="cl">vim roles/base/tasks/main.yml
@@ -1147,7 +1161,7 @@ flowchart LR
 </span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">weekday</span><span class="p">:</span><span class="w"> </span><span class="m">0</span><span class="w">  </span><span class="c"># 0 represents Sunday in cron</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">job</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;apt update &amp;&amp; apt dist-upgrade -y &amp;&amp; apt autoremove -y &amp;&amp; reboot&#34;</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">user</span><span class="p">:</span><span class="w"> </span><span class="l">root</span><span class="w">
-</span></span></span></code></pre></div><h4 class="relative group">Home 
+</span></span></span></code></pre></div><h5 class="relative group">Home 
     <div id="home" class="anchor"></div>
     
     <span
@@ -1156,7 +1170,7 @@ flowchart LR
             style="text-decoration-line: none !important;" href="#home" aria-label="Anchor">#</a>
     </span>        
     
-</h4>
+</h5>
 <p>This role contains the configuration specific to my home server.</p>
 <ul>
 <li>Installs the Unbound DNS server. See <a href="#unbound-dns-server-configuration"  >
@@ -1344,7 +1358,7 @@ flowchart LR
 </span></span></span><span class="line"><span class="cl"><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c"># node exporter</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">node_exporter_version</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;1.7.0&#39;</span><span class="w">
-</span></span></span></code></pre></div><h3 class="relative group">Root Playbooks 
+</span></span></span></code></pre></div><h4 class="relative group">Root Playbooks 
     <div id="root-playbooks" class="anchor"></div>
     
     <span
@@ -1353,7 +1367,7 @@ flowchart LR
             style="text-decoration-line: none !important;" href="#root-playbooks" aria-label="Anchor">#</a>
     </span>        
     
-</h3>
+</h4>
 <p>Create a <code>home.yml</code> in the repository root for your home server, and then accordingly for each server you would like to manage. The name does matter here, as Ansible pull expects it to be identical to the server&rsquo;s hostname. If it does not find a file matching <code>servername.domain.com.yml</code> or <code>servername.yml</code> it falls back to <code>local.yml</code>.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yml" data-lang="yml"><span class="line"><span class="cl"><span class="nn">---</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w"></span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">home server</span><span class="w">
@@ -1369,7 +1383,7 @@ flowchart LR
 </span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="l">geerlingguy.ntp</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="l">geerlingguy.security</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="l">geerlingguy.node_exporter</span><span class="w">
-</span></span></span></code></pre></div><h2 class="relative group">Push to GitHub 
+</span></span></span></code></pre></div><h3 class="relative group">Push to GitHub 
     <div id="push-to-github" class="anchor"></div>
     
     <span
@@ -1378,7 +1392,7 @@ flowchart LR
             style="text-decoration-line: none !important;" href="#push-to-github" aria-label="Anchor">#</a>
     </span>        
     
-</h2>
+</h3>
 <p>At this time, the contents of your local git folder should look like the below:</p>
 <pre tabindex="0"><code>├── LICENSE
 ├── README.md
@@ -1406,7 +1420,7 @@ flowchart LR
 </code></pre><p>Push the current state to GitHub.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">gitall
 </span></span></code></pre></div><p>We&rsquo;re done now with the client.</p>
-<h1 class="relative group">Install And Configure the Server 
+<h2 class="relative group">Install And Configure the Server 
     <div id="install-and-configure-the-server" class="anchor"></div>
     
     <span
@@ -1415,7 +1429,7 @@ flowchart LR
             style="text-decoration-line: none !important;" href="#install-and-configure-the-server" aria-label="Anchor">#</a>
     </span>        
     
-</h1>
+</h2>
 
   
 
@@ -1447,7 +1461,7 @@ flowchart LR
     >The following steps have to be done on your home server.</span>
 </div>
 
-<h2 class="relative group">Operating System 
+<h3 class="relative group">Operating System 
     <div id="operating-system" class="anchor"></div>
     
     <span
@@ -1456,13 +1470,13 @@ flowchart LR
             style="text-decoration-line: none !important;" href="#operating-system" aria-label="Anchor">#</a>
     </span>        
     
-</h2>
+</h3>
 <p>I won&rsquo;t cover the installation of Ubuntu, as there are hundreds of guides on the Internet. Just some aspects:</p>
 <ul>
 <li>You want to go with the Ubuntu LTS server edition without a graphical interface for maximum performance and stability.</li>
 <li>Set the hostname to <code>home</code>.</li>
 </ul>
-<h2 class="relative group">Generate a New SSH Key For Remote Management 
+<h3 class="relative group">Generate a New SSH Key For Remote Management 
     <div id="generate-a-new-ssh-key-for-remote-management" class="anchor"></div>
     
     <span
@@ -1471,10 +1485,10 @@ flowchart LR
             style="text-decoration-line: none !important;" href="#generate-a-new-ssh-key-for-remote-management" aria-label="Anchor">#</a>
     </span>        
     
-</h2>
+</h3>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">ssh-keygen -t ed25519 -C <span class="s2">&#34;remote management&#34;</span>
 </span></span></code></pre></div><p>Store the private key in your WSL environment on your client. You can now close the lid of your laptop home server and hopefully never touch it again.</p>
-<h2 class="relative group">Run With Ansible Pull 
+<h3 class="relative group">Run With Ansible Pull 
     <div id="run-with-ansible-pull" class="anchor"></div>
     
     <span
@@ -1483,7 +1497,7 @@ flowchart LR
             style="text-decoration-line: none !important;" href="#run-with-ansible-pull" aria-label="Anchor">#</a>
     </span>        
     
-</h2>
+</h3>
 <p>To use Ansible pull with a private GitHub repository, create a <a href="https://github.com/settings/tokens"   target="_blank">
     personal access token</a>. I use a fine-grained token that has access to one repository only.</p>
 <p>
@@ -1512,7 +1526,7 @@ flowchart LR
 </span></span><span class="line"><span class="cl">sudo apt install ansible
 </span></span><span class="line"><span class="cl"><span class="nb">export</span> <span class="nv">PAT</span><span class="o">=</span>YOUR_PAT_TOKEN
 </span></span><span class="line"><span class="cl">sudo ansible-pull -U https://<span class="nv">$PAT</span>:x-oauth-basic@github.com/DominikBritz/ansible-configs home.yml
-</span></span></code></pre></div><h1 class="relative group">Create Docker Containers 
+</span></span></code></pre></div><h2 class="relative group">Create Docker Containers 
     <div id="create-docker-containers" class="anchor"></div>
     
     <span
@@ -1521,7 +1535,7 @@ flowchart LR
             style="text-decoration-line: none !important;" href="#create-docker-containers" aria-label="Anchor">#</a>
     </span>        
     
-</h1>
+</h2>
 <p>Creating the Docker containers is a one-time manual step. Everything will be backed up later with restic and can be restored in case of data loss. Hence, I did not use Ansible to automate this task.</p>
 <p>The first container is my management container <strong>Dockge</strong>. It&rsquo;s fast, has a pretty UI, and, in comparison to Portainer, it has a file-based structure — Dockge won&rsquo;t kidnap your compose files, they are stored on your drive as usual. You can interact with them using normal <code>docker compose</code> commands.</p>
 <p>
@@ -1555,7 +1569,7 @@ flowchart LR
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nb">cd</span> /usr/local/data/docker/dockge
 </span></span><span class="line"><span class="cl">curl <span class="s2">&#34;https://dockge.kuma.pet/compose.yaml?port=5001&amp;stacksPath=/usr/local/data/docker&#34;</span> --output compose.yaml
 </span></span></code></pre></div><p>Start the container with <code>docker compose up -d</code>. Browse to <code>http://IPADDRESS:5001</code> to see the UI. This is where we create all future containers.</p>
-<h1 class="relative group">Unbound DNS Server Configuration 
+<h2 class="relative group">Unbound DNS Server Configuration 
     <div id="unbound-dns-server-configuration" class="anchor"></div>
     
     <span
@@ -1564,11 +1578,11 @@ flowchart LR
             style="text-decoration-line: none !important;" href="#unbound-dns-server-configuration" aria-label="Anchor">#</a>
     </span>        
     
-</h1>
+</h2>
 <p>I followed <a href="https://helgeklein.com/blog/unbound-dns-server-configuration-static-ipv6-address-on-proxmox/"   target="_blank">
     Helge&rsquo;s guide</a> and set up Unbound as a DNS resolver. I skipped the static IP part, as Ubuntu supports DHCP. Instead, I added a reservation for my home server on my DHCP server.</p>
 <p>I will discuss secure external access in a future blog article. Having an internal DNS resolver becomes essential then, so don&rsquo;t skip this step.</p>
-<h1 class="relative group">restic: Encrypted Offsite Backup for Your Homeserver 
+<h2 class="relative group">restic: Encrypted Offsite Backup for Your Homeserver 
     <div id="restic-encrypted-offsite-backup-for-your-homeserver" class="anchor"></div>
     
     <span
@@ -1577,7 +1591,7 @@ flowchart LR
             style="text-decoration-line: none !important;" href="#restic-encrypted-offsite-backup-for-your-homeserver" aria-label="Anchor">#</a>
     </span>        
     
-</h1>
+</h2>
 <p>I followed <a href="https://helgeklein.com/blog/restic-encrypted-offsite-backup-for-your-homeserver/"   target="_blank">
     Helge&rsquo;s guide</a> for <strong>restic</strong> and <strong>resticprofile</strong> for backups. You can skip the installation part, though, as Ansible handles this for you.</p>
 <p>In addition to Helge&rsquo;s setup, I added an exclude file to add excludes anytime without having to reschedule.</p>
@@ -1592,7 +1606,7 @@ flowchart LR
 
 # exclude all files in the deemix/downloads folder
 */docker/deemix/downloads/*
-</code></pre><h1 class="relative group">Automatic HTTPS Certificates for Services on Internal Home Network 
+</code></pre><h2 class="relative group">Automatic HTTPS Certificates for Services on Internal Home Network 
     <div id="automatic-https-certificates-for-services-on-internal-home-network" class="anchor"></div>
     
     <span
@@ -1601,7 +1615,7 @@ flowchart LR
             style="text-decoration-line: none !important;" href="#automatic-https-certificates-for-services-on-internal-home-network" aria-label="Anchor">#</a>
     </span>        
     
-</h1>
+</h2>
 <p>I followed <a href="https://helgeklein.com/blog/automatic-https-certificates-for-services-on-internal-home-network-without-opening-firewall-port/"   target="_blank">
     Helge&rsquo;s guide</a> and use Caddy for certificates for my internal services. He uses Cloudflare, but I use Netcup. To get it working with Netcup, do the below.</p>
 <p>Edit the <code>Dockerfile</code> in <code>/caddy/dockerfile-dns</code>.</p>
@@ -1634,7 +1648,7 @@ COPY --from=builder /usr/bin/caddy /usr/bin/caddy
         }
 }
 </code></pre><p>As you can guess from the timeout setting of 900 seconds, it can take a while until the certificate is successfully obtained by caddy. You can monitor the status in the Dockge terminal chart of the caddy container.</p>
-<h1 class="relative group">SSO &amp; Monitoring 
+<h2 class="relative group">SSO &amp; Monitoring 
     <div id="sso--monitoring" class="anchor"></div>
     
     <span
@@ -1643,7 +1657,7 @@ COPY --from=builder /usr/bin/caddy /usr/bin/caddy
             style="text-decoration-line: none !important;" href="#sso--monitoring" aria-label="Anchor">#</a>
     </span>        
     
-</h1>
+</h2>
 <p>I followed Helge&rsquo;s other articles more or less exactly.</p>
 <ol>
 <li><a href="https://helgeklein.com/blog/authentication-sso-user-management-password-reset-for-home-networks/"   target="_blank">
@@ -1653,7 +1667,7 @@ COPY --from=builder /usr/bin/caddy /usr/bin/caddy
 <li><a href="https://helgeklein.com/blog/docker-monitoring-with-prometheus-automatic-https-sso-authentication/"   target="_blank">
     Docker Monitoring With Prometheus, Automatic HTTPS &amp; SSO Authentication</a></li>
 </ol>
-<h1 class="relative group">Conclusion And Next Articles 
+<h2 class="relative group">Conclusion And Next Articles 
     <div id="conclusion-and-next-articles" class="anchor"></div>
     
     <span
@@ -1662,7 +1676,7 @@ COPY --from=builder /usr/bin/caddy /usr/bin/caddy
             style="text-decoration-line: none !important;" href="#conclusion-and-next-articles" aria-label="Anchor">#</a>
     </span>        
     
-</h1>
+</h2>
 <p>I achieved all my goals that I&rsquo;ve set initially. Let&rsquo;s go over them:</p>
 <ul>
 <li><strong>Automated deployment</strong>: all packages are installed and configured via Ansible. The only manual step is the Ubuntu installation.</li>
@@ -1673,7 +1687,7 @@ COPY --from=builder /usr/bin/caddy /usr/bin/caddy
 <li><strong>Remote access</strong>: will be covered in a future article</li>
 </ul>
 <p>I will continue this series with articles on remote access, Nextcloud for files, Immich for photos, Sonarr/Radarr/Plex for media management, and maybe more.</p>
-<h1 class="relative group">Changelog 
+<h2 class="relative group">Changelog 
     <div id="changelog" class="anchor"></div>
     
     <span
@@ -1682,7 +1696,7 @@ COPY --from=builder /usr/bin/caddy /usr/bin/caddy
             style="text-decoration-line: none !important;" href="#changelog" aria-label="Anchor">#</a>
     </span>        
     
-</h1>
+</h2>
 <p>-<strong>2024-01-31</strong>: added section about changes to the <a href="#automatic-https-certificates-for-services-on-internal-home-network"  >
     Dockerfile for Caddy</a></p>
 
