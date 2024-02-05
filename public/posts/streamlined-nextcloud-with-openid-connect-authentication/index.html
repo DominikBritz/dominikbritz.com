@@ -70,8 +70,8 @@
 It is part of my series on creating a home server on an old laptop. I&rsquo;m assuming that you&rsquo;ve set up Docker, Caddy, and Authelia, as described in the first article of the series." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://dominikbritz.com/posts/streamlined-nextcloud-with-openid-connect-authentication/" /><meta property="og:image" content="https://dominikbritz.com/posts/streamlined-nextcloud-with-openid-connect-authentication/featured.jpg" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2024-01-29T00:00:00+00:00" />
-<meta property="article:modified_time" content="2024-01-29T00:00:00+00:00" />
+<meta property="article:published_time" content="2024-02-05T00:00:00+00:00" />
+<meta property="article:modified_time" content="2024-02-05T00:00:00+00:00" />
 <meta property="og:see_also" content="https://dominikbritz.com/posts/2024-01-22-laptop-home-server/" />
 
 
@@ -98,15 +98,15 @@ It is part of my series on creating a home server on an old laptop. I&rsquo;m as
       "name": "Dominik Britz"
     },
     "copyrightYear": "2024",
-    "dateCreated": "2024-01-29T00:00:00\u002b00:00",
-    "datePublished": "2024-01-29T00:00:00\u002b00:00",
+    "dateCreated": "2024-02-05T00:00:00\u002b00:00",
+    "datePublished": "2024-02-05T00:00:00\u002b00:00",
     
-    "dateModified": "2024-01-29T00:00:00\u002b00:00",
+    "dateModified": "2024-02-05T00:00:00\u002b00:00",
     
     "keywords": ["home server","nextcloud","OpenID Connect"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "2223"
+    "wordCount": "2254"
   }]
   </script>
 
@@ -522,7 +522,7 @@ It is part of my series on creating a home server on an old laptop. I&rsquo;m as
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2024-01-29 00:00:00 &#43;0000 UTC">29 January 2024</time><span class="px-2 text-primary-500">&middot;</span><span>2223 words</span><span class="px-2 text-primary-500">&middot;</span>
+  <time datetime="2024-02-05 00:00:00 &#43;0000 UTC">5 February 2024</time><span class="px-2 text-primary-500">&middot;</span><span>2254 words</span><span class="px-2 text-primary-500">&middot;</span>
 
 
 <script type="text/javascript" src="/js/zen-mode.min.16f2e42a0014d476212e14c056b26b69bc85cb5de15352a5e3a1a0be498055dc1bf0926cef44baef1cc7fa2dfc5de0052892645cd3766598065f47b15c4bd44d.js" integrity="sha512-FvLkKgAU1HYhLhTAVrJrabyFy13hU1Kl46GgvkmAVdwb8JJs70S67xzH&#43;i38XeAFKJJkXNN2ZZgGX0exXEvUTQ=="></script>
@@ -1000,6 +1000,14 @@ It is part of my series on creating a home server on an old laptop. I&rsquo;m as
 </span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="l">nextcloud/secrets                          </span><span class="w"> </span><span class="c"># files containing secrets for Nextcloud</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="l">nextcloud/config                           </span><span class="w"> </span><span class="c"># config for Nextcloud</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="l">nextcloud/data                             </span><span class="w"> </span><span class="c"># your files for Nextcloud</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Create compose.yml file</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">file</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">path</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;/usr/local/data/docker/nextcloud/compose.yml&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">state</span><span class="p">:</span><span class="w"> </span><span class="l">touch</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">owner</span><span class="p">:</span><span class="w"> </span><span class="l">dockerlimited</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">group</span><span class="p">:</span><span class="w"> </span><span class="l">dockerlimited</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">mode</span><span class="p">:</span><span class="w"> </span><span class="m">0644</span><span class="w">                                    </span><span class="c"># Owner has read and write permissions, while the group and others have read permissions</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c"># generate a random 32 character alphanumeric string for the Nextcloud database password and the Nextcloud database root password. </span><span class="w">
