@@ -7,13 +7,33 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Copyright © 2024</copyright>
-    <lastBuildDate>Mon, 05 Feb 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://dominikbritz.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 24 Mar 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://dominikbritz.com/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>home server</title>
       <link>https://dominikbritz.com/tags/home-server/</link>
-      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 24 Mar 2024 00:00:00 +0000</pubDate>
       
       <guid>https://dominikbritz.com/tags/home-server/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>immich</title>
+      <link>https://dominikbritz.com/tags/immich/</link>
+      <pubDate>Sun, 24 Mar 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://dominikbritz.com/tags/immich/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>OpenID Connect</title>
+      <link>https://dominikbritz.com/tags/openid-connect/</link>
+      <pubDate>Sun, 24 Mar 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://dominikbritz.com/tags/openid-connect/</guid>
       <description></description>
       
     </item>
@@ -24,16 +44,6 @@
       <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
       
       <guid>https://dominikbritz.com/tags/nextcloud/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
-      <title>OpenID Connect</title>
-      <link>https://dominikbritz.com/tags/openid-connect/</link>
-      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
-      
-      <guid>https://dominikbritz.com/tags/openid-connect/</guid>
       <description></description>
       
     </item>

@@ -7,7 +7,18 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Copyright © 2024</copyright>
-    <lastBuildDate>Mon, 05 Feb 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://dominikbritz.com/tags/openid-connect/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 24 Mar 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://dominikbritz.com/tags/openid-connect/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Immich: Self-Hosted Photo Gallery With Cloud Backup &amp; OpenID Connect</title>
+      <link>https://dominikbritz.com/posts/immich-self-hosted-photos-with-cloud-backup/</link>
+      <pubDate>Sun, 24 Mar 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://dominikbritz.com/posts/immich-self-hosted-photos-with-cloud-backup/</guid>
+      <description>Take Control Over Your Memories #Preserving photos for eternity is the ultimate challenge in a personal context. You want to make sure that your children, friends, and family photos will never be lost.
+In the past, I have set up a cascade of external hard drives to store sensitive data, so that if one or more failed, a complete backup would always be available.</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://dominikbritz.com/posts/immich-self-hosted-photos-with-cloud-backup/featured.jpg" />
+    </item>
+    
     <item>
       <title>Streamlined Nextcloud With OpenID Connect Authentication</title>
       <link>https://dominikbritz.com/posts/streamlined-nextcloud-with-openid-connect-authentication/</link>

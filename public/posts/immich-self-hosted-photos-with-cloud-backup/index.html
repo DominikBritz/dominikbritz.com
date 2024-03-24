@@ -1,0 +1,1869 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="scroll-smooth" data-default-appearance="dark"
+  data-auto-appearance="false"><head>
+  <meta charset="utf-8" />
+  
+  <meta http-equiv="content-language" content="en" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  
+  <title>Immich: Self-Hosted Photo Gallery With Cloud Backup & OpenID Connect &middot; DominikBritz.com</title>
+  <meta name="title" content="Immich: Self-Hosted Photo Gallery With Cloud Backup & OpenID Connect &middot; DominikBritz.com" />
+  
+  <meta name="description" content="Engineer focused on end user computing, cloud technologies, and automation" />
+  <meta name="keywords" content="home server, immich, OpenID Connect, " />
+  
+  
+  <link rel="canonical" href="https://dominikbritz.com/posts/immich-self-hosted-photos-with-cloud-backup/" />
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <link type="text/css" rel="stylesheet" href="/css/main.bundle.min.7bd820881d892ec57012be5c51244ef74ee7f0fc745550018ff0f425dc6f7ffb31813a57103f413ced8cf4b313777cec8c0bbd1dde89ce4ac7a242fbf78dc051.css"
+    integrity="sha512-e9ggiB2JLsVwEr5cUSRO907n8Px0VVABj/D0Jdxvf/sxgTpXED9BPO2M9LMTd3zsjAu9Hd6JzkrHokL7943AUQ==" />
+  
+  
+  <script type="text/javascript" src="/js/appearance.min.516a16745bea5a9bd011138d254cc0fd3973cd55ce6e15f3dec763e7c7c2c7448f8fe7b54cca811cb821b0c7e12cd161caace1dd794ac3d34d40937cbcc9ee12.js"
+    integrity="sha512-UWoWdFvqWpvQERONJUzA/TlzzVXObhXz3sdj58fCx0SPj&#43;e1TMqBHLghsMfhLNFhyqzh3XlKw9NNQJN8vMnuEg=="></script>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <script defer type="text/javascript" id="script-bundle" src="/js/main.bundle.min.9bb1a9632f6ee6947ff79bb54b04b410c93e2c4db0c6c1109b856b9a575e881fb1fbe16c2a4465fae52aa0cd5b454a61ff47b99a5cd27a518e5a81ed29df8ceb.js"
+    integrity="sha512-m7GpYy9u5pR/95u1SwS0EMk&#43;LE2wxsEQm4VrmldeiB&#43;x&#43;&#43;FsKkRl&#43;uUqoM1bRUph/0e5mlzSelGOWoHtKd&#43;M6w==" data-copy="" data-copied=""></script>
+  
+  
+  <script src="/js/zoom.min.js"></script>
+  
+  
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  
+  
+  
+  
+  
+  
+  
+  <meta property="og:title" content="Immich: Self-Hosted Photo Gallery With Cloud Backup &amp; OpenID Connect" />
+<meta property="og:description" content="Take Control Over Your Memories #Preserving photos for eternity is the ultimate challenge in a personal context. You want to make sure that your children, friends, and family photos will never be lost.
+In the past, I have set up a cascade of external hard drives to store sensitive data, so that if one or more failed, a complete backup would always be available." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://dominikbritz.com/posts/immich-self-hosted-photos-with-cloud-backup/" /><meta property="og:image" content="https://dominikbritz.com/posts/immich-self-hosted-photos-with-cloud-backup/featured.jpg" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2024-03-24T00:00:00+00:00" />
+<meta property="article:modified_time" content="2024-03-24T00:00:00+00:00" />
+<meta property="og:see_also" content="https://dominikbritz.com/posts/streamlined-nextcloud-with-openid-connect-authentication/" /><meta property="og:see_also" content="https://dominikbritz.com/posts/2024-01-22-laptop-home-server/" />
+
+
+
+  <meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://dominikbritz.com/posts/immich-self-hosted-photos-with-cloud-backup/featured.jpg" /><meta name="twitter:title" content="Immich: Self-Hosted Photo Gallery With Cloud Backup &amp; OpenID Connect"/>
+<meta name="twitter:description" content="Take Control Over Your Memories #Preserving photos for eternity is the ultimate challenge in a personal context. You want to make sure that your children, friends, and family photos will never be lost.
+In the past, I have set up a cascade of external hard drives to store sensitive data, so that if one or more failed, a complete backup would always be available."/>
+
+  
+  <script type="application/ld+json">
+  [{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "articleSection": "Posts",
+    "name": "Immich: Self-Hosted Photo Gallery With Cloud Backup \u0026 OpenID Connect",
+    "headline": "Immich: Self-Hosted Photo Gallery With Cloud Backup \u0026 OpenID Connect",
+    
+    "abstract": "Take Control Over Your Memories #\rPreserving photos for eternity is the ultimate challenge in a personal context. You want to make sure that your children, friends, and family photos will never be lost.\nIn the past, I have set up a cascade of external hard drives to store sensitive data, so that if one or more failed, a complete backup would always be available.",
+    "inLanguage": "en",
+    "url" : "https:\/\/dominikbritz.com\/posts\/immich-self-hosted-photos-with-cloud-backup\/",
+    "author" : {
+      "@type": "Person",
+      "name": "Dominik Britz"
+    },
+    "copyrightYear": "2024",
+    "dateCreated": "2024-03-24T00:00:00\u002b00:00",
+    "datePublished": "2024-03-24T00:00:00\u002b00:00",
+    
+    "dateModified": "2024-03-24T00:00:00\u002b00:00",
+    
+    "keywords": ["home server","immich","OpenID Connect"],
+    
+    "mainEntityOfPage": "true",
+    "wordCount": "2200"
+  }]
+  </script>
+
+
+  
+  
+  <meta name="author" content="Dominik Britz" />
+  
+  
+  
+  <link href="mailto:info@dominikbritz.com" rel="me" />
+  
+  
+  <link href="https://github.com/dominikbritz" rel="me" />
+  
+  
+  <link href="https://www.linkedin.com/in/dominik-britz-329a0060/" rel="me" />
+  
+  
+  
+  
+
+<script src="/lib/jquery/jquery.slim.min.js" integrity=""></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+  
+  
+  <meta name="theme-color"/>
+  
+  
+</head>
+<body
+  class="flex flex-col h-screen px-6 m-auto text-lg leading-7 max-w-7xl bg-neutral text-neutral-900 dark:bg-neutral-800 dark:text-neutral sm:px-14 md:px-24 lg:px-32">
+  <div id="the-top" class="absolute flex self-center">
+    <a class="px-3 py-1 text-sm -translate-y-8 rounded-b-lg bg-primary-200 focus:translate-y-0 dark:bg-neutral-600"
+      href="#main-content"><span
+        class="font-bold text-primary-600 ltr:pr-2 rtl:pl-2 dark:text-primary-400">&darr;</span>Skip to main content</a>
+  </div>
+  
+  
+  <div class="min-h-[148px]"></div>
+<div class="fixed inset-x-0 pl-[24px] pr-[24px]" style="z-index:100">
+  <div id="menu-blur" class="absolute opacity-0 inset-x-0 top-0 h-full single_hero_background nozoom backdrop-blur-2xl shadow-2xl"></div>
+  <div class="relative max-w-[64rem] ml-auto mr-auto">
+    <div style="padding-left:0;padding-right:0;padding-top:2px;padding-bottom:3px"
+    class="main-menu flex items-center justify-between px-4 py-6 sm:px-6 md:justify-start space-x-3">
+    
+    
+    
+    <div>
+        <a href="/" class="flex">
+            <span class="sr-only">DominikBritz.com</span>
+
+            <img src="/images/logo.png" width="450" height="450"
+                class="logo max-h-[5rem] max-w-[5rem] object-scale-down object-left nozoom" alt="DominikBritz.com" />
+
+        </a>
+    </div>
+    
+    <div class="flex flex-1 items-center justify-between">
+        <nav class="flex space-x-3">
+
+            
+
+        </nav>
+        <nav class="hidden md:flex items-center space-x-5 md:ml-12 h-12">
+
+            
+            
+            
+  <a href="/posts/"  class="flex items-center">
+    
+    <p class="text-base font-medium text-gray-500 hover:text-gray-900" title="Posts">
+        Blog
+    </p>
+</a>
+
+
+            
+            
+  <a href="/tags/"  class="flex items-center">
+    
+    <p class="text-base font-medium text-gray-500 hover:text-gray-900" title="Tags">
+        Tags
+    </p>
+</a>
+
+
+            
+            
+  <a href="/cv/"  class="flex items-center">
+    
+    <p class="text-base font-medium text-gray-500 hover:text-gray-900" title="">
+        CV
+    </p>
+</a>
+
+
+            
+            
+
+            
+
+
+            
+            <button id="search-button" aria-label="Search" class="text-base hover:text-primary-600 dark:hover:text-primary-400 h-12"
+                title="">
+                
+
+  <span class="relative block icon">
+    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+
+  </span>
+
+
+            </button>
+            
+
+
+            
+            
+            <div
+                class="ltr:mr-14 rtl:ml-14 cursor-pointer text-sm text-neutral-700 hover:text-primary-600 dark:text-neutral dark:hover:text-primary-400">
+                <button id="appearance-switcher" aria-label="Dark mode switcher" type="button">
+                    <div class="flex items-center justify-center h-12 dark:hidden">
+                        
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M32 256c0-123.8 100.3-224 223.8-224c11.36 0 29.7 1.668 40.9 3.746c9.616 1.777 11.75 14.63 3.279 19.44C245 86.5 211.2 144.6 211.2 207.8c0 109.7 99.71 193 208.3 172.3c9.561-1.805 16.28 9.324 10.11 16.95C387.9 448.6 324.8 480 255.8 480C132.1 480 32 379.6 32 256z"/></svg>
+
+  </span>
+
+
+                    </div>
+                    <div class="items-center justify-center hidden h-12 dark:flex">
+                        
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 159.1c-53.02 0-95.1 42.98-95.1 95.1S202.1 351.1 256 351.1s95.1-42.98 95.1-95.1S309 159.1 256 159.1zM509.3 347L446.1 255.1l63.15-91.01c6.332-9.125 1.104-21.74-9.826-23.72l-109-19.7l-19.7-109c-1.975-10.93-14.59-16.16-23.72-9.824L256 65.89L164.1 2.736c-9.125-6.332-21.74-1.107-23.72 9.824L121.6 121.6L12.56 141.3C1.633 143.2-3.596 155.9 2.736 164.1L65.89 256l-63.15 91.01c-6.332 9.125-1.105 21.74 9.824 23.72l109 19.7l19.7 109c1.975 10.93 14.59 16.16 23.72 9.824L256 446.1l91.01 63.15c9.127 6.334 21.75 1.107 23.72-9.822l19.7-109l109-19.7C510.4 368.8 515.6 356.1 509.3 347zM256 383.1c-70.69 0-127.1-57.31-127.1-127.1c0-70.69 57.31-127.1 127.1-127.1s127.1 57.3 127.1 127.1C383.1 326.7 326.7 383.1 256 383.1z"/></svg>
+
+  </span>
+
+
+                    </div>
+                </button>
+            </div>
+            
+
+        </nav>
+        <div class="flex md:hidden items-center space-x-5 md:ml-12">
+
+            <span></span>
+
+            
+
+
+            
+            <button id="search-button-mobile" aria-label="Search" class="text-base hover:text-primary-600 dark:hover:text-primary-400"
+                title="">
+                
+
+  <span class="relative block icon">
+    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+
+  </span>
+
+
+            </button>
+            
+
+            
+            
+            <button id="appearance-switcher-mobile" aria-label="Dark mode switcher" type="button" style="margin-right:5px">
+                <div class="flex items-center justify-center h-12 dark:hidden">
+                    
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M32 256c0-123.8 100.3-224 223.8-224c11.36 0 29.7 1.668 40.9 3.746c9.616 1.777 11.75 14.63 3.279 19.44C245 86.5 211.2 144.6 211.2 207.8c0 109.7 99.71 193 208.3 172.3c9.561-1.805 16.28 9.324 10.11 16.95C387.9 448.6 324.8 480 255.8 480C132.1 480 32 379.6 32 256z"/></svg>
+
+  </span>
+
+
+                </div>
+                <div class="items-center justify-center hidden h-12 dark:flex">
+                    
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 159.1c-53.02 0-95.1 42.98-95.1 95.1S202.1 351.1 256 351.1s95.1-42.98 95.1-95.1S309 159.1 256 159.1zM509.3 347L446.1 255.1l63.15-91.01c6.332-9.125 1.104-21.74-9.826-23.72l-109-19.7l-19.7-109c-1.975-10.93-14.59-16.16-23.72-9.824L256 65.89L164.1 2.736c-9.125-6.332-21.74-1.107-23.72 9.824L121.6 121.6L12.56 141.3C1.633 143.2-3.596 155.9 2.736 164.1L65.89 256l-63.15 91.01c-6.332 9.125-1.105 21.74 9.824 23.72l109 19.7l19.7 109c1.975 10.93 14.59 16.16 23.72 9.824L256 446.1l91.01 63.15c9.127 6.334 21.75 1.107 23.72-9.822l19.7-109l109-19.7C510.4 368.8 515.6 356.1 509.3 347zM256 383.1c-70.69 0-127.1-57.31-127.1-127.1c0-70.69 57.31-127.1 127.1-127.1s127.1 57.3 127.1 127.1C383.1 326.7 326.7 383.1 256 383.1z"/></svg>
+
+  </span>
+
+
+                </div>
+            </button>
+            
+
+        </div>
+    </div>
+    <div class="-my-2 -mr-2 md:hidden">
+
+        <label id="menu-button" for="menu-controller" class="block">
+            <input type="checkbox" id="menu-controller" class="hidden" />
+            
+            <div class="cursor-pointer hover:text-primary-600 dark:hover:text-primary-400">
+                
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM0 256C0 238.3 14.33 224 32 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H32C14.33 288 0 273.7 0 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z"/></svg>
+
+  </span>
+
+
+            </div>
+            <div id="menu-wrapper" style="padding-top:5px;"
+                class="fixed inset-0 z-30 invisible w-screen h-screen m-0 overflow-auto transition-opacity opacity-0 cursor-default bg-neutral-100/50 backdrop-blur-sm dark:bg-neutral-900/50">
+                <ul
+                    class="flex space-y-2 mt-3 flex-col items-end w-full px-6 py-6 mx-auto overflow-visible list-none ltr:text-right rtl:text-left max-w-7xl">
+
+                    <li>
+                        <span
+                            class="cursor-pointer inline-block align-text-bottom hover:text-primary-600 dark:hover:text-primary-400">
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"/></svg>
+
+  </span>
+
+</span>
+                    </li>
+
+                    
+
+                    
+  <li class="mt-1">
+    <a href="/posts/"  class="flex items-center">
+        
+        <p class="text-bg font-bg text-gray-500 hover:text-gray-900" title="Posts">
+            Blog
+        </p>
+    </a>
+</li>
+
+
+
+                    
+
+                    
+  <li class="mt-1">
+    <a href="/tags/"  class="flex items-center">
+        
+        <p class="text-bg font-bg text-gray-500 hover:text-gray-900" title="Tags">
+            Tags
+        </p>
+    </a>
+</li>
+
+
+
+                    
+
+                    
+  <li class="mt-1">
+    <a href="/cv/"  class="flex items-center">
+        
+        <p class="text-bg font-bg text-gray-500 hover:text-gray-900" title="">
+            CV
+        </p>
+    </a>
+</li>
+
+
+
+                    
+
+                </ul>
+                
+                
+
+            </div>
+        </label>
+    </div>
+</div>
+
+
+
+
+<script>
+    (function () {
+        var $mainmenu = $('.main-menu');
+        var path = window.location.pathname;
+        $mainmenu.find('a[href="' + path + '"]').each(function (i, e) {
+            $(e).children('p').addClass('active');
+        });
+    })();
+</script>
+
+
+  </div>
+</div>
+<script>
+  window.addEventListener('scroll', function (e) {
+    var scroll = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+    var background_blur = document.getElementById('menu-blur');
+    background_blur.style.opacity = (scroll / 300);
+  });
+</script>
+
+  
+  <div class="relative flex flex-col grow">
+    <main id="main-content" class="grow">
+      
+
+
+<article>
+  
+  
+  
+  
+  
+  
+
+
+
+    
+    <div class="fixed inset-x-0 top-0 h-[800px] single_hero_background nozoom"
+    style="background-image:url(/posts/immich-self-hosted-photos-with-cloud-backup/featured_hu5459c0360c2b0cb7a147d2df0eb350ca_3692315_1200x0_resize_q75_box.jpg);">
+    
+
+
+    <div class="absolute inset-0 bg-gradient-to-t from-neutral dark:from-neutral-800 to-transparent mix-blend-normal">
+    </div>
+    <div
+        class="absolute inset-0 opacity-60 bg-gradient-to-t from-neutral dark:from-neutral-800 to-neutral-100 dark:to-neutral-800 mix-blend-normal">
+    </div>
+</div>
+
+<div id="background-blur" class="fixed opacity-0 inset-x-0 top-0 h-full single_hero_background nozoom backdrop-blur-2xl"></div>
+<script>
+    window.addEventListener('scroll', function (e) {
+        var scroll = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+        var background_blur = document.getElementById('background-blur');
+        background_blur.style.opacity = (scroll / 300)
+    });
+</script>
+
+  
+  
+
+  <header id="single_header" class="mt-5 max-w-prose">
+    
+    <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
+      Immich: Self-Hosted Photo Gallery With Cloud Backup & OpenID Connect
+    </h1>
+    <div class="mt-1 mb-6 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
+      
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+<div class="flex flex-row flex-wrap items-center">
+  
+  
+  <time datetime="2024-03-24 00:00:00 &#43;0000 UTC">24 March 2024</time><span class="px-2 text-primary-500">&middot;</span><span>2200 words</span><span class="px-2 text-primary-500">&middot;</span>
+
+
+<script type="text/javascript" src="/js/zen-mode.min.16f2e42a0014d476212e14c056b26b69bc85cb5de15352a5e3a1a0be498055dc1bf0926cef44baef1cc7fa2dfc5de0052892645cd3766598065f47b15c4bd44d.js" integrity="sha512-FvLkKgAU1HYhLhTAVrJrabyFy13hU1Kl46GgvkmAVdwb8JJs70S67xzH&#43;i38XeAFKJJkXNN2ZZgGX0exXEvUTQ=="></script>
+
+<span class="mb-[2px]">
+    <span id="zen-mode-button"
+          class="text-lg hover:text-primary-500"
+          title="Enable zen mode"
+          data-title-i18n-disable="Enable zen mode"
+          data-title-i18n-enable="Disable zen mode">
+        <span class="inline-block align-text-bottom">
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="50px" height="50px">
+    <path fill="currentColor" d="M 12.980469 4 C 9.1204688 4 5.9804688 7.14 5.9804688 11 L 6 26 L 9.9804688 26 L 9.9804688 11 C 9.9804688 9.35 11.320469 8 12.980469 8 L 40.019531 8 C 41.679531 8 43.019531 9.35 43.019531 11 L 43.019531 39 C 43.019531 40.65 41.679531 42 40.019531 42 L 29 42 C 29 43.54 28.420938 44.94 27.460938 46 L 40.019531 46 C 43.879531 46 47.019531 42.86 47.019531 39 L 47.019531 11 C 47.019531 7.14 43.879531 4 40.019531 4 L 12.980469 4 z M 7 28 C 4.794 28 3 29.794 3 32 L 3 42 C 3 44.206 4.794 46 7 46 L 23 46 C 25.206 46 27 44.206 27 42 L 27 32 C 27 29.794 25.206 28 23 28 L 7 28 z M 7 32 L 23 32 L 23.001953 42 L 7 42 L 7 32 z"/>
+</svg>
+  </span>
+
+</span>
+    </span>
+</span>
+  
+
+  
+  
+</div>
+
+
+
+
+
+<div class="flex flex-row flex-wrap items-center">
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/home-server/&#34;,'_self');">
+    <span class="flex" style="cursor: pointer;">
+  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    home server
+  </span>
+</span>
+  </span>
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/immich/&#34;,'_self');">
+    <span class="flex" style="cursor: pointer;">
+  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    immich
+  </span>
+</span>
+  </span>
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/openid-connect/&#34;,'_self');">
+    <span class="flex" style="cursor: pointer;">
+  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    OpenID Connect
+  </span>
+</span>
+  </span>
+  
+  
+  
+  
+</div>
+
+
+
+    </div>
+
+    
+    
+    
+    
+    
+
+    
+
+    
+
+    
+
+    
+  
+  </header>
+  
+  <section class="flex flex-col max-w-full mt-0 prose dark:prose-invert lg:flex-row">
+    
+     <div
+      class="order-first lg:ml-auto px-0 lg:order-last ltr:lg:pl-8 rtl:lg:pr-8">
+      <div class="toc ltr:pl-5 rtl:pr-5 print:hidden lg:sticky lg:top-[140px]">
+
+         <details open class="toc-right mt-0 overflow-hidden rounded-lg ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 hidden lg:block">
+  <summary
+    class="block py-1 text-lg font-semibold cursor-pointer bg-neutral-100 text-neutral-800 ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 dark:bg-neutral-700 dark:text-neutral-100 lg:hidden">
+    Table of Contents
+  </summary>
+  <div
+    class="min-w-[220px] py-2 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
+    <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#take-control-over-your-memories">Take Control Over Your Memories</a></li>
+        <li><a href="#photo-gallery-requirements">Photo Gallery Requirements</a></li>
+        <li><a href="#photo-gallery-selection">Photo Gallery Selection</a></li>
+        <li><a href="#immich-installation-in-docker-container">Immich Installation in Docker Container</a>
+          <ul>
+            <li><a href="#preparation">Preparation</a>
+              <ul>
+                <li><a href="#limited-user-and-group">Limited User And Group</a></li>
+                <li><a href="#files-and-folders">Files And Folders</a></li>
+                <li><a href="#deploy-with-ansible">Deploy With Ansible</a></li>
+              </ul>
+            </li>
+            <li><a href="#compose-file">Compose File</a></li>
+            <li><a href="#env-file">env File</a></li>
+            <li><a href="#lets-encrypt-certificate-via-caddy">Let’s Encrypt Certificate via Caddy</a>
+              <ul>
+                <li><a href="#caddyfile">Caddyfile</a></li>
+                <li><a href="#dns-a-record">DNS A Record</a></li>
+                <li><a href="#reload-caddys-configuration">Reload Caddy’s Configuration</a></li>
+              </ul>
+            </li>
+            <li><a href="#post-install-steps">Post Install Steps</a></li>
+          </ul>
+        </li>
+        <li><a href="#sso-to-immich-via-openid-connect-oidc-authentication-to-authelia">SSO to Immich via OpenID Connect (OIDC) Authentication to Authelia</a>
+          <ul>
+            <li><a href="#client-secret">Client Secret</a></li>
+            <li><a href="#authelia-configuration-file">Authelia Configuration File</a></li>
+            <li><a href="#restart-authelia">Restart Authelia</a></li>
+            <li><a href="#immich-configuration">Immich Configuration</a></li>
+          </ul>
+        </li>
+        <li><a href="#migrate-from-google-photos">Migrate from Google Photos</a></li>
+        <li><a href="#migrate-from-synology-photos">Migrate from Synology Photos</a>
+          <ul>
+            <li><a href="#clean-the-import">Clean the Import</a></li>
+            <li><a href="#file-copy-operations">File Copy Operations</a></li>
+            <li><a href="#update-the-compose-file">Update The Compose File</a></li>
+            <li><a href="#add-external-library-in-immich">Add External Library in Immich</a></li>
+          </ul>
+        </li>
+        <li><a href="#cloud-backup">Cloud Backup</a>
+          <ul>
+            <li><a href="#database">Database</a></li>
+            <li><a href="#file-system">File System</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</details>
+<details class="toc-inside mt-0 overflow-hidden rounded-lg ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 lg:hidden">
+  <summary
+    class="py-1 text-lg font-semibold cursor-pointer bg-neutral-100 text-neutral-800 ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 dark:bg-neutral-700 dark:text-neutral-100 lg:hidden">
+    Table of Contents
+  </summary>
+  <div
+    class="py-2 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
+    <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#take-control-over-your-memories">Take Control Over Your Memories</a></li>
+        <li><a href="#photo-gallery-requirements">Photo Gallery Requirements</a></li>
+        <li><a href="#photo-gallery-selection">Photo Gallery Selection</a></li>
+        <li><a href="#immich-installation-in-docker-container">Immich Installation in Docker Container</a>
+          <ul>
+            <li><a href="#preparation">Preparation</a>
+              <ul>
+                <li><a href="#limited-user-and-group">Limited User And Group</a></li>
+                <li><a href="#files-and-folders">Files And Folders</a></li>
+                <li><a href="#deploy-with-ansible">Deploy With Ansible</a></li>
+              </ul>
+            </li>
+            <li><a href="#compose-file">Compose File</a></li>
+            <li><a href="#env-file">env File</a></li>
+            <li><a href="#lets-encrypt-certificate-via-caddy">Let’s Encrypt Certificate via Caddy</a>
+              <ul>
+                <li><a href="#caddyfile">Caddyfile</a></li>
+                <li><a href="#dns-a-record">DNS A Record</a></li>
+                <li><a href="#reload-caddys-configuration">Reload Caddy’s Configuration</a></li>
+              </ul>
+            </li>
+            <li><a href="#post-install-steps">Post Install Steps</a></li>
+          </ul>
+        </li>
+        <li><a href="#sso-to-immich-via-openid-connect-oidc-authentication-to-authelia">SSO to Immich via OpenID Connect (OIDC) Authentication to Authelia</a>
+          <ul>
+            <li><a href="#client-secret">Client Secret</a></li>
+            <li><a href="#authelia-configuration-file">Authelia Configuration File</a></li>
+            <li><a href="#restart-authelia">Restart Authelia</a></li>
+            <li><a href="#immich-configuration">Immich Configuration</a></li>
+          </ul>
+        </li>
+        <li><a href="#migrate-from-google-photos">Migrate from Google Photos</a></li>
+        <li><a href="#migrate-from-synology-photos">Migrate from Synology Photos</a>
+          <ul>
+            <li><a href="#clean-the-import">Clean the Import</a></li>
+            <li><a href="#file-copy-operations">File Copy Operations</a></li>
+            <li><a href="#update-the-compose-file">Update The Compose File</a></li>
+            <li><a href="#add-external-library-in-immich">Add External Library in Immich</a></li>
+          </ul>
+        </li>
+        <li><a href="#cloud-backup">Cloud Backup</a>
+          <ul>
+            <li><a href="#database">Database</a></li>
+            <li><a href="#file-system">File System</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</details>
+
+ 
+<script>
+  (function () {
+    var $toc = $('#TableOfContents');
+    if ($toc.length > 0) {
+      var $window = $(window);
+
+      function onScroll() {
+        var currentScroll = $window.scrollTop();
+        var h = $('.anchor');
+        var id = "";
+        h.each(function (i, e) {
+          e = $(e);
+          if (e.offset().top - $(window).height()/3 <= currentScroll) {
+            id = e.attr('id');
+          }
+        });
+        var active = $toc.find('a.active');      
+        if (active.length == 1 && active.eq(0).attr('href') == '#' + id) return true;
+
+        active.each(function (i, e) {
+           
+            $(e).removeClass('active').siblings('ul').hide();
+          
+        });
+        $toc.find('a[href="#' + id + '"]').addClass('active')
+        $toc.find('a[href="#' + id + '"]').parentsUntil('#TableOfContents').each(function (i, e) {
+          $(e).children('a').parents('ul').show();          
+        });
+      }
+
+      $window.on('scroll', onScroll);
+      $(document).ready(function () {
+         
+          $toc.find('a').parent('li').find('ul').hide();
+        
+        onScroll();
+      });
+    }
+  })();
+</script>
+   </div>
+      </div>
+      
+
+      <div class="min-w-0 min-h-0 max-w-fit">
+        
+        
+<details style="margin-left:0px" class="mt-2 mb-5 overflow-hidden rounded-lg ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5" >
+    <summary
+        class="py-1 text-lg font-semibold cursor-pointer bg-primary-200 text-neutral-800 ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 dark:bg-primary-800 dark:text-neutral-100">
+        Home Server - This article is part of a series.
+    </summary>
+    
+    
+    
+    
+    <div
+        class="py-1 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
+        <a href="https://dominikbritz.com/posts/2024-01-22-laptop-home-server/">
+            Part 1: Laptop Home Server Build
+        </a>
+    </div>
+    
+    
+    
+    <div
+        class="py-1 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
+        <a href="https://dominikbritz.com/posts/streamlined-nextcloud-with-openid-connect-authentication/">
+            Part 2: Streamlined Nextcloud With OpenID Connect Authentication
+        </a>
+    </div>
+    
+    
+    
+    <div
+        class="py-1 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
+        Part 3: This Article
+    </div>
+    
+    
+
+</details>
+
+
+
+        <div class="article-content max-w-prose mb-20">
+          <h2 class="relative group">Take Control Over Your Memories 
+    <div id="take-control-over-your-memories" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#take-control-over-your-memories" aria-label="Anchor">#</a>
+    </span>        
+    
+</h2>
+<p>Preserving photos for eternity is the ultimate challenge in a personal context. You want to make sure that your children, friends, and family photos will never be lost.</p>
+<p>In the past, I have set up a cascade of external hard drives to store sensitive data, so that if one or more failed, a complete backup would always be available. However, there was always a nagging question in my mind that what if the house and all the hard drives caught fire?</p>
+<p>Today&rsquo;s world has a lot of public cloud services that take care of this concern and give you the peace of mind that your pics are safe, no matter what. Google Photos is the market leader, and rightly so, as the app works exceptionally well — especially the facial recognition and memories features that have become so popular in our household.</p>
+<p>But, that comes with a cost: you are no longer in control over your most precious data. I wanted my control back and started searching for alternatives.</p>
+<h2 class="relative group">Photo Gallery Requirements 
+    <div id="photo-gallery-requirements" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#photo-gallery-requirements" aria-label="Anchor">#</a>
+    </span>        
+    
+</h2>
+<p>Picking out a photo gallery is important, as you intend to keep it for a long time. Below is my list of criteria:</p>
+<ul>
+<li><strong>Self-hosted</strong>: must be running on my home server and not in the cloud</li>
+<li><strong>Actively maintained</strong>: when Google started charging money for Google Photos, the open-source community quickly started creating alternatives. Some projects started out promising, but were abandoned quickly. I want a solution with a big community and active developers that will be here in a few years.</li>
+<li><strong>Open-source</strong>: Synology, the vendor of my former home server, has a viable solution that ticks all boxes, but you have no influence on the development, nor can you see the current state or a roadmap. I want a solution where I can share ideas, discuss features, and see where the project is going to.</li>
+<li><strong>Native app with upload functionality</strong>: a native app for mobile phones that is easy to use and uploads photos automatically to my home server. Using an additional app like <a href="https://syncthing.net/"   target="_blank">
+    Syncthing</a> does not adhere to the WAF (wife acceptance factor).</li>
+<li><strong>Facial recognition</strong>: group photos by people, place, and time</li>
+<li><strong>Multi-user and sharing</strong>: I&rsquo;m not the sole user of the service. At least my wife is using it, too. The service must have multi-user support and excellent sharing functionality.</li>
+<li><strong>Memories</strong>: present memories from the past years in the mobile app. That&rsquo;s a hard non-negotiable factor in my family.</li>
+<li><strong>OIDC support</strong>: support single sign-on through OIDC with Authelia</li>
+</ul>
+<h2 class="relative group">Photo Gallery Selection 
+    <div id="photo-gallery-selection" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#photo-gallery-selection" aria-label="Anchor">#</a>
+    </span>        
+    
+</h2>
+<p>Below is a list of galleries that I&rsquo;ve checked against my requirements. For a more detailed comparison, refer to <a href="https://meichthys.github.io/foss_photo_libraries/"   target="_blank">
+    this table</a>.</p>
+<p><strong>Immich</strong>: ticks all boxes, but is under active development. There may be breaking changes along the way, according to their website.</p>
+<p><strong>Librephotos</strong>: no native automatic mobile upload</p>
+<p><strong>Nextcloud and Nextcloud Memories</strong>: I use Nextcloud for files (<a href="https://dominikbritz.com/posts/streamlined-nextcloud-with-openid-connect-authentication/"   target="_blank">
+    details</a>), so using it for photos as well is close. But I think that software should concentrate on a few things and then do them really well, rather than wanting to be a jack of all trades.</p>
+<p><strong>Photoprism</strong>: it&rsquo;s a progressive web app. Uploads are handled through a third-party app. Also, certain features are only available on paid plans.</p>
+<p>From the above, <a href="https://immich.app/"   target="_blank">
+    Immich</a> and Nextcloud have all the features I require. I prefer Immich&rsquo;s design over Nextcloud&rsquo;s though, as Immich looks nearly identical to Google Photos. After some research, it turned out that &ldquo;breaking changes&rdquo; in Immich means that you have to change something here and there in the Docker compose file and update it carefully. I have the confidence to do that. If that doesn&rsquo;t suit you, you&rsquo;re probably better off with Nextcloud.</p>
+<p>
+
+
+
+
+  
+  
+    
+  
+  
+    <figure>
+      
+      
+      <img class="my-0 rounded-md" src="/posts/immich-self-hosted-photos-with-cloud-backup/images/immich1_hu3fa4f8aae5468b0c92741fee77018b7c_1912615_2000x0_resize_q50_h2_box_3.webp" />
+      
+      
+    </figure>
+  
+
+</p>
+<h2 class="relative group">Immich Installation in Docker Container 
+    <div id="immich-installation-in-docker-container" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#immich-installation-in-docker-container" aria-label="Anchor">#</a>
+    </span>        
+    
+</h2>
+<h3 class="relative group">Preparation 
+    <div id="preparation" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#preparation" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+<p>We have to prepare a few things before we can create the stack.</p>
+<h4 class="relative group">Limited User And Group 
+    <div id="limited-user-and-group" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#limited-user-and-group" aria-label="Anchor">#</a>
+    </span>        
+    
+</h4>
+<p><a href="https://dominikbritz.com/posts/streamlined-nextcloud-with-openid-connect-authentication/#limited-user-and-group"   target="_blank">
+    As with Nextcloud</a>, Immich should be running with limited permissions. Hence, we run this stack with the <code>dockerlimited</code> user (<a href="https://dominikbritz.com/posts/streamlined-nextcloud-with-openid-connect-authentication/#limited-user-and-group"   target="_blank">
+    more info</a>).</p>
+<h4 class="relative group">Files And Folders 
+    <div id="files-and-folders" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#files-and-folders" aria-label="Anchor">#</a>
+    </span>        
+    
+</h4>
+<p>In your WSL client, create a new Ansible role for Immich.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">mkdir -p roles/immich/tasks
+</span></span><span class="line"><span class="cl">vim roles/immich/tasks/main.yml
+</span></span></code></pre></div><p>The playbook below is similar to my <a href="https://dominikbritz.com/posts/streamlined-nextcloud-with-openid-connect-authentication/#limited-user-and-group"   target="_blank">
+    Nextcloud one</a>, and one could argue that creating the <code>dockerlimited</code> user again makes no sense. But, that&rsquo;s the beauty of Ansible&rsquo;s idempotent nature: if the user already exists, it skips the step.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="c"># main.yml</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c"># Ansible role for Immich</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Create user dockerlimited with UID 2000</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">user</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">dockerlimited                          </span><span class="w"> </span><span class="c"># change to your preferred username</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">uid</span><span class="p">:</span><span class="w"> </span><span class="m">2000</span><span class="w">                                     </span><span class="c"># change to your preferred UID</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Create directories for Immich</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">file</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">path</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;/usr/local/data/docker/{{ item }}&#34;</span><span class="w">     </span><span class="c"># change to your preferred directory</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">state</span><span class="p">:</span><span class="w"> </span><span class="l">directory</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">owner</span><span class="p">:</span><span class="w"> </span><span class="l">dockerlimited</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">group</span><span class="p">:</span><span class="w"> </span><span class="l">dockerlimited</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">mode</span><span class="p">:</span><span class="w"> </span><span class="m">0755</span><span class="w">                                    </span><span class="c"># owner has full read, write, and execute permissions, while the group and others have read and execute permissions, but no write permissions</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">loop</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="l">immich/data                                </span><span class="w"> </span><span class="c"># upload storage</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Create compose.yaml file</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">file</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">path</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;/usr/local/data/docker/immich/compose.yaml&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">state</span><span class="p">:</span><span class="w"> </span><span class="l">touch</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">owner</span><span class="p">:</span><span class="w"> </span><span class="l">dockerlimited</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">group</span><span class="p">:</span><span class="w"> </span><span class="l">dockerlimited</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">mode</span><span class="p">:</span><span class="w"> </span><span class="m">0644</span><span class="w">                                    </span><span class="c"># Owner has read and write permissions, while the group and others have read permissions</span><span class="w">
+</span></span></span></code></pre></div><p>Add the new role to the <code>home.yml</code> playbook in the root:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nn">---</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">home server</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">hosts</span><span class="p">:</span><span class="w"> </span><span class="l">localhost</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">become</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">vars_files</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="l">vars_files/home.yml</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">roles</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="l">base</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="l">home</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="l">oefenweb.ufw</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="l">geerlingguy.docker</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="l">geerlingguy.ntp</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="l">geerlingguy.security</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="l">geerlingguy.node_exporter</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="l">nextcloud</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="l">immich</span><span class="w">
+</span></span></span></code></pre></div><p>Push the changes to GitHub (<a href="https://dominikbritz.com/posts/2024-01-22-laptop-home-server/#generate-a-new-ssh-key-for-github"   target="_blank">
+    details</a>).</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">gitall
+</span></span></code></pre></div><h4 class="relative group">Deploy With Ansible 
+    <div id="deploy-with-ansible" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#deploy-with-ansible" aria-label="Anchor">#</a>
+    </span>        
+    
+</h4>
+<p>On your home server, deploy the just created Immich role.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nb">export</span> <span class="nv">PAT</span><span class="o">=</span>YOUR_PAT_TOKEN
+</span></span><span class="line"><span class="cl">sudo ansible-pull -U https://<span class="nv">$PAT</span>:x-oauth-basic@github.com/Username/repo-name home.yml
+</span></span></code></pre></div><h3 class="relative group">Compose File 
+    <div id="compose-file" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#compose-file" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+<p>In <a href="https://dominikbritz.com/posts/2024-01-22-laptop-home-server/#create-docker-containers"   target="_blank">
+    Dockge</a>, click <code>Scan Stacks Folder</code> in the user menu at the top right. The <code>immich</code> stack should appear in the list.</p>
+<p>At the time I was writing this article, my Immich server was on version <code>1.99</code>. The compose file below is valid for this version. As Immich is under active development, the contents of the compose file change. Please check <a href="https://github.com/immich-app/immich/releases/latest/download/docker-compose.yml"   target="_blank">
+    https://github.com/immich-app/immich/releases/latest/download/docker-compose.yml</a> for the latest compose file.</p>
+<p>Note the following lines:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">labels</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span>- <span class="l">com.centurylinklabs.watchtower.enable=false</span><span class="w">
+</span></span></span></code></pre></div><p>I update all my Docker images with <a href="https://github.com/containrrr/watchtower"   target="_blank">
+    Watchtower</a> every night. Immich must be excluded with <code>com.centurylinklabs.watchtower.enable=false</code>, as sometimes changes to the compose file are required when you go to the next version. I update Immich manually.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">user</span><span class="p">:</span><span class="w"> </span><span class="m">2000</span><span class="p">:</span><span class="m">2000</span><span class="w">
+</span></span></span></code></pre></div><p>This line is not in the original compose file. Change it to the IDs of your <code>dockerlimited</code> user.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;3.8&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c">#</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c"># WARNING: Make sure to use the docker-compose.yml of the current release:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c">#</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c"># https://github.com/immich-app/immich/releases/latest/download/docker-compose.yml</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c">#</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c"># The compose file on main may not be compatible with the latest release.</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c">#</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">immich</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">services</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">immich-server</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">container_name</span><span class="p">:</span><span class="w"> </span><span class="l">immich_server</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">hostname</span><span class="p">:</span><span class="w"> </span><span class="l">photos</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">user</span><span class="p">:</span><span class="w"> </span><span class="m">2000</span><span class="p">:</span><span class="m">2000</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l">ghcr.io/immich-app/immich-server:${IMMICH_VERSION:-release}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">command</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="l">start.sh</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="l">immich</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">volumes</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="l">${UPLOAD_LOCATION}:/usr/src/app/upload</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="l">/etc/localtime:/etc/localtime:ro</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">env_file</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="l">.env</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">expose</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="m">3001</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">depends_on</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="l">redis</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="l">database</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">restart</span><span class="p">:</span><span class="w"> </span><span class="l">unless-stopped</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">networks</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="l">caddy_caddynet</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">labels</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="l">com.centurylinklabs.watchtower.enable=false</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">immich-microservices</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">container_name</span><span class="p">:</span><span class="w"> </span><span class="l">immich_microservices</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">user</span><span class="p">:</span><span class="w"> </span><span class="m">2000</span><span class="p">:</span><span class="m">2000</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l">ghcr.io/immich-app/immich-server:${IMMICH_VERSION:-release}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="c"># extends:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="c">#   file: hwaccel.yml</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="c">#   service: hwaccel</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">command</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="l">start.sh</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="l">microservices</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">volumes</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="l">${UPLOAD_LOCATION}:/usr/src/app/upload</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="l">/etc/localtime:/etc/localtime:ro</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">env_file</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="l">.env</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">depends_on</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="l">redis</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="l">database</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">restart</span><span class="p">:</span><span class="w"> </span><span class="l">unless-stopped</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">networks</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="l">caddy_caddynet</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">labels</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="l">com.centurylinklabs.watchtower.enable=false</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">immich-machine-learning</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">container_name</span><span class="p">:</span><span class="w"> </span><span class="l">immich_machine_learning</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l">ghcr.io/immich-app/immich-machine-learning:${IMMICH_VERSION:-release}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">volumes</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="l">model-cache:/cache</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">env_file</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="l">.env</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">restart</span><span class="p">:</span><span class="w"> </span><span class="l">unless-stopped</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">networks</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="l">caddy_caddynet</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">labels</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="l">com.centurylinklabs.watchtower.enable=false</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">redis</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">container_name</span><span class="p">:</span><span class="w"> </span><span class="l">immich_redis</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l">redis:6.2-alpine@sha256:b6124ab2e45cc332e16398022a411d7e37181f21ff7874835e0180f56a09e82a</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">restart</span><span class="p">:</span><span class="w"> </span><span class="l">unless-stopped</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">environment</span><span class="p">:</span><span class="w"> </span><span class="p">[]</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">networks</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="l">caddy_caddynet</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">database</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">container_name</span><span class="p">:</span><span class="w"> </span><span class="l">immich_postgres</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l">tensorchord/pgvecto-rs:pg14-v0.2.0@sha256:90724186f0a3517cf6914295b5ab410db9ce23190a2d9d0b9dd6463e3fa298f0</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">env_file</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="l">.env</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">environment</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">POSTGRES_PASSWORD</span><span class="p">:</span><span class="w"> </span><span class="l">${DB_PASSWORD}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">POSTGRES_USER</span><span class="p">:</span><span class="w"> </span><span class="l">${DB_USERNAME}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">POSTGRES_DB</span><span class="p">:</span><span class="w"> </span><span class="l">${DB_DATABASE_NAME}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">volumes</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="l">pgdata:/var/lib/postgresql/data</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">restart</span><span class="p">:</span><span class="w"> </span><span class="l">unless-stopped</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">networks</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="l">caddy_caddynet</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">labels</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="l">com.centurylinklabs.watchtower.enable=false</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">volumes</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">pgdata</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">model-cache</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">networks</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">caddy_caddynet</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">external</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span></span></span></code></pre></div><h3 class="relative group">env File 
+    <div id="env-file" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#env-file" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+<p>The <code>.env</code> file holds configurations for the Immich stack and can be edited in the Dockge UI directly.</p>
+<p>Generate a random alphanumeric string to be used as database password:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">tr -cd <span class="s1">&#39;[:alnum:]&#39;</span> &lt; /dev/urandom <span class="p">|</span> fold -w <span class="s2">&#34;32&#34;</span> <span class="p">|</span> head -n <span class="m">1</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="c"># You can find documentation for all the supported env variables at https://immich.app/docs/install/environment-variables</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c"># The location where your uploaded files are stored</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="l">UPLOAD_LOCATION=/media/18TB/photos/library</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c"># The Immich version to use. You can pin this to a specific version like &#34;v1.71.0&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="l">IMMICH_VERSION=release</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c"># Connection secret for postgres. You should change it to a random password</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="l">DB_PASSWORD=your_password</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c"># The values below this line do not need to be changed</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c">###################################################################################</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="l">DB_HOSTNAME=immich_postgres</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="l">DB_USERNAME=postgres</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="l">DB_DATABASE_NAME=immich</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="l">REDIS_HOSTNAME=immich_redis</span><span class="w">
+</span></span></span></code></pre></div><h3 class="relative group">Let’s Encrypt Certificate via Caddy 
+    <div id="lets-encrypt-certificate-via-caddy" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#lets-encrypt-certificate-via-caddy" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+<h4 class="relative group">Caddyfile 
+    <div id="caddyfile" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#caddyfile" aria-label="Anchor">#</a>
+    </span>        
+    
+</h4>
+<p>Add the following to Caddyfile (<a href="https://dominikbritz.com/posts/2024-01-22-laptop-home-server/#automatic-https-certificates-for-services-on-internal-home-network"   target="_blank">
+    details</a>):</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">photos.{$MY_DOMAIN} {
+</span></span><span class="line"><span class="cl">        reverse_proxy immich:3001
+</span></span><span class="line"><span class="cl">        tls {
+</span></span><span class="line"><span class="cl">                dns netcup {
+</span></span><span class="line"><span class="cl">                        customer_number {env.NETCUP_CUSTOMER_NUMBER}
+</span></span><span class="line"><span class="cl">                        api_key {env.NETCUP_API_KEY}
+</span></span><span class="line"><span class="cl">                        api_password {env.NETCUP_API_PASSWORD}
+</span></span><span class="line"><span class="cl">                }
+</span></span><span class="line"><span class="cl">                propagation_timeout 900s
+</span></span><span class="line"><span class="cl">                propagation_delay 600s
+</span></span><span class="line"><span class="cl">                resolvers 1.1.1.1
+</span></span><span class="line"><span class="cl">        }
+</span></span><span class="line"><span class="cl">}
+</span></span></code></pre></div><h4 class="relative group">DNS A Record 
+    <div id="dns-a-record" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#dns-a-record" aria-label="Anchor">#</a>
+    </span>        
+    
+</h4>
+<p>Add the following A record to your DNS domain:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">photos.home.yourdomain.com 192.168.178.254     # replace with your Docker host&#39;s IP address
+</span></span></code></pre></div><h4 class="relative group">Reload Caddy’s Configuration 
+    <div id="reload-caddys-configuration" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#reload-caddys-configuration" aria-label="Anchor">#</a>
+    </span>        
+    
+</h4>
+<p>Instruct Caddy to reload its configuration by running:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">docker <span class="nb">exec</span> -w /etc/caddy caddy caddy reload
+</span></span></code></pre></div><p>Immich is now accessible via <a href="https://photos.home.yourdomain.com"   target="_blank">
+    https://photos.home.yourdomain.com</a>.</p>
+<h3 class="relative group">Post Install Steps 
+    <div id="post-install-steps" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#post-install-steps" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+<p>Follow the official <a href="https://immich.app/docs/install/post-install"   target="_blank">
+    post install steps</a> to:</p>
+<ul>
+<li>Create your user as the admin user.</li>
+<li>Create additional users (optional)</li>
+<li>Update the storage template</li>
+<li>Download and set up the mobile app</li>
+</ul>
+<h2 class="relative group">SSO to Immich via OpenID Connect (OIDC) Authentication to Authelia 
+    <div id="sso-to-immich-via-openid-connect-oidc-authentication-to-authelia" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#sso-to-immich-via-openid-connect-oidc-authentication-to-authelia" aria-label="Anchor">#</a>
+    </span>        
+    
+</h2>
+<p>This section describes how to set up single sign-on to Immich via OpenID Connect authentication to <a href="https://dominikbritz.com/posts/2024-01-22-laptop-home-server/#sso--monitoring"   target="_blank">
+    Authelia</a>.</p>
+<h3 class="relative group">Client Secret 
+    <div id="client-secret" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#client-secret" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+<p>Generate a random alphanumeric string to be used as client secret:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">tr -cd <span class="s1">&#39;[:alnum:]&#39;</span> &lt; /dev/urandom <span class="p">|</span> fold -w <span class="s2">&#34;64&#34;</span> <span class="p">|</span> head -n <span class="m">1</span>
+</span></span></code></pre></div><h3 class="relative group">Authelia Configuration File 
+    <div id="authelia-configuration-file" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#authelia-configuration-file" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+<p>Add the following to the <code>oidc:</code> section of Authelia’s configuration file <code>config/configuration.yml</code>:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">clients</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span>- <span class="nt">id</span><span class="p">:</span><span class="w"> </span><span class="l">immich</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l">immich</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">secret</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;your secret&#39;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">scopes</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="l">openid</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="l">profile</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="l">email</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">redirect_uris</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="l">https://photos.home.yourdomain.com/auth/login</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="l">https://photos.home.yourdomain.com/user-settings</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="l">app.immich:/</span><span class="w">
+</span></span></span></code></pre></div><h3 class="relative group">Restart Authelia 
+    <div id="restart-authelia" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#restart-authelia" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+<p>We changed the container’s environment, which makes it necessary to recreate the container (stopping and starting is not enough). Navigate to the Authelia stack in Dockge and click <strong>Stop &amp; Inactive</strong>. Then start the stack.</p>
+<p>Inspect Dockge&rsquo;s terminal window for any errors.</p>
+<h3 class="relative group">Immich Configuration 
+    <div id="immich-configuration" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#immich-configuration" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+<p>In Immich, go to <strong>Administration</strong> → <strong>Settings</strong> → <strong>OAuth Authentication</strong> and configure the following:</p>
+<ul>
+<li><strong>Enable</strong>: yes</li>
+<li><strong>Issuer URL</strong>: <a href="https://authelia.home.yourdomain.com"   target="_blank">
+    https://authelia.home.yourdomain.com</a></li>
+<li><strong>Client ID</strong>: Immich</li>
+<li><strong>Client secret</strong>: your secret</li>
+<li><strong>Scope</strong>: openid email profile</li>
+<li><strong>Signing algorithm</strong>: RS256</li>
+<li><strong>Storage label claim</strong>: preferred_username</li>
+<li><strong>Storage quota claim</strong>: immich_quota</li>
+<li><strong>Default storage quota</strong>: you may define a quota here</li>
+<li><strong>Auto register</strong>: yes</li>
+<li><strong>Auto launch</strong>: yes</li>
+<li><strong>Mobile redirect uri override</strong>: no</li>
+</ul>
+<p>Restart the Immich stack through Dockge. Log in with your user via Authelia.</p>
+<h2 class="relative group">Migrate from Google Photos 
+    <div id="migrate-from-google-photos" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#migrate-from-google-photos" aria-label="Anchor">#</a>
+    </span>        
+    
+</h2>
+<p>The community created a <a href="https://github.com/simulot/immich-go"   target="_blank">
+    command-line tool</a> to import your Google photos into Immich.</p>
+<ol>
+<li>Export your Google photos with Google Takeout. Read the <a href="https://github.com/simulot/immich-go?tab=readme-ov-file#google-photos-best-practices"   target="_blank">
+    best practices</a> first.</li>
+<li>Import the exported zip files with <a href="https://github.com/simulot/immich-go?tab=readme-ov-file#google-photos-best-practices"   target="_blank">
+    immich-go</a></li>
+</ol>
+<h2 class="relative group">Migrate from Synology Photos 
+    <div id="migrate-from-synology-photos" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#migrate-from-synology-photos" aria-label="Anchor">#</a>
+    </span>        
+    
+</h2>
+<p>I had many photos stored in a directory structure containing years and event names (like <em>2024\2024-01-01 happy new year</em>) on my old Synology NAS, which I moved to Immich as well. While I moved off a Synology, the instructions below can be used for any folder-based structure.</p>
+<h3 class="relative group">Clean the Import 
+    <div id="clean-the-import" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#clean-the-import" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+<p>I did not do a great job organizing my photos on the Synology and had numerous duplicates. I took the migration to Immich as an opportunity to fix that.</p>
+<p><a href="https://github.com/qarmin/czkawka"   target="_blank">
+    Czkawka</a> was very helpful in cleaning my files before importing.</p>
+<h3 class="relative group">File Copy Operations 
+    <div id="file-copy-operations" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#file-copy-operations" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+<p>Mount the Synology photo share and copy the files to your home server.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># Mount the Synology share on my home server</span>
+</span></span><span class="line"><span class="cl">mkdir /mnt/synology_photos
+</span></span><span class="line"><span class="cl">mount -t cifs -o <span class="nv">user</span><span class="o">=</span>username //synology/photo /mnt/synology_photos
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Copy the files to my external media drive</span>
+</span></span><span class="line"><span class="cl">mkdir /media/18TB/photos/from_synology
+</span></span><span class="line"><span class="cl">rsync -avh /mnt/synology_photos/ /media/18TB/photos/from_synology
+</span></span></code></pre></div><h3 class="relative group">Update The Compose File 
+    <div id="update-the-compose-file" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#update-the-compose-file" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+<p>Add the <code>from_synology</code> folder as a read-only volume to the <code>immich-server</code> and <code>immich-microservices</code> services in the <code>compose.yaml</code>.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">volumes</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span>- <span class="l">/media/18TB/photos/from_synology:/mnt/media/from_synology:ro</span><span class="w">
+</span></span></span></code></pre></div><h3 class="relative group">Add External Library in Immich 
+    <div id="add-external-library-in-immich" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#add-external-library-in-immich" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+<p>External libraries in Immich are perfect for adding existing photos. From their <a href="https://immich.app/docs/features/libraries"   target="_blank">
+    documentation</a>:</p>
+<blockquote>
+<p>External libraries tracks assets stored outside of immich, i.e. in the file system. Immich will only read data from the files, and will not modify them in any way. Therefore, the delete button is disabled for external assets. When the external library is scanned, immich will read the metadata from the file and create an asset in the library for each image or video file. These items will then be shown in the main timeline, and they will look and behave like any other asset, including viewing on the map, adding to albums, etc.</p>
+</blockquote>
+<p>Go to <strong>Administration</strong> → <strong>External Libraries</strong> and add <code>/mnt/media/from_synology</code> as a library.</p>
+<p>After Immich has processed all files, they appear in your timeline.</p>
+<h2 class="relative group">Cloud Backup 
+    <div id="cloud-backup" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#cloud-backup" aria-label="Anchor">#</a>
+    </span>        
+    
+</h2>
+<p>A good backup is crucial for photos. I back up my data encrypted to the cloud with <a href="https://dominikbritz.com/posts/2024-01-22-laptop-home-server/#restic-encrypted-offsite-backup-for-your-homeserver"   target="_blank">
+    resticprofile</a>.</p>
+<p>According to the <a href="https://immich.app/docs/administration/backup-and-restore"   target="_blank">
+    Immich documentation</a>, one must back up the database and a few folders in the file system.</p>
+<h3 class="relative group">Database 
+    <div id="database" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#database" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+<p>Add the <code>pg_dumpall</code> command to the <code>run-before</code> section of your resticprofile configuration in <code>/usr/local/data/resticprofile/profiles.yaml</code>.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">run-before</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span>- <span class="s2">&#34;docker exec -t immich_postgres pg_dumpall -c -U postgres | gzip &gt; /usr/local/data/docker/immich/db_dump.sql.gz&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span>- <span class="s2">&#34;systemctl stop docker.socket&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span>- <span class="s2">&#34;systemctl stop docker&#34;</span><span class="w">
+</span></span></span></code></pre></div><p>Verify that the Docker folder is part of the <code>source</code> section.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">source</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span>- <span class="s2">&#34;/usr/local/data/docker&#34;</span><span class="w">
+</span></span></span></code></pre></div><h3 class="relative group">File System 
+    <div id="file-system" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#file-system" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+<p>If you place the uploaded photos in the stack folder, i.e., <code>/usr/local/data/docker/immich</code>, add <code>/usr/local/data/docker/immich/thumbs</code> and <code>/usr/local/data/docker/immich/encoded-video</code> to the <code>excludes</code> file (<a href="https://dominikbritz.com/posts/2024-01-22-laptop-home-server/#restic-encrypted-offsite-backup-for-your-homeserver"   target="_blank">
+    more info</a>).</p>
+<p>If you don&rsquo;t place the uploaded photos in the stack folder, like me, add the following paths to the <code>source</code> section. Replace <code>UPLOAD_LOCATION</code> with the path set in your <a href="#env-file"  >
+    .env file</a>.</p>
+<ol>
+<li><code>UPLOAD_LOCATION/library</code></li>
+<li><code>UPLOAD_LOCATION/upload</code></li>
+<li><code>UPLOAD_LOCATION/profile</code></li>
+</ol>
+<p>Also, add any <a href="#add-external-library-in-immich"  >
+    external library</a>.</p>
+<p>Here is my <code>source</code> section in the <code>profiles.yaml</code>:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">source</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span>- <span class="s2">&#34;/usr/local/data/docker&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span>- <span class="s2">&#34;/usr/local/data/resticprofile&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span>- <span class="s2">&#34;/media/18TB/photos/library/library&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span>- <span class="s2">&#34;/media/18TB/photos/library/upload&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span>- <span class="s2">&#34;/media/18TB/photos/library/profile&#34;</span><span class="w"> 
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span>- <span class="s2">&#34;/media/18TB/photos/from_synology&#34;</span><span class="w"> 
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span>- <span class="s2">&#34;/etc/unbound/unbound.conf&#34;</span><span class="w">
+</span></span></span></code></pre></div>
+        </div>
+                
+        
+<details style="margin-left:0px" class="mt-2 mb-5 overflow-hidden rounded-lg ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5">
+    <summary
+        class="py-1 text-lg font-semibold cursor-pointer bg-primary-200 text-neutral-800 ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 dark:bg-primary-800 dark:text-neutral-100">
+        Home Server - This article is part of a series.
+    </summary>
+    
+    
+    
+    
+    <div
+        class="py-1 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
+        <a href="https://dominikbritz.com/posts/2024-01-22-laptop-home-server/">
+            Part 1: Laptop Home Server Build
+        </a>
+    </div>
+    
+    
+    
+    <div
+        class="py-1 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
+        <a href="https://dominikbritz.com/posts/streamlined-nextcloud-with-openid-connect-authentication/">
+            Part 2: Streamlined Nextcloud With OpenID Connect Authentication
+        </a>
+    </div>
+    
+    
+    
+    <div
+        class="py-1 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
+        Part 3: This Article
+    </div>
+    
+    
+
+</details>
+
+
+        
+  
+  <section class="flex flex-row flex-wrap justify-center pt-4 text-xl">
+    
+      
+      <a
+      target="_blank"
+      class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
+      href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://dominikbritz.com/posts/immich-self-hosted-photos-with-cloud-backup/&amp;title=Immich:%20Self-Hosted%20Photo%20Gallery%20With%20Cloud%20Backup%20&amp;%20OpenID%20Connect"
+      title="Share on LinkedIn"
+      aria-label="Share on LinkedIn"
+      >
+      
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
+
+  </span>
+
+
+    </a>
+      
+    
+      
+      <a
+      target="_blank"
+      class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
+      href="https://twitter.com/intent/tweet/?url=https://dominikbritz.com/posts/immich-self-hosted-photos-with-cloud-backup/&amp;text=Immich:%20Self-Hosted%20Photo%20Gallery%20With%20Cloud%20Backup%20&amp;%20OpenID%20Connect"
+      title="Tweet on Twitter"
+      aria-label="Tweet on Twitter"
+      >
+      
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"/></svg>
+  </span>
+
+
+    </a>
+      
+    
+      
+      <a
+      target="_blank"
+      class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
+      href="https://reddit.com/submit/?url=https://dominikbritz.com/posts/immich-self-hosted-photos-with-cloud-backup/&amp;resubmit=true&amp;title=Immich:%20Self-Hosted%20Photo%20Gallery%20With%20Cloud%20Backup%20&amp;%20OpenID%20Connect"
+      title="Submit to Reddit"
+      aria-label="Submit to Reddit"
+      >
+      
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M201.5 305.5c-13.8 0-24.9-11.1-24.9-24.6 0-13.8 11.1-24.9 24.9-24.9 13.6 0 24.6 11.1 24.6 24.9 0 13.6-11.1 24.6-24.6 24.6zM504 256c0 137-111 248-248 248S8 393 8 256 119 8 256 8s248 111 248 248zm-132.3-41.2c-9.4 0-17.7 3.9-23.8 10-22.4-15.5-52.6-25.5-86.1-26.6l17.4-78.3 55.4 12.5c0 13.6 11.1 24.6 24.6 24.6 13.8 0 24.9-11.3 24.9-24.9s-11.1-24.9-24.9-24.9c-9.7 0-18 5.8-22.1 13.8l-61.2-13.6c-3-.8-6.1 1.4-6.9 4.4l-19.1 86.4c-33.2 1.4-63.1 11.3-85.5 26.8-6.1-6.4-14.7-10.2-24.1-10.2-34.9 0-46.3 46.9-14.4 62.8-1.1 5-1.7 10.2-1.7 15.5 0 52.6 59.2 95.2 132 95.2 73.1 0 132.3-42.6 132.3-95.2 0-5.3-.6-10.8-1.9-15.8 31.3-16 19.8-62.5-14.9-62.5zM302.8 331c-18.2 18.2-76.1 17.9-93.6 0-2.2-2.2-6.1-2.2-8.3 0-2.5 2.5-2.5 6.4 0 8.6 22.8 22.8 87.3 22.8 110.2 0 2.5-2.2 2.5-6.1 0-8.6-2.2-2.2-6.1-2.2-8.3 0zm7.7-75c-13.6 0-24.6 11.1-24.6 24.9 0 13.6 11.1 24.6 24.6 24.6 13.8 0 24.9-11.1 24.9-24.6 0-13.8-11-24.9-24.9-24.9z"/></svg>
+
+  </span>
+
+
+    </a>
+      
+    
+      
+      <a
+      target="_blank"
+      class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
+      href="https://pinterest.com/pin/create/bookmarklet/?url=https://dominikbritz.com/posts/immich-self-hosted-photos-with-cloud-backup/&amp;description=Immich:%20Self-Hosted%20Photo%20Gallery%20With%20Cloud%20Backup%20&amp;%20OpenID%20Connect"
+      title="Pin on Pinterest"
+      aria-label="Pin on Pinterest"
+      >
+      
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path fill="currentColor" d="M496 256c0 137-111 248-248 248-25.6 0-50.2-3.9-73.4-11.1 10.1-16.5 25.2-43.5 30.8-65 3-11.6 15.4-59 15.4-59 8.1 15.4 31.7 28.5 56.8 28.5 74.8 0 128.7-68.8 128.7-154.3 0-81.9-66.9-143.2-152.9-143.2-107 0-163.9 71.8-163.9 150.1 0 36.4 19.4 81.7 50.3 96.1 4.7 2.2 7.2 1.2 8.3-3.3.8-3.4 5-20.3 6.9-28.1.6-2.5.3-4.7-1.7-7.1-10.1-12.5-18.3-35.3-18.3-56.6 0-54.7 41.4-107.6 112-107.6 60.9 0 103.6 41.5 103.6 100.9 0 67.1-33.9 113.6-78 113.6-24.3 0-42.6-20.1-36.7-44.8 7-29.5 20.5-61.3 20.5-82.6 0-19-10.2-34.9-31.4-34.9-24.9 0-44.9 25.7-44.9 60.2 0 22 7.4 36.8 7.4 36.8s-24.5 103.8-29 123.2c-5 21.4-3 51.6-.9 71.2C65.4 450.9 0 361.1 0 256 0 119 111 8 248 8s248 111 248 248z"/></svg>
+
+  </span>
+
+
+    </a>
+      
+    
+      
+      <a
+      target="_blank"
+      class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
+      href="https://www.facebook.com/sharer/sharer.php?u=https://dominikbritz.com/posts/immich-self-hosted-photos-with-cloud-backup/&amp;quote=Immich:%20Self-Hosted%20Photo%20Gallery%20With%20Cloud%20Backup%20&amp;%20OpenID%20Connect"
+      title="Share on Facebook"
+      aria-label="Share on Facebook"
+      >
+      
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/></svg>
+
+  </span>
+
+
+    </a>
+      
+    
+      
+      <a
+      target="_blank"
+      class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
+      href="mailto:?body=https://dominikbritz.com/posts/immich-self-hosted-photos-with-cloud-backup/&amp;subject=Immich:%20Self-Hosted%20Photo%20Gallery%20With%20Cloud%20Backup%20&amp;%20OpenID%20Connect"
+      title="Send via email"
+      aria-label="Send via email"
+      >
+      
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M207.8 20.73c-93.45 18.32-168.7 93.66-187 187.1c-27.64 140.9 68.65 266.2 199.1 285.1c19.01 2.888 36.17-12.26 36.17-31.49l.0001-.6631c0-15.74-11.44-28.88-26.84-31.24c-84.35-12.98-149.2-86.13-149.2-174.2c0-102.9 88.61-185.5 193.4-175.4c91.54 8.869 158.6 91.25 158.6 183.2l0 16.16c0 22.09-17.94 40.05-40 40.05s-40.01-17.96-40.01-40.05v-120.1c0-8.847-7.161-16.02-16.01-16.02l-31.98 .0036c-7.299 0-13.2 4.992-15.12 11.68c-24.85-12.15-54.24-16.38-86.06-5.106c-38.75 13.73-68.12 48.91-73.72 89.64c-9.483 69.01 43.81 128 110.9 128c26.44 0 50.43-9.544 69.59-24.88c24 31.3 65.23 48.69 109.4 37.49C465.2 369.3 496 324.1 495.1 277.2V256.3C495.1 107.1 361.2-9.332 207.8 20.73zM239.1 304.3c-26.47 0-48-21.56-48-48.05s21.53-48.05 48-48.05s48 21.56 48 48.05S266.5 304.3 239.1 304.3z"/></svg>
+
+  </span>
+
+
+    </a>
+      
+    
+      
+      <a
+      target="_blank"
+      class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
+      href="https://api.whatsapp.com/send?text=https://dominikbritz.com/posts/immich-self-hosted-photos-with-cloud-backup/&amp;resubmit=true&amp;title=Immich:%20Self-Hosted%20Photo%20Gallery%20With%20Cloud%20Backup%20&amp;%20OpenID%20Connect"
+      title=""
+      aria-label=""
+      >
+      
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg>
+
+  </span>
+
+
+    </a>
+      
+    
+      
+      <a
+      target="_blank"
+      class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
+      href="https://t.me/share/url?url=https://dominikbritz.com/posts/immich-self-hosted-photos-with-cloud-backup/&amp;resubmit=true&amp;title=Immich:%20Self-Hosted%20Photo%20Gallery%20With%20Cloud%20Backup%20&amp;%20OpenID%20Connect"
+      title=""
+      aria-label=""
+      >
+      
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path fill="currentColor" d="M248,8C111.033,8,0,119.033,0,256S111.033,504,248,504,496,392.967,496,256,384.967,8,248,8ZM362.952,176.66c-3.732,39.215-19.881,134.378-28.1,178.3-3.476,18.584-10.322,24.816-16.948,25.425-14.4,1.326-25.338-9.517-39.287-18.661-21.827-14.308-34.158-23.215-55.346-37.177-24.485-16.135-8.612-25,5.342-39.5,3.652-3.793,67.107-61.51,68.335-66.746.153-.655.3-3.1-1.154-4.384s-3.59-.849-5.135-.5q-3.283.746-104.608,69.142-14.845,10.194-26.894,9.934c-8.855-.191-25.888-5.006-38.551-9.123-15.531-5.048-27.875-7.717-26.8-16.291q.84-6.7,18.45-13.7,108.446-47.248,144.628-62.3c68.872-28.647,83.183-33.623,92.511-33.789,2.052-.034,6.639.474,9.61,2.885a10.452,10.452,0,0,1,3.53,6.716A43.765,43.765,0,0,1,362.952,176.66Z"/></svg>
+
+  </span>
+
+
+    </a>
+      
+    
+  </section>
+
+
+          
+      </div>
+     
+    
+     <script>
+        var oid = "views_posts\\Immich Self Hosted Photos With Cloud Backup\\index.md"
+        var oid_likes = "likes_posts\\Immich Self Hosted Photos With Cloud Backup\\index.md"
+      </script>
+      
+      
+      
+      <script type="text/javascript" src="/js/page.min.5b1bad196a6075a1e11bae1dc95f24f67b610948a00525e347566c5a62338ea78f1c7224ab9a53873dcdb2a1a7d7d391b8a8ef45561297f68806c01315b0c4f6.js" integrity="sha512-WxutGWpgdaHhG64dyV8k9nthCUigBSXjR1ZsWmIzjqePHHIkq5pThz3NsqGn19ORuKjvRVYSl/aIBsATFbDE9g=="></script>
+  
+    </section>
+  <footer class="pt-8 max-w-prose print:hidden">
+
+    
+  
+    
+    
+    
+    <div class="pt-8">
+      <hr class="border-dotted border-neutral-300 dark:border-neutral-600" />
+      <div class="flex justify-between pt-3">
+        <span>
+          
+            <a class="flex group mr-3" href="/posts/streamlined-nextcloud-with-openid-connect-authentication/">
+              <span
+                class="mr-3 text-neutral-700 group-hover:text-primary-600 ltr:inline rtl:hidden dark:text-neutral dark:group-hover:text-primary-400"
+                >&larr;</span
+              >
+              <span
+                class="ml-3 text-neutral-700 group-hover:text-primary-600 ltr:hidden rtl:inline dark:text-neutral dark:group-hover:text-primary-400"
+                >&rarr;</span
+              >
+              <span class="flex flex-col">
+                <span
+                  class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
+                  >Streamlined Nextcloud With OpenID Connect Authentication</span
+                >
+                <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
+                  
+                    <time datetime="2024-02-05 00:00:00 &#43;0000 UTC">5 February 2024</time>
+                  
+                </span>
+              </span>
+            </a>
+          
+        </span>
+        <span>
+          
+        </span>
+      </div>
+    </div>
+  
+
+
+    
+    
+    <div class="pt-3">
+      <hr class="border-dotted border-neutral-300 dark:border-neutral-600" />
+      <div class="pt-3">
+        <script src="https://giscus.app/client.js"
+        data-repo="DominikBritz/dominikbritz.com"
+        data-repo-id="R_kgDOLDj0-Q"
+        data-category="Announcements"
+        data-category-id="DIC_kwDOLDj0-c4CcWbV"
+        data-mapping="url"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="transparent_dark"
+        data-lang="en"
+        data-loading="lazy"
+        crossorigin="anonymous"
+        async>
+</script>
+      </div>
+    </div>
+    
+    
+  </footer>
+</article>
+
+      <div id="top-scroller" class="pointer-events-none absolute top-[110vh] bottom-0 w-12 ltr:right-0 rtl:left-0">
+  <a href="#the-top"
+    class="pointer-events-auto sticky top-[calc(100vh-5.5rem)] flex h-12 w-12 mb-16 items-center justify-center rounded-full bg-neutral/50 text-xl text-neutral-700 hover:text-primary-600 dark:bg-neutral-800/50 dark:text-neutral dark:hover:text-primary-400"
+    aria-label="Scroll to top" title="Scroll to top">
+    &uarr;
+  </a>
+</div>
+    </main><footer id="site-footer" class="py-10 print:hidden">
+  
+  
+    
+  
+  <div class="flex items-center justify-between">
+
+    
+    
+    <p class="text-sm text-neutral-500 dark:text-neutral-400">
+      Copyright © 2024
+    </p>
+    
+
+    
+    
+
+  </div>
+  <script>
+    
+    mediumZoom(document.querySelectorAll("img:not(.nozoom)"), {
+      margin: 24,
+      background: 'rgba(0,0,0,0.5)',
+      scrollOffset: 0,
+    })
+    
+  </script>
+  
+  
+  <script type="text/javascript" src="/js/process.min.62060bb247f4de2b6dde45903668fefb68d792f365587605177b1227c0cf43588701edaca0cb40e2c8e2789bd5ce67c1d2a215b9fb258c3496a7cd25e7cb5fdf.js" integrity="sha512-YgYLskf03itt3kWQNmj&#43;&#43;2jXkvNlWHYFF3sSJ8DPQ1iHAe2soMtA4sjieJvVzmfB0qIVufsljDSWp80l58tf3w=="></script>
+  
+  
+</footer><div
+  id="search-wrapper"
+  class="invisible fixed inset-0 flex h-screen w-screen cursor-default flex-col bg-neutral-500/50 p-4 backdrop-blur-sm dark:bg-neutral-900/50 sm:p-6 md:p-[10vh] lg:p-[12vh]"
+  data-url="https://dominikbritz.com/"
+  style="z-index:500"
+>
+  <div
+    id="search-modal"
+    class="flex flex-col w-full max-w-3xl min-h-0 mx-auto border rounded-md shadow-lg top-20 border-neutral-200 bg-neutral dark:border-neutral-700 dark:bg-neutral-800"
+  >
+    <header class="relative z-10 flex items-center justify-between flex-none px-2">
+      <form class="flex items-center flex-auto min-w-0">
+        <div class="flex items-center justify-center w-8 h-8 text-neutral-400">
+          
+
+  <span class="relative block icon">
+    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+
+  </span>
+
+
+        </div>
+        <input
+          type="search"
+          id="search-query"
+          class="flex flex-auto h-12 mx-1 bg-transparent appearance-none focus:outline-dotted focus:outline-2 focus:outline-transparent"
+          placeholder="Search"
+          tabindex="0"
+        />
+      </form>
+      <button
+        id="close-search-button"
+        class="flex items-center justify-center w-8 h-8 text-neutral-700 hover:text-primary-600 dark:text-neutral dark:hover:text-primary-400"
+        title="Close (Esc)"
+      >
+        
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"/></svg>
+
+  </span>
+
+
+      </button>
+    </header>
+    <section class="flex-auto px-2 overflow-auto">
+      <ul id="search-results">
+        
+      </ul>
+    </section>
+  </div>
+</div>
+
+  </div>
+</body>
+
+</html>
