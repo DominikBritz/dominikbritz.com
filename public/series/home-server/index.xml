@@ -14,8 +14,8 @@
       <pubDate>Sun, 24 Mar 2024 00:00:00 +0000</pubDate>
       
       <guid>https://dominikbritz.com/posts/immich-self-hosted-photos-with-cloud-backup/</guid>
-      <description>Take Control Over Your Memories #Preserving photos for eternity is the ultimate challenge in a personal context. You want to make sure that your children, friends, and family photos will never be lost.
-In the past, I have set up a cascade of external hard drives to store sensitive data, so that if one or more failed, a complete backup would always be available.</description>
+      <description>This article explains how to set up a self-hosted photo gallery with Immich including cloud backup and OpenID Connect to Authelia.
+It is part of my series on creating a home server on an old laptop. I’m assuming that you’ve set up Docker, Caddy, and Authelia, as described in the first article of the series.</description>
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://dominikbritz.com/posts/immich-self-hosted-photos-with-cloud-backup/featured.jpg" />
     </item>
     
