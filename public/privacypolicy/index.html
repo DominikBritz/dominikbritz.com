@@ -28,8 +28,8 @@
   
   
   
-  <link type="text/css" rel="stylesheet" href="/css/main.bundle.min.7bd820881d892ec57012be5c51244ef74ee7f0fc745550018ff0f425dc6f7ffb31813a57103f413ced8cf4b313777cec8c0bbd1dde89ce4ac7a242fbf78dc051.css"
-    integrity="sha512-e9ggiB2JLsVwEr5cUSRO907n8Px0VVABj/D0Jdxvf/sxgTpXED9BPO2M9LMTd3zsjAu9Hd6JzkrHokL7943AUQ==" />
+  <link type="text/css" rel="stylesheet" href="/css/main.bundle.min.26325eb38d57bc8a75cf989151a2f6c0984cba91c8f1ca6ec10808ca3a9b56c3ba9210257dea450b3810ef3abecf16eacf0a002c8914a0c364b437c621c310ff.css"
+    integrity="sha512-JjJes41XvIp1z5iRUaL2wJhMupHI8cpuwQgIyjqbVsO6khAlfepFCzgQ7zq&#43;zxbqzwoALIkUoMNktDfGIcMQ/w==" />
   
   
   <script type="text/javascript" src="/js/appearance.min.516a16745bea5a9bd011138d254cc0fd3973cd55ce6e15f3dec763e7c7c2c7448f8fe7b54cca811cb821b0c7e12cd161caace1dd794ac3d34d40937cbcc9ee12.js"
@@ -46,8 +46,8 @@
   
   
   
-  <script defer type="text/javascript" id="script-bundle" src="/js/main.bundle.min.9bb1a9632f6ee6947ff79bb54b04b410c93e2c4db0c6c1109b856b9a575e881fb1fbe16c2a4465fae52aa0cd5b454a61ff47b99a5cd27a518e5a81ed29df8ceb.js"
-    integrity="sha512-m7GpYy9u5pR/95u1SwS0EMk&#43;LE2wxsEQm4VrmldeiB&#43;x&#43;&#43;FsKkRl&#43;uUqoM1bRUph/0e5mlzSelGOWoHtKd&#43;M6w==" data-copy="" data-copied=""></script>
+  <script defer type="text/javascript" id="script-bundle" src="/js/main.bundle.min.870bd1eeddef06ec04863ed312dffcdbfea1600079f9c8226e5f83315073fd92a8ebc0ab39e4dffebf36482a0167839fd6006b69bff803241d1fe677eebf541d.js"
+    integrity="sha512-hwvR7t3vBuwEhj7TEt/82/6hYAB5&#43;cgibl&#43;DMVBz/ZKo68CrOeTf/r82SCoBZ4Of1gBrab/4AyQdH&#43;Z37r9UHQ==" data-copy="" data-copied=""></script>
   
   
   <script src="/js/zoom.min.js"></script>
@@ -152,8 +152,12 @@ Die verantwortliche Stelle entscheidet allein oder gemeinsam mit anderen über d
 
 
 
+
+
+
   
   
+
 
   
   
@@ -162,7 +166,7 @@ Die verantwortliche Stelle entscheidet allein oder gemeinsam mit anderen über d
   
 </head>
 <body
-  class="flex flex-col h-screen px-6 m-auto text-lg leading-7 max-w-7xl bg-neutral text-neutral-900 dark:bg-neutral-800 dark:text-neutral sm:px-14 md:px-24 lg:px-32">
+  class="flex flex-col h-screen px-6 m-auto text-lg leading-7 max-w-7xl bg-neutral text-neutral-900 dark:bg-neutral-800 dark:text-neutral sm:px-14 md:px-24 lg:px-32 scrollbar-thin scrollbar-track-neutral-200 scrollbar-thumb-neutral-400 dark:scrollbar-track-neutral-800 dark:scrollbar-thumb-neutral-600">
   <div id="the-top" class="absolute flex self-center">
     <a class="px-3 py-1 text-sm -translate-y-8 rounded-b-lg bg-primary-200 focus:translate-y-0 dark:bg-neutral-600"
       href="#main-content"><span
@@ -200,34 +204,37 @@ Die verantwortliche Stelle entscheidet allein oder gemeinsam mit anderen über d
             
             
             
-  <a href="/posts/"  class="flex items-center">
+  <a href="/posts/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
     
-    <p class="text-base font-medium text-gray-500 hover:text-gray-900" title="Posts">
+    <p class="text-base font-medium" title="Posts">
         Blog
     </p>
 </a>
 
 
+
             
             
-  <a href="/tags/"  class="flex items-center">
+  <a href="/tags/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
     
-    <p class="text-base font-medium text-gray-500 hover:text-gray-900" title="Tags">
+    <p class="text-base font-medium" title="Tags">
         Tags
     </p>
 </a>
 
 
+
             
             
-  <a href="/cv/"  class="flex items-center">
+  <a href="/cv/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
     
-    <p class="text-base font-medium text-gray-500 hover:text-gray-900" title="">
+    <p class="text-base font-medium" title="">
         CV
     </p>
 </a>
 
 
+
             
             
 
@@ -235,7 +242,7 @@ Die verantwortliche Stelle entscheidet allein oder gemeinsam mit anderen über d
 
 
             
-            <button id="search-button" aria-label="Search" class="text-base hover:text-primary-600 dark:hover:text-primary-400 h-12"
+            <button id="search-button" aria-label="Search" class="text-base hover:text-primary-600 dark:hover:text-primary-400"
                 title="">
                 
 
@@ -252,9 +259,9 @@ Die verantwortliche Stelle entscheidet allein oder gemeinsam mit anderen über d
             
             
             <div
-                class="ltr:mr-14 rtl:ml-14 cursor-pointer text-sm text-neutral-700 hover:text-primary-600 dark:text-neutral dark:hover:text-primary-400">
-                <button id="appearance-switcher" aria-label="Dark mode switcher" type="button">
-                    <div class="flex items-center justify-center h-12 dark:hidden">
+                class="ltr:mr-14 rtl:ml-14 flex items-center">
+                <button id="appearance-switcher" aria-label="Dark mode switcher" type="button" class="text-base hover:text-primary-600 dark:hover:text-primary-400">
+                    <div class="flex items-center justify-center dark:hidden">
                         
 
   <span class="relative block icon">
@@ -264,7 +271,7 @@ Die verantwortliche Stelle entscheidet allein oder gemeinsam mit anderen über d
 
 
                     </div>
-                    <div class="items-center justify-center hidden h-12 dark:flex">
+                    <div class="items-center justify-center hidden dark:flex">
                         
 
   <span class="relative block icon">
@@ -279,7 +286,7 @@ Die verantwortliche Stelle entscheidet allein oder gemeinsam mit anderen über d
             
 
         </nav>
-        <div class="flex md:hidden items-center space-x-5 md:ml-12">
+        <div class="flex md:hidden items-center space-x-5 md:ml-12 h-12">
 
             <span></span>
 
@@ -302,8 +309,8 @@ Die verantwortliche Stelle entscheidet allein oder gemeinsam mit anderen über d
 
             
             
-            <button id="appearance-switcher-mobile" aria-label="Dark mode switcher" type="button" style="margin-right:5px">
-                <div class="flex items-center justify-center h-12 dark:hidden">
+            <button id="appearance-switcher-mobile" aria-label="Dark mode switcher" type="button" class="text-base hover:text-primary-600 dark:hover:text-primary-400" style="margin-right:5px">
+                <div class="flex items-center justify-center dark:hidden">
                     
 
   <span class="relative block icon">
@@ -313,7 +320,7 @@ Die verantwortliche Stelle entscheidet allein oder gemeinsam mit anderen über d
 
 
                 </div>
-                <div class="items-center justify-center hidden h-12 dark:flex">
+                <div class="items-center justify-center hidden dark:flex">
                     
 
   <span class="relative block icon">
@@ -364,9 +371,9 @@ Die verantwortliche Stelle entscheidet allein oder gemeinsam mit anderen über d
 
                     
   <li class="mt-1">
-    <a href="/posts/"  class="flex items-center">
+    <a href="/posts/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
         
-        <p class="text-bg font-bg text-gray-500 hover:text-gray-900" title="Posts">
+        <p class="text-bg font-bg" title="Posts">
             Blog
         </p>
     </a>
@@ -374,13 +381,14 @@ Die verantwortliche Stelle entscheidet allein oder gemeinsam mit anderen über d
 
 
 
+
                     
 
                     
   <li class="mt-1">
-    <a href="/tags/"  class="flex items-center">
+    <a href="/tags/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
         
-        <p class="text-bg font-bg text-gray-500 hover:text-gray-900" title="Tags">
+        <p class="text-bg font-bg" title="Tags">
             Tags
         </p>
     </a>
@@ -388,17 +396,19 @@ Die verantwortliche Stelle entscheidet allein oder gemeinsam mit anderen über d
 
 
 
+
                     
 
                     
   <li class="mt-1">
-    <a href="/cv/"  class="flex items-center">
+    <a href="/cv/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
         
-        <p class="text-bg font-bg text-gray-500 hover:text-gray-900" title="">
+        <p class="text-bg font-bg" title="">
             CV
         </p>
     </a>
 </li>
+
 
 
 
@@ -450,6 +460,8 @@ Die verantwortliche Stelle entscheidet allein oder gemeinsam mit anderen über d
   
   
   
+ 
+
 
 
   
@@ -535,11 +547,15 @@ Die verantwortliche Stelle entscheidet allein oder gemeinsam mit anderen über d
     
 
     
+      
+      
+
+      
+
+      
 
     
 
-    
-  
   </header>
   
   <section class="flex flex-col max-w-full mt-0 prose dark:prose-invert lg:flex-row">
@@ -552,16 +568,20 @@ Die verantwortliche Stelle entscheidet allein oder gemeinsam mit anderen über d
 
 
         <div class="article-content max-w-prose mb-20">
-          <h1 class="relative group">Datenschutzerklärung 
-    <div id="datenschutzerklärung" class="anchor"></div>
+          
+
+<h1 class="relative group">Datenschutzerklärung 
+    <div id="datenschutzerkl%C3%A4rung" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#datenschutzerkl%c3%a4rung" aria-label="Anchor">#</a>
+            style="text-decoration-line: none !important;" href="#datenschutzerkl%C3%A4rung" aria-label="Anchor">#</a>
     </span>        
     
 </h1>
+
+
 <h2 class="relative group">Allgemeiner Hinweis und Pflichtinformationen 
     <div id="allgemeiner-hinweis-und-pflichtinformationen" class="anchor"></div>
     
@@ -572,6 +592,8 @@ Die verantwortliche Stelle entscheidet allein oder gemeinsam mit anderen über d
     </span>        
     
 </h2>
+
+
 <h3 class="relative group">Benennung der verantwortlichen Stelle 
     <div id="benennung-der-verantwortlichen-stelle" class="anchor"></div>
     
@@ -587,6 +609,8 @@ Die verantwortliche Stelle entscheidet allein oder gemeinsam mit anderen über d
 <p>Gengesfeld, 12</p>
 <p>51688 Wipperfürth</p>
 <p>Die verantwortliche Stelle entscheidet allein oder gemeinsam mit anderen über die Zwecke und Mittel der Verarbeitung von personenbezogenen Daten (z.B. Namen, Kontaktdaten o. Ä.).</p>
+
+
 <h3 class="relative group">Widerruf Ihrer Einwilligung zur Datenverarbeitung 
     <div id="widerruf-ihrer-einwilligung-zur-datenverarbeitung" class="anchor"></div>
     
@@ -598,51 +622,60 @@ Die verantwortliche Stelle entscheidet allein oder gemeinsam mit anderen über d
     
 </h3>
 <p>Nur mit Ihrer ausdrücklichen Einwilligung sind einige Vorgänge der Datenverarbeitung möglich. Ein Widerruf Ihrer bereits erteilten Einwilligung ist jederzeit möglich. Für den Widerruf genügt eine formlose Mitteilung per E-Mail. Die Rechtmäßigkeit der bis zum Widerruf erfolgten Datenverarbeitung bleibt vom Widerruf unberührt.</p>
+
+
 <h3 class="relative group">Recht auf Beschwerde bei der zuständigen Aufsichtsbehörde 
-    <div id="recht-auf-beschwerde-bei-der-zuständigen-aufsichtsbehörde" class="anchor"></div>
+    <div id="recht-auf-beschwerde-bei-der-zust%C3%A4ndigen-aufsichtsbeh%C3%B6rde" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#recht-auf-beschwerde-bei-der-zust%c3%a4ndigen-aufsichtsbeh%c3%b6rde" aria-label="Anchor">#</a>
+            style="text-decoration-line: none !important;" href="#recht-auf-beschwerde-bei-der-zust%C3%A4ndigen-aufsichtsbeh%C3%B6rde" aria-label="Anchor">#</a>
     </span>        
     
 </h3>
-<p>Als Betroffener steht Ihnen im Falle eines datenschutzrechtlichen Verstoßes ein Beschwerderecht bei der zuständigen Aufsichtsbehörde zu. Zuständige Aufsichtsbehörde bezüglich datenschutzrechtlicher Fragen ist der Landesdatenschutzbeauftragte des Bundeslandes, in dem sich der Sitz unseres Unternehmens befindet. Der folgende Link stellt eine Liste der Datenschutzbeauftragten sowie deren Kontaktdaten bereit: <a href="https://www.bfdi.bund.de/DE/Infothek/Anschriften_Links/anschriften_links-node.html"   target="_blank">
-    https://www.bfdi.bund.de/DE/Infothek/Anschriften_Links/anschriften_links-node.html</a>.</p>
+<p>Als Betroffener steht Ihnen im Falle eines datenschutzrechtlichen Verstoßes ein Beschwerderecht bei der zuständigen Aufsichtsbehörde zu. Zuständige Aufsichtsbehörde bezüglich datenschutzrechtlicher Fragen ist der Landesdatenschutzbeauftragte des Bundeslandes, in dem sich der Sitz unseres Unternehmens befindet. Der folgende Link stellt eine Liste der Datenschutzbeauftragten sowie deren Kontaktdaten bereit: <a href="https://www.bfdi.bund.de/DE/Infothek/Anschriften_Links/anschriften_links-node.html" target="_blank">https://www.bfdi.bund.de/DE/Infothek/Anschriften_Links/anschriften_links-node.html</a>.</p>
+
+
 <h3 class="relative group">Recht auf Datenübertragbarkeit 
-    <div id="recht-auf-datenübertragbarkeit" class="anchor"></div>
+    <div id="recht-auf-daten%C3%BCbertragbarkeit" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#recht-auf-daten%c3%bcbertragbarkeit" aria-label="Anchor">#</a>
+            style="text-decoration-line: none !important;" href="#recht-auf-daten%C3%BCbertragbarkeit" aria-label="Anchor">#</a>
     </span>        
     
 </h3>
 <p>Ihnen steht das Recht zu, Daten, die wir auf Grundlage Ihrer Einwilligung oder in Erfüllung eines Vertrags automatisiert verarbeiten, an sich oder an Dritte aushändigen zu lassen. Die Bereitstellung erfolgt in einem maschinenlesbaren Format. Sofern Sie die direkte Übertragung der Daten an einen anderen Verantwortlichen verlangen, erfolgt dies nur, soweit es technisch machbar ist.</p>
+
+
 <h3 class="relative group">Recht auf Auskunft, Berichtigung, Sperrung, Löschung 
-    <div id="recht-auf-auskunft-berichtigung-sperrung-löschung" class="anchor"></div>
+    <div id="recht-auf-auskunft-berichtigung-sperrung-l%C3%B6schung" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#recht-auf-auskunft-berichtigung-sperrung-l%c3%b6schung" aria-label="Anchor">#</a>
+            style="text-decoration-line: none !important;" href="#recht-auf-auskunft-berichtigung-sperrung-l%C3%B6schung" aria-label="Anchor">#</a>
     </span>        
     
 </h3>
 <p>Sie haben jederzeit im Rahmen der geltenden gesetzlichen Bestimmungen das Recht auf unentgeltliche Auskunft über Ihre gespeicherten personenbezogenen Daten, Herkunft der Daten, deren Empfänger und den Zweck der Datenverarbeitung und ggf. ein Recht auf Berichtigung, Sperrung oder Löschung dieser Daten. Diesbezüglich und auch zu weiteren Fragen zum Thema personenbezogene Daten können Sie sich jederzeit über die im Impressum aufgeführten Kontaktmöglichkeiten an uns wenden.</p>
+
+
 <h3 class="relative group">SSL- bzw. TLS-Verschlüsselung 
-    <div id="ssl--bzw-tls-verschlüsselung" class="anchor"></div>
+    <div id="ssl--bzw-tls-verschl%C3%BCsselung" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#ssl--bzw-tls-verschl%c3%bcsselung" aria-label="Anchor">#</a>
+            style="text-decoration-line: none !important;" href="#ssl--bzw-tls-verschl%C3%BCsselung" aria-label="Anchor">#</a>
     </span>        
     
 </h3>
 <p>Aus Sicherheitsgründen und zum Schutz der Übertragung vertraulicher Inhalte, die Sie an uns als Seitenbetreiber senden, nutzt unsere Website eine SSL-bzw. TLS-Verschlüsselung. Damit sind Daten, die Sie über diese Website übermitteln, für Dritte nicht mitlesbar. Sie erkennen eine verschlüsselte Verbindung an der „https://“ Adresszeile Ihres Browsers und am Schloss-Symbol in der Browserzeile.</p>
+
+
 <h2 class="relative group">Server-Log-Dateien 
     <div id="server-log-dateien" class="anchor"></div>
     
@@ -678,18 +711,22 @@ Die verantwortliche Stelle entscheidet allein oder gemeinsam mit anderen über d
 </li>
 </ul>
 <p>Es findet keine Zusammenführung dieser Daten mit anderen Datenquellen statt. Grundlage der Datenverarbeitung bildet Art. 6 Abs. 1 lit. b DSGVO, der die Verarbeitung von Daten zur Erfüllung eines Vertrags oder vorvertraglicher Maßnahmen gestattet.</p>
+
+
 <h2 class="relative group">Speicherdauer von Beiträgen und Kommentaren 
-    <div id="speicherdauer-von-beiträgen-und-kommentaren" class="anchor"></div>
+    <div id="speicherdauer-von-beitr%C3%A4gen-und-kommentaren" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#speicherdauer-von-beitr%c3%a4gen-und-kommentaren" aria-label="Anchor">#</a>
+            style="text-decoration-line: none !important;" href="#speicherdauer-von-beitr%C3%A4gen-und-kommentaren" aria-label="Anchor">#</a>
     </span>        
     
 </h2>
 <p>Beiträge und Kommentare sowie damit in Verbindung stehende Daten, wie beispielsweise IP-Adressen, werden gespeichert. Der Inhalt verbleibt auf unserer Website, bis er vollständig gelöscht wurde oder aus rechtlichen Gründen gelöscht werden musste.</p>
 <p>Die Speicherung der Beiträge und Kommentare erfolgt auf Grundlage Ihrer Einwilligung (Art. 6 Abs. 1 lit. a DSGVO). Ein Widerruf Ihrer bereits erteilten Einwilligung ist jederzeit möglich. Für den Widerruf genügt eine formlose Mitteilung per E-Mail. Die Rechtmäßigkeit bereits erfolgter Datenverarbeitungsvorgänge bleibt vom Widerruf unberührt.</p>
+
+
 <h2 class="relative group">Abonnieren von Kommentaren 
     <div id="abonnieren-von-kommentaren" class="anchor"></div>
     
@@ -701,6 +738,8 @@ Die verantwortliche Stelle entscheidet allein oder gemeinsam mit anderen über d
     
 </h2>
 <p>Sie können als Nutzer unserer Website nach erfolgter Anmeldung Kommentare abonnieren. Mit einer Bestätigungs-E-Mail prüfen wir, ob Sie der Inhaber der angegebenen E-Mail-Adresse sind. Sie können die Abo-Funktion für Kommentare jederzeit über einen Link, der sich in einer Abo-Mail befindet, abbestellen. Zur Einrichtung des Abonnements eingegebene Daten werden im Falle der Abmeldung gelöscht. Sollten diese Daten für andere Zwecke und an anderer Stelle an uns übermittelt worden sein, verbleiben diese weiterhin bei uns.</p>
+
+
 <h2 class="relative group">Cookies 
     <div id="cookies" class="anchor"></div>
     
@@ -715,6 +754,8 @@ Die verantwortliche Stelle entscheidet allein oder gemeinsam mit anderen über d
 <p>Einige Cookies sind “Session-Cookies.” Solche Cookies werden nach Ende Ihrer Browser-Sitzung von selbst gelöscht. Hingegen bleiben andere Cookies auf Ihrem Endgerät bestehen, bis Sie diese selbst löschen. Solche Cookies helfen uns, Sie bei Rückkehr auf unserer Website wiederzuerkennen.</p>
 <p>Mit einem modernen Webbrowser können Sie das Setzen von Cookies überwachen, einschränken oder unterbinden. Viele Webbrowser lassen sich so konfigurieren, dass Cookies mit dem Schließen des Programms von selbst gelöscht werden. Die Deaktivierung von Cookies kann eine eingeschränkte Funktionalität unserer Website zur Folge haben.</p>
 <p>Das Setzen von Cookies, die zur Ausübung elektronischer Kommunikationsvorgänge oder der Bereitstellung bestimmter, von Ihnen erwünschter Funktionen (z.B. Warenkorb) notwendig sind, erfolgt auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO. Als Betreiber dieser Website haben wir ein berechtigtes Interesse an der Speicherung von Cookies zur technisch fehlerfreien und reibungslosen Bereitstellung unserer Dienste. Sofern die Setzung anderer Cookies (z.B. für Analyse-Funktionen) erfolgt, werden diese in dieser Datenschutzerklärung separat behandelt.</p>
+
+
 <h2 class="relative group">YouTube Videos 
     <div id="youtube-videos" class="anchor"></div>
     
@@ -725,6 +766,8 @@ Die verantwortliche Stelle entscheidet allein oder gemeinsam mit anderen über d
     </span>        
     
 </h2>
+
+
 <h3 class="relative group">Art und Umfang der Verarbeitung 
     <div id="art-und-umfang-der-verarbeitung" class="anchor"></div>
     
@@ -738,6 +781,8 @@ Die verantwortliche Stelle entscheidet allein oder gemeinsam mit anderen über d
 <p>Wir haben auf unserer Website YouTube Video integriert. YouTube Video ist eine Komponente der Videoplattform der YouTube, LLC, auf der Nutzer Inhalte hochladen, über das Internet teilen und detaillierte Statistiken erhalten können. YouTube Video ermöglicht es uns, Inhalte der Plattform in unsere Website zu integrieren.</p>
 <p>YouTube Video nutzt Cookies und weitere Browser-Technologien um Nutzerverhalten auszuwerten, Nutzer wiederzuerkennen und Nutzerprofile zu erstellen. Diese Informationen werden unter anderem genutzt, um die Aktivität der angehörten Inhalte zu analysieren und Berichte zu erstellen. Wenn ein Nutzer bei YouTube, LLC registriert ist, kann YouTube Video die abgespielten Videos dem Profil zuordnen.</p>
 <p>Wenn Sie auf diese Inhalte zugreifen, stellen Sie eine Verbindung zu Servern der YouTube, LLC, Google Ireland Limited, Gordon House, Barrow Street Dublin 4 Irland her, wobei Ihre IP-Adresse und ggf. Browserdaten wie Ihr User-Agent übermittelt werden.</p>
+
+
 <h3 class="relative group">Zweck und Rechtsgrundlage 
     <div id="zweck-und-rechtsgrundlage" class="anchor"></div>
     
@@ -749,9 +794,10 @@ Die verantwortliche Stelle entscheidet allein oder gemeinsam mit anderen über d
     
 </h3>
 <p>Die Nutzung des Dienstes erfolgt auf Grundlage Ihrer Einwilligung gemäß Art. 6 Abs. 1 lit. a. DSGVO und § 25 Abs. 1 TTDSG.</p>
-<p>Wir beabsichtigen personenbezogenen Daten an Drittländer außerhalb des Europäischen Wirtschaftsraums, insbesondere die USA, zu übermitteln. In Fällen, in denen kein Angemessenheitsbeschluss der Europäischen Kommission existiert (z.B. in den USA) haben wir mit den Empfängern der Daten anderweitige geeignete Garantien im Sinne der Art. 44 ff. DSGVO vereinbart. Dies sind – sofern nicht anders angegeben – Standardvertragsklauseln der EU-Kommission gemäß Durchführungsbeschluss (EU) 2021/914 vom 4. Juni 2021. Eine Kopie dieser Standardvertragsklauseln können Sie unter <a href="https://eur-lex.europa.eu/legal-content/DE/TXT/HTML/?uri=CELEX:32021D0914&amp;from=DE"   target="_blank">
-    https://eur-lex.europa.eu/legal-content/DE/TXT/HTML/?uri=CELEX:32021D0914&amp;from=DE</a> einsehen.</p>
+<p>Wir beabsichtigen personenbezogenen Daten an Drittländer außerhalb des Europäischen Wirtschaftsraums, insbesondere die USA, zu übermitteln. In Fällen, in denen kein Angemessenheitsbeschluss der Europäischen Kommission existiert (z.B. in den USA) haben wir mit den Empfängern der Daten anderweitige geeignete Garantien im Sinne der Art. 44 ff. DSGVO vereinbart. Dies sind – sofern nicht anders angegeben – Standardvertragsklauseln der EU-Kommission gemäß Durchführungsbeschluss (EU) 2021/914 vom 4. Juni 2021. Eine Kopie dieser Standardvertragsklauseln können Sie unter <a href="https://eur-lex.europa.eu/legal-content/DE/TXT/HTML/?uri=CELEX:32021D0914&amp;from=DE" target="_blank">https://eur-lex.europa.eu/legal-content/DE/TXT/HTML/?uri=CELEX:32021D0914&amp;from=DE</a> einsehen.</p>
 <p>Zudem holen wir vor einem solchen Drittlandtransfer Ihre Einwilligung nach Art. 49 Abs. 1 Satz 1 lit. a. DSGVO ein, die Sie über die Einwilligung im Consent Manager (oder sonstigen Formularen, Registrierungen etc.) erteilen. Wir weisen Sie darauf hin, dass bei Drittlandübermittlungen im Detail unbekannte Risiken (z.B. die Datenverarbeitung durch Sicherheitsbehörden des Drittlandes, deren genauer Umfang und deren Folgen für Sie wir nicht kennen, auf die wir keinen Einfluss haben und von denen Sie unter Umständen keine Kenntnis erlangen) bestehen können.</p>
+
+
 <h3 class="relative group">Speicherdauer 
     <div id="speicherdauer" class="anchor"></div>
     
@@ -762,8 +808,9 @@ Die verantwortliche Stelle entscheidet allein oder gemeinsam mit anderen über d
     </span>        
     
 </h3>
-<p>Die konkrete Speicherdauer der verarbeiteten Daten ist nicht durch uns beeinflussbar, sondern wird von YouTube, LLC bestimmt. Weitere Hinweise finden Sie in der Datenschutzerklärung für YouTube Video: <a href="https://policies.google.com/privacy"   target="_blank">
-    https://policies.google.com/privacy</a>.</p>
+<p>Die konkrete Speicherdauer der verarbeiteten Daten ist nicht durch uns beeinflussbar, sondern wird von YouTube, LLC bestimmt. Weitere Hinweise finden Sie in der Datenschutzerklärung für YouTube Video: <a href="https://policies.google.com/privacy" target="_blank">https://policies.google.com/privacy</a>.</p>
+
+
 <h2 class="relative group">Vimeo 
     <div id="vimeo" class="anchor"></div>
     
@@ -774,6 +821,8 @@ Die verantwortliche Stelle entscheidet allein oder gemeinsam mit anderen über d
     </span>        
     
 </h2>
+
+
 <h3 class="relative group">Art und Umfang der Verarbeitung 
     <div id="art-und-umfang-der-verarbeitung-1" class="anchor"></div>
     
@@ -788,6 +837,8 @@ Die verantwortliche Stelle entscheidet allein oder gemeinsam mit anderen über d
 <p>Vimeo Video ermöglicht es uns, Inhalte der Plattform in unsere Website zu integrieren.</p>
 <p>Vimeo Video nutzt Cookies und weitere Browser-Technologien um Nutzerverhalten auszuwerten, Nutzer wiederzuerkennen und Nutzerprofile zu erstellen. Diese Informationen werden unter anderem genutzt, um die Aktivität der angehörten Inhalte zu analysieren und Berichte zu erstellen.</p>
 <p>Wenn Sie auf diese Inhalte zugreifen, stellen Sie eine Verbindung zu Servern der Vimeo, LLC, 555 W 18th St, New York, New York 10011 her, wobei Ihre IP-Adresse und ggf. Browserdaten wie Ihr User-Agent übermittelt werden.</p>
+
+
 <h3 class="relative group">Zweck und Rechtsgrundlage 
     <div id="zweck-und-rechtsgrundlage-1" class="anchor"></div>
     
@@ -799,9 +850,10 @@ Die verantwortliche Stelle entscheidet allein oder gemeinsam mit anderen über d
     
 </h3>
 <p>Der Einsatz von Vimeo erfolgt auf Grundlage Ihrer Einwilligung gemäß Art. 6 Abs. 1 lit. a. DSGVO und § 25 Abs. 1 TTDSG.</p>
-<p>Wir beabsichtigen personenbezogenen Daten an Drittländer außerhalb des Europäischen Wirtschaftsraums, insbesondere die USA, zu übermitteln. In Fällen, in denen kein Angemessenheitsbeschluss der Europäischen Kommission existiert (z.B. in den USA) haben wir mit den Empfängern der Daten anderweitige geeignete Garantien im Sinne der Art. 44 ff. DSGVO vereinbart. Dies sind – sofern nicht anders angegeben – Standardvertragsklauseln der EU-Kommission gemäß Durchführungsbeschluss (EU) 2021/914 vom 4. Juni 2021. Eine Kopie dieser Standardvertragsklauseln können Sie unter <a href="https://eur-lex.europa.eu/legal-content/DE/TXT/HTML/?uri=CELEX:32021D0914&amp;from=DE"   target="_blank">
-    https://eur-lex.europa.eu/legal-content/DE/TXT/HTML/?uri=CELEX:32021D0914&amp;from=DE</a> einsehen.</p>
+<p>Wir beabsichtigen personenbezogenen Daten an Drittländer außerhalb des Europäischen Wirtschaftsraums, insbesondere die USA, zu übermitteln. In Fällen, in denen kein Angemessenheitsbeschluss der Europäischen Kommission existiert (z.B. in den USA) haben wir mit den Empfängern der Daten anderweitige geeignete Garantien im Sinne der Art. 44 ff. DSGVO vereinbart. Dies sind – sofern nicht anders angegeben – Standardvertragsklauseln der EU-Kommission gemäß Durchführungsbeschluss (EU) 2021/914 vom 4. Juni 2021. Eine Kopie dieser Standardvertragsklauseln können Sie unter <a href="https://eur-lex.europa.eu/legal-content/DE/TXT/HTML/?uri=CELEX:32021D0914&amp;from=DE" target="_blank">https://eur-lex.europa.eu/legal-content/DE/TXT/HTML/?uri=CELEX:32021D0914&amp;from=DE</a> einsehen.</p>
 <p>Zudem holen wir vor einem solchen Drittlandtransfer Ihre Einwilligung nach Art. 49 Abs. 1 Satz 1 lit. a. DSGVO ein, die Sie über die Einwilligung im Consent Manager (oder sonstigen Formularen, Registrierungen etc.) erteilen. Wir weisen Sie darauf hin, dass bei Drittlandübermittlungen im Detail unbekannte Risiken (z.B. die Datenverarbeitung durch Sicherheitsbehörden des Drittlandes, deren genauer Umfang und deren Folgen für Sie wir nicht kennen, auf die wir keinen Einfluss haben und von denen Sie unter Umständen keine Kenntnis erlangen) bestehen können.</p>
+
+
 <h3 class="relative group">Speicherdauer 
     <div id="speicherdauer-1" class="anchor"></div>
     
@@ -812,8 +864,9 @@ Die verantwortliche Stelle entscheidet allein oder gemeinsam mit anderen über d
     </span>        
     
 </h3>
-<p>Die konkrete Speicherdauer der verarbeiteten Daten ist nicht durch uns beeinflussbar, sondern wird von Vimeo, LLC bestimmt. Weitere Hinweise finden Sie in der Datenschutzerklärung für Vimeo Video: <a href="https://vimeo.com/privacy"   target="_blank">
-    https://vimeo.com/privacy</a>.</p>
+<p>Die konkrete Speicherdauer der verarbeiteten Daten ist nicht durch uns beeinflussbar, sondern wird von Vimeo, LLC bestimmt. Weitere Hinweise finden Sie in der Datenschutzerklärung für Vimeo Video: <a href="https://vimeo.com/privacy" target="_blank">https://vimeo.com/privacy</a>.</p>
+
+
 <h2 class="relative group">Cloudflare CDN 
     <div id="cloudflare-cdn" class="anchor"></div>
     
@@ -824,6 +877,8 @@ Die verantwortliche Stelle entscheidet allein oder gemeinsam mit anderen über d
     </span>        
     
 </h2>
+
+
 <h3 class="relative group">Art und Umfang der Verarbeitung 
     <div id="art-und-umfang-der-verarbeitung-2" class="anchor"></div>
     
@@ -836,6 +891,8 @@ Die verantwortliche Stelle entscheidet allein oder gemeinsam mit anderen über d
 </h3>
 <p>Wir verwenden zur ordnungsgemäßen Bereitstellung der Inhalte unserer Website Cloudflare CDN. Cloudflare CDN ist ein Dienst der Cloudflare, Inc., welcher auf unserer Website als Content Delivery Network (CDN) fungiert.</p>
 <p>Ein CDN trägt dazu bei, Inhalte unseres Onlineangebotes, insbesondere Dateien wie Grafiken oder Skripte, mit Hilfe regional oder international verteilter Server schneller bereitzustellen. Wenn Sie auf diese Inhalte zugreifen, stellen Sie eine Verbindung zu Servern der Cloudflare, Inc., her, wobei Ihre IP-Adresse und ggf. Browserdaten wie Ihr User-Agent übermittelt werden. Diese Daten werden ausschließlich zu den oben genannten Zwecken und zur Aufrechterhaltung der Sicherheit und Funktionalität von Cloudflare CDN verarbeitet.</p>
+
+
 <h3 class="relative group">Zweck und Rechtsgrundlage 
     <div id="zweck-und-rechtsgrundlage-2" class="anchor"></div>
     
@@ -847,8 +904,9 @@ Die verantwortliche Stelle entscheidet allein oder gemeinsam mit anderen über d
     
 </h3>
 <p>Die Nutzung des Content Delivery Networks erfolgt auf Grundlage unserer berechtigten Interessen, d.h. Interesse an einer sicheren und effizienten Bereitstellung sowie der Optimierung unseres Onlineangebotes gemäß Art. 6 Abs. 1 lit. f. DSGVO.</p>
-<p>Wir beabsichtigen personenbezogenen Daten an Drittländer außerhalb des Europäischen Wirtschaftsraums, insbesondere die USA, zu übermitteln. In Fällen, in denen kein Angemessenheitsbeschluss der Europäischen Kommission existiert (z.B. in den USA) haben wir mit den Empfängern der Daten anderweitige geeignete Garantien im Sinne der Art. 44 ff. DSGVO vereinbart. Dies sind – sofern nicht anders angegeben – Standardvertragsklauseln der EU-Kommission gemäß Durchführungsbeschluss (EU) 2021/914 vom 4. Juni 2021. Eine Kopie dieser Standardvertragsklauseln können Sie unter <a href="https://eur-lex.europa.eu/legal-content/DE/TXT/HTML/?uri=CELEX:32021D0914&amp;from=DE"   target="_blank">
-    https://eur-lex.europa.eu/legal-content/DE/TXT/HTML/?uri=CELEX:32021D0914&amp;from=DE</a> einsehen.</p>
+<p>Wir beabsichtigen personenbezogenen Daten an Drittländer außerhalb des Europäischen Wirtschaftsraums, insbesondere die USA, zu übermitteln. In Fällen, in denen kein Angemessenheitsbeschluss der Europäischen Kommission existiert (z.B. in den USA) haben wir mit den Empfängern der Daten anderweitige geeignete Garantien im Sinne der Art. 44 ff. DSGVO vereinbart. Dies sind – sofern nicht anders angegeben – Standardvertragsklauseln der EU-Kommission gemäß Durchführungsbeschluss (EU) 2021/914 vom 4. Juni 2021. Eine Kopie dieser Standardvertragsklauseln können Sie unter <a href="https://eur-lex.europa.eu/legal-content/DE/TXT/HTML/?uri=CELEX:32021D0914&amp;from=DE" target="_blank">https://eur-lex.europa.eu/legal-content/DE/TXT/HTML/?uri=CELEX:32021D0914&amp;from=DE</a> einsehen.</p>
+
+
 <h3 class="relative group">Speicherdauer 
     <div id="speicherdauer-2" class="anchor"></div>
     
@@ -859,8 +917,9 @@ Die verantwortliche Stelle entscheidet allein oder gemeinsam mit anderen über d
     </span>        
     
 </h3>
-<p>Die konkrete Speicherdauer der verarbeiteten Daten ist nicht durch uns beeinflussbar, sondern wird von Cloudflare, Inc. bestimmt. Weitere Hinweise finden Sie in der Datenschutzerklärung für Cloudflare CDN: <a href="https://www.cloudflare.com/privacypolicy/"   target="_blank">
-    https://www.cloudflare.com/privacypolicy/</a>.</p>
+<p>Die konkrete Speicherdauer der verarbeiteten Daten ist nicht durch uns beeinflussbar, sondern wird von Cloudflare, Inc. bestimmt. Weitere Hinweise finden Sie in der Datenschutzerklärung für Cloudflare CDN: <a href="https://www.cloudflare.com/privacypolicy/" target="_blank">https://www.cloudflare.com/privacypolicy/</a>.</p>
+
+
 <h2 class="relative group">Google Maps 
     <div id="google-maps" class="anchor"></div>
     
@@ -871,6 +930,8 @@ Die verantwortliche Stelle entscheidet allein oder gemeinsam mit anderen über d
     </span>        
     
 </h2>
+
+
 <h3 class="relative group">Art und Umfang der Verarbeitung 
     <div id="art-und-umfang-der-verarbeitung-3" class="anchor"></div>
     
@@ -882,6 +943,8 @@ Die verantwortliche Stelle entscheidet allein oder gemeinsam mit anderen über d
     
 </h3>
 <p>Wir verwenden zur Erstellung von Anfahrtsbeschreibungen den Kartendienst Google Maps. Google Maps ist ein Dienst der Google Ireland Limited, welcher auf unserer Website eine Karte darstellt. Wenn Sie auf diese Inhalte unserer Website zugreifen, stellen Sie eine Verbindung zu Servern der Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland her, wobei Ihre IP-Adresse und ggf. Browserdaten wie Ihr User-Agent übermittelt werden. Diese Daten werden ausschließlich zu den oben genannten Zwecken und zur Aufrechterhaltung der Sicherheit und Funktionalität von Google Maps verarbeitet.</p>
+
+
 <h3 class="relative group">Zweck und Rechtsgrundlage 
     <div id="zweck-und-rechtsgrundlage-3" class="anchor"></div>
     
@@ -893,9 +956,10 @@ Die verantwortliche Stelle entscheidet allein oder gemeinsam mit anderen über d
     
 </h3>
 <p>Der Einsatz von Google Maps erfolgt auf Grundlage Ihrer Einwilligung gemäß Art. 6 Abs. 1 lit. a. DSGVO und § 25 Abs. 1 TTDSG.</p>
-<p>Wir beabsichtigen personenbezogenen Daten an Drittländer außerhalb des Europäischen Wirtschaftsraums, insbesondere die USA, zu übermitteln. In Fällen, in denen kein Angemessenheitsbeschluss der Europäischen Kommission existiert (z.B. in den USA) haben wir mit den Empfängern der Daten anderweitige geeignete Garantien im Sinne der Art. 44 ff. DSGVO vereinbart. Dies sind – sofern nicht anders angegeben – Standardvertragsklauseln der EU-Kommission gemäß Durchführungsbeschluss (EU) 2021/914 vom 4. Juni 2021. Eine Kopie dieser Standardvertragsklauseln können Sie unter <a href="https://eur-lex.europa.eu/legal-content/DE/TXT/HTML/?uri=CELEX:32021D0914&amp;from=DE"   target="_blank">
-    https://eur-lex.europa.eu/legal-content/DE/TXT/HTML/?uri=CELEX:32021D0914&amp;from=DE</a> einsehen.</p>
+<p>Wir beabsichtigen personenbezogenen Daten an Drittländer außerhalb des Europäischen Wirtschaftsraums, insbesondere die USA, zu übermitteln. In Fällen, in denen kein Angemessenheitsbeschluss der Europäischen Kommission existiert (z.B. in den USA) haben wir mit den Empfängern der Daten anderweitige geeignete Garantien im Sinne der Art. 44 ff. DSGVO vereinbart. Dies sind – sofern nicht anders angegeben – Standardvertragsklauseln der EU-Kommission gemäß Durchführungsbeschluss (EU) 2021/914 vom 4. Juni 2021. Eine Kopie dieser Standardvertragsklauseln können Sie unter <a href="https://eur-lex.europa.eu/legal-content/DE/TXT/HTML/?uri=CELEX:32021D0914&amp;from=DE" target="_blank">https://eur-lex.europa.eu/legal-content/DE/TXT/HTML/?uri=CELEX:32021D0914&amp;from=DE</a> einsehen.</p>
 <p>Zudem holen wir vor einem solchen Drittlandtransfer Ihre Einwilligung nach Art. 49 Abs. 1 Satz 1 lit. a. DSGVO ein, die Sie über die Einwilligung im Consent Manager (oder sonstigen Formularen, Registrierungen etc.) erteilen. Wir weisen Sie darauf hin, dass bei Drittlandübermittlungen im Detail unbekannte Risiken (z.B. die Datenverarbeitung durch Sicherheitsbehörden des Drittlandes, deren genauer Umfang und deren Folgen für Sie wir nicht kennen, auf die wir keinen Einfluss haben und von denen Sie unter Umständen keine Kenntnis erlangen) bestehen können.</p>
+
+
 <h3 class="relative group">Speicherdauer 
     <div id="speicherdauer-3" class="anchor"></div>
     
@@ -906,8 +970,9 @@ Die verantwortliche Stelle entscheidet allein oder gemeinsam mit anderen über d
     </span>        
     
 </h3>
-<p>Die konkrete Speicherdauer der verarbeiteten Daten ist nicht durch uns beeinflussbar, sondern wird von Google Ireland Limited bestimmt. Weitere Hinweise finden Sie in der Datenschutzerklärung für Google Maps: <a href="https://policies.google.com/privacy"   target="_blank">
-    https://policies.google.com/privacy</a>.</p>
+<p>Die konkrete Speicherdauer der verarbeiteten Daten ist nicht durch uns beeinflussbar, sondern wird von Google Ireland Limited bestimmt. Weitere Hinweise finden Sie in der Datenschutzerklärung für Google Maps: <a href="https://policies.google.com/privacy" target="_blank">https://policies.google.com/privacy</a>.</p>
+
+
 <h2 class="relative group">Google Web Fonts 
     <div id="google-web-fonts" class="anchor"></div>
     
@@ -918,6 +983,8 @@ Die verantwortliche Stelle entscheidet allein oder gemeinsam mit anderen über d
     </span>        
     
 </h2>
+
+
 <h3 class="relative group">Art und Umfang der Verarbeitung 
     <div id="art-und-umfang-der-verarbeitung-4" class="anchor"></div>
     
@@ -929,6 +996,8 @@ Die verantwortliche Stelle entscheidet allein oder gemeinsam mit anderen über d
     
 </h3>
 <p>Wir verwenden Google Fonts von Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland, als Dienst zur Bereitstellung von Schriftarten für unser Onlineangebot. Um diese Schriftarten zu beziehen, stellen Sie eine Verbindung zu Servern von Google Ireland Limited her, wobei Ihre IP-Adresse übertragen wird.</p>
+
+
 <h3 class="relative group">Zweck und Rechtsgrundlage 
     <div id="zweck-und-rechtsgrundlage-4" class="anchor"></div>
     
@@ -940,9 +1009,10 @@ Die verantwortliche Stelle entscheidet allein oder gemeinsam mit anderen über d
     
 </h3>
 <p>Der Einsatz von Google Fonts erfolgt auf Grundlage Ihrer Einwilligung gemäß Art. 6 Abs. 1 lit. a. DSGVO und § 25 Abs. 1 TTDSG.</p>
-<p>Wir beabsichtigen personenbezogenen Daten an Drittländer außerhalb des Europäischen Wirtschaftsraums, insbesondere die USA, zu übermitteln. In Fällen, in denen kein Angemessenheitsbeschluss der Europäischen Kommission existiert (z.B. in den USA) haben wir mit den Empfängern der Daten anderweitige geeignete Garantien im Sinne der Art. 44 ff. DSGVO vereinbart. Dies sind – sofern nicht anders angegeben – Standardvertragsklauseln der EU-Kommission gemäß Durchführungsbeschluss (EU) 2021/914 vom 4. Juni 2021. Eine Kopie dieser Standardvertragsklauseln können Sie unter <a href="https://eur-lex.europa.eu/legal-content/DE/TXT/HTML/?uri=CELEX:32021D0914&amp;from=DE"   target="_blank">
-    https://eur-lex.europa.eu/legal-content/DE/TXT/HTML/?uri=CELEX:32021D0914&amp;from=DE</a> einsehen.</p>
+<p>Wir beabsichtigen personenbezogenen Daten an Drittländer außerhalb des Europäischen Wirtschaftsraums, insbesondere die USA, zu übermitteln. In Fällen, in denen kein Angemessenheitsbeschluss der Europäischen Kommission existiert (z.B. in den USA) haben wir mit den Empfängern der Daten anderweitige geeignete Garantien im Sinne der Art. 44 ff. DSGVO vereinbart. Dies sind – sofern nicht anders angegeben – Standardvertragsklauseln der EU-Kommission gemäß Durchführungsbeschluss (EU) 2021/914 vom 4. Juni 2021. Eine Kopie dieser Standardvertragsklauseln können Sie unter <a href="https://eur-lex.europa.eu/legal-content/DE/TXT/HTML/?uri=CELEX:32021D0914&amp;from=DE" target="_blank">https://eur-lex.europa.eu/legal-content/DE/TXT/HTML/?uri=CELEX:32021D0914&amp;from=DE</a> einsehen.</p>
 <p>Zudem holen wir vor einem solchen Drittlandtransfer Ihre Einwilligung nach Art. 49 Abs. 1 Satz 1 lit. a. DSGVO ein, die Sie über die Einwilligung im Consent Manager (oder sonstigen Formularen, Registrierungen etc.) erteilen. Wir weisen Sie darauf hin, dass bei Drittlandübermittlungen im Detail unbekannte Risiken (z.B. die Datenverarbeitung durch Sicherheitsbehörden des Drittlandes, deren genauer Umfang und deren Folgen für Sie wir nicht kennen, auf die wir keinen Einfluss haben und von denen Sie unter Umständen keine Kenntnis erlangen) bestehen können.</p>
+
+
 <h3 class="relative group">Speicherdauer 
     <div id="speicherdauer-4" class="anchor"></div>
     
@@ -953,8 +1023,9 @@ Die verantwortliche Stelle entscheidet allein oder gemeinsam mit anderen über d
     </span>        
     
 </h3>
-<p>Die konkrete Speicherdauer der verarbeiteten Daten ist nicht durch uns beeinflussbar, sondern wird von Google Ireland Limited bestimmt. Weitere Hinweise finden Sie in der Datenschutzerklärung für Google Fonts: <a href="https://policies.google.com/privacy"   target="_blank">
-    https://policies.google.com/privacy</a>.</p>
+<p>Die konkrete Speicherdauer der verarbeiteten Daten ist nicht durch uns beeinflussbar, sondern wird von Google Ireland Limited bestimmt. Weitere Hinweise finden Sie in der Datenschutzerklärung für Google Fonts: <a href="https://policies.google.com/privacy" target="_blank">https://policies.google.com/privacy</a>.</p>
+
+
 <h2 class="relative group">Font Awesome 
     <div id="font-awesome" class="anchor"></div>
     
@@ -965,6 +1036,8 @@ Die verantwortliche Stelle entscheidet allein oder gemeinsam mit anderen über d
     </span>        
     
 </h2>
+
+
 <h3 class="relative group">Art und Umfang der Verarbeitung 
     <div id="art-und-umfang-der-verarbeitung-5" class="anchor"></div>
     
@@ -976,6 +1049,8 @@ Die verantwortliche Stelle entscheidet allein oder gemeinsam mit anderen über d
     
 </h3>
 <p>Wir verwenden zur ordnungsgemäßen Bereitstellung der Inhalte unserer Website Font Awesome des Anbieters Fonticons, Inc..</p>
+
+
 <h3 class="relative group">Zweck und Rechtsgrundlage 
     <div id="zweck-und-rechtsgrundlage-5" class="anchor"></div>
     
@@ -987,9 +1062,10 @@ Die verantwortliche Stelle entscheidet allein oder gemeinsam mit anderen über d
     
 </h3>
 <p>Der Einsatz von Font Awesome erfolgt auf Grundlage Ihrer Einwilligung gemäß Art. 6 Abs. 1 lit. a. DSGVO und § 25 Abs. 1 TTDSG.</p>
-<p>Wir beabsichtigen personenbezogenen Daten an Drittländer außerhalb des Europäischen Wirtschaftsraums, insbesondere die USA, zu übermitteln. In Fällen, in denen kein Angemessenheitsbeschluss der Europäischen Kommission existiert (z.B. in den USA) haben wir mit den Empfängern der Daten anderweitige geeignete Garantien im Sinne der Art. 44 ff. DSGVO vereinbart. Dies sind – sofern nicht anders angegeben – Standardvertragsklauseln der EU-Kommission gemäß Durchführungsbeschluss (EU) 2021/914 vom 4. Juni 2021. Eine Kopie dieser Standardvertragsklauseln können Sie unter <a href="https://eur-lex.europa.eu/legal-content/DE/TXT/HTML/?uri=CELEX:32021D0914&amp;from=DE"   target="_blank">
-    https://eur-lex.europa.eu/legal-content/DE/TXT/HTML/?uri=CELEX:32021D0914&amp;from=DE</a> einsehen.</p>
+<p>Wir beabsichtigen personenbezogenen Daten an Drittländer außerhalb des Europäischen Wirtschaftsraums, insbesondere die USA, zu übermitteln. In Fällen, in denen kein Angemessenheitsbeschluss der Europäischen Kommission existiert (z.B. in den USA) haben wir mit den Empfängern der Daten anderweitige geeignete Garantien im Sinne der Art. 44 ff. DSGVO vereinbart. Dies sind – sofern nicht anders angegeben – Standardvertragsklauseln der EU-Kommission gemäß Durchführungsbeschluss (EU) 2021/914 vom 4. Juni 2021. Eine Kopie dieser Standardvertragsklauseln können Sie unter <a href="https://eur-lex.europa.eu/legal-content/DE/TXT/HTML/?uri=CELEX:32021D0914&amp;from=DE" target="_blank">https://eur-lex.europa.eu/legal-content/DE/TXT/HTML/?uri=CELEX:32021D0914&amp;from=DE</a> einsehen.</p>
 <p>Zudem holen wir vor einem solchen Drittlandtransfer Ihre Einwilligung nach Art. 49 Abs. 1 Satz 1 lit. a. DSGVO ein, die Sie über die Einwilligung im Consent Manager (oder sonstigen Formularen, Registrierungen etc.) erteilen. Wir weisen Sie darauf hin, dass bei Drittlandübermittlungen im Detail unbekannte Risiken (z.B. die Datenverarbeitung durch Sicherheitsbehörden des Drittlandes, deren genauer Umfang und deren Folgen für Sie wir nicht kennen, auf die wir keinen Einfluss haben und von denen Sie unter Umständen keine Kenntnis erlangen) bestehen können.</p>
+
+
 <h3 class="relative group">Speicherdauer 
     <div id="speicherdauer-5" class="anchor"></div>
     
@@ -1000,27 +1076,30 @@ Die verantwortliche Stelle entscheidet allein oder gemeinsam mit anderen über d
     </span>        
     
 </h3>
-<p>Die konkrete Speicherdauer der verarbeiteten Daten ist nicht durch uns beeinflussbar, sondern wird von Fonticons, Inc. bestimmt. Weitere Hinweise finden Sie in der Datenschutzerklärung für Font Awesome CDN: <a href="https://cdn.fontawesome.com/privacy"   target="_blank">
-    https://cdn.fontawesome.com/privacy</a>.</p>
+<p>Die konkrete Speicherdauer der verarbeiteten Daten ist nicht durch uns beeinflussbar, sondern wird von Fonticons, Inc. bestimmt. Weitere Hinweise finden Sie in der Datenschutzerklärung für Font Awesome CDN: <a href="https://cdn.fontawesome.com/privacy" target="_blank">https://cdn.fontawesome.com/privacy</a>.</p>
 
         </div>
-                
+        
         
 
+        
         
 
           
       </div>
      
-    
-     <script>
+      
+      
+        
+        
+      <script>
         var oid = "views_privacypolicy.md"
         var oid_likes = "likes_privacypolicy.md"
       </script>
       
       
       
-      <script type="text/javascript" src="/js/page.min.5b1bad196a6075a1e11bae1dc95f24f67b610948a00525e347566c5a62338ea78f1c7224ab9a53873dcdb2a1a7d7d391b8a8ef45561297f68806c01315b0c4f6.js" integrity="sha512-WxutGWpgdaHhG64dyV8k9nthCUigBSXjR1ZsWmIzjqePHHIkq5pThz3NsqGn19ORuKjvRVYSl/aIBsATFbDE9g=="></script>
+      <script type="text/javascript" src="/js/page.min.b06a29d42a4ed16787978e2eee1e8c797b7698db2bc14ccee78f5c80ac566fc996190a73ad80a5e987558474b20b96fa38f7d85b405f165ff72b7b163c5ad11b.js" integrity="sha512-sGop1CpO0WeHl44u7h6MeXt2mNsrwUzO549cgKxWb8mWGQpzrYCl6YdVhHSyC5b6OPfYW0BfFl/3K3sWPFrRGw=="></script>
   
     </section>
   <footer class="pt-8 max-w-prose print:hidden">
@@ -1107,7 +1186,8 @@ Die verantwortliche Stelle entscheidet allein oder gemeinsam mit anderen über d
   <script type="text/javascript" src="/js/process.min.62060bb247f4de2b6dde45903668fefb68d792f365587605177b1227c0cf43588701edaca0cb40e2c8e2789bd5ce67c1d2a215b9fb258c3496a7cd25e7cb5fdf.js" integrity="sha512-YgYLskf03itt3kWQNmj&#43;&#43;2jXkvNlWHYFF3sSJ8DPQ1iHAe2soMtA4sjieJvVzmfB0qIVufsljDSWp80l58tf3w=="></script>
   
   
-</footer><div
+</footer>
+<div
   id="search-wrapper"
   class="invisible fixed inset-0 flex h-screen w-screen cursor-default flex-col bg-neutral-500/50 p-4 backdrop-blur-sm dark:bg-neutral-900/50 sm:p-6 md:p-[10vh] lg:p-[12vh]"
   data-url="https://dominikbritz.com/"

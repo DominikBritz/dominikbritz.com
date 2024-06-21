@@ -28,8 +28,8 @@
   
   
   
-  <link type="text/css" rel="stylesheet" href="/css/main.bundle.min.7bd820881d892ec57012be5c51244ef74ee7f0fc745550018ff0f425dc6f7ffb31813a57103f413ced8cf4b313777cec8c0bbd1dde89ce4ac7a242fbf78dc051.css"
-    integrity="sha512-e9ggiB2JLsVwEr5cUSRO907n8Px0VVABj/D0Jdxvf/sxgTpXED9BPO2M9LMTd3zsjAu9Hd6JzkrHokL7943AUQ==" />
+  <link type="text/css" rel="stylesheet" href="/css/main.bundle.min.26325eb38d57bc8a75cf989151a2f6c0984cba91c8f1ca6ec10808ca3a9b56c3ba9210257dea450b3810ef3abecf16eacf0a002c8914a0c364b437c621c310ff.css"
+    integrity="sha512-JjJes41XvIp1z5iRUaL2wJhMupHI8cpuwQgIyjqbVsO6khAlfepFCzgQ7zq&#43;zxbqzwoALIkUoMNktDfGIcMQ/w==" />
   
   
   <script type="text/javascript" src="/js/appearance.min.516a16745bea5a9bd011138d254cc0fd3973cd55ce6e15f3dec763e7c7c2c7448f8fe7b54cca811cb821b0c7e12cd161caace1dd794ac3d34d40937cbcc9ee12.js"
@@ -46,8 +46,8 @@
   
   
   
-  <script defer type="text/javascript" id="script-bundle" src="/js/main.bundle.min.9bb1a9632f6ee6947ff79bb54b04b410c93e2c4db0c6c1109b856b9a575e881fb1fbe16c2a4465fae52aa0cd5b454a61ff47b99a5cd27a518e5a81ed29df8ceb.js"
-    integrity="sha512-m7GpYy9u5pR/95u1SwS0EMk&#43;LE2wxsEQm4VrmldeiB&#43;x&#43;&#43;FsKkRl&#43;uUqoM1bRUph/0e5mlzSelGOWoHtKd&#43;M6w==" data-copy="" data-copied=""></script>
+  <script defer type="text/javascript" id="script-bundle" src="/js/main.bundle.min.870bd1eeddef06ec04863ed312dffcdbfea1600079f9c8226e5f83315073fd92a8ebc0ab39e4dffebf36482a0167839fd6006b69bff803241d1fe677eebf541d.js"
+    integrity="sha512-hwvR7t3vBuwEhj7TEt/82/6hYAB5&#43;cgibl&#43;DMVBz/ZKo68CrOeTf/r82SCoBZ4Of1gBrab/4AyQdH&#43;Z37r9UHQ==" data-copy="" data-copied=""></script>
   
   
   <script src="/js/zoom.min.js"></script>
@@ -147,8 +147,12 @@ While ConfigMgr (and others) makes sense for mid to large enterprises, the manag
 
 
 
+
+
+
   
   
+
 
   
   
@@ -157,7 +161,7 @@ While ConfigMgr (and others) makes sense for mid to large enterprises, the manag
   
 </head>
 <body
-  class="flex flex-col h-screen px-6 m-auto text-lg leading-7 max-w-7xl bg-neutral text-neutral-900 dark:bg-neutral-800 dark:text-neutral sm:px-14 md:px-24 lg:px-32">
+  class="flex flex-col h-screen px-6 m-auto text-lg leading-7 max-w-7xl bg-neutral text-neutral-900 dark:bg-neutral-800 dark:text-neutral sm:px-14 md:px-24 lg:px-32 scrollbar-thin scrollbar-track-neutral-200 scrollbar-thumb-neutral-400 dark:scrollbar-track-neutral-800 dark:scrollbar-thumb-neutral-600">
   <div id="the-top" class="absolute flex self-center">
     <a class="px-3 py-1 text-sm -translate-y-8 rounded-b-lg bg-primary-200 focus:translate-y-0 dark:bg-neutral-600"
       href="#main-content"><span
@@ -195,34 +199,37 @@ While ConfigMgr (and others) makes sense for mid to large enterprises, the manag
             
             
             
-  <a href="/posts/"  class="flex items-center">
+  <a href="/posts/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
     
-    <p class="text-base font-medium text-gray-500 hover:text-gray-900" title="Posts">
+    <p class="text-base font-medium" title="Posts">
         Blog
     </p>
 </a>
 
 
+
             
             
-  <a href="/tags/"  class="flex items-center">
+  <a href="/tags/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
     
-    <p class="text-base font-medium text-gray-500 hover:text-gray-900" title="Tags">
+    <p class="text-base font-medium" title="Tags">
         Tags
     </p>
 </a>
 
 
+
             
             
-  <a href="/cv/"  class="flex items-center">
+  <a href="/cv/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
     
-    <p class="text-base font-medium text-gray-500 hover:text-gray-900" title="">
+    <p class="text-base font-medium" title="">
         CV
     </p>
 </a>
 
 
+
             
             
 
@@ -230,7 +237,7 @@ While ConfigMgr (and others) makes sense for mid to large enterprises, the manag
 
 
             
-            <button id="search-button" aria-label="Search" class="text-base hover:text-primary-600 dark:hover:text-primary-400 h-12"
+            <button id="search-button" aria-label="Search" class="text-base hover:text-primary-600 dark:hover:text-primary-400"
                 title="">
                 
 
@@ -247,9 +254,9 @@ While ConfigMgr (and others) makes sense for mid to large enterprises, the manag
             
             
             <div
-                class="ltr:mr-14 rtl:ml-14 cursor-pointer text-sm text-neutral-700 hover:text-primary-600 dark:text-neutral dark:hover:text-primary-400">
-                <button id="appearance-switcher" aria-label="Dark mode switcher" type="button">
-                    <div class="flex items-center justify-center h-12 dark:hidden">
+                class="ltr:mr-14 rtl:ml-14 flex items-center">
+                <button id="appearance-switcher" aria-label="Dark mode switcher" type="button" class="text-base hover:text-primary-600 dark:hover:text-primary-400">
+                    <div class="flex items-center justify-center dark:hidden">
                         
 
   <span class="relative block icon">
@@ -259,7 +266,7 @@ While ConfigMgr (and others) makes sense for mid to large enterprises, the manag
 
 
                     </div>
-                    <div class="items-center justify-center hidden h-12 dark:flex">
+                    <div class="items-center justify-center hidden dark:flex">
                         
 
   <span class="relative block icon">
@@ -274,7 +281,7 @@ While ConfigMgr (and others) makes sense for mid to large enterprises, the manag
             
 
         </nav>
-        <div class="flex md:hidden items-center space-x-5 md:ml-12">
+        <div class="flex md:hidden items-center space-x-5 md:ml-12 h-12">
 
             <span></span>
 
@@ -297,8 +304,8 @@ While ConfigMgr (and others) makes sense for mid to large enterprises, the manag
 
             
             
-            <button id="appearance-switcher-mobile" aria-label="Dark mode switcher" type="button" style="margin-right:5px">
-                <div class="flex items-center justify-center h-12 dark:hidden">
+            <button id="appearance-switcher-mobile" aria-label="Dark mode switcher" type="button" class="text-base hover:text-primary-600 dark:hover:text-primary-400" style="margin-right:5px">
+                <div class="flex items-center justify-center dark:hidden">
                     
 
   <span class="relative block icon">
@@ -308,7 +315,7 @@ While ConfigMgr (and others) makes sense for mid to large enterprises, the manag
 
 
                 </div>
-                <div class="items-center justify-center hidden h-12 dark:flex">
+                <div class="items-center justify-center hidden dark:flex">
                     
 
   <span class="relative block icon">
@@ -359,9 +366,9 @@ While ConfigMgr (and others) makes sense for mid to large enterprises, the manag
 
                     
   <li class="mt-1">
-    <a href="/posts/"  class="flex items-center">
+    <a href="/posts/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
         
-        <p class="text-bg font-bg text-gray-500 hover:text-gray-900" title="Posts">
+        <p class="text-bg font-bg" title="Posts">
             Blog
         </p>
     </a>
@@ -369,13 +376,14 @@ While ConfigMgr (and others) makes sense for mid to large enterprises, the manag
 
 
 
+
                     
 
                     
   <li class="mt-1">
-    <a href="/tags/"  class="flex items-center">
+    <a href="/tags/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
         
-        <p class="text-bg font-bg text-gray-500 hover:text-gray-900" title="Tags">
+        <p class="text-bg font-bg" title="Tags">
             Tags
         </p>
     </a>
@@ -383,17 +391,19 @@ While ConfigMgr (and others) makes sense for mid to large enterprises, the manag
 
 
 
+
                     
 
                     
   <li class="mt-1">
-    <a href="/cv/"  class="flex items-center">
+    <a href="/cv/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
         
-        <p class="text-bg font-bg text-gray-500 hover:text-gray-900" title="">
+        <p class="text-bg font-bg" title="">
             CV
         </p>
     </a>
 </li>
+
 
 
 
@@ -445,6 +455,7 @@ While ConfigMgr (and others) makes sense for mid to large enterprises, the manag
   
   
   
+
 
 
 
@@ -524,7 +535,7 @@ While ConfigMgr (and others) makes sense for mid to large enterprises, the manag
   <time datetime="2020-03-17 00:00:00 &#43;0000 UTC">17 March 2020</time><span class="px-2 text-primary-500">&middot;</span><span>1186 words</span><span class="px-2 text-primary-500">&middot;</span>
 
 
-<script type="text/javascript" src="/js/zen-mode.min.16f2e42a0014d476212e14c056b26b69bc85cb5de15352a5e3a1a0be498055dc1bf0926cef44baef1cc7fa2dfc5de0052892645cd3766598065f47b15c4bd44d.js" integrity="sha512-FvLkKgAU1HYhLhTAVrJrabyFy13hU1Kl46GgvkmAVdwb8JJs70S67xzH&#43;i38XeAFKJJkXNN2ZZgGX0exXEvUTQ=="></script>
+<script type="text/javascript" src="/js/zen-mode.min.63c8a202661f4a2063fdc2706685d668e8ea3da613da2224e9da527e5876e4f53dcac39ab60732626fb4151feae5d430d0cf44731e5d3c726522fcc1519c1547.js" integrity="sha512-Y8iiAmYfSiBj/cJwZoXWaOjqPaYT2iIk6dpSflh25PU9ysOatgcyYm&#43;0FR/q5dQw0M9Ecx5dPHJlIvzBUZwVRw=="></script>
 
 <span class="mb-[2px]">
     <span id="zen-mode-button"
@@ -600,11 +611,15 @@ While ConfigMgr (and others) makes sense for mid to large enterprises, the manag
     
 
     
+      
+      
+
+      
+
+      
 
     
 
-    
-  
   </header>
   
   <section class="flex flex-col max-w-full mt-0 prose dark:prose-invert lg:flex-row">
@@ -613,13 +628,14 @@ While ConfigMgr (and others) makes sense for mid to large enterprises, the manag
       class="order-first lg:ml-auto px-0 lg:order-last ltr:lg:pl-8 rtl:lg:pr-8">
       <div class="toc ltr:pl-5 rtl:pr-5 print:hidden lg:sticky lg:top-[140px]">
 
-         <details open class="toc-right mt-0 overflow-hidden rounded-lg ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 hidden lg:block">
+         <details open id="TOCView"
+  class="toc-right mt-0 overflow-y-scroll overscroll-contain scrollbar-thin scrollbar-track-neutral-200 scrollbar-thumb-neutral-400 dark:scrollbar-track-neutral-800 dark:scrollbar-thumb-neutral-600 rounded-lg ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 hidden lg:block">
   <summary
     class="block py-1 text-lg font-semibold cursor-pointer bg-neutral-100 text-neutral-800 ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 dark:bg-neutral-700 dark:text-neutral-100 lg:hidden">
     Table of Contents
   </summary>
   <div
-    class="min-w-[220px] py-2 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
+    class="min-w-[220px] py-2 border-dotted ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
     <nav id="TableOfContents">
   <ul>
     <li>
@@ -680,8 +696,33 @@ While ConfigMgr (and others) makes sense for mid to large enterprises, the manag
   </div>
 </details>
 
- 
 <script>
+
+  var margin = 200;
+  var marginError = 50;
+
+  (function () {
+    var $window = $(window);
+    var $toc = $('#TOCView');
+    var tocHeight = $toc.height();
+
+    function onResize() {
+      var windowAndMarginHeight = $window.height() - margin;
+      if(tocHeight >= windowAndMarginHeight) {
+        $toc.css("overflow-y", "scroll")
+        $toc.css("max-height", (windowAndMarginHeight + marginError) + "px")
+      } else {
+        $toc.css("overflow-y", "hidden")
+        $toc.css("max-height", "9999999px")
+      }
+    }
+
+    $window.on('resize', onResize);
+    $(document).ready(onResize);
+  })();
+
+
+
   (function () {
     var $toc = $('#TableOfContents');
     if ($toc.length > 0) {
@@ -694,7 +735,7 @@ While ConfigMgr (and others) makes sense for mid to large enterprises, the manag
         h.each(function (i, e) {
           e = $(e);
           if (e.offset().top - $(window).height()/3 <= currentScroll) {
-            id = e.attr('id');
+            id = decodeURIComponent(e.attr('id'));
           }
         });
         var active = $toc.find('a.active');      
@@ -720,6 +761,8 @@ While ConfigMgr (and others) makes sense for mid to large enterprises, the manag
       });
     }
   })();
+
+
 </script>
    </div>
       </div>
@@ -732,10 +775,11 @@ While ConfigMgr (and others) makes sense for mid to large enterprises, the manag
 
         <div class="article-content max-w-prose mb-20">
           <p>Managing applications on Windows in enterprises is complex and cumbersome. Admins are using a variety of tools to install, uninstall or reconfigure applications silently. The most popular tool is propably Microsoft&rsquo;s ConfigMgr.</p>
-<p>While ConfigMgr (and others) makes sense for mid to large enterprises, the management is too time-consuming for smaller firms. I work in such a smaller firm. We have a lab to test our own applications <a href="https://uberagent.com"   target="_blank">
-    uberAgent</a> on several operating systems. These lab machines don&rsquo;t only run uberAgent, of course, they also run standard applications like text editors, browsers, and more complex things.</p>
+<p>While ConfigMgr (and others) makes sense for mid to large enterprises, the management is too time-consuming for smaller firms. I work in such a smaller firm. We have a lab to test our own applications <a href="https://uberagent.com" target="_blank">uberAgent</a> on several operating systems. These lab machines don&rsquo;t only run uberAgent, of course, they also run standard applications like text editors, browsers, and more complex things.</p>
 <p>While we are using Microsoft MDT to install the OS and set everything up, all these applications need some sort of installing/updating mechanism. We use chocolatey for most of them. However, not all packages can be deployed with chocolatey. Some need special treatment, pre-install or post-install actions, or there is simply no chocolatey package available.</p>
 <p>For these &lsquo;special treatment&rsquo; applications we developed our own PowerShell module called <code>vlDeploy</code>, which I&rsquo;m happy to share publically.</p>
+
+
 <h2 class="relative group">Introducing vlDeploy 
     <div id="introducing-vldeploy" class="anchor"></div>
     
@@ -768,6 +812,8 @@ While ConfigMgr (and others) makes sense for mid to large enterprises, the manag
 </ul>
 <p>Is it a full blown application distribution and everything else can get tossed to the void? No, of course not. It has its use-cases which I&rsquo;m describing in the following.</p>
 <p>Combining <code>vlDeploy</code> with other tools gives you a very powerful PowerShell-based installation framework. See chapter <em>Combine vlDeploy With Other Tools</em> for details.</p>
+
+
 <h2 class="relative group">Prerequisites 
     <div id="prerequisites" class="anchor"></div>
     
@@ -783,6 +829,8 @@ While ConfigMgr (and others) makes sense for mid to large enterprises, the manag
 <li>At least PowerShell version 5.0</li>
 <li>Windows operating system</li>
 </ul>
+
+
 <h2 class="relative group">Installing vlDeploy 
     <div id="installing-vldeploy" class="anchor"></div>
     
@@ -795,7 +843,9 @@ While ConfigMgr (and others) makes sense for mid to large enterprises, the manag
 </h2>
 <p>The module is availabe in the PowerShell Gallery. To install <code>vlDeploy</code>, follow these steps:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-powershell" data-lang="powershell"><span class="line"><span class="cl"><span class="nb">Install-Module</span> <span class="n">vlDeploy</span>
-</span></span></code></pre></div><h2 class="relative group">Using vlDeploy 
+</span></span></code></pre></div>
+
+<h2 class="relative group">Using vlDeploy 
     <div id="using-vldeploy" class="anchor"></div>
     
     <span
@@ -810,7 +860,9 @@ While ConfigMgr (and others) makes sense for mid to large enterprises, the manag
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-powershell" data-lang="powershell"><span class="line"><span class="cl"><span class="nb">Get-Help</span> <span class="nb">Install-vlApplication</span> <span class="n">-full</span>
 </span></span><span class="line"><span class="cl"><span class="nb">Get-Help</span> <span class="nb">Uninstall-vlApplication</span> <span class="n">-full</span>
 </span></span><span class="line"><span class="cl"><span class="nb">Get-Help</span> <span class="nb">Get-vlInstalledApplication</span> <span class="n">-full</span>
-</span></span></code></pre></div><h3 class="relative group">Examples 
+</span></span></code></pre></div>
+
+<h3 class="relative group">Examples 
     <div id="examples" class="anchor"></div>
     
     <span
@@ -836,7 +888,9 @@ While ConfigMgr (and others) makes sense for mid to large enterprises, the manag
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-powershell" data-lang="powershell"><span class="line"><span class="cl"><span class="nv">$cred</span> <span class="p">=</span> <span class="nb">Get-Credential</span>
 </span></span><span class="line"><span class="cl"><span class="nv">$UninstallString</span> <span class="p">=</span> <span class="p">(</span><span class="nb">Get-vlInstalledApplication</span> <span class="n">-Computer</span> <span class="n">PC1</span> <span class="n">-Name</span> <span class="s1">&#39;Google Chrome&#39;</span> <span class="n">-Credential</span> <span class="nv">$cred</span><span class="p">).</span><span class="py">UninstallString</span>
 </span></span><span class="line"><span class="cl"><span class="s1">&#39;PC1&#39;</span><span class="p">,</span> <span class="s1">&#39;PC2&#39;</span><span class="p">,</span> <span class="s1">&#39;PC3&#39;</span> <span class="p">|</span> <span class="nb">Uninstall-vlApplication</span> <span class="n">-UninstallString</span> <span class="nv">$UninstallString</span> <span class="n">-Credential</span> <span class="nv">$cred</span> <span class="n">-RebootAfterSuccess</span>
-</span></span></code></pre></div><h2 class="relative group">Combine vlDeploy With Other Tools 
+</span></span></code></pre></div>
+
+<h2 class="relative group">Combine vlDeploy With Other Tools 
     <div id="combine-vldeploy-with-other-tools" class="anchor"></div>
     
     <span
@@ -847,6 +901,8 @@ While ConfigMgr (and others) makes sense for mid to large enterprises, the manag
     
 </h2>
 <p>You can combine <code>vlDeploy</code> very nicely with other PowerShell tools. The combination with the following tools gives you a very powerful PowerShell-based installation framework</p>
+
+
 <h3 class="relative group">Evergreen 
     <div id="evergreen" class="anchor"></div>
     
@@ -857,9 +913,7 @@ While ConfigMgr (and others) makes sense for mid to large enterprises, the manag
     </span>        
     
 </h3>
-<p><a href="https://github.com/aaronparker/Evergreen"   target="_blank">
-    Evergreen</a> is a PowerShell module actively developed by <a href="https://stealthpuppy.com/"   target="_blank">
-    Aaron Parker</a> to return the latest version and download URLs for a set of common enterprise applications.</p>
+<p><a href="https://github.com/aaronparker/Evergreen" target="_blank">Evergreen</a> is a PowerShell module actively developed by <a href="https://stealthpuppy.com/" target="_blank">Aaron Parker</a> to return the latest version and download URLs for a set of common enterprise applications.</p>
 <p>As of 2020-03-02, the following applications are included:</p>
 <pre tabindex="0"><code>AdobeAcrobatReaderDC
 Atom
@@ -936,8 +990,9 @@ Zoom
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="c"># Install</span>
 </span></span><span class="line"><span class="cl"><span class="nb">Install-vlApplication</span> <span class="n">-Installer</span> <span class="s2">&#34;</span><span class="p">$(</span><span class="nv">$App</span><span class="p">.</span><span class="n">URI</span><span class="p">)</span><span class="s2">&#34;</span> <span class="n">-Computer</span> <span class="nv">$Computers</span> <span class="n">-Credential</span> <span class="nv">$cred</span>
-</span></span></code></pre></div><p>I recommend having a look at <code>Evergreen</code> in more detail. It also includes silent installer arguments as well as pre-install and post-install actions. <a href="https://github.com/aaronparker/Evergreen/blob/master/scripts/Install-AdobeReaderDC.ps1"   target="_blank">
-    Here</a> is nice example for Adobe Reader.</p>
+</span></span></code></pre></div><p>I recommend having a look at <code>Evergreen</code> in more detail. It also includes silent installer arguments as well as pre-install and post-install actions. <a href="https://github.com/aaronparker/Evergreen/blob/master/scripts/Install-AdobeReaderDC.ps1" target="_blank">Here</a> is nice example for Adobe Reader.</p>
+
+
 <h3 class="relative group">XenAppBlog Automation Framework Applications 
     <div id="xenappblog-automation-framework-applications" class="anchor"></div>
     
@@ -948,9 +1003,7 @@ Zoom
     </span>        
     
 </h3>
-<p>The <a href="https://github.com/haavarstein/Applications"   target="_blank">
-    XenAppBlog Automation Framework Applications</a> by <a href="https://xenappblog.com/blog/"   target="_blank">
-    Trond Eirik Haavarstein</a> are scripts that install applications without the need to maintain installer sources. The framework is using <code>Evergreen</code> in some scripts as well.</p>
+<p>The <a href="https://github.com/haavarstein/Applications" target="_blank">XenAppBlog Automation Framework Applications</a> by <a href="https://xenappblog.com/blog/" target="_blank">Trond Eirik Haavarstein</a> are scripts that install applications without the need to maintain installer sources. The framework is using <code>Evergreen</code> in some scripts as well.</p>
 <p>Install VMware Tools on multiple computers and reboot without having to think about managing installers.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-powershell" data-lang="powershell"><span class="line"><span class="cl"><span class="c"># Variables</span>
 </span></span><span class="line"><span class="cl"><span class="nv">$Computers</span> <span class="p">=</span> <span class="s2">&#34;PC1&#34;</span><span class="p">,</span><span class="s2">&#34;PC2&#34;</span>
@@ -958,7 +1011,9 @@ Zoom
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="c"># Install app</span>
 </span></span><span class="line"><span class="cl"><span class="nb">Install-vlApplication</span> <span class="n">-Installer</span> <span class="s1">&#39;https://raw.githubusercontent.com/haavarstein/Applications/master/VMware/Tools/Install.ps1&#39;</span> <span class="n">-Computer</span> <span class="nv">$Computers</span> <span class="n">-Credential</span> <span class="nv">$cred</span> <span class="n">-RebootAfterSuccess</span>
-</span></span></code></pre></div><h3 class="relative group">PowerShell App Deployment Toolkit 
+</span></span></code></pre></div>
+
+<h3 class="relative group">PowerShell App Deployment Toolkit 
     <div id="powershell-app-deployment-toolkit" class="anchor"></div>
     
     <span
@@ -968,11 +1023,9 @@ Zoom
     </span>        
     
 </h3>
-<p><code>Evergreen</code> and the <em>XenAppBlog Automation Framework Applications</em> are limited to a set of common enterprise applications. You won&rsquo;t find your very special LOB application in there. LOB applications are best deployed with the <a href="https://github.com/PSAppDeployToolkit/PSAppDeployToolkit"   target="_blank">
-    PowerShell App Deployment Toolkit</a>.</p>
+<p><code>Evergreen</code> and the <em>XenAppBlog Automation Framework Applications</em> are limited to a set of common enterprise applications. You won&rsquo;t find your very special LOB application in there. LOB applications are best deployed with the <a href="https://github.com/PSAppDeployToolkit/PSAppDeployToolkit" target="_blank">PowerShell App Deployment Toolkit</a>.</p>
 <blockquote>
-<p>The PowerShell App Deployment Toolkit provides a set of functions to perform common application deployment tasks and to interact with the user during a deployment. It simplifies the complex scripting challenges of deploying applications in the enterprise, provides a consistent deployment experience and improves installation success rates. <em>Source: <a href="https://github.com/PSAppDeployToolkit/PSAppDeployToolkit"   target="_blank">
-    https://github.com/PSAppDeployToolkit/PSAppDeployToolkit</a></em></p>
+<p>The PowerShell App Deployment Toolkit provides a set of functions to perform common application deployment tasks and to interact with the user during a deployment. It simplifies the complex scripting challenges of deploying applications in the enterprise, provides a consistent deployment experience and improves installation success rates. <em>Source: <a href="https://github.com/PSAppDeployToolkit/PSAppDeployToolkit" target="_blank">https://github.com/PSAppDeployToolkit/PSAppDeployToolkit</a></em></p>
 </blockquote>
 <p>The installation logic is defined in the file <code>Deploy-Application.ps1</code>. That makes the integration with <code>vlDeploy</code> very easy.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-powershell" data-lang="powershell"><span class="line"><span class="cl"><span class="c"># Variables</span>
@@ -985,8 +1038,9 @@ Zoom
 </span></span><span class="line"><span class="cl"><span class="k">Foreach</span> <span class="p">(</span><span class="nv">$Folder</span> <span class="k">in</span> <span class="nv">$Folders</span><span class="p">)</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">    <span class="nb">Install-vlApplication</span> <span class="n">-Sourcefiles</span> <span class="nv">$Folder</span> <span class="n">-Installer</span> <span class="s1">&#39;Deploy-Application.ps1&#39;</span> <span class="n">-Computer</span> <span class="nv">$Computers</span> <span class="n">-Credential</span> <span class="nv">$cred</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span></code></pre></div><p>A step-by-step guide for the PowerShell App Deployment Toolkit is available <a href="https://replicajunction.github.io/2015/04/07/installing-applications-with-psadt-part1/"   target="_blank">
-    here from replicajunction</a>.</p>
+</span></span></code></pre></div><p>A step-by-step guide for the PowerShell App Deployment Toolkit is available <a href="https://replicajunction.github.io/2015/04/07/installing-applications-with-psadt-part1/" target="_blank">here from replicajunction</a>.</p>
+
+
 <h2 class="relative group">Development And Contributing 
     <div id="development-and-contributing" class="anchor"></div>
     
@@ -997,14 +1051,12 @@ Zoom
     </span>        
     
 </h2>
-<p>The module has a feature set tailored to the needs we have in our company. If you need something else, please contribute at <a href="https://github.com/vastlimits/vlDeploy"   target="_blank">
-    GitHub</a>.</p>
+<p>The module has a feature set tailored to the needs we have in our company. If you need something else, please contribute at <a href="https://github.com/vastlimits/vlDeploy" target="_blank">GitHub</a>.</p>
 <p>A list of features I would like to add, but there was not enough time yet:</p>
 <ul>
 <li>Run install/uninstall as PowerShell jobs to benefit from parallelism
 <ul>
-<li>Perhaps use PowerShell 7 and <code>Foreach-Object -Parallel</code>. <a href="https://devblogs.microsoft.com/powershell/powershell-foreach-object-parallel-feature/"   target="_blank">
-    More information</a>.</li>
+<li>Perhaps use PowerShell 7 and <code>Foreach-Object -Parallel</code>. <a href="https://devblogs.microsoft.com/powershell/powershell-foreach-object-parallel-feature/" target="_blank">More information</a>.</li>
 </ul>
 </li>
 <li>Add support for <code>.bat</code>,<code>.cmd</code>, <code>.msp</code>, <code>.mst</code>, and <code>.msu</code> installers</li>
@@ -1012,9 +1064,10 @@ Zoom
 </ul>
 
         </div>
-                
+        
         
 
+        
         
   
   <section class="flex flex-row flex-wrap justify-center pt-4 text-xl">
@@ -1176,15 +1229,18 @@ Zoom
           
       </div>
      
-    
-     <script>
+      
+      
+        
+        
+      <script>
         var oid = "views_posts\\2020-03-17-introducing-vldeploy\\index.md"
         var oid_likes = "likes_posts\\2020-03-17-introducing-vldeploy\\index.md"
       </script>
       
       
       
-      <script type="text/javascript" src="/js/page.min.5b1bad196a6075a1e11bae1dc95f24f67b610948a00525e347566c5a62338ea78f1c7224ab9a53873dcdb2a1a7d7d391b8a8ef45561297f68806c01315b0c4f6.js" integrity="sha512-WxutGWpgdaHhG64dyV8k9nthCUigBSXjR1ZsWmIzjqePHHIkq5pThz3NsqGn19ORuKjvRVYSl/aIBsATFbDE9g=="></script>
+      <script type="text/javascript" src="/js/page.min.b06a29d42a4ed16787978e2eee1e8c797b7698db2bc14ccee78f5c80ac566fc996190a73ad80a5e987558474b20b96fa38f7d85b405f165ff72b7b163c5ad11b.js" integrity="sha512-sGop1CpO0WeHl44u7h6MeXt2mNsrwUzO549cgKxWb8mWGQpzrYCl6YdVhHSyC5b6OPfYW0BfFl/3K3sWPFrRGw=="></script>
   
     </section>
   <footer class="pt-8 max-w-prose print:hidden">
@@ -1297,7 +1353,8 @@ Zoom
   <script type="text/javascript" src="/js/process.min.62060bb247f4de2b6dde45903668fefb68d792f365587605177b1227c0cf43588701edaca0cb40e2c8e2789bd5ce67c1d2a215b9fb258c3496a7cd25e7cb5fdf.js" integrity="sha512-YgYLskf03itt3kWQNmj&#43;&#43;2jXkvNlWHYFF3sSJ8DPQ1iHAe2soMtA4sjieJvVzmfB0qIVufsljDSWp80l58tf3w=="></script>
   
   
-</footer><div
+</footer>
+<div
   id="search-wrapper"
   class="invisible fixed inset-0 flex h-screen w-screen cursor-default flex-col bg-neutral-500/50 p-4 backdrop-blur-sm dark:bg-neutral-900/50 sm:p-6 md:p-[10vh] lg:p-[12vh]"
   data-url="https://dominikbritz.com/"
