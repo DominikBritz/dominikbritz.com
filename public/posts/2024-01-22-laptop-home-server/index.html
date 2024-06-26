@@ -1018,7 +1018,6 @@ Bye Bye Synology, Hello Ubuntu #TL;DR #Synology has a great ecosystem, but one
 <p>I use it to install packages and configure the home server. No steps are done manually, so when the server breaks, I can spin up another, run the deployment there and have the same configuration.</p>
 <p>With Ansible, one describes how a target system should look like in YAML. A YAML file is called a playbook. In organizations, there is typically a control server that connects to targets and applies the steps defined in the playbook. That works well but is too complicated for a home lab. You can save the control server and run the playbook directly from GitHub through Ansible pull.</p>
 <p>Below is a diagram of the deployment architecture. I prepare the config of the home server on a client, push the config to GitHub, and execute it via Ansible pull on the home server.</p>
-<div style="background-color:white; padding: 20px">
 <div class="mermaid" align="center">
   
 flowchart LR
@@ -1029,7 +1028,6 @@ flowchart LR
 
 </div>
 
-</div>
 
 
 <h3 class="relative group">Create a Repository On GitHub 
