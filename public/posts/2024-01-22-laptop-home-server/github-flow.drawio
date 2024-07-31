@@ -1,0 +1,37 @@
+<mxfile host="65bd71144e">
+    <diagram id="a21SGSFSpOxDpeA47iBE" name="Page-1">
+        <mxGraphModel dx="120" dy="899" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="3" pageWidth="1169" pageHeight="827" background="none" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" value="Windows client&lt;br style=&quot;font-size: 12px;&quot;&gt;- WSL&lt;br style=&quot;font-size: 12px;&quot;&gt;- Git&lt;br style=&quot;font-size: 12px;&quot;&gt;- SSH" style="whiteSpace=wrap;aspect=fixed;align=left;rounded=0;sketch=1;curveFitting=1;jiggle=2;shadow=0;glass=0;spacingLeft=5;labelBorderColor=none;html=1;arcSize=23;fontSize=12;fillColor=#f5f5f5;fontColor=#FFFFFF;strokeColor=#666666;" parent="1" vertex="1">
+                    <mxGeometry x="130" y="400" width="100" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="Home server&lt;br&gt;- Ansible&lt;br&gt;- Docker&lt;br&gt;- Unbound DNS&lt;br&gt;- restic Backup" style="whiteSpace=wrap;html=1;aspect=fixed;align=left;rounded=0;sketch=1;curveFitting=1;jiggle=2;shadow=0;glass=0;spacingLeft=5;arcSize=23;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#FFFFFF;labelBorderColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="130" y="540" width="100" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value="GitHub" style="whiteSpace=wrap;html=1;aspect=fixed;align=left;rounded=0;sketch=1;curveFitting=1;jiggle=2;shadow=0;glass=0;spacingLeft=5;arcSize=23;" parent="1" vertex="1">
+                    <mxGeometry x="300" y="490" width="60" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" value="" style="endArrow=classic;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;sketch=1;curveFitting=1;jiggle=2;arcSize=23;" parent="1" target="6" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="230" y="449.5" as="sourcePoint"/>
+                        <mxPoint x="330" y="449.5" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="11" value="Push" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;rounded=0;shadow=0;glass=0;sketch=1;spacingTop=0;spacingLeft=0;spacing=2;labelBorderColor=default;curveFitting=1;jiggle=2;arcSize=23;" parent="10" connectable="0" vertex="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="15" value="" style="endArrow=classic;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;sketch=1;curveFitting=1;jiggle=2;arcSize=23;" parent="1" target="6" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="230" y="590" as="sourcePoint"/>
+                        <mxPoint x="395" y="630.5" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="16" value="Pull" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;rounded=0;shadow=0;glass=0;sketch=1;spacingTop=0;spacingLeft=0;spacing=2;labelBorderColor=default;curveFitting=1;jiggle=2;arcSize=23;" parent="15" connectable="0" vertex="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
