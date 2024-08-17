@@ -46,8 +46,8 @@
   
   
   
-  <script defer type="text/javascript" id="script-bundle" src="/js/main.bundle.min.025318f5a9296162e2a8d3ed13ff80860ce1b3112766a169724c63de558b3d010d00ba6707a85456471f2154e7f0fd0f25afb53d994d31af6213efedc13874d4.js"
-    integrity="sha512-AlMY9akpYWLiqNPtE/&#43;AhgzhsxEnZqFpckxj3lWLPQENALpnB6hUVkcfIVTn8P0PJa&#43;1PZlNMa9iE&#43;/twTh01A==" data-copy="" data-copied=""></script>
+  <script defer type="text/javascript" id="script-bundle" src="/js/main.bundle.min.8b56b0fd46524eaecbfe33f576b8ba2cd2a122521a89f8229a95be0b635a7ac8e774eb1d8b8b93b32bbd677c3deb734aeea62917443f124d5bf5478859767380.js"
+    integrity="sha512-i1aw/UZSTq7L/jP1dri6LNKhIlIaifgimpW&#43;C2NaesjndOsdi4uTsyu9Z3w963NK7qYpF0Q/Ek1b9UeIWXZzgA==" data-copy="" data-copied=""></script>
   
   
   
@@ -66,21 +66,27 @@
   
   
   
-  <meta property="og:title" content="Laptop Home Server Build" />
-<meta property="og:description" content="A guide to setting up an old laptop as your new home server, powered by Ubuntu, Ansible, and Docker. It securely hosts videos, files, and photos. Add HTTPS everywhere, cloud backup and performance monitoring.
-Bye Bye Synology, Hello Ubuntu #TL;DR #Synology has a great ecosystem, but one is locked in." />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://dominikbritz.com/posts/2024-01-22-laptop-home-server/" /><meta property="og:image" content="https://dominikbritz.com/posts/2024-01-22-laptop-home-server/featured.jpg" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2024-01-23T00:00:00+00:00" />
-<meta property="article:modified_time" content="2024-01-23T00:00:00+00:00" />
-<meta property="og:see_also" content="https://dominikbritz.com/posts/immich-self-hosted-photos-with-cloud-backup/" /><meta property="og:see_also" content="https://dominikbritz.com/posts/streamlined-nextcloud-with-openid-connect-authentication/" />
+  <meta property="og:url" content="https://dominikbritz.com/posts/2024-01-22-laptop-home-server/">
+  <meta property="og:site_name" content="DominikBritz.com">
+  <meta property="og:title" content="Laptop Home Server Build">
+  <meta property="og:description" content="A guide to setting up an old laptop as your new home server, powered by Ubuntu, Ansible, and Docker. It securely hosts videos, files, and photos. Add HTTPS everywhere, cloud backup and performance monitoring.
+Bye Bye Synology, Hello Ubuntu #TL;DR #Synology has a great ecosystem, but one is locked in.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2024-01-23T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-01-23T00:00:00+00:00">
+    <meta property="article:tag" content="Home Server">
+    <meta property="og:image" content="https://dominikbritz.com/posts/2024-01-22-laptop-home-server/featured.jpg">
+      <meta property="og:see_also" content="https://dominikbritz.com/posts/immich-self-hosted-photos-with-cloud-backup/">
+      <meta property="og:see_also" content="https://dominikbritz.com/posts/streamlined-nextcloud-with-openid-connect-authentication/">
 
-
-
-  <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:image" content="https://dominikbritz.com/posts/2024-01-22-laptop-home-server/featured.jpg" /><meta name="twitter:title" content="Laptop Home Server Build"/>
-<meta name="twitter:description" content="A guide to setting up an old laptop as your new home server, powered by Ubuntu, Ansible, and Docker. It securely hosts videos, files, and photos. Add HTTPS everywhere, cloud backup and performance monitoring.
-Bye Bye Synology, Hello Ubuntu #TL;DR #Synology has a great ecosystem, but one is locked in."/>
+  
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://dominikbritz.com/posts/2024-01-22-laptop-home-server/featured.jpg">
+  <meta name="twitter:title" content="Laptop Home Server Build">
+  <meta name="twitter:description" content="A guide to setting up an old laptop as your new home server, powered by Ubuntu, Ansible, and Docker. It securely hosts videos, files, and photos. Add HTTPS everywhere, cloud backup and performance monitoring.
+Bye Bye Synology, Hello Ubuntu #TL;DR #Synology has a great ecosystem, but one is locked in.">
 
   
   <script type="application/ld+json">
@@ -107,7 +113,7 @@ Bye Bye Synology, Hello Ubuntu #TL;DR #Synology has a great ecosystem, but one
     "keywords": ["home server"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "3132"
+    "wordCount": "3106"
   }]
   </script>
 
@@ -133,17 +139,6 @@ Bye Bye Synology, Hello Ubuntu #TL;DR #Synology has a great ecosystem, but one
 <script src="/lib/jquery/jquery.slim.min.03cb160e3cfdb2667a2e2c80d283bebcf63ff8bbc4b629c9ab2babf6fae1d0c07ad470edae783efa4fabda2ac01c58d60e63b98b3c336be8208460f08f4354f5.js" integrity="sha512-A8sWDjz9smZ6LiyA0oO&#43;vPY/&#43;LvEtinJqyur9vrh0MB61HDtrng&#43;&#43;k&#43;r2irAHFjWDmO5izwza&#43;gghGDwj0NU9Q=="></script>
 
 
-
-  
-  
-  
-  
-  <script
-    defer
-    type="text/javascript"
-    src="/js/mermaid.bundle.ef0933378f676aa561c334c3dbb2fe885e546858abb2234d7ceabaac607496b53e7d048e4b402b049fe60fa802dd2261a89c37050b87ea62651b42ff57dd6758.js"
-    integrity="sha512-7wkzN49naqVhwzTD27L&#43;iF5UaFirsiNNfOq6rGB0lrU&#43;fQSOS0ArBJ/mD6gC3SJhqJw3BQuH6mJlG0L/V91nWA=="
-  ></script>
 
 
 
@@ -218,7 +213,7 @@ Bye Bye Synology, Hello Ubuntu #TL;DR #Synology has a great ecosystem, but one
             
   <a href="/posts/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
     
-    <p class="text-base font-medium" title="Posts">
+    <p class="text-base font-medium" title="">
         Blog
     </p>
 </a>
@@ -229,7 +224,7 @@ Bye Bye Synology, Hello Ubuntu #TL;DR #Synology has a great ecosystem, but one
             
   <a href="/tags/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
     
-    <p class="text-base font-medium" title="Tags">
+    <p class="text-base font-medium" title="">
         Tags
     </p>
 </a>
@@ -385,7 +380,7 @@ Bye Bye Synology, Hello Ubuntu #TL;DR #Synology has a great ecosystem, but one
   <li class="mt-1">
     <a href="/posts/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
         
-        <p class="text-bg font-bg" title="Posts">
+        <p class="text-bg font-bg" title="">
             Blog
         </p>
     </a>
@@ -400,7 +395,7 @@ Bye Bye Synology, Hello Ubuntu #TL;DR #Synology has a great ecosystem, but one
   <li class="mt-1">
     <a href="/tags/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
         
-        <p class="text-bg font-bg" title="Tags">
+        <p class="text-bg font-bg" title="">
             Tags
         </p>
     </a>
@@ -549,7 +544,7 @@ Bye Bye Synology, Hello Ubuntu #TL;DR #Synology has a great ecosystem, but one
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2024-01-23 00:00:00 &#43;0000 UTC">23 January 2024</time><span class="px-2 text-primary-500">&middot;</span><span>3132 words</span><span class="px-2 text-primary-500">&middot;</span>
+  <time datetime="2024-01-23 00:00:00 &#43;0000 UTC">23 January 2024</time><span class="px-2 text-primary-500">&middot;</span><span>3106 words</span><span class="px-2 text-primary-500">&middot;</span>
 
 
 <script type="text/javascript" src="/js/zen-mode.min.63c8a202661f4a2063fdc2706685d668e8ea3da613da2224e9da527e5876e4f53dcac39ab60732626fb4151feae5d430d0cf44731e5d3c726522fcc1519c1547.js" integrity="sha512-Y8iiAmYfSiBj/cJwZoXWaOjqPaYT2iIk6dpSflh25PU9ysOatgcyYm&#43;0FR/q5dQw0M9Ecx5dPHJlIvzBUZwVRw=="></script>
@@ -597,7 +592,7 @@ Bye Bye Synology, Hello Ubuntu #TL;DR #Synology has a great ecosystem, but one
   <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/home-server/&#34;,'_self');">
     <span class="flex" style="cursor: pointer;">
   <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    home server
+    Home Server
   </span>
 </span>
   </span>
@@ -870,6 +865,31 @@ Bye Bye Synology, Hello Ubuntu #TL;DR #Synology has a great ecosystem, but one
     </summary>
     
     
+    
+    <div
+        class="py-1 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
+        Part 1: This Article
+    </div>
+    
+    
+    
+    <div
+        class="py-1 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
+        <a href="https://dominikbritz.com/posts/streamlined-nextcloud-with-openid-connect-authentication/">
+            Part 2: Streamlined Nextcloud With OpenID Connect Authentication
+        </a>
+    </div>
+    
+    
+    
+    <div
+        class="py-1 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
+        <a href="https://dominikbritz.com/posts/immich-self-hosted-photos-with-cloud-backup/">
+            Part 3: Immich: Self-Hosted Photo Gallery With Cloud Backup &amp; OpenID Connect
+        </a>
+    </div>
+    
+    
 
 
 </details>
@@ -1033,16 +1053,6 @@ Bye Bye Synology, Hello Ubuntu #TL;DR #Synology has a great ecosystem, but one
   <figcaption>GitHub Flow</figcaption>
   
   </figure>
-<div class="mermaid" align="center">
-  
-flowchart LR
-    a(Windows client\n#8226; WSL\n#8226; Git \n#8226; SSH) -->|Push| c(GitHub)
-    b("Home server\n#8226; Ansible\n#8226; Docker\n#8226; Unbound DNS\n#8226; restic Backup") -->|Pull| c
-    style a text-align:left
-    style b text-align:left
-
-</div>
-
 
 
 <h3 class="relative group">Create a Repository On GitHub 
@@ -1868,6 +1878,31 @@ COPY --from=builder /usr/bin/caddy /usr/bin/caddy
     </summary>
     
     
+    
+    <div
+        class="py-1 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
+        Part 1: This Article
+    </div>
+    
+    
+    
+    <div
+        class="py-1 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
+        <a href="https://dominikbritz.com/posts/streamlined-nextcloud-with-openid-connect-authentication/">
+            Part 2: Streamlined Nextcloud With OpenID Connect Authentication
+        </a>
+    </div>
+    
+    
+    
+    <div
+        class="py-1 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
+        <a href="https://dominikbritz.com/posts/immich-self-hosted-photos-with-cloud-backup/">
+            Part 3: Immich: Self-Hosted Photo Gallery With Cloud Backup &amp; OpenID Connect
+        </a>
+    </div>
+    
+    
 
 
 </details>
@@ -2037,13 +2072,16 @@ COPY --from=builder /usr/bin/caddy /usr/bin/caddy
       
         
         
+          
+          
+        
       <script>
         var oid = "views_posts\\2024-01-22-laptop-home-server\\index.md"
         var oid_likes = "likes_posts\\2024-01-22-laptop-home-server\\index.md"
       </script>
       
       
-      <script type="text/javascript" src="/js/page.min.b06a29d42a4ed16787978e2eee1e8c797b7698db2bc14ccee78f5c80ac566fc996190a73ad80a5e987558474b20b96fa38f7d85b405f165ff72b7b163c5ad11b.js" integrity="sha512-sGop1CpO0WeHl44u7h6MeXt2mNsrwUzO549cgKxWb8mWGQpzrYCl6YdVhHSyC5b6OPfYW0BfFl/3K3sWPFrRGw=="></script>
+      <script type="text/javascript" src="/js/page.min.0860cf4e04fa2d72cc33ddba263083464d48f67de06114529043cb4623319efed4f484fd7f1730df5abea0e2da6f3538855634081d02f2d6e920b956f063e823.js" integrity="sha512-CGDPTgT6LXLMM926JjCDRk1I9n3gYRRSkEPLRiMxnv7U9IT9fxcw31q&#43;oOLabzU4hVY0CB0C8tbpILlW8GPoIw=="></script>
       
   
     </section>
@@ -2176,7 +2214,7 @@ COPY --from=builder /usr/bin/caddy /usr/bin/caddy
   </script>
   
   
-  <script type="text/javascript" src="/js/process.min.62060bb247f4de2b6dde45903668fefb68d792f365587605177b1227c0cf43588701edaca0cb40e2c8e2789bd5ce67c1d2a215b9fb258c3496a7cd25e7cb5fdf.js" integrity="sha512-YgYLskf03itt3kWQNmj&#43;&#43;2jXkvNlWHYFF3sSJ8DPQ1iHAe2soMtA4sjieJvVzmfB0qIVufsljDSWp80l58tf3w=="></script>
+  <script type="text/javascript" src="/js/process.min.ee03488f19c93c2efb199e2e3014ea5f3cb2ce7d45154adb3399a158cac27ca52831db249ede5bb602700ef87eb02434139de0858af1818ab0fb4182472204a4.js" integrity="sha512-7gNIjxnJPC77GZ4uMBTqXzyyzn1FFUrbM5mhWMrCfKUoMdsknt5btgJwDvh&#43;sCQ0E53ghYrxgYqw&#43;0GCRyIEpA=="></script>
   
   
 </footer>
