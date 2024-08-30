@@ -2,32 +2,32 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Powershell on DominikBritz.com</title>
-    <link>https://dominikbritz.com/tags/powershell/</link>
+    <link>http://localhost:1313/tags/powershell/</link>
     <description>Recent content in Powershell on DominikBritz.com</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Copyright © 2024</copyright>
-    <lastBuildDate>Thu, 07 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://dominikbritz.com/tags/powershell/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 07 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/powershell/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>PowerShell – Batch Convert URLs to PDF</title>
-      <link>https://dominikbritz.com/posts/2021-01-07-batch-convert-urls-to-pdf/</link>
+      <link>http://localhost:1313/posts/2021-01-07-batch-convert-urls-to-pdf/</link>
       <pubDate>Thu, 07 Jan 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://dominikbritz.com/posts/2021-01-07-batch-convert-urls-to-pdf/</guid>
+      <guid>http://localhost:1313/posts/2021-01-07-batch-convert-urls-to-pdf/</guid>
       <description>There are lots and lots of articles on the web describing how to save a whole webpage as PDF. They all use, more or less, the browser&amp;rsquo;s ability to print to PDF.
 I needed to convert many URLs at once. Doing that manually for every URL would have been cumbersome, and that&amp;rsquo;s why I automated the process.</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://dominikbritz.com/posts/2021-01-07-batch-convert-urls-to-pdf/featured.jpg" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/2021-01-07-batch-convert-urls-to-pdf/featured.jpg" />
     </item>
     
     <item>
       <title>Introducing vlDeploy - Deploy Applications With PowerShell Remotely</title>
-      <link>https://dominikbritz.com/posts/2020-03-17-introducing-vldeploy/</link>
+      <link>http://localhost:1313/posts/2020-03-17-introducing-vldeploy/</link>
       <pubDate>Tue, 17 Mar 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://dominikbritz.com/posts/2020-03-17-introducing-vldeploy/</guid>
+      <guid>http://localhost:1313/posts/2020-03-17-introducing-vldeploy/</guid>
       <description>Managing applications on Windows in enterprises is complex and cumbersome. Admins are using a variety of tools to install, uninstall or reconfigure applications silently. The most popular tool is propably Microsoft&amp;rsquo;s ConfigMgr.
 While ConfigMgr (and others) makes sense for mid to large enterprises, the management is too time-consuming for smaller firms.</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://dominikbritz.com/posts/2020-03-17-introducing-vldeploy/featured2.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/2020-03-17-introducing-vldeploy/featured2.png" />
     </item>
     
   </channel>

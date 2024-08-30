@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Euc on DominikBritz.com</title>
-    <link>https://dominikbritz.com/tags/euc/</link>
+    <link>http://localhost:1313/tags/euc/</link>
     <description>Recent content in Euc on DominikBritz.com</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Copyright © 2024</copyright>
-    <lastBuildDate>Tue, 17 Mar 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://dominikbritz.com/tags/euc/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 17 Mar 2020 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/euc/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Introducing vlDeploy - Deploy Applications With PowerShell Remotely</title>
-      <link>https://dominikbritz.com/posts/2020-03-17-introducing-vldeploy/</link>
+      <link>http://localhost:1313/posts/2020-03-17-introducing-vldeploy/</link>
       <pubDate>Tue, 17 Mar 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://dominikbritz.com/posts/2020-03-17-introducing-vldeploy/</guid>
+      <guid>http://localhost:1313/posts/2020-03-17-introducing-vldeploy/</guid>
       <description>Managing applications on Windows in enterprises is complex and cumbersome. Admins are using a variety of tools to install, uninstall or reconfigure applications silently. The most popular tool is propably Microsoft&amp;rsquo;s ConfigMgr.
 While ConfigMgr (and others) makes sense for mid to large enterprises, the management is too time-consuming for smaller firms.</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://dominikbritz.com/posts/2020-03-17-introducing-vldeploy/featured2.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/2020-03-17-introducing-vldeploy/featured2.png" />
     </item>
     
   </channel>

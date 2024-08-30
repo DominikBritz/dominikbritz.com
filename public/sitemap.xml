@@ -3,65 +3,65 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
   <url>
-    <loc>https://dominikbritz.com/</loc>
+    <loc>http://localhost:1313/</loc>
     <lastmod>2024-03-24T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://dominikbritz.com/posts/immich-self-hosted-photos-with-cloud-backup/</loc>
+    <loc>http://localhost:1313/posts/immich-self-hosted-photos-with-cloud-backup/</loc>
     <lastmod>2024-03-24T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://dominikbritz.com/posts/</loc>
+    <loc>http://localhost:1313/posts/</loc>
     <lastmod>2024-03-24T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://dominikbritz.com/posts/streamlined-nextcloud-with-openid-connect-authentication/</loc>
+    <loc>http://localhost:1313/posts/streamlined-nextcloud-with-openid-connect-authentication/</loc>
     <lastmod>2024-02-05T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://dominikbritz.com/posts/2024-01-22-laptop-home-server/</loc>
+    <loc>http://localhost:1313/posts/2024-01-22-laptop-home-server/</loc>
     <lastmod>2024-01-23T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://dominikbritz.com/posts/2021-01-07-batch-convert-urls-to-pdf/</loc>
+    <loc>http://localhost:1313/posts/2021-01-07-batch-convert-urls-to-pdf/</loc>
     <lastmod>2021-01-07T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://dominikbritz.com/posts/2020-11-02-using-lookups-as-token-input/</loc>
+    <loc>http://localhost:1313/posts/2020-11-02-using-lookups-as-token-input/</loc>
     <lastmod>2020-11-02T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://dominikbritz.com/posts/2020-03-17-introducing-vldeploy/</loc>
+    <loc>http://localhost:1313/posts/2020-03-17-introducing-vldeploy/</loc>
     <lastmod>2020-03-17T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://dominikbritz.com/cv/</loc>
+    <loc>http://localhost:1313/cv/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://dominikbritz.com/imprint/</loc>
+    <loc>http://localhost:1313/imprint/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://dominikbritz.com/privacypolicy/</loc>
+    <loc>http://localhost:1313/privacypolicy/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>

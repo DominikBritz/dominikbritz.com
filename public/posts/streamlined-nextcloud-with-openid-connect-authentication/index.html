@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr" class="scroll-smooth" data-default-appearance="dark"
-  data-auto-appearance="false"><head>
+  data-auto-appearance="false"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
   <meta charset="utf-8" />
   
   <meta http-equiv="content-language" content="en" />
@@ -15,7 +15,7 @@
   <meta name="keywords" content="home server, nextcloud, OpenID Connect, " />
   
   
-  <link rel="canonical" href="https://dominikbritz.com/posts/streamlined-nextcloud-with-openid-connect-authentication/" />
+  <link rel="canonical" href="http://localhost:1313/posts/streamlined-nextcloud-with-openid-connect-authentication/" />
   
   
   
@@ -28,8 +28,8 @@
   
   
   
-  <link type="text/css" rel="stylesheet" href="/css/main.bundle.min.27d7df8ddad6d1935972281c2eba4054c6c8712d732a1f94eb9b02bdbad4febac6d90bb6ef337d52b2cc9821b64c7a07e28c0dda17aa28701883e2c76a832959.css"
-    integrity="sha512-J9ffjdrW0ZNZcigcLrpAVMbIcS1zKh&#43;U65sCvbrU/rrG2Qu27zN9UrLMmCG2THoH4owN2heqKHAYg&#43;LHaoMpWQ==" />
+  <link type="text/css" rel="stylesheet" href="/css/main.bundle.min.1804da52cc3998ad845c24005799d681ab767dfc94844a3ef5df0e372435c79c79840acddf0f92a0dbc7f36f274c7da851c76dacb43084f6235d7b843ed31d2a.css"
+    integrity="sha512-GATaUsw5mK2EXCQAV5nWgat2ffyUhEo&#43;9d8ONyQ1x5x5hArN3w&#43;SoNvH828nTH2oUcdtrLQwhPYjXXuEPtMdKg==" />
   
   
   <script type="text/javascript" src="/js/appearance.min.516a16745bea5a9bd011138d254cc0fd3973cd55ce6e15f3dec763e7c7c2c7448f8fe7b54cca811cb821b0c7e12cd161caace1dd794ac3d34d40937cbcc9ee12.js"
@@ -46,8 +46,8 @@
   
   
   
-  <script defer type="text/javascript" id="script-bundle" src="/js/main.bundle.min.8b56b0fd46524eaecbfe33f576b8ba2cd2a122521a89f8229a95be0b635a7ac8e774eb1d8b8b93b32bbd677c3deb734aeea62917443f124d5bf5478859767380.js"
-    integrity="sha512-i1aw/UZSTq7L/jP1dri6LNKhIlIaifgimpW&#43;C2NaesjndOsdi4uTsyu9Z3w963NK7qYpF0Q/Ek1b9UeIWXZzgA==" data-copy="" data-copied=""></script>
+  <script defer type="text/javascript" id="script-bundle" src="/js/main.bundle.min.4760f110524572796446a87b7d1897938225a2419ef7fd0835903f575024d135a3e3d96ee5231c96107f7bce84c8f28fb880a064a7593abadfd3cb2dda11476d.js"
+    integrity="sha512-R2DxEFJFcnlkRqh7fRiXk4IlokGe9/0INZA/V1Ak0TWj49lu5SMclhB/e86EyPKPuICgZKdZOrrf08st2hFHbQ==" data-copy="" data-copied=""></script>
   
   
   
@@ -66,7 +66,7 @@
   
   
   
-  <meta property="og:url" content="https://dominikbritz.com/posts/streamlined-nextcloud-with-openid-connect-authentication/">
+  <meta property="og:url" content="http://localhost:1313/posts/streamlined-nextcloud-with-openid-connect-authentication/">
   <meta property="og:site_name" content="DominikBritz.com">
   <meta property="og:title" content="Streamlined Nextcloud With OpenID Connect Authentication">
   <meta property="og:description" content="This article explains how to set up a fast and efficient Nextcloud as file management tool with OpenID Connect to Authelia.
@@ -79,13 +79,13 @@ It is part of my series on creating a home server on an old laptop. I’m assumi
     <meta property="article:tag" content="Home Server">
     <meta property="article:tag" content="Nextcloud">
     <meta property="article:tag" content="OpenID Connect">
-    <meta property="og:image" content="https://dominikbritz.com/posts/streamlined-nextcloud-with-openid-connect-authentication/featured.jpg">
-      <meta property="og:see_also" content="https://dominikbritz.com/posts/immich-self-hosted-photos-with-cloud-backup/">
-      <meta property="og:see_also" content="https://dominikbritz.com/posts/2024-01-22-laptop-home-server/">
+    <meta property="og:image" content="http://localhost:1313/posts/streamlined-nextcloud-with-openid-connect-authentication/featured.jpg">
+      <meta property="og:see_also" content="http://localhost:1313/posts/immich-self-hosted-photos-with-cloud-backup/">
+      <meta property="og:see_also" content="http://localhost:1313/posts/2024-01-22-laptop-home-server/">
 
   
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="https://dominikbritz.com/posts/streamlined-nextcloud-with-openid-connect-authentication/featured.jpg">
+  <meta name="twitter:image" content="http://localhost:1313/posts/streamlined-nextcloud-with-openid-connect-authentication/featured.jpg">
   <meta name="twitter:title" content="Streamlined Nextcloud With OpenID Connect Authentication">
   <meta name="twitter:description" content="This article explains how to set up a fast and efficient Nextcloud as file management tool with OpenID Connect to Authelia.
 It is part of my series on creating a home server on an old laptop. I’m assuming that you’ve set up Docker, Caddy, and Authelia, as described in the first article of the series.">
@@ -101,7 +101,7 @@ It is part of my series on creating a home server on an old laptop. I’m assumi
     
     "abstract": "This article explains how to set up a fast and efficient Nextcloud as file management tool with OpenID Connect to Authelia.\nIt is part of my series on creating a home server on an old laptop. I\u0026rsquo;m assuming that you\u0026rsquo;ve set up Docker, Caddy, and Authelia, as described in the first article of the series.",
     "inLanguage": "en",
-    "url" : "https:\/\/dominikbritz.com\/posts\/streamlined-nextcloud-with-openid-connect-authentication\/",
+    "url" : "http:\/\/localhost:1313\/posts\/streamlined-nextcloud-with-openid-connect-authentication\/",
     "author" : {
       "@type": "Person",
       "name": "Dominik Britz"
@@ -546,7 +546,7 @@ It is part of my series on creating a home server on an old laptop. I’m assumi
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2024-02-05 00:00:00 &#43;0000 UTC">5 February 2024</time><span class="px-2 text-primary-500">&middot;</span><span>2287 words</span><span class="px-2 text-primary-500">&middot;</span>
+  <time datetime="2024-02-05T00:00:00&#43;00:00">5 February 2024</time><span class="px-2 text-primary-500">&middot;</span><span>2287 words</span><span class="px-2 text-primary-500">&middot;</span>
 
 
 <script type="text/javascript" src="/js/zen-mode.min.63c8a202661f4a2063fdc2706685d668e8ea3da613da2224e9da527e5876e4f53dcac39ab60732626fb4151feae5d430d0cf44731e5d3c726522fcc1519c1547.js" integrity="sha512-Y8iiAmYfSiBj/cJwZoXWaOjqPaYT2iIk6dpSflh25PU9ysOatgcyYm&#43;0FR/q5dQw0M9Ecx5dPHJlIvzBUZwVRw=="></script>
@@ -619,6 +619,7 @@ It is part of my series on creating a home server on an old laptop. I’m assumi
   
   
 </div>
+
 
 
 
@@ -886,7 +887,7 @@ It is part of my series on creating a home server on an old laptop. I’m assumi
     
     <div
         class="py-1 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
-        <a href="https://dominikbritz.com/posts/2024-01-22-laptop-home-server/">
+        <a href="http://localhost:1313/posts/2024-01-22-laptop-home-server/">
             Part 1: Laptop Home Server Build
         </a>
     </div>
@@ -902,7 +903,7 @@ It is part of my series on creating a home server on an old laptop. I’m assumi
     
     <div
         class="py-1 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
-        <a href="https://dominikbritz.com/posts/immich-self-hosted-photos-with-cloud-backup/">
+        <a href="http://localhost:1313/posts/immich-self-hosted-photos-with-cloud-backup/">
             Part 3: Immich: Self-Hosted Photo Gallery With Cloud Backup &amp; OpenID Connect
         </a>
     </div>
@@ -1698,7 +1699,7 @@ It is part of my series on creating a home server on an old laptop. I’m assumi
     
     <div
         class="py-1 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
-        <a href="https://dominikbritz.com/posts/2024-01-22-laptop-home-server/">
+        <a href="http://localhost:1313/posts/2024-01-22-laptop-home-server/">
             Part 1: Laptop Home Server Build
         </a>
     </div>
@@ -1714,7 +1715,7 @@ It is part of my series on creating a home server on an old laptop. I’m assumi
     
     <div
         class="py-1 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
-        <a href="https://dominikbritz.com/posts/immich-self-hosted-photos-with-cloud-backup/">
+        <a href="http://localhost:1313/posts/immich-self-hosted-photos-with-cloud-backup/">
             Part 3: Immich: Self-Hosted Photo Gallery With Cloud Backup &amp; OpenID Connect
         </a>
     </div>
@@ -1732,7 +1733,7 @@ It is part of my series on creating a home server on an old laptop. I’m assumi
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://dominikbritz.com/posts/streamlined-nextcloud-with-openid-connect-authentication/&amp;title=Streamlined%20Nextcloud%20With%20OpenID%20Connect%20Authentication"
+      href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http://localhost:1313/posts/streamlined-nextcloud-with-openid-connect-authentication/&amp;title=Streamlined%20Nextcloud%20With%20OpenID%20Connect%20Authentication"
       title="Share on LinkedIn"
       aria-label="Share on LinkedIn"
       >
@@ -1751,7 +1752,7 @@ It is part of my series on creating a home server on an old laptop. I’m assumi
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://twitter.com/intent/tweet/?url=https://dominikbritz.com/posts/streamlined-nextcloud-with-openid-connect-authentication/&amp;text=Streamlined%20Nextcloud%20With%20OpenID%20Connect%20Authentication"
+      href="https://twitter.com/intent/tweet/?url=http://localhost:1313/posts/streamlined-nextcloud-with-openid-connect-authentication/&amp;text=Streamlined%20Nextcloud%20With%20OpenID%20Connect%20Authentication"
       title="Tweet on Twitter"
       aria-label="Tweet on Twitter"
       >
@@ -1769,7 +1770,7 @@ It is part of my series on creating a home server on an old laptop. I’m assumi
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://reddit.com/submit/?url=https://dominikbritz.com/posts/streamlined-nextcloud-with-openid-connect-authentication/&amp;resubmit=true&amp;title=Streamlined%20Nextcloud%20With%20OpenID%20Connect%20Authentication"
+      href="https://reddit.com/submit/?url=http://localhost:1313/posts/streamlined-nextcloud-with-openid-connect-authentication/&amp;resubmit=true&amp;title=Streamlined%20Nextcloud%20With%20OpenID%20Connect%20Authentication"
       title="Submit to Reddit"
       aria-label="Submit to Reddit"
       >
@@ -1788,7 +1789,7 @@ It is part of my series on creating a home server on an old laptop. I’m assumi
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://pinterest.com/pin/create/bookmarklet/?url=https://dominikbritz.com/posts/streamlined-nextcloud-with-openid-connect-authentication/&amp;description=Streamlined%20Nextcloud%20With%20OpenID%20Connect%20Authentication"
+      href="https://pinterest.com/pin/create/bookmarklet/?url=http://localhost:1313/posts/streamlined-nextcloud-with-openid-connect-authentication/&amp;description=Streamlined%20Nextcloud%20With%20OpenID%20Connect%20Authentication"
       title="Pin on Pinterest"
       aria-label="Pin on Pinterest"
       >
@@ -1807,7 +1808,7 @@ It is part of my series on creating a home server on an old laptop. I’m assumi
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://www.facebook.com/sharer/sharer.php?u=https://dominikbritz.com/posts/streamlined-nextcloud-with-openid-connect-authentication/&amp;quote=Streamlined%20Nextcloud%20With%20OpenID%20Connect%20Authentication"
+      href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:1313/posts/streamlined-nextcloud-with-openid-connect-authentication/&amp;quote=Streamlined%20Nextcloud%20With%20OpenID%20Connect%20Authentication"
       title="Share on Facebook"
       aria-label="Share on Facebook"
       >
@@ -1826,7 +1827,7 @@ It is part of my series on creating a home server on an old laptop. I’m assumi
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="mailto:?body=https://dominikbritz.com/posts/streamlined-nextcloud-with-openid-connect-authentication/&amp;subject=Streamlined%20Nextcloud%20With%20OpenID%20Connect%20Authentication"
+      href="mailto:?body=http://localhost:1313/posts/streamlined-nextcloud-with-openid-connect-authentication/&amp;subject=Streamlined%20Nextcloud%20With%20OpenID%20Connect%20Authentication"
       title="Send via email"
       aria-label="Send via email"
       >
@@ -1845,7 +1846,7 @@ It is part of my series on creating a home server on an old laptop. I’m assumi
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://api.whatsapp.com/send?text=https://dominikbritz.com/posts/streamlined-nextcloud-with-openid-connect-authentication/&amp;resubmit=true&amp;title=Streamlined%20Nextcloud%20With%20OpenID%20Connect%20Authentication"
+      href="https://api.whatsapp.com/send?text=http://localhost:1313/posts/streamlined-nextcloud-with-openid-connect-authentication/&amp;resubmit=true&amp;title=Streamlined%20Nextcloud%20With%20OpenID%20Connect%20Authentication"
       title=""
       aria-label=""
       >
@@ -1864,7 +1865,7 @@ It is part of my series on creating a home server on an old laptop. I’m assumi
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://t.me/share/url?url=https://dominikbritz.com/posts/streamlined-nextcloud-with-openid-connect-authentication/&amp;resubmit=true&amp;title=Streamlined%20Nextcloud%20With%20OpenID%20Connect%20Authentication"
+      href="https://t.me/share/url?url=http://localhost:1313/posts/streamlined-nextcloud-with-openid-connect-authentication/&amp;resubmit=true&amp;title=Streamlined%20Nextcloud%20With%20OpenID%20Connect%20Authentication"
       title=""
       aria-label=""
       >
@@ -1930,7 +1931,7 @@ It is part of my series on creating a home server on an old laptop. I’m assumi
                 >
                 <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
                   
-                    <time datetime="2024-01-23 00:00:00 &#43;0000 UTC">23 January 2024</time>
+                    <time datetime="2024-01-23T00:00:00&#43;00:00">23 January 2024</time>
                   
                 </span>
               </span>
@@ -1947,7 +1948,7 @@ It is part of my series on creating a home server on an old laptop. I’m assumi
                 >
                 <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
                   
-                    <time datetime="2024-03-24 00:00:00 &#43;0000 UTC">24 March 2024</time>
+                    <time datetime="2024-03-24T00:00:00&#43;00:00">24 March 2024</time>
                   
                 </span>
               </span>
@@ -2038,7 +2039,7 @@ It is part of my series on creating a home server on an old laptop. I’m assumi
 <div
   id="search-wrapper"
   class="invisible fixed inset-0 flex h-screen w-screen cursor-default flex-col bg-neutral-500/50 p-4 backdrop-blur-sm dark:bg-neutral-900/50 sm:p-6 md:p-[10vh] lg:p-[12vh]"
-  data-url="https://dominikbritz.com/"
+  data-url="http://localhost:1313/"
   style="z-index:500"
 >
   <div

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr" class="scroll-smooth" data-default-appearance="dark"
-  data-auto-appearance="false"><head>
+  data-auto-appearance="false"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
   <meta charset="utf-8" />
   
   <meta http-equiv="content-language" content="en" />
@@ -15,7 +15,7 @@
   <meta name="keywords" content="splunk, " />
   
   
-  <link rel="canonical" href="https://dominikbritz.com/posts/2020-11-02-using-lookups-as-token-input/" />
+  <link rel="canonical" href="http://localhost:1313/posts/2020-11-02-using-lookups-as-token-input/" />
   
   
   
@@ -28,8 +28,8 @@
   
   
   
-  <link type="text/css" rel="stylesheet" href="/css/main.bundle.min.27d7df8ddad6d1935972281c2eba4054c6c8712d732a1f94eb9b02bdbad4febac6d90bb6ef337d52b2cc9821b64c7a07e28c0dda17aa28701883e2c76a832959.css"
-    integrity="sha512-J9ffjdrW0ZNZcigcLrpAVMbIcS1zKh&#43;U65sCvbrU/rrG2Qu27zN9UrLMmCG2THoH4owN2heqKHAYg&#43;LHaoMpWQ==" />
+  <link type="text/css" rel="stylesheet" href="/css/main.bundle.min.1804da52cc3998ad845c24005799d681ab767dfc94844a3ef5df0e372435c79c79840acddf0f92a0dbc7f36f274c7da851c76dacb43084f6235d7b843ed31d2a.css"
+    integrity="sha512-GATaUsw5mK2EXCQAV5nWgat2ffyUhEo&#43;9d8ONyQ1x5x5hArN3w&#43;SoNvH828nTH2oUcdtrLQwhPYjXXuEPtMdKg==" />
   
   
   <script type="text/javascript" src="/js/appearance.min.516a16745bea5a9bd011138d254cc0fd3973cd55ce6e15f3dec763e7c7c2c7448f8fe7b54cca811cb821b0c7e12cd161caace1dd794ac3d34d40937cbcc9ee12.js"
@@ -46,8 +46,8 @@
   
   
   
-  <script defer type="text/javascript" id="script-bundle" src="/js/main.bundle.min.8b56b0fd46524eaecbfe33f576b8ba2cd2a122521a89f8229a95be0b635a7ac8e774eb1d8b8b93b32bbd677c3deb734aeea62917443f124d5bf5478859767380.js"
-    integrity="sha512-i1aw/UZSTq7L/jP1dri6LNKhIlIaifgimpW&#43;C2NaesjndOsdi4uTsyu9Z3w963NK7qYpF0Q/Ek1b9UeIWXZzgA==" data-copy="" data-copied=""></script>
+  <script defer type="text/javascript" id="script-bundle" src="/js/main.bundle.min.4760f110524572796446a87b7d1897938225a2419ef7fd0835903f575024d135a3e3d96ee5231c96107f7bce84c8f28fb880a064a7593abadfd3cb2dda11476d.js"
+    integrity="sha512-R2DxEFJFcnlkRqh7fRiXk4IlokGe9/0INZA/V1Ak0TWj49lu5SMclhB/e86EyPKPuICgZKdZOrrf08st2hFHbQ==" data-copy="" data-copied=""></script>
   
   
   
@@ -66,7 +66,7 @@
   
   
   
-  <meta property="og:url" content="https://dominikbritz.com/posts/2020-11-02-using-lookups-as-token-input/">
+  <meta property="og:url" content="http://localhost:1313/posts/2020-11-02-using-lookups-as-token-input/">
   <meta property="og:site_name" content="DominikBritz.com">
   <meta property="og:title" content="Running Splunk Saved Searches Powered by Tokens From Lookups">
   <meta property="og:description" content="For a new feature in version 6.0 of uberAgent, we needed to run a few saved searches to do some calculations but let users modify input values.
@@ -78,11 +78,11 @@ Run saved searches to calculate experience scores for machines, user sessions, a
     <meta property="article:published_time" content="2020-11-02T00:00:00+00:00">
     <meta property="article:modified_time" content="2020-11-02T00:00:00+00:00">
     <meta property="article:tag" content="Splunk">
-    <meta property="og:image" content="https://dominikbritz.com/posts/2020-11-02-using-lookups-as-token-input/featured.jpg">
+    <meta property="og:image" content="http://localhost:1313/posts/2020-11-02-using-lookups-as-token-input/featured.jpg">
 
   
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="https://dominikbritz.com/posts/2020-11-02-using-lookups-as-token-input/featured.jpg">
+  <meta name="twitter:image" content="http://localhost:1313/posts/2020-11-02-using-lookups-as-token-input/featured.jpg">
   <meta name="twitter:title" content="Running Splunk Saved Searches Powered by Tokens From Lookups">
   <meta name="twitter:description" content="For a new feature in version 6.0 of uberAgent, we needed to run a few saved searches to do some calculations but let users modify input values.
 Our requirements in detail:
@@ -99,7 +99,7 @@ Run saved searches to calculate experience scores for machines, user sessions, a
     
     "abstract": "For a new feature in version 6.0 of uberAgent, we needed to run a few saved searches to do some calculations but let users modify input values.\nOur requirements in detail:\nRun saved searches to calculate experience scores for machines, user sessions, and applications Provide defaults for thresholds and weights but let users configure them.",
     "inLanguage": "en",
-    "url" : "https:\/\/dominikbritz.com\/posts\/2020-11-02-using-lookups-as-token-input\/",
+    "url" : "http:\/\/localhost:1313\/posts\/2020-11-02-using-lookups-as-token-input\/",
     "author" : {
       "@type": "Person",
       "name": "Dominik Britz"
@@ -544,7 +544,7 @@ Run saved searches to calculate experience scores for machines, user sessions, a
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2020-11-02 00:00:00 &#43;0000 UTC">2 November 2020</time><span class="px-2 text-primary-500">&middot;</span><span>614 words</span><span class="px-2 text-primary-500">&middot;</span>
+  <time datetime="2020-11-02T00:00:00&#43;00:00">2 November 2020</time><span class="px-2 text-primary-500">&middot;</span><span>614 words</span><span class="px-2 text-primary-500">&middot;</span>
 
 
 <script type="text/javascript" src="/js/zen-mode.min.63c8a202661f4a2063fdc2706685d668e8ea3da613da2224e9da527e5876e4f53dcac39ab60732626fb4151feae5d430d0cf44731e5d3c726522fcc1519c1547.js" integrity="sha512-Y8iiAmYfSiBj/cJwZoXWaOjqPaYT2iIk6dpSflh25PU9ysOatgcyYm&#43;0FR/q5dQw0M9Ecx5dPHJlIvzBUZwVRw=="></script>
@@ -601,6 +601,7 @@ Run saved searches to calculate experience scores for machines, user sessions, a
   
   
 </div>
+
 
 
 
@@ -930,7 +931,7 @@ AndAnotherOne,123
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://dominikbritz.com/posts/2020-11-02-using-lookups-as-token-input/&amp;title=Running%20Splunk%20Saved%20Searches%20Powered%20by%20Tokens%20From%20Lookups"
+      href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http://localhost:1313/posts/2020-11-02-using-lookups-as-token-input/&amp;title=Running%20Splunk%20Saved%20Searches%20Powered%20by%20Tokens%20From%20Lookups"
       title="Share on LinkedIn"
       aria-label="Share on LinkedIn"
       >
@@ -949,7 +950,7 @@ AndAnotherOne,123
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://twitter.com/intent/tweet/?url=https://dominikbritz.com/posts/2020-11-02-using-lookups-as-token-input/&amp;text=Running%20Splunk%20Saved%20Searches%20Powered%20by%20Tokens%20From%20Lookups"
+      href="https://twitter.com/intent/tweet/?url=http://localhost:1313/posts/2020-11-02-using-lookups-as-token-input/&amp;text=Running%20Splunk%20Saved%20Searches%20Powered%20by%20Tokens%20From%20Lookups"
       title="Tweet on Twitter"
       aria-label="Tweet on Twitter"
       >
@@ -967,7 +968,7 @@ AndAnotherOne,123
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://reddit.com/submit/?url=https://dominikbritz.com/posts/2020-11-02-using-lookups-as-token-input/&amp;resubmit=true&amp;title=Running%20Splunk%20Saved%20Searches%20Powered%20by%20Tokens%20From%20Lookups"
+      href="https://reddit.com/submit/?url=http://localhost:1313/posts/2020-11-02-using-lookups-as-token-input/&amp;resubmit=true&amp;title=Running%20Splunk%20Saved%20Searches%20Powered%20by%20Tokens%20From%20Lookups"
       title="Submit to Reddit"
       aria-label="Submit to Reddit"
       >
@@ -986,7 +987,7 @@ AndAnotherOne,123
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://pinterest.com/pin/create/bookmarklet/?url=https://dominikbritz.com/posts/2020-11-02-using-lookups-as-token-input/&amp;description=Running%20Splunk%20Saved%20Searches%20Powered%20by%20Tokens%20From%20Lookups"
+      href="https://pinterest.com/pin/create/bookmarklet/?url=http://localhost:1313/posts/2020-11-02-using-lookups-as-token-input/&amp;description=Running%20Splunk%20Saved%20Searches%20Powered%20by%20Tokens%20From%20Lookups"
       title="Pin on Pinterest"
       aria-label="Pin on Pinterest"
       >
@@ -1005,7 +1006,7 @@ AndAnotherOne,123
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://www.facebook.com/sharer/sharer.php?u=https://dominikbritz.com/posts/2020-11-02-using-lookups-as-token-input/&amp;quote=Running%20Splunk%20Saved%20Searches%20Powered%20by%20Tokens%20From%20Lookups"
+      href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:1313/posts/2020-11-02-using-lookups-as-token-input/&amp;quote=Running%20Splunk%20Saved%20Searches%20Powered%20by%20Tokens%20From%20Lookups"
       title="Share on Facebook"
       aria-label="Share on Facebook"
       >
@@ -1024,7 +1025,7 @@ AndAnotherOne,123
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="mailto:?body=https://dominikbritz.com/posts/2020-11-02-using-lookups-as-token-input/&amp;subject=Running%20Splunk%20Saved%20Searches%20Powered%20by%20Tokens%20From%20Lookups"
+      href="mailto:?body=http://localhost:1313/posts/2020-11-02-using-lookups-as-token-input/&amp;subject=Running%20Splunk%20Saved%20Searches%20Powered%20by%20Tokens%20From%20Lookups"
       title="Send via email"
       aria-label="Send via email"
       >
@@ -1043,7 +1044,7 @@ AndAnotherOne,123
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://api.whatsapp.com/send?text=https://dominikbritz.com/posts/2020-11-02-using-lookups-as-token-input/&amp;resubmit=true&amp;title=Running%20Splunk%20Saved%20Searches%20Powered%20by%20Tokens%20From%20Lookups"
+      href="https://api.whatsapp.com/send?text=http://localhost:1313/posts/2020-11-02-using-lookups-as-token-input/&amp;resubmit=true&amp;title=Running%20Splunk%20Saved%20Searches%20Powered%20by%20Tokens%20From%20Lookups"
       title=""
       aria-label=""
       >
@@ -1062,7 +1063,7 @@ AndAnotherOne,123
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://t.me/share/url?url=https://dominikbritz.com/posts/2020-11-02-using-lookups-as-token-input/&amp;resubmit=true&amp;title=Running%20Splunk%20Saved%20Searches%20Powered%20by%20Tokens%20From%20Lookups"
+      href="https://t.me/share/url?url=http://localhost:1313/posts/2020-11-02-using-lookups-as-token-input/&amp;resubmit=true&amp;title=Running%20Splunk%20Saved%20Searches%20Powered%20by%20Tokens%20From%20Lookups"
       title=""
       aria-label=""
       >
@@ -1128,7 +1129,7 @@ AndAnotherOne,123
                 >
                 <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
                   
-                    <time datetime="2020-03-17 00:00:00 &#43;0000 UTC">17 March 2020</time>
+                    <time datetime="2020-03-17T00:00:00&#43;00:00">17 March 2020</time>
                   
                 </span>
               </span>
@@ -1145,7 +1146,7 @@ AndAnotherOne,123
                 >
                 <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
                   
-                    <time datetime="2021-01-07 00:00:00 &#43;0000 UTC">7 January 2021</time>
+                    <time datetime="2021-01-07T00:00:00&#43;00:00">7 January 2021</time>
                   
                 </span>
               </span>
@@ -1236,7 +1237,7 @@ AndAnotherOne,123
 <div
   id="search-wrapper"
   class="invisible fixed inset-0 flex h-screen w-screen cursor-default flex-col bg-neutral-500/50 p-4 backdrop-blur-sm dark:bg-neutral-900/50 sm:p-6 md:p-[10vh] lg:p-[12vh]"
-  data-url="https://dominikbritz.com/"
+  data-url="http://localhost:1313/"
   style="z-index:500"
 >
   <div
