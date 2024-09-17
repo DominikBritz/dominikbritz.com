@@ -2,43 +2,43 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Home Server on DominikBritz.com</title>
-    <link>http://localhost:1313/series/home-server/</link>
+    <link>https://dominikbritz.com/series/home-server/</link>
     <description>Recent content in Home Server on DominikBritz.com</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Copyright © 2024</copyright>
-    <lastBuildDate>Sun, 24 Mar 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/series/home-server/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 24 Mar 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://dominikbritz.com/series/home-server/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Immich: Self-Hosted Photo Gallery With Cloud Backup &amp; OpenID Connect</title>
-      <link>http://localhost:1313/posts/immich-self-hosted-photos-with-cloud-backup/</link>
+      <link>https://dominikbritz.com/posts/immich-self-hosted-photos-with-cloud-backup/</link>
       <pubDate>Sun, 24 Mar 2024 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/immich-self-hosted-photos-with-cloud-backup/</guid>
+      <guid>https://dominikbritz.com/posts/immich-self-hosted-photos-with-cloud-backup/</guid>
       <description>This article explains how to set up a self-hosted photo gallery with Immich including cloud backup and OpenID Connect to Authelia.
 It is part of my series on creating a home server on an old laptop. I’m assuming that you’ve set up Docker, Caddy, and Authelia, as described in the first article of the series.</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/immich-self-hosted-photos-with-cloud-backup/featured.jpg" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://dominikbritz.com/posts/immich-self-hosted-photos-with-cloud-backup/featured.jpg" />
     </item>
     
     <item>
       <title>Streamlined Nextcloud With OpenID Connect Authentication</title>
-      <link>http://localhost:1313/posts/streamlined-nextcloud-with-openid-connect-authentication/</link>
+      <link>https://dominikbritz.com/posts/streamlined-nextcloud-with-openid-connect-authentication/</link>
       <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/streamlined-nextcloud-with-openid-connect-authentication/</guid>
+      <guid>https://dominikbritz.com/posts/streamlined-nextcloud-with-openid-connect-authentication/</guid>
       <description>This article explains how to set up a fast and efficient Nextcloud as file management tool with OpenID Connect to Authelia.
 It is part of my series on creating a home server on an old laptop. I&amp;rsquo;m assuming that you&amp;rsquo;ve set up Docker, Caddy, and Authelia, as described in the first article of the series.</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/streamlined-nextcloud-with-openid-connect-authentication/featured.jpg" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://dominikbritz.com/posts/streamlined-nextcloud-with-openid-connect-authentication/featured.jpg" />
     </item>
     
     <item>
       <title>Laptop Home Server Build</title>
-      <link>http://localhost:1313/posts/2024-01-22-laptop-home-server/</link>
+      <link>https://dominikbritz.com/posts/2024-01-22-laptop-home-server/</link>
       <pubDate>Tue, 23 Jan 2024 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/2024-01-22-laptop-home-server/</guid>
+      <guid>https://dominikbritz.com/posts/2024-01-22-laptop-home-server/</guid>
       <description>A guide to setting up an old laptop as your new home server, powered by Ubuntu, Ansible, and Docker. It securely hosts videos, files, and photos. Add HTTPS everywhere, cloud backup and performance monitoring.
 Bye Bye Synology, Hello Ubuntu #TL;DR #Synology has a great ecosystem, but one is locked in.</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/2024-01-22-laptop-home-server/featured.jpg" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://dominikbritz.com/posts/2024-01-22-laptop-home-server/featured.jpg" />
     </item>
     
   </channel>
