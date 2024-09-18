@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr" class="scroll-smooth" data-default-appearance="dark"
-  data-auto-appearance="false"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  data-auto-appearance="false"><head>
   <meta charset="utf-8" />
   
   <meta http-equiv="content-language" content="en" />
@@ -15,7 +15,7 @@
   <meta name="keywords" content="home server, remote access, mTLS, WireGuard, " />
   
   
-  <link rel="canonical" href="http://localhost:1313/posts/secure-remote-access/" />
+  <link rel="canonical" href="https://dominikbritz.com/posts/secure-remote-access/" />
   
   
   
@@ -66,7 +66,7 @@
   
   
   
-  <meta property="og:url" content="http://localhost:1313/posts/secure-remote-access/">
+  <meta property="og:url" content="https://dominikbritz.com/posts/secure-remote-access/">
   <meta property="og:site_name" content="DominikBritz.com">
   <meta property="og:title" content="Secure Remote Home Server Access With mTLS and WireGuard">
   <meta property="og:description" content="This article explains how to securely access your home server and its services with mTLS and WireGuard.
@@ -74,20 +74,20 @@ It is part of my series on creating a home server on an old laptop. I’m assumi
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
-    <meta property="article:published_time" content="2024-09-17T00:00:00+00:00">
-    <meta property="article:modified_time" content="2024-09-17T00:00:00+00:00">
+    <meta property="article:published_time" content="2024-09-18T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-09-18T00:00:00+00:00">
     <meta property="article:tag" content="Home Server">
     <meta property="article:tag" content="Remote Access">
     <meta property="article:tag" content="MTLS">
     <meta property="article:tag" content="WireGuard">
-    <meta property="og:image" content="http://localhost:1313/posts/secure-remote-access/featured.jpg">
-      <meta property="og:see_also" content="http://localhost:1313/posts/immich-self-hosted-photos-with-cloud-backup/">
-      <meta property="og:see_also" content="http://localhost:1313/posts/streamlined-nextcloud-with-openid-connect-authentication/">
-      <meta property="og:see_also" content="http://localhost:1313/posts/2024-01-22-laptop-home-server/">
+    <meta property="og:image" content="https://dominikbritz.com/posts/secure-remote-access/featured.jpg">
+      <meta property="og:see_also" content="https://dominikbritz.com/posts/immich-self-hosted-photos-with-cloud-backup/">
+      <meta property="og:see_also" content="https://dominikbritz.com/posts/streamlined-nextcloud-with-openid-connect-authentication/">
+      <meta property="og:see_also" content="https://dominikbritz.com/posts/2024-01-22-laptop-home-server/">
 
   
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="http://localhost:1313/posts/secure-remote-access/featured.jpg">
+  <meta name="twitter:image" content="https://dominikbritz.com/posts/secure-remote-access/featured.jpg">
   <meta name="twitter:title" content="Secure Remote Home Server Access With mTLS and WireGuard">
   <meta name="twitter:description" content="This article explains how to securely access your home server and its services with mTLS and WireGuard.
 It is part of my series on creating a home server on an old laptop. I’m assuming that you’ve set up Docker, Caddy, and Authelia, as described in the first article of the series.">
@@ -103,21 +103,21 @@ It is part of my series on creating a home server on an old laptop. I’m assumi
     
     "abstract": "This article explains how to securely access your home server and its services with mTLS and WireGuard.\nIt is part of my series on creating a home server on an old laptop. I’m assuming that you’ve set up Docker, Caddy, and Authelia, as described in the first article of the series.",
     "inLanguage": "en",
-    "url" : "http:\/\/localhost:1313\/posts\/secure-remote-access\/",
+    "url" : "https:\/\/dominikbritz.com\/posts\/secure-remote-access\/",
     "author" : {
       "@type": "Person",
       "name": "Dominik Britz"
     },
     "copyrightYear": "2024",
-    "dateCreated": "2024-09-17T00:00:00\u002b00:00",
-    "datePublished": "2024-09-17T00:00:00\u002b00:00",
+    "dateCreated": "2024-09-18T00:00:00\u002b00:00",
+    "datePublished": "2024-09-18T00:00:00\u002b00:00",
     
-    "dateModified": "2024-09-17T00:00:00\u002b00:00",
+    "dateModified": "2024-09-18T00:00:00\u002b00:00",
     
     "keywords": ["home server","remote access","mTLS","WireGuard"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "1362"
+    "wordCount": "1599"
   }]
   </script>
 
@@ -548,7 +548,7 @@ It is part of my series on creating a home server on an old laptop. I’m assumi
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2024-09-17T00:00:00&#43;00:00">17 September 2024</time><span class="px-2 text-primary-500">&middot;</span><span>1362 words</span><span class="px-2 text-primary-500">&middot;</span>
+  <time datetime="2024-09-18T00:00:00&#43;00:00">18 September 2024</time><span class="px-2 text-primary-500">&middot;</span><span>1599 words</span><span class="px-2 text-primary-500">&middot;</span>
 
 
 <script type="text/javascript" src="/js/zen-mode.min.63c8a202661f4a2063fdc2706685d668e8ea3da613da2224e9da527e5876e4f53dcac39ab60732626fb4151feae5d430d0cf44731e5d3c726522fcc1519c1547.js" integrity="sha512-Y8iiAmYfSiBj/cJwZoXWaOjqPaYT2iIk6dpSflh25PU9ysOatgcyYm&#43;0FR/q5dQw0M9Ecx5dPHJlIvzBUZwVRw=="></script>
@@ -573,12 +573,6 @@ It is part of my series on creating a home server on an old laptop. I’m assumi
   
 
   
-  
-  <span class="pl-2"><span class="flex" style="cursor: pointer;">
-  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Draft
-  </span>
-</span></span>
   
 </div>
 
@@ -693,8 +687,10 @@ It is part of my series on creating a home server on an old laptop. I’m assumi
         <li><a href="#wireguard-for-everything-else">WireGuard for Everything Else</a></li>
         <li><a href="#network-architecture">Network Architecture</a>
           <ul>
-            <li><a href="#adding-a-second-caddy-reverse-proxy">Adding a Second Caddy Reverse Proxy</a></li>
+            <li><a href="#internal-traffic">Internal Traffic</a></li>
+            <li><a href="#external-traffic-via-second-caddy-reverse-proxy">External Traffic Via Second Caddy Reverse Proxy</a></li>
             <li><a href="#firewall-changes">Firewall Changes</a></li>
+            <li><a href="#dns">DNS</a></li>
           </ul>
         </li>
         <li><a href="#caddy-pub-docker-container">caddy-pub Docker Container</a>
@@ -705,17 +701,17 @@ It is part of my series on creating a home server on an old laptop. I’m assumi
         </li>
         <li><a href="#create-a-certificate-authority">Create a Certificate Authority</a></li>
         <li><a href="#create-the-client-certificates">Create the Client Certificates</a></li>
+        <li><a href="#caddy-configuration">Caddy Configuration</a></li>
         <li><a href="#backup-the-certificates">Backup the Certificates</a></li>
         <li><a href="#client-certificate-installation">Client Certificate Installation</a></li>
         <li><a href="#android">Android</a>
           <ul>
             <li><a href="#nextcloud">Nextcloud</a></li>
             <li><a href="#immich">Immich</a></li>
+            <li><a href="#firefoxchrome">Firefox/Chrome</a></li>
           </ul>
         </li>
-        <li><a href="#android-firefox">Android Firefox</a></li>
         <li><a href="#windows">Windows</a></li>
-        <li><a href="#mtls-usage-verification-with-caddy">mTLS Usage Verification With Caddy</a></li>
       </ul>
     </li>
   </ul>
@@ -747,8 +743,10 @@ It is part of my series on creating a home server on an old laptop. I’m assumi
         <li><a href="#wireguard-for-everything-else">WireGuard for Everything Else</a></li>
         <li><a href="#network-architecture">Network Architecture</a>
           <ul>
-            <li><a href="#adding-a-second-caddy-reverse-proxy">Adding a Second Caddy Reverse Proxy</a></li>
+            <li><a href="#internal-traffic">Internal Traffic</a></li>
+            <li><a href="#external-traffic-via-second-caddy-reverse-proxy">External Traffic Via Second Caddy Reverse Proxy</a></li>
             <li><a href="#firewall-changes">Firewall Changes</a></li>
+            <li><a href="#dns">DNS</a></li>
           </ul>
         </li>
         <li><a href="#caddy-pub-docker-container">caddy-pub Docker Container</a>
@@ -759,17 +757,17 @@ It is part of my series on creating a home server on an old laptop. I’m assumi
         </li>
         <li><a href="#create-a-certificate-authority">Create a Certificate Authority</a></li>
         <li><a href="#create-the-client-certificates">Create the Client Certificates</a></li>
+        <li><a href="#caddy-configuration">Caddy Configuration</a></li>
         <li><a href="#backup-the-certificates">Backup the Certificates</a></li>
         <li><a href="#client-certificate-installation">Client Certificate Installation</a></li>
         <li><a href="#android">Android</a>
           <ul>
             <li><a href="#nextcloud">Nextcloud</a></li>
             <li><a href="#immich">Immich</a></li>
+            <li><a href="#firefoxchrome">Firefox/Chrome</a></li>
           </ul>
         </li>
-        <li><a href="#android-firefox">Android Firefox</a></li>
         <li><a href="#windows">Windows</a></li>
-        <li><a href="#mtls-usage-verification-with-caddy">mTLS Usage Verification With Caddy</a></li>
       </ul>
     </li>
   </ul>
@@ -863,7 +861,7 @@ It is part of my series on creating a home server on an old laptop. I’m assumi
     
     <div
         class="py-1 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
-        <a href="http://localhost:1313/posts/2024-01-22-laptop-home-server/">
+        <a href="https://dominikbritz.com/posts/2024-01-22-laptop-home-server/">
             Part 1: Laptop Home Server Build
         </a>
     </div>
@@ -872,7 +870,7 @@ It is part of my series on creating a home server on an old laptop. I’m assumi
     
     <div
         class="py-1 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
-        <a href="http://localhost:1313/posts/streamlined-nextcloud-with-openid-connect-authentication/">
+        <a href="https://dominikbritz.com/posts/streamlined-nextcloud-with-openid-connect-authentication/">
             Part 2: Streamlined Nextcloud With OpenID Connect Authentication
         </a>
     </div>
@@ -881,7 +879,7 @@ It is part of my series on creating a home server on an old laptop. I’m assumi
     
     <div
         class="py-1 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
-        <a href="http://localhost:1313/posts/immich-self-hosted-photos-with-cloud-backup/">
+        <a href="https://dominikbritz.com/posts/immich-self-hosted-photos-with-cloud-backup/">
             Part 3: Immich: Self-Hosted Photo Gallery With Cloud Backup &amp; OpenID Connect
         </a>
     </div>
@@ -916,7 +914,7 @@ It is part of my series on creating a home server on an old laptop. I’m assumi
     </span>        
     
 </h2>
-<p>When you expose your apps and services from your home server to the public Internet, you are immediately a target for exploits, malware, and so on and so forth. Hence it is generally not a good idea. If you can, avoid it.</p>
+<p>When you expose your apps and services from your home server to the public Internet, you are immediately a target for exploits, malware, and so on and so forth. Hence, it is generally not a good idea. If you can, avoid it.</p>
 <p>That is why the common strategy of self-hosters is to choose a VPN like WireGuard or OpenVPN to access their services. With a VPN, your accessing device becomes part of your local network and your services don&rsquo;t need to be exposed.</p>
 
 
@@ -960,8 +958,8 @@ It is part of my series on creating a home server on an old laptop. I’m assumi
 <p>This yields to the following benefits when used with a reverse proxy like Caddy:</p>
 <ul>
 <li>Attackers need a valid private key to authenticate to the reverse proxy. The private key is secured with a passphrase, too.</li>
-<li>The mTLS handshake happens before access to the web service is granted. Hence attackers can&rsquo;t use exploits or issues in web services as they can&rsquo;t see the web service in the first place.</li>
-<li>mTLS is transparent to the user. You install a certificate on the user&rsquo;s devices once and they can transparently use your services around the globe.</li>
+<li>The mTLS handshake happens before access to the web service is granted. Hence, attackers can&rsquo;t use exploits or issues in web services as they can&rsquo;t see the web service in the first place.</li>
+<li>mTLS is transparent to the user. You install a certificate on the user&rsquo;s devices once and, they can transparently use your services around the globe.</li>
 <li>No additional battery consumption.</li>
 </ul>
 
@@ -976,9 +974,10 @@ It is part of my series on creating a home server on an old laptop. I’m assumi
     </span>        
     
 </h3>
-<p>The only downside in comparison to a VPN is, that you expose your public IP. If that is a problem for you, a VPN is the only option. It&rsquo;s not a problem for me, though.</p>
+<p>If your ISP is putting you behind <a href="https://en.wikipedia.org/wiki/Carrier-grade_NAT" target="_blank">CGNAT</a>, mTLS does not work. You need a VPN then.</p>
+<p>With mTLS you expose your public IP. If that is a problem for you, a VPN is the only option. It&rsquo;s not a problem for me, though.</p>
 <p>A more serious constraint is, that mTLS is not well-known and that not all services or devices support it. Luckily, Immich and Nextcloud both support mTLS.</p>
-<p>You have to install a certificate on every device. For me, that means I have to install certificates on multiple laptops, Android, and iOS devices of my parents, wife, and so on. Unfortunately, Android Family Link does not support installing certificates. So it&rsquo;s really a manual step. Depending on the certificate validity, this task becomes tedious. Still the pros outweighed the cons for me.</p>
+<p>Also, you have to install a certificate on every device. For me, that means I have to install certificates on multiple laptops, Android, and iOS devices of my parents, wife, and so on. Unfortunately, Android Family Link does not support installing certificates. So it&rsquo;s really a manual step. Depending on the certificate validity, this task becomes tedious. Still the pros outweighed the cons for me.</p>
 
 
 <h2 class="relative group">WireGuard for Everything Else 
@@ -991,7 +990,7 @@ It is part of my series on creating a home server on an old laptop. I’m assumi
     </span>        
     
 </h2>
-<p>I&rsquo;m the sole user of the other services that are running on my home server and I&rsquo;m fine accessing them via WireGuard. My router, a FritzBox, can act as a WireGuard server out-of-the-box and that&rsquo;s what I&rsquo;m using.</p>
+<p>I&rsquo;m the sole user of the other services that are running on my home server and, I&rsquo;m fine accessing them via WireGuard. My router, a Fritz Box, can act as a WireGuard server out-of-the-box and that&rsquo;s what I&rsquo;m using.</p>
 <p>But, as soon as I get to know that mTLS is supported for one of these services, I&rsquo;ll make the switch as it is much more convenient.</p>
 
 
@@ -1005,7 +1004,7 @@ It is part of my series on creating a home server on an old laptop. I’m assumi
     </span>        
     
 </h2>
-<p>This section shows  the final network architecture for my home lab.</p>
+<p>This section shows the final network architecture for my home lab.</p>
 
 <figure>
         <img
@@ -1018,18 +1017,31 @@ It is part of my series on creating a home server on an old laptop. I’m assumi
   </figure>
 
 
-<h3 class="relative group">Adding a Second Caddy Reverse Proxy 
-    <div id="adding-a-second-caddy-reverse-proxy" class="anchor"></div>
+<h3 class="relative group">Internal Traffic 
+    <div id="internal-traffic" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#adding-a-second-caddy-reverse-proxy" aria-label="Anchor">#</a>
+            style="text-decoration-line: none !important;" href="#internal-traffic" aria-label="Anchor">#</a>
     </span>        
     
 </h3>
-<p>I added a second Caddy reverse proxy (caddy-pub) just for external services. This allows me to separate settings for external and internal services more easily. It also saves me from accidentally publishing services through my normal Caddy reverse proxy.</p>
-<p>The Caddy reverse proxy for my internal services listens on port 443. For the external services, I&rsquo;ve configured caddy-pub to listen on port 444 and configured forwarding from the public port 443 to caddy-pub on port 444.</p>
+<p>Services that are not exposed to the Internet can be accessed through the normal Caddy container that runs on port 443. That is also true for devices that are connected via WireGuard.</p>
+
+
+<h3 class="relative group">External Traffic Via Second Caddy Reverse Proxy 
+    <div id="external-traffic-via-second-caddy-reverse-proxy" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#external-traffic-via-second-caddy-reverse-proxy" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+<p>I added a second Caddy reverse proxy (<strong>caddy-pub</strong>) just for external services. This allows me to separate settings for external and internal services more easily. It also saves me from accidentally publishing services through my normal Caddy reverse proxy.</p>
+<p>For the external services, I&rsquo;ve set <strong>caddy-pub</strong> to listen on port 444 and configured forwarding from the public port 443 on my router to <strong>caddy-pub</strong> on port 444.</p>
 
 
 <h3 class="relative group">Firewall Changes 
@@ -1042,12 +1054,27 @@ It is part of my series on creating a home server on an old laptop. I’m assumi
     </span>        
     
 </h3>
-<p>Allow port 444 through your firewall. If you&rsquo;ve followed my series, add the following to the <code>home.yml</code> <a href="https://dominikbritz.com/posts/2024-01-22-laptop-home-server/#variables" target="_blank">variable file</a>.</p>
+<p>Allow port 444 through your firewall on your home server. If you&rsquo;ve followed my series, add the following to the <code>home.yml</code> <a href="https://dominikbritz.com/posts/2024-01-22-laptop-home-server/#variables" target="_blank">variable file</a>.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">ufw_rules</span><span class="p">:</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span>- <span class="nt">rule</span><span class="p">:</span><span class="w"> </span><span class="l">allow</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">to_port</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;444&#34;</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">protocol</span><span class="p">:</span><span class="w"> </span><span class="l">tcp</span><span class="w">
 </span></span></span></code></pre></div>
+
+<h3 class="relative group">DNS 
+    <div id="dns" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#dns" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+<p>To access your services from the Internet you need public DNS entries pointing to your public IP. But, the public IP assigned by your ISP changes. You need a dynamic DNS service to solve that problem. My Fritz Box router has this option built-in. If you don&rsquo;t have a Fritz Box, <a href="https://ipv64.net/" target="_blank">IPv64.net</a> is a service I can recommend.</p>
+<p>For every service you want to expose, add a CNAME entry pointing to the dynamic DNS address.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-txt" data-lang="txt"><span class="line"><span class="cl">CNAME nextcloud.home.dominikbritz.de -&gt; Your-DynDNS-String.myfritz.net
+</span></span></code></pre></div>
 
 <h2 class="relative group">caddy-pub Docker Container 
     <div id="caddy-pub-docker-container" class="anchor"></div>
@@ -1071,8 +1098,8 @@ It is part of my series on creating a home server on an old laptop. I’m assumi
     </span>        
     
 </h3>
-<p>As described in my Immich and Nextcloud articles, you would rather not run the caddy-pub container as root as it is exposed to the Internet.</p>
-<p>Create an Ansible role for caddy-pub to run with limited permissions <a href="https://dominikbritz.com/posts/streamlined-nextcloud-with-openid-connect-authentication/#preparation" target="_blank">like this</a>.</p>
+<p>As described in my Immich and Nextcloud articles, you would rather not run the <strong>caddy-pub</strong> container as root as it is exposed to the Internet.</p>
+<p>Create an Ansible role for <strong>caddy-pub</strong> to run with limited permissions <a href="https://dominikbritz.com/posts/streamlined-nextcloud-with-openid-connect-authentication/#preparation" target="_blank">like this</a>.</p>
 
 
 <h3 class="relative group">Compose File 
@@ -1124,9 +1151,9 @@ It is part of my series on creating a home server on an old laptop. I’m assumi
 </span></span></code></pre></div><p>Second, create some folders that hold your CA and client certificates. Make sure that it is the same path as in the compose file.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">mkdir -p /usr/local/data/certificates/ca
 </span></span><span class="line"><span class="cl">mkdir -p /usr/local/data/certificates/clients
-</span></span><span class="line"><span class="cl"><span class="nb">cd</span> /usr/local/data/certificates/ca
 </span></span></code></pre></div><p>Third, create the CA. Change the domain name accordingly.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">openssl req -x509 -newkey rsa:4096 -sha256 -days <span class="m">3650</span> <span class="se">\
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nb">cd</span> /usr/local/data/certificates/ca
+</span></span><span class="line"><span class="cl">openssl req -x509 -newkey rsa:4096 -sha256 -days <span class="m">3650</span> <span class="se">\
 </span></span></span><span class="line"><span class="cl"><span class="se"></span>  -nodes -keyout home.dominikbritz.de.key -out home.dominikbritz.de.crt -subj <span class="s2">&#34;/CN=home.dominikbritz.de&#34;</span> <span class="se">\
 </span></span></span><span class="line"><span class="cl"><span class="se"></span>  -addext <span class="s2">&#34;subjectAltName=DNS:home.dominikbritz.de,DNS:*.home.dominikbritz.de&#34;</span>
 </span></span></code></pre></div><p>Each of the above commands creates a certificate that is</p>
@@ -1153,17 +1180,60 @@ It is part of my series on creating a home server on an old laptop. I’m assumi
     </span>        
     
 </h2>
-<p>For each of your users or each of your devices, depending how complex you want to have it, run the following commands.</p>
+<p>For each of your users or each of your devices, depending on how complex you want to have it, run the following commands.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># Nice oneliner that only prompts for a passphrase</span>
 </span></span><span class="line"><span class="cl"><span class="c1"># Replace client1 and the CA accordingly</span>
 </span></span><span class="line"><span class="cl"><span class="c1"># -days lets you specify the certificate validity</span>
+</span></span><span class="line"><span class="cl"><span class="nb">cd</span> /usr/local/data/certificates/clients
 </span></span><span class="line"><span class="cl">openssl req -new -newkey rsa:4096 -keyout client1.key -subj <span class="s2">&#34;/C=DE/ST=State/L=Location/O=Organisation/CN=client1&#34;</span> <span class="p">|</span> openssl x509 -req -CA ../ca/home.dominikbritz.de.crt -CAkey ../ca/home.dominikbritz.de.key -CAcreateserial -out client1.crt -days <span class="m">3650</span>
 </span></span></code></pre></div><p>Android requires different hashes and ciphers. Run the below.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">certtool --load-privkey client1.key --load-certificate client1.crt <span class="se">\
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nb">cd</span> /usr/local/data/certificates/clients
+</span></span><span class="line"><span class="cl">certtool --load-privkey client1.key --load-certificate client1.crt <span class="se">\
 </span></span></span><span class="line"><span class="cl"><span class="se"></span>    --load-ca-certificate ../ca/home.dominikbritz.de.crt <span class="se">\
 </span></span></span><span class="line"><span class="cl"><span class="se"></span>    --to-p12 --outder --outfile client1-android.p12 <span class="se">\
 </span></span></span><span class="line"><span class="cl"><span class="se"></span>    --p12-name <span class="s2">&#34;client1-android&#34;</span> <span class="se">\
 </span></span></span><span class="line"><span class="cl"><span class="se"></span>    --hash SHA1 --pkcs-cipher 3des-pkcs12 --password YourPassword
+</span></span></code></pre></div>
+
+<h2 class="relative group">Caddy Configuration 
+    <div id="caddy-configuration" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#caddy-configuration" aria-label="Anchor">#</a>
+    </span>        
+    
+</h2>
+<p>Implementing mTLS with Caddy is a breeze. Add the following reusable block at the top of your <code>Caddyfile</code> (<a href="https://dominikbritz.com/posts/2024-01-22-laptop-home-server/#automatic-https-certificates-for-services-on-internal-home-network" target="_blank">details</a>).</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-txt" data-lang="txt"><span class="line"><span class="cl">(mTLS) {
+</span></span><span class="line"><span class="cl">client_auth {
+</span></span><span class="line"><span class="cl">            mode require_and_verify
+</span></span><span class="line"><span class="cl">            trusted_ca_cert_file /certificates/ca/home.dominikbritz.de.crt
+</span></span><span class="line"><span class="cl">        }
+</span></span><span class="line"><span class="cl">}
+</span></span></code></pre></div><p>Then import it for your services in the <code>tls</code> statement. Here is an example for Nextcloud (<a href="https://dominikbritz.com/posts/streamlined-nextcloud-with-openid-connect-authentication/#lets-encrypt-certificate-via-caddy" target="_blank">details</a>).</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-txt" data-lang="txt"><span class="line"><span class="cl">nextcloud.{$MY_DOMAIN} {
+</span></span><span class="line"><span class="cl">        reverse_proxy nextcloud:80
+</span></span><span class="line"><span class="cl">        redir /.well-known/carddav /remote.php/dav 301
+</span></span><span class="line"><span class="cl">        redir /.well-known/caldav /remote.php/dav 301
+</span></span><span class="line"><span class="cl">        redir /.well-known/webfinger /index.php/.well-known/webfinger
+</span></span><span class="line"><span class="cl">        redir /.well-known/nodeinfo /index.php/.well-known/nodeinfo
+</span></span><span class="line"><span class="cl">        tls {
+</span></span><span class="line"><span class="cl">            import mTLS
+</span></span><span class="line"><span class="cl">                dns netcup {
+</span></span><span class="line"><span class="cl">                        customer_number {env.NETCUP_CUSTOMER_NUMBER}
+</span></span><span class="line"><span class="cl">                        api_key {env.NETCUP_API_KEY}
+</span></span><span class="line"><span class="cl">                        api_password {env.NETCUP_API_PASSWORD}
+</span></span><span class="line"><span class="cl">                }
+</span></span><span class="line"><span class="cl">                propagation_timeout 900s
+</span></span><span class="line"><span class="cl">                propagation_delay 600s
+</span></span><span class="line"><span class="cl">                resolvers 1.1.1.1
+</span></span><span class="line"><span class="cl">        }
+</span></span><span class="line"><span class="cl">        import personal_headers
+</span></span><span class="line"><span class="cl">}
+</span></span></code></pre></div><p>Instruct <strong>caddy-pub</strong> to reload its configuration by running:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">docker <span class="nb">exec</span> -w /etc/caddy caddy-pub caddy reload
 </span></span></code></pre></div>
 
 <h2 class="relative group">Backup the Certificates 
@@ -1176,9 +1246,9 @@ It is part of my series on creating a home server on an old laptop. I’m assumi
     </span>        
     
 </h2>
-<p>Add the certificates to your backup. If you&rsquo;ve followed my series, add the following to <code>data/resticprofile/profiles.yml</code>.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="w">    </span><span class="nt">source</span><span class="p">:</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="s2">&#34;/usr/local/data/certificates&#34;</span><span class="w">
+<p>Add the certificates to your backup. If you&rsquo;ve followed my series, add the following to <code>data/resticprofile/profiles.yml</code> (<a href="https://dominikbritz.com/posts/2024-01-22-laptop-home-server/#restic-encrypted-offsite-backup-for-your-homeserver" target="_blank">details</a>).</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">source</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span>- <span class="s2">&#34;/usr/local/data/certificates&#34;</span><span class="w">
 </span></span></span></code></pre></div>
 
 <h2 class="relative group">Client Certificate Installation 
@@ -1235,21 +1305,21 @@ It is part of my series on creating a home server on an old laptop. I’m assumi
 </h3>
 <ul>
 <li>If you are already logged on, log off first.</li>
-<li>Go to <strong>Settings -&gt; Certificate -&gt; Import</strong> and import the <code>client1-android.p12</code> certificate.</li>
+<li>Go to <strong>Settings -&gt; Advanced -&gt; SSL Client Certificate -&gt; Import</strong> and import the <code>client1-android.p12</code> certificate.</li>
 <li>Log on again.</li>
 </ul>
 
 
-<h2 class="relative group">Android Firefox 
-    <div id="android-firefox" class="anchor"></div>
+<h3 class="relative group">Firefox/Chrome 
+    <div id="firefoxchrome" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#android-firefox" aria-label="Anchor">#</a>
+            style="text-decoration-line: none !important;" href="#firefoxchrome" aria-label="Anchor">#</a>
     </span>        
     
-</h2>
+</h3>
 <p>While there are articles on the Internet claiming that they can use Firefox on Android with mTLS, I was unable to do so. Chrome works fine with certificates in the system store, though.</p>
 <p>So if you have apps or services that you access through the browser only secured with mTLS, Chrome is your best bet on Android.</p>
 
@@ -1264,25 +1334,13 @@ It is part of my series on creating a home server on an old laptop. I’m assumi
     </span>        
     
 </h2>
+<p>Use PowerShell to import the certificates.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-powershell" data-lang="powershell"><span class="line"><span class="cl"><span class="c"># Import the server CA</span>
 </span></span><span class="line"><span class="cl"><span class="nb">Import-Certificate</span> <span class="n">-FilePath</span> <span class="s2">&#34;home.dominikbritz.de.crt&#34;</span> <span class="n">-CertStoreLocation</span> <span class="n">Cert</span><span class="err">:</span><span class="p">\</span><span class="n">LocalMachine</span><span class="p">\</span><span class="n">Root</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="c"># Import the client TLS certificate and key</span>
 </span></span><span class="line"><span class="cl"><span class="nb">Import-PfxCertificate</span> <span class="n">-FilePath</span> <span class="s2">&#34;client1.p12&#34;</span> <span class="n">-CertStoreLocation</span> <span class="n">Cert</span><span class="err">:</span><span class="p">\</span><span class="n">LocalMachine</span><span class="p">\</span><span class="n">My</span>
 </span></span></code></pre></div>
-
-<h2 class="relative group">mTLS Usage Verification With Caddy 
-    <div id="mtls-usage-verification-with-caddy" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#mtls-usage-verification-with-caddy" aria-label="Anchor">#</a>
-    </span>        
-    
-</h2>
-<p>TODO</p>
-
           
           
           
@@ -1302,7 +1360,7 @@ It is part of my series on creating a home server on an old laptop. I’m assumi
     
     <div
         class="py-1 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
-        <a href="http://localhost:1313/posts/2024-01-22-laptop-home-server/">
+        <a href="https://dominikbritz.com/posts/2024-01-22-laptop-home-server/">
             Part 1: Laptop Home Server Build
         </a>
     </div>
@@ -1311,7 +1369,7 @@ It is part of my series on creating a home server on an old laptop. I’m assumi
     
     <div
         class="py-1 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
-        <a href="http://localhost:1313/posts/streamlined-nextcloud-with-openid-connect-authentication/">
+        <a href="https://dominikbritz.com/posts/streamlined-nextcloud-with-openid-connect-authentication/">
             Part 2: Streamlined Nextcloud With OpenID Connect Authentication
         </a>
     </div>
@@ -1320,7 +1378,7 @@ It is part of my series on creating a home server on an old laptop. I’m assumi
     
     <div
         class="py-1 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
-        <a href="http://localhost:1313/posts/immich-self-hosted-photos-with-cloud-backup/">
+        <a href="https://dominikbritz.com/posts/immich-self-hosted-photos-with-cloud-backup/">
             Part 3: Immich: Self-Hosted Photo Gallery With Cloud Backup &amp; OpenID Connect
         </a>
     </div>
@@ -1345,7 +1403,7 @@ It is part of my series on creating a home server on an old laptop. I’m assumi
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http://localhost:1313/posts/secure-remote-access/&amp;title=Secure%20Remote%20Home%20Server%20Access%20With%20mTLS%20and%20WireGuard"
+      href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://dominikbritz.com/posts/secure-remote-access/&amp;title=Secure%20Remote%20Home%20Server%20Access%20With%20mTLS%20and%20WireGuard"
       title="Share on LinkedIn"
       aria-label="Share on LinkedIn"
       >
@@ -1364,7 +1422,7 @@ It is part of my series on creating a home server on an old laptop. I’m assumi
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://twitter.com/intent/tweet/?url=http://localhost:1313/posts/secure-remote-access/&amp;text=Secure%20Remote%20Home%20Server%20Access%20With%20mTLS%20and%20WireGuard"
+      href="https://twitter.com/intent/tweet/?url=https://dominikbritz.com/posts/secure-remote-access/&amp;text=Secure%20Remote%20Home%20Server%20Access%20With%20mTLS%20and%20WireGuard"
       title="Tweet on Twitter"
       aria-label="Tweet on Twitter"
       >
@@ -1382,7 +1440,7 @@ It is part of my series on creating a home server on an old laptop. I’m assumi
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://reddit.com/submit/?url=http://localhost:1313/posts/secure-remote-access/&amp;resubmit=true&amp;title=Secure%20Remote%20Home%20Server%20Access%20With%20mTLS%20and%20WireGuard"
+      href="https://reddit.com/submit/?url=https://dominikbritz.com/posts/secure-remote-access/&amp;resubmit=true&amp;title=Secure%20Remote%20Home%20Server%20Access%20With%20mTLS%20and%20WireGuard"
       title="Submit to Reddit"
       aria-label="Submit to Reddit"
       >
@@ -1401,7 +1459,7 @@ It is part of my series on creating a home server on an old laptop. I’m assumi
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://pinterest.com/pin/create/bookmarklet/?url=http://localhost:1313/posts/secure-remote-access/&amp;description=Secure%20Remote%20Home%20Server%20Access%20With%20mTLS%20and%20WireGuard"
+      href="https://pinterest.com/pin/create/bookmarklet/?url=https://dominikbritz.com/posts/secure-remote-access/&amp;description=Secure%20Remote%20Home%20Server%20Access%20With%20mTLS%20and%20WireGuard"
       title="Pin on Pinterest"
       aria-label="Pin on Pinterest"
       >
@@ -1420,7 +1478,7 @@ It is part of my series on creating a home server on an old laptop. I’m assumi
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:1313/posts/secure-remote-access/&amp;quote=Secure%20Remote%20Home%20Server%20Access%20With%20mTLS%20and%20WireGuard"
+      href="https://www.facebook.com/sharer/sharer.php?u=https://dominikbritz.com/posts/secure-remote-access/&amp;quote=Secure%20Remote%20Home%20Server%20Access%20With%20mTLS%20and%20WireGuard"
       title="Share on Facebook"
       aria-label="Share on Facebook"
       >
@@ -1439,7 +1497,7 @@ It is part of my series on creating a home server on an old laptop. I’m assumi
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="mailto:?body=http://localhost:1313/posts/secure-remote-access/&amp;subject=Secure%20Remote%20Home%20Server%20Access%20With%20mTLS%20and%20WireGuard"
+      href="mailto:?body=https://dominikbritz.com/posts/secure-remote-access/&amp;subject=Secure%20Remote%20Home%20Server%20Access%20With%20mTLS%20and%20WireGuard"
       title="Send via email"
       aria-label="Send via email"
       >
@@ -1458,7 +1516,7 @@ It is part of my series on creating a home server on an old laptop. I’m assumi
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://api.whatsapp.com/send?text=http://localhost:1313/posts/secure-remote-access/&amp;resubmit=true&amp;title=Secure%20Remote%20Home%20Server%20Access%20With%20mTLS%20and%20WireGuard"
+      href="https://api.whatsapp.com/send?text=https://dominikbritz.com/posts/secure-remote-access/&amp;resubmit=true&amp;title=Secure%20Remote%20Home%20Server%20Access%20With%20mTLS%20and%20WireGuard"
       title=""
       aria-label=""
       >
@@ -1477,7 +1535,7 @@ It is part of my series on creating a home server on an old laptop. I’m assumi
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://t.me/share/url?url=http://localhost:1313/posts/secure-remote-access/&amp;resubmit=true&amp;title=Secure%20Remote%20Home%20Server%20Access%20With%20mTLS%20and%20WireGuard"
+      href="https://t.me/share/url?url=https://dominikbritz.com/posts/secure-remote-access/&amp;resubmit=true&amp;title=Secure%20Remote%20Home%20Server%20Access%20With%20mTLS%20and%20WireGuard"
       title=""
       aria-label=""
       >
@@ -1629,7 +1687,7 @@ It is part of my series on creating a home server on an old laptop. I’m assumi
 <div
   id="search-wrapper"
   class="invisible fixed inset-0 flex h-screen w-screen cursor-default flex-col bg-neutral-500/50 p-4 backdrop-blur-sm dark:bg-neutral-900/50 sm:p-6 md:p-[10vh] lg:p-[12vh]"
-  data-url="http://localhost:1313/"
+  data-url="https://dominikbritz.com/"
   style="z-index:500"
 >
   <div
