@@ -116,7 +116,7 @@ It is part of my series on creating a home server on an old laptop. I’m assumi
     "keywords": ["home server","immich","OpenID Connect"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "2253"
+    "wordCount": "2297"
   }]
   </script>
 
@@ -547,7 +547,7 @@ It is part of my series on creating a home server on an old laptop. I’m assumi
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2024-03-24T00:00:00&#43;00:00">24 March 2024</time><span class="px-2 text-primary-500">&middot;</span><span>2253 words</span><span class="px-2 text-primary-500">&middot;</span>
+  <time datetime="2024-03-24T00:00:00&#43;00:00">24 March 2024</time><span class="px-2 text-primary-500">&middot;</span><span>2297 words</span><span class="px-2 text-primary-500">&middot;</span>
 
 
 <script type="text/javascript" src="/js/zen-mode.min.63c8a202661f4a2063fdc2706685d668e8ea3da613da2224e9da527e5876e4f53dcac39ab60732626fb4151feae5d430d0cf44731e5d3c726522fcc1519c1547.js" integrity="sha512-Y8iiAmYfSiBj/cJwZoXWaOjqPaYT2iIk6dpSflh25PU9ysOatgcyYm&#43;0FR/q5dQw0M9Ecx5dPHJlIvzBUZwVRw=="></script>
@@ -711,6 +711,11 @@ It is part of my series on creating a home server on an old laptop. I’m assumi
             <li><a href="#file-system">File System</a></li>
           </ul>
         </li>
+        <li><a href="#changelog">Changelog</a>
+          <ul>
+            <li><a href="#2024-11-07">2024-11-07</a></li>
+          </ul>
+        </li>
       </ul>
     </li>
   </ul>
@@ -773,6 +778,11 @@ It is part of my series on creating a home server on an old laptop. I’m assumi
           <ul>
             <li><a href="#database">Database</a></li>
             <li><a href="#file-system">File System</a></li>
+          </ul>
+        </li>
+        <li><a href="#changelog">Changelog</a>
+          <ul>
+            <li><a href="#2024-11-07">2024-11-07</a></li>
           </ul>
         </li>
       </ul>
@@ -1552,9 +1562,41 @@ It is part of my series on creating a home server on an old laptop. I’m assumi
     </span>        
     
 </h3>
+
+  
+
+
+
+<div
+  
+    class="flex px-4 py-3 rounded-md bg-primary-100 dark:bg-primary-900"
+  >
+
+  <span
+    
+      class="text-primary-400 ltr:pr-3 rtl:pl-3 flex items-center"
+    >
+
+    
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 0C114.6 0 0 114.6 0 256s114.6 256 256 256s256-114.6 256-256S397.4 0 256 0zM256 128c17.67 0 32 14.33 32 32c0 17.67-14.33 32-32 32S224 177.7 224 160C224 142.3 238.3 128 256 128zM296 384h-80C202.8 384 192 373.3 192 360s10.75-24 24-24h16v-64H224c-13.25 0-24-10.75-24-24S210.8 224 224 224h32c13.25 0 24 10.75 24 24v88h16c13.25 0 24 10.75 24 24S309.3 384 296 384z"/></svg>
+
+  </span>
+
+
+  </span>
+
+  <span
+    
+      class="dark:text-neutral-300"
+    >Immich added automatic database backups with version <a href="https://github.com/immich-app/immich/releases/tag/v1.120.0" target="_blank">1.120</a>, which are enabled by default.
+I prefer my own backups and disabled the setting in <code>Administration &gt; Settings &gt; Backup Settings</code>.</span>
+</div>
+
 <p>Add the <code>pg_dumpall</code> command to the <code>run-before</code> section of your resticprofile configuration in <code>/usr/local/data/resticprofile/profiles.yaml</code>.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">run-before</span><span class="p">:</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">  </span>- <span class="s2">&#34;docker exec -t immich_postgres pg_dumpall -c -U postgres | gzip &gt; /usr/local/data/docker/immich/db_dump.sql.gz&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span>- <span class="s2">&#34;docker exec -t immich_postgres pg_dumpall --clean --if-exists --username=postgres | gzip &gt; /usr/local/data/docker/immich/db_dump.sql.gz&#34;</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span>- <span class="s2">&#34;systemctl stop docker.socket&#34;</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span>- <span class="s2">&#34;systemctl stop docker&#34;</span><span class="w">
 </span></span></span></code></pre></div><p>Verify that the Docker folder is part of the <code>source</code> section.</p>
@@ -1590,6 +1632,33 @@ It is part of my series on creating a home server on an old laptop. I’m assumi
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span>- <span class="s2">&#34;/media/18TB/photos/from_synology&#34;</span><span class="w"> 
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span>- <span class="s2">&#34;/etc/unbound/unbound.conf&#34;</span><span class="w">
 </span></span></span></code></pre></div>
+
+<h2 class="relative group">Changelog 
+    <div id="changelog" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#changelog" aria-label="Anchor">#</a>
+    </span>        
+    
+</h2>
+
+
+<h3 class="relative group">2024-11-07 
+    <div id="2024-11-07" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#2024-11-07" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+<ul>
+<li>Added a note about automatic database backups to the database section.</li>
+</ul>
+
           
           
           
