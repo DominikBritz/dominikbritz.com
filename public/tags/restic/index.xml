@@ -1,24 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Docker on DominikBritz.com</title>
-    <link>https://dominikbritz.com/tags/docker/</link>
-    <description>Recent content in Docker on DominikBritz.com</description>
+    <title>Restic on DominikBritz.com</title>
+    <link>https://dominikbritz.com/tags/restic/</link>
+    <description>Recent content in Restic on DominikBritz.com</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Copyright © 2025</copyright>
-    <lastBuildDate>Sat, 18 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://dominikbritz.com/tags/docker/index.xml" rel="self" type="application/rss+xml" />
-    
-    <item>
-      <title>Docker Monitoring With Grafana and Victoria Metrics</title>
-      <link>https://dominikbritz.com/posts/victoria-metrics-grafana/</link>
-      <pubDate>Sat, 18 Jan 2025 00:00:00 +0000</pubDate>
-      
-      <guid>https://dominikbritz.com/posts/victoria-metrics-grafana/</guid>
-      <description>&lt;p&gt;This article describes how to monitor Docker containers and host performance as well as Docker logs with VictoriaMetrics, VictoriaLogs and Grafana.&lt;/p&gt;
-&lt;p&gt;It is part of my series on creating a home server on an old laptop. I’m assuming that you’ve set up Docker, Caddy, and Dockge, as described in the first article of the series.&lt;/p&gt;</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://dominikbritz.com/posts/victoria-metrics-grafana/featured.jpg" />
-    </item>
+    <lastBuildDate>Tue, 23 Jan 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://dominikbritz.com/tags/restic/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Laptop Home Server Build</title>
