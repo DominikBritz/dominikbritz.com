@@ -10,7 +10,7 @@
     <lastBuildDate>Sat, 18 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://dominikbritz.com/tags/cadvisor/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>Docker Monitoring With Grafana and VictoriaMetrics</title>
+      <title>Docker Monitoring With Grafana and Victoria Metrics</title>
       <link>https://dominikbritz.com/posts/victoria-metrics-grafana/</link>
       <pubDate>Sat, 18 Jan 2025 00:00:00 +0000</pubDate>
       
