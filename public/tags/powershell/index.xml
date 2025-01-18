@@ -6,16 +6,17 @@
     <description>Recent content in Powershell on DominikBritz.com</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <copyright>Copyright © 2024</copyright>
+    <copyright>Copyright © 2025</copyright>
     <lastBuildDate>Thu, 07 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://dominikbritz.com/tags/powershell/index.xml" rel="self" type="application/rss+xml" />
+    
     <item>
       <title>PowerShell – Batch Convert URLs to PDF</title>
       <link>https://dominikbritz.com/posts/2021-01-07-batch-convert-urls-to-pdf/</link>
       <pubDate>Thu, 07 Jan 2021 00:00:00 +0000</pubDate>
       
       <guid>https://dominikbritz.com/posts/2021-01-07-batch-convert-urls-to-pdf/</guid>
-      <description>There are lots and lots of articles on the web describing how to save a whole webpage as PDF. They all use, more or less, the browser&amp;rsquo;s ability to print to PDF.
-I needed to convert many URLs at once. Doing that manually for every URL would have been cumbersome, and that&amp;rsquo;s why I automated the process.</description>
+      <description>&lt;p&gt;There are lots and lots of articles on the web describing how to save a whole webpage as PDF. They all use, more or less, the browser&amp;rsquo;s ability to print to PDF.&lt;/p&gt;
+&lt;p&gt;I needed to convert many URLs at once. Doing that manually for every URL would have been cumbersome, and that&amp;rsquo;s why I automated the process.&lt;/p&gt;</description>
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://dominikbritz.com/posts/2021-01-07-batch-convert-urls-to-pdf/featured.jpg" />
     </item>
     
@@ -25,8 +26,8 @@ I needed to convert many URLs at once. Doing that manually for every URL would h
       <pubDate>Tue, 17 Mar 2020 00:00:00 +0000</pubDate>
       
       <guid>https://dominikbritz.com/posts/2020-03-17-introducing-vldeploy/</guid>
-      <description>Managing applications on Windows in enterprises is complex and cumbersome. Admins are using a variety of tools to install, uninstall or reconfigure applications silently. The most popular tool is propably Microsoft&amp;rsquo;s ConfigMgr.
-While ConfigMgr (and others) makes sense for mid to large enterprises, the management is too time-consuming for smaller firms.</description>
+      <description>&lt;p&gt;Managing applications on Windows in enterprises is complex and cumbersome. Admins are using a variety of tools to install, uninstall or reconfigure applications silently. The most popular tool is propably Microsoft&amp;rsquo;s ConfigMgr.&lt;/p&gt;
+&lt;p&gt;While ConfigMgr (and others) makes sense for mid to large enterprises, the management is too time-consuming for smaller firms. I work in such a smaller firm. We have a lab to test our own applications &lt;a href=&#34;https://uberagent.com&#34; target=&#34;_blank&#34;&gt;uberAgent&lt;/a&gt; on several operating systems. These lab machines don&amp;rsquo;t only run uberAgent, of course, they also run standard applications like text editors, browsers, and more complex things.&lt;/p&gt;</description>
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://dominikbritz.com/posts/2020-03-17-introducing-vldeploy/featured2.png" />
     </item>
     

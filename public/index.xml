@@ -6,16 +6,28 @@
     <description>Recent content on DominikBritz.com</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <copyright>Copyright © 2024</copyright>
-    <lastBuildDate>Wed, 18 Sep 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://dominikbritz.com/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>Copyright © 2025</copyright>
+    <lastBuildDate>Sat, 18 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://dominikbritz.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Docker Monitoring With Grafana and VictoriaMetrics</title>
+      <link>https://dominikbritz.com/posts/victoria-metrics-grafana/</link>
+      <pubDate>Sat, 18 Jan 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://dominikbritz.com/posts/victoria-metrics-grafana/</guid>
+      <description>&lt;p&gt;This article describes how to monitor Docker containers and host performance as well as Docker logs with VictoriaMetrics, VictoriaLogs and Grafana.&lt;/p&gt;
+&lt;p&gt;It is part of my series on creating a home server on an old laptop. I’m assuming that you’ve set up Docker, Caddy, and Dockge, as described in the first article of the series.&lt;/p&gt;</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://dominikbritz.com/posts/victoria-metrics-grafana/featured.jpg" />
+    </item>
+    
     <item>
       <title>Secure Remote Home Server Access With mTLS and WireGuard</title>
       <link>https://dominikbritz.com/posts/secure-remote-access/</link>
       <pubDate>Wed, 18 Sep 2024 00:00:00 +0000</pubDate>
       
       <guid>https://dominikbritz.com/posts/secure-remote-access/</guid>
-      <description>This article explains how to securely access your home server and its services with mTLS and WireGuard.
-It is part of my series on creating a home server on an old laptop. I’m assuming that you’ve set up Docker, Caddy, and Authelia, as described in the first article of the series.</description>
+      <description>&lt;p&gt;This article explains how to securely access your home server and its services with mTLS and WireGuard.&lt;/p&gt;
+&lt;p&gt;It is part of my series on creating a home server on an old laptop. I’m assuming that you’ve set up Docker, Caddy, and Authelia, as described in the first article of the series.&lt;/p&gt;</description>
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://dominikbritz.com/posts/secure-remote-access/featured.jpg" />
     </item>
     
@@ -25,8 +37,8 @@ It is part of my series on creating a home server on an old laptop. I’m assumi
       <pubDate>Sun, 24 Mar 2024 00:00:00 +0000</pubDate>
       
       <guid>https://dominikbritz.com/posts/immich-self-hosted-photos-with-cloud-backup/</guid>
-      <description>This article explains how to set up a self-hosted photo gallery with Immich including cloud backup and OpenID Connect to Authelia.
-It is part of my series on creating a home server on an old laptop. I’m assuming that you’ve set up Docker, Caddy, and Authelia, as described in the first article of the series.</description>
+      <description>&lt;p&gt;This article explains how to set up a self-hosted photo gallery with Immich including cloud backup and OpenID Connect to Authelia.&lt;/p&gt;
+&lt;p&gt;It is part of my series on creating a home server on an old laptop. I’m assuming that you’ve set up Docker, Caddy, and Authelia, as described in the &lt;a href=&#34;https://dominikbritz.com/posts/2024-01-22-laptop-home-server/&#34; target=&#34;_blank&#34;&gt;first article of the series&lt;/a&gt;.&lt;/p&gt;</description>
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://dominikbritz.com/posts/immich-self-hosted-photos-with-cloud-backup/featured.jpg" />
     </item>
     
@@ -36,8 +48,8 @@ It is part of my series on creating a home server on an old laptop. I’m assumi
       <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
       
       <guid>https://dominikbritz.com/posts/streamlined-nextcloud-with-openid-connect-authentication/</guid>
-      <description>This article explains how to set up a fast and efficient Nextcloud as file management tool with OpenID Connect to Authelia.
-It is part of my series on creating a home server on an old laptop. I&amp;rsquo;m assuming that you&amp;rsquo;ve set up Docker, Caddy, and Authelia, as described in the first article of the series.</description>
+      <description>&lt;p&gt;This article explains how to set up a fast and efficient Nextcloud as file management tool with OpenID Connect to Authelia.&lt;/p&gt;
+&lt;p&gt;It is part of my series on creating a home server on an old laptop. I&amp;rsquo;m assuming that you&amp;rsquo;ve set up Docker, Caddy, and Authelia, as described in the &lt;a href=&#34;https://dominikbritz.com/posts/2024-01-22-laptop-home-server/&#34; target=&#34;_blank&#34;&gt;first article of the series&lt;/a&gt;.&lt;/p&gt;</description>
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://dominikbritz.com/posts/streamlined-nextcloud-with-openid-connect-authentication/featured.jpg" />
     </item>
     
@@ -47,8 +59,32 @@ It is part of my series on creating a home server on an old laptop. I&amp;rsquo;
       <pubDate>Tue, 23 Jan 2024 00:00:00 +0000</pubDate>
       
       <guid>https://dominikbritz.com/posts/2024-01-22-laptop-home-server/</guid>
-      <description>A guide to setting up an old laptop as your new home server, powered by Ubuntu, Ansible, and Docker. It securely hosts videos, files, and photos. Add HTTPS everywhere, cloud backup and performance monitoring.
-Bye Bye Synology, Hello Ubuntu #TL;DR #Synology has a great ecosystem, but one is locked in.</description>
+      <description>&lt;p&gt;A guide to setting up an old laptop as your new home server, powered by Ubuntu, Ansible, and Docker. It securely hosts videos, files, and photos. Add HTTPS everywhere, cloud backup and performance monitoring.&lt;/p&gt;
+
+
+&lt;h2 class=&#34;relative group&#34;&gt;Bye Bye Synology, Hello Ubuntu 
+    &lt;div id=&#34;bye-bye-synology-hello-ubuntu&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
+    
+    &lt;span
+        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100&#34;&gt;
+        &lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34;
+            style=&#34;text-decoration-line: none !important;&#34; href=&#34;#bye-bye-synology-hello-ubuntu&#34; aria-label=&#34;Anchor&#34;&gt;#&lt;/a&gt;
+    &lt;/span&gt;        
+    
+&lt;/h2&gt;
+
+
+&lt;h3 class=&#34;relative group&#34;&gt;TL;DR 
+    &lt;div id=&#34;tldr&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
+    
+    &lt;span
+        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100&#34;&gt;
+        &lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34;
+            style=&#34;text-decoration-line: none !important;&#34; href=&#34;#tldr&#34; aria-label=&#34;Anchor&#34;&gt;#&lt;/a&gt;
+    &lt;/span&gt;        
+    
+&lt;/h3&gt;
+&lt;p&gt;Synology has a great ecosystem, but one is locked in. I&amp;rsquo;m using Ubuntu LTS server now, as it gives full control and is focused on stability. I chose it over Proxmox for simplicity, as I don&amp;rsquo;t need virtual machines.&lt;/p&gt;</description>
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://dominikbritz.com/posts/2024-01-22-laptop-home-server/featured.jpg" />
     </item>
     
@@ -58,8 +94,8 @@ Bye Bye Synology, Hello Ubuntu #TL;DR #Synology has a great ecosystem, but one
       <pubDate>Thu, 07 Jan 2021 00:00:00 +0000</pubDate>
       
       <guid>https://dominikbritz.com/posts/2021-01-07-batch-convert-urls-to-pdf/</guid>
-      <description>There are lots and lots of articles on the web describing how to save a whole webpage as PDF. They all use, more or less, the browser&amp;rsquo;s ability to print to PDF.
-I needed to convert many URLs at once. Doing that manually for every URL would have been cumbersome, and that&amp;rsquo;s why I automated the process.</description>
+      <description>&lt;p&gt;There are lots and lots of articles on the web describing how to save a whole webpage as PDF. They all use, more or less, the browser&amp;rsquo;s ability to print to PDF.&lt;/p&gt;
+&lt;p&gt;I needed to convert many URLs at once. Doing that manually for every URL would have been cumbersome, and that&amp;rsquo;s why I automated the process.&lt;/p&gt;</description>
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://dominikbritz.com/posts/2021-01-07-batch-convert-urls-to-pdf/featured.jpg" />
     </item>
     
@@ -69,9 +105,14 @@ I needed to convert many URLs at once. Doing that manually for every URL would h
       <pubDate>Mon, 02 Nov 2020 00:00:00 +0000</pubDate>
       
       <guid>https://dominikbritz.com/posts/2020-11-02-using-lookups-as-token-input/</guid>
-      <description>For a new feature in version 6.0 of uberAgent, we needed to run a few saved searches to do some calculations but let users modify input values.
-Our requirements in detail:
-Run saved searches to calculate experience scores for machines, user sessions, and applications Provide defaults for thresholds and weights but let users configure them.</description>
+      <description>&lt;p&gt;For a new feature in version 6.0 of uberAgent, we needed to run a few saved searches to do some calculations but let users modify input values.&lt;/p&gt;
+&lt;p&gt;Our requirements in detail:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Run saved searches to calculate experience scores for machines, user sessions, and applications&lt;/li&gt;
+&lt;li&gt;Provide defaults for thresholds and weights but let users configure them. Users might make modifications once or twice, but not daily. So we needed something easy to understand but nothing too fancy.&lt;/li&gt;
+&lt;li&gt;Only administrators should modify settings that should be valid for all users accessing a particular Splunk app. It needed to be configurable, but not for everyone. A poor man&amp;rsquo;s access control, so to say.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;I explain below how we achieved that by using Splunk anywhere examples. That&amp;rsquo;s probably easier to understand, and I don&amp;rsquo;t have to explain every bit of uberAgent here 😉&lt;/p&gt;</description>
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://dominikbritz.com/posts/2020-11-02-using-lookups-as-token-input/featured.jpg" />
     </item>
     
@@ -81,8 +122,8 @@ Run saved searches to calculate experience scores for machines, user sessions, a
       <pubDate>Tue, 17 Mar 2020 00:00:00 +0000</pubDate>
       
       <guid>https://dominikbritz.com/posts/2020-03-17-introducing-vldeploy/</guid>
-      <description>Managing applications on Windows in enterprises is complex and cumbersome. Admins are using a variety of tools to install, uninstall or reconfigure applications silently. The most popular tool is propably Microsoft&amp;rsquo;s ConfigMgr.
-While ConfigMgr (and others) makes sense for mid to large enterprises, the management is too time-consuming for smaller firms.</description>
+      <description>&lt;p&gt;Managing applications on Windows in enterprises is complex and cumbersome. Admins are using a variety of tools to install, uninstall or reconfigure applications silently. The most popular tool is propably Microsoft&amp;rsquo;s ConfigMgr.&lt;/p&gt;
+&lt;p&gt;While ConfigMgr (and others) makes sense for mid to large enterprises, the management is too time-consuming for smaller firms. I work in such a smaller firm. We have a lab to test our own applications &lt;a href=&#34;https://uberagent.com&#34; target=&#34;_blank&#34;&gt;uberAgent&lt;/a&gt; on several operating systems. These lab machines don&amp;rsquo;t only run uberAgent, of course, they also run standard applications like text editors, browsers, and more complex things.&lt;/p&gt;</description>
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://dominikbritz.com/posts/2020-03-17-introducing-vldeploy/featured2.png" />
     </item>
     
@@ -92,10 +133,42 @@ While ConfigMgr (and others) makes sense for mid to large enterprises, the manag
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://dominikbritz.com/cv/</guid>
-      <description>CV #Professional experience #Lead Product Manager #Cloud Software Group, Citrix Jan. 2024 — Today
-Managing the transition of uberAgent into the Citrix platform.
-Customer Success Engineer #vast limit GmbH (acquired by Cloud Software Group) Nov. 2017 — Dec. 2023
-In my position as customer success engineer I had a broad set of responsibilities covering such diverse areas as key account management, technical presales, partner enablement, 3rd level technical support, Splunk dashboard development, and integration testing for our product uberAgent.</description>
+      <description>&lt;h1 class=&#34;relative group&#34;&gt;CV 
+    &lt;div id=&#34;cv&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
+    
+    &lt;span
+        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100&#34;&gt;
+        &lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34;
+            style=&#34;text-decoration-line: none !important;&#34; href=&#34;#cv&#34; aria-label=&#34;Anchor&#34;&gt;#&lt;/a&gt;
+    &lt;/span&gt;        
+    
+&lt;/h1&gt;
+
+
+&lt;h2 class=&#34;relative group&#34;&gt;Professional experience 
+    &lt;div id=&#34;professional-experience&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
+    
+    &lt;span
+        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100&#34;&gt;
+        &lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34;
+            style=&#34;text-decoration-line: none !important;&#34; href=&#34;#professional-experience&#34; aria-label=&#34;Anchor&#34;&gt;#&lt;/a&gt;
+    &lt;/span&gt;        
+    
+&lt;/h2&gt;
+
+
+&lt;h3 class=&#34;relative group&#34;&gt;Lead Product Manager 
+    &lt;div id=&#34;lead-product-manager&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
+    
+    &lt;span
+        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100&#34;&gt;
+        &lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34;
+            style=&#34;text-decoration-line: none !important;&#34; href=&#34;#lead-product-manager&#34; aria-label=&#34;Anchor&#34;&gt;#&lt;/a&gt;
+    &lt;/span&gt;        
+    
+&lt;/h3&gt;
+&lt;p&gt;Cloud Software Group, Citrix
+&lt;em&gt;Jan. 2024 — Today&lt;/em&gt;&lt;/p&gt;</description>
       
     </item>
     
@@ -105,11 +178,44 @@ In my position as customer success engineer I had a broad set of responsibilitie
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://dominikbritz.com/imprint/</guid>
-      <description>Impressum #Angaben gemäß § 5 TMG #Dominik Britz
-Gengesfeld, 12
-51688 Wipperfürth
-Kontakt #E-Mail: info@dominikbritz.com
-Redaktionell verantwortlich #Dominik Britz</description>
+      <description>&lt;h1 class=&#34;relative group&#34;&gt;Impressum 
+    &lt;div id=&#34;impressum&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
+    
+    &lt;span
+        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100&#34;&gt;
+        &lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34;
+            style=&#34;text-decoration-line: none !important;&#34; href=&#34;#impressum&#34; aria-label=&#34;Anchor&#34;&gt;#&lt;/a&gt;
+    &lt;/span&gt;        
+    
+&lt;/h1&gt;
+
+
+&lt;h2 class=&#34;relative group&#34;&gt;Angaben gemäß § 5 TMG 
+    &lt;div id=&#34;angaben-gem%C3%A4%C3%9F--5-tmg&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
+    
+    &lt;span
+        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100&#34;&gt;
+        &lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34;
+            style=&#34;text-decoration-line: none !important;&#34; href=&#34;#angaben-gem%C3%A4%C3%9F--5-tmg&#34; aria-label=&#34;Anchor&#34;&gt;#&lt;/a&gt;
+    &lt;/span&gt;        
+    
+&lt;/h2&gt;
+&lt;p&gt;Dominik Britz&lt;/p&gt;
+&lt;p&gt;Gengesfeld, 12&lt;/p&gt;
+&lt;p&gt;51688 Wipperfürth&lt;/p&gt;
+
+
+&lt;h2 class=&#34;relative group&#34;&gt;Kontakt 
+    &lt;div id=&#34;kontakt&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
+    
+    &lt;span
+        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100&#34;&gt;
+        &lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34;
+            style=&#34;text-decoration-line: none !important;&#34; href=&#34;#kontakt&#34; aria-label=&#34;Anchor&#34;&gt;#&lt;/a&gt;
+    &lt;/span&gt;        
+    
+&lt;/h2&gt;
+&lt;p&gt;E-Mail: &lt;a href=&#34;mailto:info@dominikbritz.com&#34;&gt;info@dominikbritz.com&lt;/a&gt;&lt;/p&gt;</description>
       
     </item>
     
@@ -119,11 +225,41 @@ Redaktionell verantwortlich #Dominik Britz</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://dominikbritz.com/privacypolicy/</guid>
-      <description>Datenschutzerklärung #Allgemeiner Hinweis und Pflichtinformationen #Benennung der verantwortlichen Stelle #Die verantwortliche Stelle für die Datenverarbeitung auf dieser Website ist:
-Dominik Britz
-Gengesfeld, 12
-51688 Wipperfürth
-Die verantwortliche Stelle entscheidet allein oder gemeinsam mit anderen über die Zwecke und Mittel der Verarbeitung von personenbezogenen Daten (z.B. Namen, Kontaktdaten o.</description>
+      <description>&lt;h1 class=&#34;relative group&#34;&gt;Datenschutzerklärung 
+    &lt;div id=&#34;datenschutzerkl%C3%A4rung&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
+    
+    &lt;span
+        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100&#34;&gt;
+        &lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34;
+            style=&#34;text-decoration-line: none !important;&#34; href=&#34;#datenschutzerkl%C3%A4rung&#34; aria-label=&#34;Anchor&#34;&gt;#&lt;/a&gt;
+    &lt;/span&gt;        
+    
+&lt;/h1&gt;
+
+
+&lt;h2 class=&#34;relative group&#34;&gt;Allgemeiner Hinweis und Pflichtinformationen 
+    &lt;div id=&#34;allgemeiner-hinweis-und-pflichtinformationen&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
+    
+    &lt;span
+        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100&#34;&gt;
+        &lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34;
+            style=&#34;text-decoration-line: none !important;&#34; href=&#34;#allgemeiner-hinweis-und-pflichtinformationen&#34; aria-label=&#34;Anchor&#34;&gt;#&lt;/a&gt;
+    &lt;/span&gt;        
+    
+&lt;/h2&gt;
+
+
+&lt;h3 class=&#34;relative group&#34;&gt;Benennung der verantwortlichen Stelle 
+    &lt;div id=&#34;benennung-der-verantwortlichen-stelle&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
+    
+    &lt;span
+        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100&#34;&gt;
+        &lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34;
+            style=&#34;text-decoration-line: none !important;&#34; href=&#34;#benennung-der-verantwortlichen-stelle&#34; aria-label=&#34;Anchor&#34;&gt;#&lt;/a&gt;
+    &lt;/span&gt;        
+    
+&lt;/h3&gt;
+&lt;p&gt;Die verantwortliche Stelle für die Datenverarbeitung auf dieser Website ist:&lt;/p&gt;</description>
       
     </item>
     

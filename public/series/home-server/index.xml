@@ -6,16 +6,28 @@
     <description>Recent content in Home Server on DominikBritz.com</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <copyright>Copyright © 2024</copyright>
-    <lastBuildDate>Wed, 18 Sep 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://dominikbritz.com/series/home-server/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>Copyright © 2025</copyright>
+    <lastBuildDate>Sat, 18 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://dominikbritz.com/series/home-server/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Docker Monitoring With Grafana and VictoriaMetrics</title>
+      <link>https://dominikbritz.com/posts/victoria-metrics-grafana/</link>
+      <pubDate>Sat, 18 Jan 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://dominikbritz.com/posts/victoria-metrics-grafana/</guid>
+      <description>&lt;p&gt;This article describes how to monitor Docker containers and host performance as well as Docker logs with VictoriaMetrics, VictoriaLogs and Grafana.&lt;/p&gt;
+&lt;p&gt;It is part of my series on creating a home server on an old laptop. I’m assuming that you’ve set up Docker, Caddy, and Dockge, as described in the first article of the series.&lt;/p&gt;</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://dominikbritz.com/posts/victoria-metrics-grafana/featured.jpg" />
+    </item>
+    
     <item>
       <title>Secure Remote Home Server Access With mTLS and WireGuard</title>
       <link>https://dominikbritz.com/posts/secure-remote-access/</link>
       <pubDate>Wed, 18 Sep 2024 00:00:00 +0000</pubDate>
       
       <guid>https://dominikbritz.com/posts/secure-remote-access/</guid>
-      <description>This article explains how to securely access your home server and its services with mTLS and WireGuard.
-It is part of my series on creating a home server on an old laptop. I’m assuming that you’ve set up Docker, Caddy, and Authelia, as described in the first article of the series.</description>
+      <description>&lt;p&gt;This article explains how to securely access your home server and its services with mTLS and WireGuard.&lt;/p&gt;
+&lt;p&gt;It is part of my series on creating a home server on an old laptop. I’m assuming that you’ve set up Docker, Caddy, and Authelia, as described in the first article of the series.&lt;/p&gt;</description>
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://dominikbritz.com/posts/secure-remote-access/featured.jpg" />
     </item>
     
@@ -25,8 +37,8 @@ It is part of my series on creating a home server on an old laptop. I’m assumi
       <pubDate>Sun, 24 Mar 2024 00:00:00 +0000</pubDate>
       
       <guid>https://dominikbritz.com/posts/immich-self-hosted-photos-with-cloud-backup/</guid>
-      <description>This article explains how to set up a self-hosted photo gallery with Immich including cloud backup and OpenID Connect to Authelia.
-It is part of my series on creating a home server on an old laptop. I’m assuming that you’ve set up Docker, Caddy, and Authelia, as described in the first article of the series.</description>
+      <description>&lt;p&gt;This article explains how to set up a self-hosted photo gallery with Immich including cloud backup and OpenID Connect to Authelia.&lt;/p&gt;
+&lt;p&gt;It is part of my series on creating a home server on an old laptop. I’m assuming that you’ve set up Docker, Caddy, and Authelia, as described in the &lt;a href=&#34;https://dominikbritz.com/posts/2024-01-22-laptop-home-server/&#34; target=&#34;_blank&#34;&gt;first article of the series&lt;/a&gt;.&lt;/p&gt;</description>
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://dominikbritz.com/posts/immich-self-hosted-photos-with-cloud-backup/featured.jpg" />
     </item>
     
@@ -36,8 +48,8 @@ It is part of my series on creating a home server on an old laptop. I’m assumi
       <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
       
       <guid>https://dominikbritz.com/posts/streamlined-nextcloud-with-openid-connect-authentication/</guid>
-      <description>This article explains how to set up a fast and efficient Nextcloud as file management tool with OpenID Connect to Authelia.
-It is part of my series on creating a home server on an old laptop. I&amp;rsquo;m assuming that you&amp;rsquo;ve set up Docker, Caddy, and Authelia, as described in the first article of the series.</description>
+      <description>&lt;p&gt;This article explains how to set up a fast and efficient Nextcloud as file management tool with OpenID Connect to Authelia.&lt;/p&gt;
+&lt;p&gt;It is part of my series on creating a home server on an old laptop. I&amp;rsquo;m assuming that you&amp;rsquo;ve set up Docker, Caddy, and Authelia, as described in the &lt;a href=&#34;https://dominikbritz.com/posts/2024-01-22-laptop-home-server/&#34; target=&#34;_blank&#34;&gt;first article of the series&lt;/a&gt;.&lt;/p&gt;</description>
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://dominikbritz.com/posts/streamlined-nextcloud-with-openid-connect-authentication/featured.jpg" />
     </item>
     
@@ -47,8 +59,32 @@ It is part of my series on creating a home server on an old laptop. I&amp;rsquo;
       <pubDate>Tue, 23 Jan 2024 00:00:00 +0000</pubDate>
       
       <guid>https://dominikbritz.com/posts/2024-01-22-laptop-home-server/</guid>
-      <description>A guide to setting up an old laptop as your new home server, powered by Ubuntu, Ansible, and Docker. It securely hosts videos, files, and photos. Add HTTPS everywhere, cloud backup and performance monitoring.
-Bye Bye Synology, Hello Ubuntu #TL;DR #Synology has a great ecosystem, but one is locked in.</description>
+      <description>&lt;p&gt;A guide to setting up an old laptop as your new home server, powered by Ubuntu, Ansible, and Docker. It securely hosts videos, files, and photos. Add HTTPS everywhere, cloud backup and performance monitoring.&lt;/p&gt;
+
+
+&lt;h2 class=&#34;relative group&#34;&gt;Bye Bye Synology, Hello Ubuntu 
+    &lt;div id=&#34;bye-bye-synology-hello-ubuntu&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
+    
+    &lt;span
+        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100&#34;&gt;
+        &lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34;
+            style=&#34;text-decoration-line: none !important;&#34; href=&#34;#bye-bye-synology-hello-ubuntu&#34; aria-label=&#34;Anchor&#34;&gt;#&lt;/a&gt;
+    &lt;/span&gt;        
+    
+&lt;/h2&gt;
+
+
+&lt;h3 class=&#34;relative group&#34;&gt;TL;DR 
+    &lt;div id=&#34;tldr&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
+    
+    &lt;span
+        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100&#34;&gt;
+        &lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34;
+            style=&#34;text-decoration-line: none !important;&#34; href=&#34;#tldr&#34; aria-label=&#34;Anchor&#34;&gt;#&lt;/a&gt;
+    &lt;/span&gt;        
+    
+&lt;/h3&gt;
+&lt;p&gt;Synology has a great ecosystem, but one is locked in. I&amp;rsquo;m using Ubuntu LTS server now, as it gives full control and is focused on stability. I chose it over Proxmox for simplicity, as I don&amp;rsquo;t need virtual machines.&lt;/p&gt;</description>
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://dominikbritz.com/posts/2024-01-22-laptop-home-server/featured.jpg" />
     </item>
     
