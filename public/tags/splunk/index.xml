@@ -15,14 +15,9 @@
       <pubDate>Mon, 02 Nov 2020 00:00:00 +0000</pubDate>
       
       <guid>https://dominikbritz.com/posts/2020-11-02-using-lookups-as-token-input/</guid>
-      <description>&lt;p&gt;For a new feature in version 6.0 of uberAgent, we needed to run a few saved searches to do some calculations but let users modify input values.&lt;/p&gt;
-&lt;p&gt;Our requirements in detail:&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Run saved searches to calculate experience scores for machines, user sessions, and applications&lt;/li&gt;
-&lt;li&gt;Provide defaults for thresholds and weights but let users configure them. Users might make modifications once or twice, but not daily. So we needed something easy to understand but nothing too fancy.&lt;/li&gt;
-&lt;li&gt;Only administrators should modify settings that should be valid for all users accessing a particular Splunk app. It needed to be configurable, but not for everyone. A poor man&amp;rsquo;s access control, so to say.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;I explain below how we achieved that by using Splunk anywhere examples. That&amp;rsquo;s probably easier to understand, and I don&amp;rsquo;t have to explain every bit of uberAgent here 😉&lt;/p&gt;</description>
+      <description>For a new feature in version 6.0 of uberAgent, we needed to run a few saved searches to do some calculations but let users modify input values.
+Our requirements in detail:
+Run saved searches to calculate experience scores for machines, user sessions, and applications Provide defaults for thresholds and weights but let users configure them.</description>
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://dominikbritz.com/posts/2020-11-02-using-lookups-as-token-input/featured.jpg" />
     </item>
     

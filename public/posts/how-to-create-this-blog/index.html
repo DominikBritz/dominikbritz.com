@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr" class="scroll-smooth" data-default-appearance="dark"
-  data-auto-appearance="false"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  data-auto-appearance="false"><head>
   <meta charset="utf-8" />
   
   <meta http-equiv="content-language" content="en" />
@@ -12,13 +12,10 @@
   <meta name="title" content="How To Create This Beautiful Blog - (It Is Free!) &middot; DominikBritz.com" />
   
   <meta name="description" content="Engineer focused on end user computing, cloud technologies, and automation" />
-  <meta name="keywords" content="Hugo, Blowfish, GitHub, Cloudflare, " />
+  <meta name="keywords" content="Hugo, Blowfish, GitHub, Cloudflare, Giscus, " />
   
   
-  <link rel="canonical" href="http://localhost:1313/posts/how-to-create-this-blog/" />
-  
-  
-  
+  <link rel="canonical" href="https://dominikbritz.com/posts/how-to-create-this-blog/" />
   
   
   
@@ -28,8 +25,11 @@
   
   
   
-  <link type="text/css" rel="stylesheet" href="/css/main.bundle.min.1804da52cc3998ad845c24005799d681ab767dfc94844a3ef5df0e372435c79c79840acddf0f92a0dbc7f36f274c7da851c76dacb43084f6235d7b843ed31d2a.css"
-    integrity="sha512-GATaUsw5mK2EXCQAV5nWgat2ffyUhEo&#43;9d8ONyQ1x5x5hArN3w&#43;SoNvH828nTH2oUcdtrLQwhPYjXXuEPtMdKg==" />
+  
+  
+  
+  <link type="text/css" rel="stylesheet" href="/css/main.bundle.min.b56c277de77756b3a66a99196a7287df0e014f80765f0df904773ed3e57388837ff36f82cb3037d0e58fb91f5a8970e4f808b1f905c2097df205faae9c2e5158.css"
+    integrity="sha512-tWwnfed3VrOmapkZanKH3w4BT4B2Xw35BHc&#43;0&#43;VziIN/82&#43;CyzA30OWPuR9aiXDk&#43;Aix&#43;QXCCX3yBfqunC5RWA==" />
   
   
   <script type="text/javascript" src="/js/appearance.min.516a16745bea5a9bd011138d254cc0fd3973cd55ce6e15f3dec763e7c7c2c7448f8fe7b54cca811cb821b0c7e12cd161caace1dd794ac3d34d40937cbcc9ee12.js"
@@ -46,12 +46,14 @@
   
   
   
-  <script defer type="text/javascript" id="script-bundle" src="/js/main.bundle.min.4760f110524572796446a87b7d1897938225a2419ef7fd0835903f575024d135a3e3d96ee5231c96107f7bce84c8f28fb880a064a7593abadfd3cb2dda11476d.js"
-    integrity="sha512-R2DxEFJFcnlkRqh7fRiXk4IlokGe9/0INZA/V1Ak0TWj49lu5SMclhB/e86EyPKPuICgZKdZOrrf08st2hFHbQ==" data-copy="" data-copied=""></script>
+  
+  
+  <script defer type="text/javascript" id="script-bundle" src="/js/main.bundle.min.477974de0a7f7a2e524a28d54a0a648c183b8f257dd21be402125f9091ed2fe14e1565f19481a6ddbf1c01bacdded3fa2538a98d9f3fcbf43336c6892601e235.js"
+    integrity="sha512-R3l03gp/ei5SSijVSgpkjBg7jyV90hvkAhJfkJHtL&#43;FOFWXxlIGm3b8cAbrN3tP6JTipjZ8/y/QzNsaJJgHiNQ==" data-copy="" data-copied=""></script>
   
   
   
-  <script src="/lib/zoom/zoom.min.fcbc7f7b3dcea96e3b5570cd322c5d7a12d5351c87f9889b1c31745a2cc711df58f6b70795a86d50e63813b236ade916668332c10a70a4ce26f7c0878f525fce.js" integrity="sha512-/Lx/ez3OqW47VXDNMixdehLVNRyH&#43;YibHDF0WizHEd9Y9rcHlahtUOY4E7I2rekWZoMywQpwpM4m98CHj1Jfzg=="></script>
+  <script src="/lib/zoom/zoom.min.37d2094687372da3f7343a221a470f6b8806f7891aa46a5a03966af7f0ebd38b9fe536cb154e6ad28f006d184b294525a7c4054b6bbb4be62d8b453b42db99bd.js" integrity="sha512-N9IJRoc3LaP3NDoiGkcPa4gG94kapGpaA5Zq9/Dr04uf5TbLFU5q0o8AbRhLKUUlp8QFS2u7S&#43;Yti0U7QtuZvQ=="></script>
   
   
   
@@ -66,26 +68,21 @@
   
   
   
-  <meta property="og:url" content="http://localhost:1313/posts/how-to-create-this-blog/">
-  <meta property="og:site_name" content="DominikBritz.com">
-  <meta property="og:title" content="How To Create This Beautiful Blog - (It Is Free!)">
-  <meta property="og:description" content="This article explains how to create this beautiful blog with the static site generator Hugo, the theme Blowfish, GitHub for storage, and Cloudflare for hosting. And the best thing: it doesn’t cost you a penny!
-My Blog Journey #I’m blogging for more than 15 years now. During that time, I tested and used different blogging technologies and products. I started with a hosted service. While writing was okay, it lacked flexibility and personalization possibilities. I then moved to a self-hosted WordPress installation, which solved these problems. But, WordPress was slow, maintenance intensive, and I had to pay and maintain a virtual private server which was idling the majority of the time.">
-  <meta property="og:locale" content="en">
-  <meta property="og:type" content="article">
-    <meta property="article:section" content="posts">
-    <meta property="article:published_time" content="2024-09-18T00:00:00+00:00">
-    <meta property="article:modified_time" content="2024-09-18T00:00:00+00:00">
-    <meta property="article:tag" content="Hugo">
-    <meta property="article:tag" content="Blowfish">
-    <meta property="article:tag" content="GitHub">
-    <meta property="article:tag" content="Cloudflare">
-
   
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="How To Create This Beautiful Blog - (It Is Free!)">
-  <meta name="twitter:description" content="This article explains how to create this beautiful blog with the static site generator Hugo, the theme Blowfish, GitHub for storage, and Cloudflare for hosting. And the best thing: it doesn’t cost you a penny!
-My Blog Journey #I’m blogging for more than 15 years now. During that time, I tested and used different blogging technologies and products. I started with a hosted service. While writing was okay, it lacked flexibility and personalization possibilities. I then moved to a self-hosted WordPress installation, which solved these problems. But, WordPress was slow, maintenance intensive, and I had to pay and maintain a virtual private server which was idling the majority of the time.">
+  <meta property="og:title" content="How To Create This Beautiful Blog - (It Is Free!)" />
+<meta property="og:description" content="This article explains how to create this beautiful blog with the static site generator Hugo, the theme Blowfish, GitHub for storage, Giscus for comments, and Cloudflare for hosting. And the best thing: it doesn&rsquo;t cost you a penny!
+My Blog Journey # I&rsquo;m blogging for more than 15 years now. During that time, I tested and used different blogging technologies and products." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://dominikbritz.com/posts/how-to-create-this-blog/" /><meta property="og:image" content="https://dominikbritz.com/posts/how-to-create-this-blog/featured.jpg" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2025-02-09T00:00:00+00:00" />
+<meta property="article:modified_time" content="2025-02-09T00:00:00+00:00" />
+
+
+
+  <meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://dominikbritz.com/posts/how-to-create-this-blog/featured.jpg" /><meta name="twitter:title" content="How To Create This Beautiful Blog - (It Is Free!)"/>
+<meta name="twitter:description" content="This article explains how to create this beautiful blog with the static site generator Hugo, the theme Blowfish, GitHub for storage, Giscus for comments, and Cloudflare for hosting. And the best thing: it doesn&rsquo;t cost you a penny!
+My Blog Journey # I&rsquo;m blogging for more than 15 years now. During that time, I tested and used different blogging technologies and products."/>
 
   
   <script type="application/ld+json">
@@ -96,23 +93,23 @@ My Blog Journey #I’m blogging for more than 15 years now. During that time, I
     "name": "How To Create This Beautiful Blog - (It Is Free!)",
     "headline": "How To Create This Beautiful Blog - (It Is Free!)",
     
-    "abstract": "\u003cp\u003eThis article explains how to create this beautiful blog with the static site generator Hugo, the theme Blowfish, GitHub for storage, and Cloudflare for hosting. And the best thing: it doesn\u0026rsquo;t cost you a penny!\u003c\/p\u003e\n\r\n\r\n\u003ch2 class=\u0022relative group\u0022\u003eMy Blog Journey \r\n    \u003cdiv id=\u0022my-blog-journey\u0022 class=\u0022anchor\u0022\u003e\u003c\/div\u003e\r\n    \r\n    \u003cspan\r\n        class=\u0022absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100\u0022\u003e\r\n        \u003ca class=\u0022group-hover:text-primary-300 dark:group-hover:text-neutral-700\u0022\r\n            style=\u0022text-decoration-line: none !important;\u0022 href=\u0022#my-blog-journey\u0022 aria-label=\u0022Anchor\u0022\u003e#\u003c\/a\u003e\r\n    \u003c\/span\u003e        \r\n    \r\n\u003c\/h2\u003e\r\n\u003cp\u003eI\u0026rsquo;m blogging for more than 15 years now. During that time, I tested and used different blogging technologies and products. I started with a hosted service. While writing was okay, it lacked flexibility and personalization possibilities. I then moved to a self-hosted WordPress installation, which solved these problems. But, WordPress was slow, maintenance intensive, and I had to pay and maintain a virtual private server which was idling the majority of the time.\u003c\/p\u003e",
+    "abstract": "This article explains how to create this beautiful blog with the static site generator Hugo, the theme Blowfish, GitHub for storage, Giscus for comments, and Cloudflare for hosting. And the best thing: it doesn\u0026rsquo;t cost you a penny!\nMy Blog Journey # I\u0026rsquo;m blogging for more than 15 years now. During that time, I tested and used different blogging technologies and products.",
     "inLanguage": "en",
-    "url" : "http:\/\/localhost:1313\/posts\/how-to-create-this-blog\/",
+    "url" : "https:\/\/dominikbritz.com\/posts\/how-to-create-this-blog\/",
     "author" : {
       "@type": "Person",
       "name": "Dominik Britz"
     },
-    "copyrightYear": "2024",
-    "dateCreated": "2024-09-18T00:00:00\u002b00:00",
-    "datePublished": "2024-09-18T00:00:00\u002b00:00",
+    "copyrightYear": "2025",
+    "dateCreated": "2025-02-09T00:00:00\u002b00:00",
+    "datePublished": "2025-02-09T00:00:00\u002b00:00",
     
-    "dateModified": "2024-09-18T00:00:00\u002b00:00",
+    "dateModified": "2025-02-09T00:00:00\u002b00:00",
     
-    "keywords": ["Hugo","Blowfish","GitHub","Cloudflare"],
+    "keywords": ["Hugo","Blowfish","GitHub","Cloudflare","Giscus"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "1583"
+    "wordCount": "1796"
   }]
   </script>
 
@@ -138,7 +135,7 @@ My Blog Journey #I’m blogging for more than 15 years now. During that time, I
   
   
 
-<script src="/lib/jquery/jquery.slim.min.03cb160e3cfdb2667a2e2c80d283bebcf63ff8bbc4b629c9ab2babf6fae1d0c07ad470edae783efa4fabda2ac01c58d60e63b98b3c336be8208460f08f4354f5.js" integrity="sha512-A8sWDjz9smZ6LiyA0oO&#43;vPY/&#43;LvEtinJqyur9vrh0MB61HDtrng&#43;&#43;k&#43;r2irAHFjWDmO5izwza&#43;gghGDwj0NU9Q=="></script>
+<script src="/lib/jquery/jquery.slim.min.b0dca576e87d7eaa5850ae4e61759c065786cdb6489d68fcc82240539eebd5da522bdb4fda085ffd245808c8fe2acb2516408eb774ef26b5f6015fc6737c0ea8.js" integrity="sha512-sNylduh9fqpYUK5OYXWcBleGzbZInWj8yCJAU57r1dpSK9tP2ghf/SRYCMj&#43;KsslFkCOt3TvJrX2AV/Gc3wOqA=="></script>
 
 
 
@@ -186,7 +183,7 @@ My Blog Journey #I’m blogging for more than 15 years now. During that time, I
   <div id="menu-blur" class="absolute opacity-0 inset-x-0 top-0 h-full single_hero_background nozoom backdrop-blur-2xl shadow-2xl"></div>
   <div class="relative max-w-[64rem] ml-auto mr-auto">
     <div style="padding-left:0;padding-right:0;padding-top:2px;padding-bottom:3px"
-    class="main-menu flex items-center justify-between px-4 py-6 sm:px-6 md:justify-start space-x-3">
+    class="main-menu flex items-center justify-between px-4 py-6 sm:px-6 md:justify-start gap-x-3">
     
     
     
@@ -208,14 +205,14 @@ My Blog Journey #I’m blogging for more than 15 years now. During that time, I
             
 
         </nav>
-        <nav class="hidden md:flex items-center space-x-5 md:ml-12 h-12">
+        <nav class="hidden md:flex items-center gap-x-5 md:ml-12 h-12">
 
             
             
             
   <a href="/posts/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
     
-    <p class="text-base font-medium" title="Posts">
+    <p class="text-base font-medium" title="">
         Blog
     </p>
 </a>
@@ -226,7 +223,7 @@ My Blog Journey #I’m blogging for more than 15 years now. During that time, I
             
   <a href="/tags/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
     
-    <p class="text-base font-medium" title="Tags">
+    <p class="text-base font-medium" title="">
         Tags
     </p>
 </a>
@@ -268,7 +265,7 @@ My Blog Journey #I’m blogging for more than 15 years now. During that time, I
             
             
             <div
-                class="ltr:mr-14 rtl:ml-14 flex items-center">
+                class=" flex items-center">
                 <button id="appearance-switcher" aria-label="Dark mode switcher" type="button" class="text-base hover:text-primary-600 dark:hover:text-primary-400">
                     <div class="flex items-center justify-center dark:hidden">
                         
@@ -295,7 +292,7 @@ My Blog Journey #I’m blogging for more than 15 years now. During that time, I
             
 
         </nav>
-        <div class="flex md:hidden items-center space-x-5 md:ml-12 h-12">
+        <div class="flex md:hidden items-center gap-x-5 md:ml-12 h-12">
 
             <span></span>
 
@@ -318,7 +315,7 @@ My Blog Journey #I’m blogging for more than 15 years now. During that time, I
 
             
             
-            <button id="appearance-switcher-mobile" aria-label="Dark mode switcher" type="button" class="text-base hover:text-primary-600 dark:hover:text-primary-400" style="margin-right:5px">
+            <button id="appearance-switcher-mobile" aria-label="Dark mode switcher" type="button" class="text-base hover:text-primary-600 dark:hover:text-primary-400 ltr:mr-1 rtl:ml-1">
                 <div class="flex items-center justify-center dark:hidden">
                     
 
@@ -344,10 +341,9 @@ My Blog Journey #I’m blogging for more than 15 years now. During that time, I
 
         </div>
     </div>
-    <div class="-my-2 -mr-2 md:hidden">
+    <div class="-my-2 md:hidden">
 
-        <label id="menu-button" for="menu-controller" class="block">
-            <input type="checkbox" id="menu-controller" class="hidden" />
+        <label id="menu-button" class="block">
             
             <div class="cursor-pointer hover:text-primary-600 dark:hover:text-primary-400">
                 
@@ -364,7 +360,7 @@ My Blog Journey #I’m blogging for more than 15 years now. During that time, I
                 <ul
                     class="flex space-y-2 mt-3 flex-col items-end w-full px-6 py-6 mx-auto overflow-visible list-none ltr:text-right rtl:text-left max-w-7xl">
 
-                    <li>
+                    <li id="menu-close-button">
                         <span
                             class="cursor-pointer inline-block align-text-bottom hover:text-primary-600 dark:hover:text-primary-400">
 
@@ -382,7 +378,7 @@ My Blog Journey #I’m blogging for more than 15 years now. During that time, I
   <li class="mt-1">
     <a href="/posts/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
         
-        <p class="text-bg font-bg" title="Posts">
+        <p class="text-bg font-bg" title="">
             Blog
         </p>
     </a>
@@ -397,7 +393,7 @@ My Blog Journey #I’m blogging for more than 15 years now. During that time, I
   <li class="mt-1">
     <a href="/tags/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
         
-        <p class="text-bg font-bg" title="Tags">
+        <p class="text-bg font-bg" title="">
             Tags
         </p>
     </a>
@@ -469,9 +465,31 @@ My Blog Journey #I’m blogging for more than 15 years now. During that time, I
   
   
   
- 
 
 
+
+
+    
+    <div class="fixed inset-x-0 top-0 h-[800px] single_hero_background nozoom"
+    style="background-image:url(/posts/how-to-create-this-blog/featured_hu5459c0360c2b0cb7a147d2df0eb350ca_229141_1200x0_resize_q75_box.jpg);">
+    
+
+
+    <div class="absolute inset-0 bg-gradient-to-t from-neutral dark:from-neutral-800 to-transparent mix-blend-normal">
+    </div>
+    <div
+        class="absolute inset-0 opacity-60 bg-gradient-to-t from-neutral dark:from-neutral-800 to-neutral-100 dark:to-neutral-800 mix-blend-normal">
+    </div>
+</div>
+
+<div id="background-blur" class="fixed opacity-0 inset-x-0 top-0 h-full single_hero_background nozoom backdrop-blur-2xl"></div>
+<script>
+    window.addEventListener('scroll', function (e) {
+        var scroll = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+        var background_blur = document.getElementById('background-blur');
+        background_blur.style.opacity = (scroll / 300)
+    });
+</script>
 
   
   
@@ -524,10 +542,10 @@ My Blog Journey #I’m blogging for more than 15 years now. During that time, I
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2024-09-18T00:00:00&#43;00:00">18 September 2024</time><span class="px-2 text-primary-500">&middot;</span><span>1583 words</span><span class="px-2 text-primary-500">&middot;</span>
+  <time datetime="2025-02-09T00:00:00&#43;00:00">9 February 2025</time><span class="px-2 text-primary-500">&middot;</span><span>1796 words</span><span class="px-2 text-primary-500">&middot;</span>
 
 
-<script type="text/javascript" src="/js/zen-mode.min.63c8a202661f4a2063fdc2706685d668e8ea3da613da2224e9da527e5876e4f53dcac39ab60732626fb4151feae5d430d0cf44731e5d3c726522fcc1519c1547.js" integrity="sha512-Y8iiAmYfSiBj/cJwZoXWaOjqPaYT2iIk6dpSflh25PU9ysOatgcyYm&#43;0FR/q5dQw0M9Ecx5dPHJlIvzBUZwVRw=="></script>
+<script type="text/javascript" src="/js/zen-mode.min.eea5245cf9244ecbdf2c150d1c8833226c1541cadf6e98f63a7c9192b1a3676df2c3ec603b14f4cfaaa53971fd9d8955640c0f405bf3de2b43ee7a5fb29ae721.js" integrity="sha512-7qUkXPkkTsvfLBUNHIgzImwVQcrfbpj2OnyRkrGjZ23yw&#43;xgOxT0z6qlOXH9nYlVZAwPQFvz3itD7npfsprnIQ=="></script>
 
 <span class="mb-[2px]">
     <span id="zen-mode-button"
@@ -550,12 +568,6 @@ My Blog Journey #I’m blogging for more than 15 years now. During that time, I
 
   
   
-  <span class="pl-2"><span class="flex" style="cursor: pointer;">
-  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Draft
-  </span>
-</span></span>
-  
 </div>
 
 
@@ -575,7 +587,7 @@ My Blog Journey #I’m blogging for more than 15 years now. During that time, I
   
   
   
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/hugo/&#34;,'_self');">
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/hugo/&#34;,'_self');return false;">
     <span class="flex" style="cursor: pointer;">
   <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
     Hugo
@@ -583,7 +595,7 @@ My Blog Journey #I’m blogging for more than 15 years now. During that time, I
 </span>
   </span>
   
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/blowfish/&#34;,'_self');">
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/blowfish/&#34;,'_self');return false;">
     <span class="flex" style="cursor: pointer;">
   <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
     Blowfish
@@ -591,7 +603,7 @@ My Blog Journey #I’m blogging for more than 15 years now. During that time, I
 </span>
   </span>
   
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/github/&#34;,'_self');">
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/github/&#34;,'_self');return false;">
     <span class="flex" style="cursor: pointer;">
   <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
     GitHub
@@ -599,10 +611,18 @@ My Blog Journey #I’m blogging for more than 15 years now. During that time, I
 </span>
   </span>
   
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/cloudflare/&#34;,'_self');">
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/cloudflare/&#34;,'_self');return false;">
     <span class="flex" style="cursor: pointer;">
   <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
     Cloudflare
+  </span>
+</span>
+  </span>
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/giscus/&#34;,'_self');return false;">
+    <span class="flex" style="cursor: pointer;">
+  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    Giscus
   </span>
 </span>
   </span>
@@ -672,17 +692,17 @@ My Blog Journey #I’m blogging for more than 15 years now. During that time, I
             <li><a href="#blowfish">Blowfish</a></li>
             <li><a href="#github">GitHub</a></li>
             <li><a href="#cloudflare">Cloudflare</a></li>
-            <li><a href="#comments">Comments</a></li>
+            <li><a href="#giscus-comments">Giscus Comments</a></li>
           </ul>
         </li>
         <li><a href="#publish-your-first-article">Publish Your First Article</a></li>
-        <li><a href="#updates">Updates</a>
+        <li><a href="#keeping-your-blog-up-to-date">Keeping Your Blog Up To Date</a>
           <ul>
             <li><a href="#hugo-1">Hugo</a></li>
             <li><a href="#blowfish-1">Blowfish</a></li>
           </ul>
         </li>
-        <li><a href="#tips-and-tricks">Tips And Tricks</a></li>
+        <li><a href="#further-reading">Further Reading</a></li>
       </ul>
     </li>
   </ul>
@@ -717,17 +737,17 @@ My Blog Journey #I’m blogging for more than 15 years now. During that time, I
             <li><a href="#blowfish">Blowfish</a></li>
             <li><a href="#github">GitHub</a></li>
             <li><a href="#cloudflare">Cloudflare</a></li>
-            <li><a href="#comments">Comments</a></li>
+            <li><a href="#giscus-comments">Giscus Comments</a></li>
           </ul>
         </li>
         <li><a href="#publish-your-first-article">Publish Your First Article</a></li>
-        <li><a href="#updates">Updates</a>
+        <li><a href="#keeping-your-blog-up-to-date">Keeping Your Blog Up To Date</a>
           <ul>
             <li><a href="#hugo-1">Hugo</a></li>
             <li><a href="#blowfish-1">Blowfish</a></li>
           </ul>
         </li>
-        <li><a href="#tips-and-tricks">Tips And Tricks</a></li>
+        <li><a href="#further-reading">Further Reading</a></li>
       </ul>
     </li>
   </ul>
@@ -813,7 +833,7 @@ My Blog Journey #I’m blogging for more than 15 years now. During that time, I
 
 
         <div class="article-content max-w-prose mb-20">
-          <p>This article explains how to create this beautiful blog with the static site generator Hugo, the theme Blowfish, GitHub for storage, and Cloudflare for hosting. And the best thing: it doesn&rsquo;t cost you a penny!</p>
+          <p>This article explains how to create this beautiful blog with the static site generator Hugo, the theme Blowfish, GitHub for storage, Giscus for comments, and Cloudflare for hosting. And the best thing: it doesn&rsquo;t cost you a penny!</p>
 
 
 <h2 class="relative group">My Blog Journey 
@@ -913,7 +933,7 @@ My Blog Journey #I’m blogging for more than 15 years now. During that time, I
     
 </h3>
 <p>As SSGs create static HTML files, you can store your whole blog in a git system like GitHub and can benefit from version control. Also, GitHub allows unlimited private and public repositories.</p>
-<p>I store my work in a private repository, so I can privately work on new articles. Once I&rsquo;m satisfied with my work, the genereated public content is copied to a public repository through a GitHub action, where it is picked up by Cloudflare. More on the technical integrations later.</p>
+<p>I store my work in a private repository, so I can privately work on new articles. Once I&rsquo;m satisfied with my work, the generated public content is copied to a public repository through a GitHub action, where it is picked up by Cloudflare. More on the technical integrations later.</p>
 
 
 <h3 class="relative group">Cloudflare - Ship Your Website Fast and Secure 
@@ -940,6 +960,27 @@ My Blog Journey #I’m blogging for more than 15 years now. During that time, I
     </span>        
     
 </h3>
+<p>I use <a href="https://giscus.app" target="_blank">Giscus</a> for comments. Giscus is a great solution for small blogs like mine. It&rsquo;s free, easy to set up, and the comments are stored in my GitHub repository. I don&rsquo;t have to worry about a third-party service shutting down and losing all my comments. Well, GitHub could shut down, but that is unlikely to happen soon.</p>
+<p>
+
+
+
+
+  
+  
+    
+  
+  
+    <figure>
+      
+      
+      <img class="my-0 rounded-md" src="/posts/how-to-create-this-blog/images/giscus1_huab3454b80c150afae42d5397da008934_46914_2000x0_resize_q50_h2_box_3.webp" />
+      
+      <figcaption>Giscus comment UI</figcaption>
+    </figure>
+  
+
+</p>
 
 
 <h3 class="relative group">Blog Requirements Solved ✅ 
@@ -1029,7 +1070,9 @@ My Blog Journey #I’m blogging for more than 15 years now. During that time, I
 <p>First, create a new public repository.</p>
 <p>Second, in <strong>GitHub.com -&gt; Your private repository -&gt; Settings -&gt; Secrets and variables -&gt; Actions</strong>, create a new <code>API_TOKEN_GITHUB</code> repository secret.</p>
 <p>Third, create the file <code>.git\workflows\main.yml</code>, where the folder <code>.git</code> is in the root of your private repository.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Copy public folder to public repository</span><span class="w">
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="c"># main.yml</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Copy public folder to public repository</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">on</span><span class="p">:</span><span class="w"> </span><span class="l">push</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">
@@ -1106,17 +1149,37 @@ My Blog Journey #I’m blogging for more than 15 years now. During that time, I
 
 
 
-<h3 class="relative group">Comments 
-    <div id="comments" class="anchor"></div>
+<h3 class="relative group">Giscus Comments 
+    <div id="giscus-comments" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#comments" aria-label="Anchor">#</a>
+            style="text-decoration-line: none !important;" href="#giscus-comments" aria-label="Anchor">#</a>
     </span>        
     
 </h3>
-
+<p>To enable comments, follow the <a href="https://giscus.app/" target="_blank">Giscus installation guide</a>. It&rsquo;s a simple process and only requires a few clicks.</p>
+<p>Blowfish supports any comment system, including Giscus, with a Hugo partial. Create a <code>layouts/partials/comments.html</code> and paste the code provided by Giscus.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;https://giscus.app/client.js&#34;</span>
+</span></span><span class="line"><span class="cl">        <span class="na">data-repo</span><span class="o">=</span><span class="s">&#34;[ENTER REPO HERE]&#34;</span>
+</span></span><span class="line"><span class="cl">        <span class="na">data-repo-id</span><span class="o">=</span><span class="s">&#34;[ENTER REPO ID HERE]&#34;</span>
+</span></span><span class="line"><span class="cl">        <span class="na">data-category</span><span class="o">=</span><span class="s">&#34;[ENTER CATEGORY NAME HERE]&#34;</span>
+</span></span><span class="line"><span class="cl">        <span class="na">data-category-id</span><span class="o">=</span><span class="s">&#34;[ENTER CATEGORY ID HERE]&#34;</span>
+</span></span><span class="line"><span class="cl">        <span class="na">data-mapping</span><span class="o">=</span><span class="s">&#34;url&#34;</span>
+</span></span><span class="line"><span class="cl">        <span class="na">data-strict</span><span class="o">=</span><span class="s">&#34;0&#34;</span>
+</span></span><span class="line"><span class="cl">        <span class="na">data-reactions-enabled</span><span class="o">=</span><span class="s">&#34;1&#34;</span>
+</span></span><span class="line"><span class="cl">        <span class="na">data-emit-metadata</span><span class="o">=</span><span class="s">&#34;0&#34;</span>
+</span></span><span class="line"><span class="cl">        <span class="na">data-input-position</span><span class="o">=</span><span class="s">&#34;top&#34;</span>
+</span></span><span class="line"><span class="cl">        <span class="na">data-theme</span><span class="o">=</span><span class="s">&#34;transparent_dark&#34;</span>
+</span></span><span class="line"><span class="cl">        <span class="na">data-lang</span><span class="o">=</span><span class="s">&#34;en&#34;</span>
+</span></span><span class="line"><span class="cl">        <span class="na">data-loading</span><span class="o">=</span><span class="s">&#34;lazy&#34;</span>
+</span></span><span class="line"><span class="cl">        <span class="na">crossorigin</span><span class="o">=</span><span class="s">&#34;anonymous&#34;</span>
+</span></span><span class="line"><span class="cl">        <span class="na">async</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+</span></span></code></pre></div><p>In every article where you want to enable comments, add the following line to the site&rsquo;s metadata:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">comments</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span></span></span></code></pre></div>
 
 <h2 class="relative group">Publish Your First Article 
     <div id="publish-your-first-article" class="anchor"></div>
@@ -1142,23 +1205,23 @@ My Blog Journey #I’m blogging for more than 15 years now. During that time, I
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span>- <span class="l">GitHub</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span>- <span class="l">Cloudflare</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">comments</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">                      </span><span class="c"># Whether comments should appear under the article</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">series</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&#34;My series&#34;</span><span class="p">]</span><span class="w">               </span><span class="c"># All series articles are highlighted and linked at the beginning of the article</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">series_order</span><span class="p">:</span><span class="w"> </span><span class="m">1</span><span class="w">                     </span><span class="c"># The current article&#39;s order in the series</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">series</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&#34;My series&#34;</span><span class="p">]</span><span class="w">               </span><span class="c"># Optional. All series articles are highlighted and linked at the beginning of the article</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">series_order</span><span class="p">:</span><span class="w"> </span><span class="m">1</span><span class="w">                     </span><span class="c"># Optional. The current article&#39;s order in the series</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nn">---</span><span class="w">
-</span></span></span></code></pre></div><p>Add the article content to the <code>index.md</code>, too.</p>
+</span></span></span></code></pre></div><p>Start writing your article in Markdown below the metadata.</p>
 <p>You can live preview all changes and drafts you are working on with <code>hugo server --buildDrafts</code>. The live preview refreshes every time you save a file. You can save your progress with git in your private repository anytime and nobody sees your unfinished drafts.</p>
 <p>Once you are ready to publish your article, in the metadata section, change <code>draft</code> to <code>no</code> and change the <code>date</code> to the current date. Then run <code>hugo</code> to build the final site to the <code>public</code> folder.</p>
 <p>Push the changes to your private repository. The GitHub workflow picks up the changes in the <code>public</code> folder and commits them to your public repository. Cloudflare sees the new commit in the public repository and starts building your website.</p>
 <p>After a few minutes, your first article is publically available.</p>
 
 
-<h2 class="relative group">Updates 
-    <div id="updates" class="anchor"></div>
+<h2 class="relative group">Keeping Your Blog Up To Date 
+    <div id="keeping-your-blog-up-to-date" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#updates" aria-label="Anchor">#</a>
+            style="text-decoration-line: none !important;" href="#keeping-your-blog-up-to-date" aria-label="Anchor">#</a>
     </span>        
     
 </h2>
@@ -1177,7 +1240,7 @@ My Blog Journey #I’m blogging for more than 15 years now. During that time, I
     <figure>
       
       
-      <img class="my-0 rounded-md" src="/posts/how-to-create-this-blog/images/gh_sub_hu11161709267215436894.webp" />
+      <img class="my-0 rounded-md" src="/posts/how-to-create-this-blog/images/gh_sub_hu5fa8940a267f0c1c2de800f34775db91_6904_2000x0_resize_q50_h2_box_3.webp" />
       
       <figcaption>Subscribe to new GitHub releases</figcaption>
     </figure>
@@ -1214,16 +1277,22 @@ My Blog Journey #I’m blogging for more than 15 years now. During that time, I
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-batch" data-lang="batch"><span class="line"><span class="cl">blowfish-tools
 </span></span></code></pre></div>
 
-<h2 class="relative group">Tips And Tricks 
-    <div id="tips-and-tricks" class="anchor"></div>
+<h2 class="relative group">Further Reading 
+    <div id="further-reading" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#tips-and-tricks" aria-label="Anchor">#</a>
+            style="text-decoration-line: none !important;" href="#further-reading" aria-label="Anchor">#</a>
     </span>        
     
 </h2>
+<p>Here are some other articles that follow the same idea, but differ slightly in the implementation:</p>
+<ul>
+<li><a href="https://mycloudrevolution.com/2024/07/16/built-with-hugo-cloudflare-and-love/" target="_blank">Markus Kraus - Built with Hugo, Cloudflare and Love</a></li>
+<li><a href="https://pablogonzalez.me/posts/personal_webpage/" target="_blank">Pablo Jesús González Rubio - Setting Up a Static Page with Hugo, Cloudflare, and Umami Analytics</a></li>
+<li><a href="https://blog.cf5.co.uk/blog/23-03-23-cloudflare-github/" target="_blank">Colin Fretwell - Deploy a Hugo Site with Cloudflare Pages and GitHub</a></li>
+</ul>
 
           
           
@@ -1241,7 +1310,7 @@ My Blog Journey #I’m blogging for more than 15 years now. During that time, I
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http://localhost:1313/posts/how-to-create-this-blog/&amp;title=How%20To%20Create%20This%20Beautiful%20Blog%20-%20%28It%20Is%20Free!%29"
+      href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://dominikbritz.com/posts/how-to-create-this-blog/&amp;title=How%20To%20Create%20This%20Beautiful%20Blog%20-%20%28It%20Is%20Free!%29"
       title="Share on LinkedIn"
       aria-label="Share on LinkedIn"
       >
@@ -1260,7 +1329,7 @@ My Blog Journey #I’m blogging for more than 15 years now. During that time, I
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://twitter.com/intent/tweet/?url=http://localhost:1313/posts/how-to-create-this-blog/&amp;text=How%20To%20Create%20This%20Beautiful%20Blog%20-%20%28It%20Is%20Free!%29"
+      href="https://twitter.com/intent/tweet/?url=https://dominikbritz.com/posts/how-to-create-this-blog/&amp;text=How%20To%20Create%20This%20Beautiful%20Blog%20-%20%28It%20Is%20Free!%29"
       title="Tweet on Twitter"
       aria-label="Tweet on Twitter"
       >
@@ -1278,7 +1347,7 @@ My Blog Journey #I’m blogging for more than 15 years now. During that time, I
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://reddit.com/submit/?url=http://localhost:1313/posts/how-to-create-this-blog/&amp;resubmit=true&amp;title=How%20To%20Create%20This%20Beautiful%20Blog%20-%20%28It%20Is%20Free!%29"
+      href="https://reddit.com/submit/?url=https://dominikbritz.com/posts/how-to-create-this-blog/&amp;resubmit=true&amp;title=How%20To%20Create%20This%20Beautiful%20Blog%20-%20%28It%20Is%20Free!%29"
       title="Submit to Reddit"
       aria-label="Submit to Reddit"
       >
@@ -1297,7 +1366,7 @@ My Blog Journey #I’m blogging for more than 15 years now. During that time, I
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://pinterest.com/pin/create/bookmarklet/?url=http://localhost:1313/posts/how-to-create-this-blog/&amp;description=How%20To%20Create%20This%20Beautiful%20Blog%20-%20%28It%20Is%20Free!%29"
+      href="https://pinterest.com/pin/create/bookmarklet/?url=https://dominikbritz.com/posts/how-to-create-this-blog/&amp;description=How%20To%20Create%20This%20Beautiful%20Blog%20-%20%28It%20Is%20Free!%29"
       title="Pin on Pinterest"
       aria-label="Pin on Pinterest"
       >
@@ -1316,7 +1385,7 @@ My Blog Journey #I’m blogging for more than 15 years now. During that time, I
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:1313/posts/how-to-create-this-blog/&amp;quote=How%20To%20Create%20This%20Beautiful%20Blog%20-%20%28It%20Is%20Free!%29"
+      href="https://www.facebook.com/sharer/sharer.php?u=https://dominikbritz.com/posts/how-to-create-this-blog/&amp;quote=How%20To%20Create%20This%20Beautiful%20Blog%20-%20%28It%20Is%20Free!%29"
       title="Share on Facebook"
       aria-label="Share on Facebook"
       >
@@ -1335,7 +1404,7 @@ My Blog Journey #I’m blogging for more than 15 years now. During that time, I
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="mailto:?body=http://localhost:1313/posts/how-to-create-this-blog/&amp;subject=How%20To%20Create%20This%20Beautiful%20Blog%20-%20%28It%20Is%20Free!%29"
+      href="mailto:?body=https://dominikbritz.com/posts/how-to-create-this-blog/&amp;subject=How%20To%20Create%20This%20Beautiful%20Blog%20-%20%28It%20Is%20Free!%29"
       title="Send via email"
       aria-label="Send via email"
       >
@@ -1354,9 +1423,9 @@ My Blog Journey #I’m blogging for more than 15 years now. During that time, I
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://api.whatsapp.com/send?text=http://localhost:1313/posts/how-to-create-this-blog/&amp;resubmit=true&amp;title=How%20To%20Create%20This%20Beautiful%20Blog%20-%20%28It%20Is%20Free!%29"
-      title=""
-      aria-label=""
+      href="https://api.whatsapp.com/send?text=https://dominikbritz.com/posts/how-to-create-this-blog/&amp;resubmit=true&amp;title=How%20To%20Create%20This%20Beautiful%20Blog%20-%20%28It%20Is%20Free!%29"
+      title="Share via WhatsApp"
+      aria-label="Share via WhatsApp"
       >
       
 
@@ -1373,9 +1442,9 @@ My Blog Journey #I’m blogging for more than 15 years now. During that time, I
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://t.me/share/url?url=http://localhost:1313/posts/how-to-create-this-blog/&amp;resubmit=true&amp;title=How%20To%20Create%20This%20Beautiful%20Blog%20-%20%28It%20Is%20Free!%29"
-      title=""
-      aria-label=""
+      href="https://t.me/share/url?url=https://dominikbritz.com/posts/how-to-create-this-blog/&amp;resubmit=true&amp;title=How%20To%20Create%20This%20Beautiful%20Blog%20-%20%28It%20Is%20Free!%29"
+      title="Share via Telegram"
+      aria-label="Share via Telegram"
       >
       
 
@@ -1402,12 +1471,12 @@ My Blog Journey #I’m blogging for more than 15 years now. During that time, I
           
         
       <script>
-        var oid = "views_posts\\How to create this blog\\index.md"
-        var oid_likes = "likes_posts\\How to create this blog\\index.md"
+        var oid = "views_posts\/How to create this blog\/index.md"
+        var oid_likes = "likes_posts\/How to create this blog\/index.md"
       </script>
       
       
-      <script type="text/javascript" src="/js/page.min.0860cf4e04fa2d72cc33ddba263083464d48f67de06114529043cb4623319efed4f484fd7f1730df5abea0e2da6f3538855634081d02f2d6e920b956f063e823.js" integrity="sha512-CGDPTgT6LXLMM926JjCDRk1I9n3gYRRSkEPLRiMxnv7U9IT9fxcw31q&#43;oOLabzU4hVY0CB0C8tbpILlW8GPoIw=="></script>
+      <script type="text/javascript" src="/js/page.min.b06a29d42a4ed16787978e2eee1e8c797b7698db2bc14ccee78f5c80ac566fc996190a73ad80a5e987558474b20b96fa38f7d85b405f165ff72b7b163c5ad11b.js" integrity="sha512-sGop1CpO0WeHl44u7h6MeXt2mNsrwUzO549cgKxWb8mWGQpzrYCl6YdVhHSyC5b6OPfYW0BfFl/3K3sWPFrRGw=="></script>
       
   
     </section>
@@ -1423,7 +1492,7 @@ My Blog Journey #I’m blogging for more than 15 years now. During that time, I
       <div class="flex justify-between pt-3">
         <span>
           
-            <a class="flex group mr-3" href="/posts/secure-remote-access/">
+            <a class="flex group mr-3" href="/posts/victoria-metrics-grafana/">
               <span
                 class="mr-3 text-neutral-700 group-hover:text-primary-600 ltr:inline rtl:hidden dark:text-neutral dark:group-hover:text-primary-400"
                 >&larr;</span
@@ -1435,11 +1504,11 @@ My Blog Journey #I’m blogging for more than 15 years now. During that time, I
               <span class="flex flex-col">
                 <span
                   class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
-                  >Secure Remote Home Server Access With mTLS and WireGuard</span
+                  >Docker Monitoring With Grafana and VictoriaMetrics</span
                 >
                 <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
                   
-                    <time datetime="2024-09-18T00:00:00&#43;00:00">18 September 2024</time>
+                    <time datetime="2025-01-18T00:00:00&#43;00:00">18 January 2025</time>
                   
                 </span>
               </span>
@@ -1518,14 +1587,14 @@ My Blog Journey #I’m blogging for more than 15 years now. During that time, I
   </script>
   
   
-  <script type="text/javascript" src="/js/process.min.ee03488f19c93c2efb199e2e3014ea5f3cb2ce7d45154adb3399a158cac27ca52831db249ede5bb602700ef87eb02434139de0858af1818ab0fb4182472204a4.js" integrity="sha512-7gNIjxnJPC77GZ4uMBTqXzyyzn1FFUrbM5mhWMrCfKUoMdsknt5btgJwDvh&#43;sCQ0E53ghYrxgYqw&#43;0GCRyIEpA=="></script>
+  <script type="text/javascript" src="/js/process.min.62060bb247f4de2b6dde45903668fefb68d792f365587605177b1227c0cf43588701edaca0cb40e2c8e2789bd5ce67c1d2a215b9fb258c3496a7cd25e7cb5fdf.js" integrity="sha512-YgYLskf03itt3kWQNmj&#43;&#43;2jXkvNlWHYFF3sSJ8DPQ1iHAe2soMtA4sjieJvVzmfB0qIVufsljDSWp80l58tf3w=="></script>
   
   
 </footer>
 <div
   id="search-wrapper"
   class="invisible fixed inset-0 flex h-screen w-screen cursor-default flex-col bg-neutral-500/50 p-4 backdrop-blur-sm dark:bg-neutral-900/50 sm:p-6 md:p-[10vh] lg:p-[12vh]"
-  data-url="http://localhost:1313/"
+  data-url="https://dominikbritz.com/"
   style="z-index:500"
 >
   <div

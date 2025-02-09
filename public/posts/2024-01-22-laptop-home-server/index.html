@@ -48,12 +48,12 @@
   
   
   
-  <script defer type="text/javascript" id="script-bundle" src="/js/main.bundle.min.0c424ab1c6aafe2039f09c49da59e609e9c3639b293d752971a3f96bb967114eb9719493d28e382b62527c185812ddc2c5a3664a3a21d0cbab06dafccbf685e4.js"
-    integrity="sha512-DEJKscaq/iA58JxJ2lnmCenDY5spPXUpcaP5a7lnEU65cZST0o44K2JSfBhYEt3CxaNmSjoh0MurBtr8y/aF5A==" data-copy="" data-copied=""></script>
+  <script defer type="text/javascript" id="script-bundle" src="/js/main.bundle.min.477974de0a7f7a2e524a28d54a0a648c183b8f257dd21be402125f9091ed2fe14e1565f19481a6ddbf1c01bacdded3fa2538a98d9f3fcbf43336c6892601e235.js"
+    integrity="sha512-R3l03gp/ei5SSijVSgpkjBg7jyV90hvkAhJfkJHtL&#43;FOFWXxlIGm3b8cAbrN3tP6JTipjZ8/y/QzNsaJJgHiNQ==" data-copy="" data-copied=""></script>
   
   
   
-  <script src="/lib/zoom/zoom.min.fcbc7f7b3dcea96e3b5570cd322c5d7a12d5351c87f9889b1c31745a2cc711df58f6b70795a86d50e63813b236ade916668332c10a70a4ce26f7c0878f525fce.js" integrity="sha512-/Lx/ez3OqW47VXDNMixdehLVNRyH&#43;YibHDF0WizHEd9Y9rcHlahtUOY4E7I2rekWZoMywQpwpM4m98CHj1Jfzg=="></script>
+  <script src="/lib/zoom/zoom.min.37d2094687372da3f7343a221a470f6b8806f7891aa46a5a03966af7f0ebd38b9fe536cb154e6ad28f006d184b294525a7c4054b6bbb4be62d8b453b42db99bd.js" integrity="sha512-N9IJRoc3LaP3NDoiGkcPa4gG94kapGpaA5Zq9/Dr04uf5TbLFU5q0o8AbRhLKUUlp8QFS2u7S&#43;Yti0U7QtuZvQ=="></script>
   
   
   
@@ -69,34 +69,21 @@
   
   
   
-  <meta property="og:url" content="https://dominikbritz.com/posts/2024-01-22-laptop-home-server/">
-  <meta property="og:site_name" content="DominikBritz.com">
-  <meta property="og:title" content="Laptop Home Server Build">
-  <meta property="og:description" content="A guide to setting up an old laptop as your new home server, powered by Ubuntu, Ansible, and Docker. It securely hosts videos, files, and photos. Add HTTPS everywhere, cloud backup and performance monitoring.
-Bye Bye Synology, Hello Ubuntu #TL;DR #Synology has a great ecosystem, but one is locked in. I’m using Ubuntu LTS server now, as it gives full control and is focused on stability. I chose it over Proxmox for simplicity, as I don’t need virtual machines.">
-  <meta property="og:locale" content="en">
-  <meta property="og:type" content="article">
-    <meta property="article:section" content="posts">
-    <meta property="article:published_time" content="2024-01-23T00:00:00+00:00">
-    <meta property="article:modified_time" content="2024-01-23T00:00:00+00:00">
-    <meta property="article:tag" content="Home Server">
-    <meta property="article:tag" content="Docker">
-    <meta property="article:tag" content="Caddy">
-    <meta property="article:tag" content="Ansible">
-    <meta property="article:tag" content="Ubuntu">
-    <meta property="article:tag" content="Restic">
-    <meta property="og:image" content="https://dominikbritz.com/posts/2024-01-22-laptop-home-server/featured.jpg">
-      <meta property="og:see_also" content="https://dominikbritz.com/posts/victoria-metrics-grafana/">
-      <meta property="og:see_also" content="https://dominikbritz.com/posts/secure-remote-access/">
-      <meta property="og:see_also" content="https://dominikbritz.com/posts/immich-self-hosted-photos-with-cloud-backup/">
-      <meta property="og:see_also" content="https://dominikbritz.com/posts/streamlined-nextcloud-with-openid-connect-authentication/">
+  <meta property="og:title" content="Laptop Home Server Build" />
+<meta property="og:description" content="A guide to setting up an old laptop as your new home server, powered by Ubuntu, Ansible, and Docker. It securely hosts videos, files, and photos. Add HTTPS everywhere, cloud backup and performance monitoring.
+Bye Bye Synology, Hello Ubuntu # TL;DR # Synology has a great ecosystem, but one is locked in." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://dominikbritz.com/posts/2024-01-22-laptop-home-server/" /><meta property="og:image" content="https://dominikbritz.com/posts/2024-01-22-laptop-home-server/featured.jpg" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2024-01-23T00:00:00+00:00" />
+<meta property="article:modified_time" content="2024-01-23T00:00:00+00:00" />
 
-  
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="https://dominikbritz.com/posts/2024-01-22-laptop-home-server/featured.jpg">
-  <meta name="twitter:title" content="Laptop Home Server Build">
-  <meta name="twitter:description" content="A guide to setting up an old laptop as your new home server, powered by Ubuntu, Ansible, and Docker. It securely hosts videos, files, and photos. Add HTTPS everywhere, cloud backup and performance monitoring.
-Bye Bye Synology, Hello Ubuntu #TL;DR #Synology has a great ecosystem, but one is locked in. I’m using Ubuntu LTS server now, as it gives full control and is focused on stability. I chose it over Proxmox for simplicity, as I don’t need virtual machines.">
+
+
+
+  <meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://dominikbritz.com/posts/2024-01-22-laptop-home-server/featured.jpg" /><meta name="twitter:title" content="Laptop Home Server Build"/>
+<meta name="twitter:description" content="A guide to setting up an old laptop as your new home server, powered by Ubuntu, Ansible, and Docker. It securely hosts videos, files, and photos. Add HTTPS everywhere, cloud backup and performance monitoring.
+Bye Bye Synology, Hello Ubuntu # TL;DR # Synology has a great ecosystem, but one is locked in."/>
 
   
   <script type="application/ld+json">
@@ -107,7 +94,7 @@ Bye Bye Synology, Hello Ubuntu #TL;DR #Synology has a great ecosystem, but one
     "name": "Laptop Home Server Build",
     "headline": "Laptop Home Server Build",
     
-    "abstract": "\u003cp\u003eA guide to setting up an old laptop as your new home server, powered by Ubuntu, Ansible, and Docker. It securely hosts videos, files, and photos. Add HTTPS everywhere, cloud backup and performance monitoring.\u003c\/p\u003e\n\r\n\r\n\u003ch2 class=\u0022relative group\u0022\u003eBye Bye Synology, Hello Ubuntu \r\n    \u003cdiv id=\u0022bye-bye-synology-hello-ubuntu\u0022 class=\u0022anchor\u0022\u003e\u003c\/div\u003e\r\n    \r\n    \u003cspan\r\n        class=\u0022absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100\u0022\u003e\r\n        \u003ca class=\u0022group-hover:text-primary-300 dark:group-hover:text-neutral-700\u0022\r\n            style=\u0022text-decoration-line: none !important;\u0022 href=\u0022#bye-bye-synology-hello-ubuntu\u0022 aria-label=\u0022Anchor\u0022\u003e#\u003c\/a\u003e\r\n    \u003c\/span\u003e        \r\n    \r\n\u003c\/h2\u003e\r\n\r\n\r\n\u003ch3 class=\u0022relative group\u0022\u003eTL;DR \r\n    \u003cdiv id=\u0022tldr\u0022 class=\u0022anchor\u0022\u003e\u003c\/div\u003e\r\n    \r\n    \u003cspan\r\n        class=\u0022absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100\u0022\u003e\r\n        \u003ca class=\u0022group-hover:text-primary-300 dark:group-hover:text-neutral-700\u0022\r\n            style=\u0022text-decoration-line: none !important;\u0022 href=\u0022#tldr\u0022 aria-label=\u0022Anchor\u0022\u003e#\u003c\/a\u003e\r\n    \u003c\/span\u003e        \r\n    \r\n\u003c\/h3\u003e\r\n\u003cp\u003eSynology has a great ecosystem, but one is locked in. I\u0026rsquo;m using Ubuntu LTS server now, as it gives full control and is focused on stability. I chose it over Proxmox for simplicity, as I don\u0026rsquo;t need virtual machines.\u003c\/p\u003e",
+    "abstract": "A guide to setting up an old laptop as your new home server, powered by Ubuntu, Ansible, and Docker. It securely hosts videos, files, and photos. Add HTTPS everywhere, cloud backup and performance monitoring.\nBye Bye Synology, Hello Ubuntu # TL;DR # Synology has a great ecosystem, but one is locked in.",
     "inLanguage": "en",
     "url" : "https:\/\/dominikbritz.com\/posts\/2024-01-22-laptop-home-server\/",
     "author" : {
@@ -149,7 +136,7 @@ Bye Bye Synology, Hello Ubuntu #TL;DR #Synology has a great ecosystem, but one
   
   
 
-<script src="/lib/jquery/jquery.slim.min.03cb160e3cfdb2667a2e2c80d283bebcf63ff8bbc4b629c9ab2babf6fae1d0c07ad470edae783efa4fabda2ac01c58d60e63b98b3c336be8208460f08f4354f5.js" integrity="sha512-A8sWDjz9smZ6LiyA0oO&#43;vPY/&#43;LvEtinJqyur9vrh0MB61HDtrng&#43;&#43;k&#43;r2irAHFjWDmO5izwza&#43;gghGDwj0NU9Q=="></script>
+<script src="/lib/jquery/jquery.slim.min.b0dca576e87d7eaa5850ae4e61759c065786cdb6489d68fcc82240539eebd5da522bdb4fda085ffd245808c8fe2acb2516408eb774ef26b5f6015fc6737c0ea8.js" integrity="sha512-sNylduh9fqpYUK5OYXWcBleGzbZInWj8yCJAU57r1dpSK9tP2ghf/SRYCMj&#43;KsslFkCOt3TvJrX2AV/Gc3wOqA=="></script>
 
 
 
@@ -226,7 +213,7 @@ Bye Bye Synology, Hello Ubuntu #TL;DR #Synology has a great ecosystem, but one
             
   <a href="/posts/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
     
-    <p class="text-base font-medium" title="Posts">
+    <p class="text-base font-medium" title="">
         Blog
     </p>
 </a>
@@ -237,7 +224,7 @@ Bye Bye Synology, Hello Ubuntu #TL;DR #Synology has a great ecosystem, but one
             
   <a href="/tags/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
     
-    <p class="text-base font-medium" title="Tags">
+    <p class="text-base font-medium" title="">
         Tags
     </p>
 </a>
@@ -392,7 +379,7 @@ Bye Bye Synology, Hello Ubuntu #TL;DR #Synology has a great ecosystem, but one
   <li class="mt-1">
     <a href="/posts/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
         
-        <p class="text-bg font-bg" title="Posts">
+        <p class="text-bg font-bg" title="">
             Blog
         </p>
     </a>
@@ -407,7 +394,7 @@ Bye Bye Synology, Hello Ubuntu #TL;DR #Synology has a great ecosystem, but one
   <li class="mt-1">
     <a href="/tags/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
         
-        <p class="text-bg font-bg" title="Tags">
+        <p class="text-bg font-bg" title="">
             Tags
         </p>
     </a>
@@ -485,7 +472,7 @@ Bye Bye Synology, Hello Ubuntu #TL;DR #Synology has a great ecosystem, but one
 
     
     <div class="fixed inset-x-0 top-0 h-[800px] single_hero_background nozoom"
-    style="background-image:url(/posts/2024-01-22-laptop-home-server/featured_hu18227465903073770102.jpg);">
+    style="background-image:url(/posts/2024-01-22-laptop-home-server/featured_hu5459c0360c2b0cb7a147d2df0eb350ca_91625_1200x0_resize_q75_box.jpg);">
     
 
 
@@ -1092,7 +1079,7 @@ Bye Bye Synology, Hello Ubuntu #TL;DR #Synology has a great ecosystem, but one
     <figure>
       
       
-      <img class="my-0 rounded-md" src="/posts/2024-01-22-laptop-home-server/images/helgekleindotcom_hu8250597039682810301.webp" />
+      <img class="my-0 rounded-md" src="/posts/2024-01-22-laptop-home-server/images/helgekleindotcom_huca85428c9e8d0d2883123c80e3a42e34_458922_2000x0_resize_q50_h2_box_3.webp" />
       
       <figcaption>Helge&rsquo;s series on home automation</figcaption>
     </figure>
@@ -1747,7 +1734,7 @@ Bye Bye Synology, Hello Ubuntu #TL;DR #Synology has a great ecosystem, but one
     <figure>
       
       
-      <img class="my-0 rounded-md" src="/posts/2024-01-22-laptop-home-server/images/githubtoken_hu17554826767860707015.webp" />
+      <img class="my-0 rounded-md" src="/posts/2024-01-22-laptop-home-server/images/githubtoken_hu3a7efc09e19220cfadf84b587096918e_87963_2000x0_resize_q50_h2_box_3.webp" />
       
       <figcaption>Fine-grained access token in GitHub</figcaption>
     </figure>
@@ -1787,7 +1774,7 @@ Bye Bye Synology, Hello Ubuntu #TL;DR #Synology has a great ecosystem, but one
     <figure>
       
       
-      <img class="my-0 rounded-md" src="/posts/2024-01-22-laptop-home-server/images/dockge_hu14878743734157071704.webp" />
+      <img class="my-0 rounded-md" src="/posts/2024-01-22-laptop-home-server/images/dockge_hu2cb554d507a3d7188aa0afb9c26b44fb_308883_2000x0_resize_q50_h2_box_3.webp" />
       
       <figcaption>Beautiful Dockge UI</figcaption>
     </figure>
@@ -2173,12 +2160,12 @@ COPY --from=builder /usr/bin/caddy /usr/bin/caddy
           
         
       <script>
-        var oid = "views_posts\\2024-01-22-laptop-home-server\\index.md"
-        var oid_likes = "likes_posts\\2024-01-22-laptop-home-server\\index.md"
+        var oid = "views_posts\/2024-01-22-laptop-home-server\/index.md"
+        var oid_likes = "likes_posts\/2024-01-22-laptop-home-server\/index.md"
       </script>
       
       
-      <script type="text/javascript" src="/js/page.min.0860cf4e04fa2d72cc33ddba263083464d48f67de06114529043cb4623319efed4f484fd7f1730df5abea0e2da6f3538855634081d02f2d6e920b956f063e823.js" integrity="sha512-CGDPTgT6LXLMM926JjCDRk1I9n3gYRRSkEPLRiMxnv7U9IT9fxcw31q&#43;oOLabzU4hVY0CB0C8tbpILlW8GPoIw=="></script>
+      <script type="text/javascript" src="/js/page.min.b06a29d42a4ed16787978e2eee1e8c797b7698db2bc14ccee78f5c80ac566fc996190a73ad80a5e987558474b20b96fa38f7d85b405f165ff72b7b163c5ad11b.js" integrity="sha512-sGop1CpO0WeHl44u7h6MeXt2mNsrwUzO549cgKxWb8mWGQpzrYCl6YdVhHSyC5b6OPfYW0BfFl/3K3sWPFrRGw=="></script>
       
   
     </section>
@@ -2311,7 +2298,7 @@ COPY --from=builder /usr/bin/caddy /usr/bin/caddy
   </script>
   
   
-  <script type="text/javascript" src="/js/process.min.ee03488f19c93c2efb199e2e3014ea5f3cb2ce7d45154adb3399a158cac27ca52831db249ede5bb602700ef87eb02434139de0858af1818ab0fb4182472204a4.js" integrity="sha512-7gNIjxnJPC77GZ4uMBTqXzyyzn1FFUrbM5mhWMrCfKUoMdsknt5btgJwDvh&#43;sCQ0E53ghYrxgYqw&#43;0GCRyIEpA=="></script>
+  <script type="text/javascript" src="/js/process.min.62060bb247f4de2b6dde45903668fefb68d792f365587605177b1227c0cf43588701edaca0cb40e2c8e2789bd5ce67c1d2a215b9fb258c3496a7cd25e7cb5fdf.js" integrity="sha512-YgYLskf03itt3kWQNmj&#43;&#43;2jXkvNlWHYFF3sSJ8DPQ1iHAe2soMtA4sjieJvVzmfB0qIVufsljDSWp80l58tf3w=="></script>
   
   
 </footer>

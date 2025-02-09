@@ -3,19 +3,25 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
   <url>
-    <loc>https://dominikbritz.com/posts/victoria-metrics-grafana/</loc>
-    <lastmod>2025-01-18T00:00:00+00:00</lastmod>
+    <loc>https://dominikbritz.com/</loc>
+    <lastmod>2025-02-09T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://dominikbritz.com/</loc>
-    <lastmod>2025-01-18T00:00:00+00:00</lastmod>
+    <loc>https://dominikbritz.com/posts/how-to-create-this-blog/</loc>
+    <lastmod>2025-02-09T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://dominikbritz.com/posts/</loc>
+    <lastmod>2025-02-09T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://dominikbritz.com/posts/victoria-metrics-grafana/</loc>
     <lastmod>2025-01-18T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>

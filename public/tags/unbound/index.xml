@@ -15,32 +15,8 @@
       <pubDate>Tue, 23 Jan 2024 00:00:00 +0000</pubDate>
       
       <guid>https://dominikbritz.com/posts/2024-01-22-laptop-home-server/</guid>
-      <description>&lt;p&gt;A guide to setting up an old laptop as your new home server, powered by Ubuntu, Ansible, and Docker. It securely hosts videos, files, and photos. Add HTTPS everywhere, cloud backup and performance monitoring.&lt;/p&gt;
-
-
-&lt;h2 class=&#34;relative group&#34;&gt;Bye Bye Synology, Hello Ubuntu 
-    &lt;div id=&#34;bye-bye-synology-hello-ubuntu&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
-    
-    &lt;span
-        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100&#34;&gt;
-        &lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34;
-            style=&#34;text-decoration-line: none !important;&#34; href=&#34;#bye-bye-synology-hello-ubuntu&#34; aria-label=&#34;Anchor&#34;&gt;#&lt;/a&gt;
-    &lt;/span&gt;        
-    
-&lt;/h2&gt;
-
-
-&lt;h3 class=&#34;relative group&#34;&gt;TL;DR 
-    &lt;div id=&#34;tldr&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
-    
-    &lt;span
-        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100&#34;&gt;
-        &lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34;
-            style=&#34;text-decoration-line: none !important;&#34; href=&#34;#tldr&#34; aria-label=&#34;Anchor&#34;&gt;#&lt;/a&gt;
-    &lt;/span&gt;        
-    
-&lt;/h3&gt;
-&lt;p&gt;Synology has a great ecosystem, but one is locked in. I&amp;rsquo;m using Ubuntu LTS server now, as it gives full control and is focused on stability. I chose it over Proxmox for simplicity, as I don&amp;rsquo;t need virtual machines.&lt;/p&gt;</description>
+      <description>A guide to setting up an old laptop as your new home server, powered by Ubuntu, Ansible, and Docker. It securely hosts videos, files, and photos. Add HTTPS everywhere, cloud backup and performance monitoring.
+Bye Bye Synology, Hello Ubuntu # TL;DR # Synology has a great ecosystem, but one is locked in.</description>
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://dominikbritz.com/posts/2024-01-22-laptop-home-server/featured.jpg" />
     </item>
     
