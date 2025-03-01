@@ -48,12 +48,12 @@
   
   
   
-  <script defer type="text/javascript" id="script-bundle" src="/js/main.bundle.min.477974de0a7f7a2e524a28d54a0a648c183b8f257dd21be402125f9091ed2fe14e1565f19481a6ddbf1c01bacdded3fa2538a98d9f3fcbf43336c6892601e235.js"
-    integrity="sha512-R3l03gp/ei5SSijVSgpkjBg7jyV90hvkAhJfkJHtL&#43;FOFWXxlIGm3b8cAbrN3tP6JTipjZ8/y/QzNsaJJgHiNQ==" data-copy="" data-copied=""></script>
+  <script defer type="text/javascript" id="script-bundle" src="/js/main.bundle.min.0c424ab1c6aafe2039f09c49da59e609e9c3639b293d752971a3f96bb967114eb9719493d28e382b62527c185812ddc2c5a3664a3a21d0cbab06dafccbf685e4.js"
+    integrity="sha512-DEJKscaq/iA58JxJ2lnmCenDY5spPXUpcaP5a7lnEU65cZST0o44K2JSfBhYEt3CxaNmSjoh0MurBtr8y/aF5A==" data-copy="" data-copied=""></script>
   
   
   
-  <script src="/lib/zoom/zoom.min.37d2094687372da3f7343a221a470f6b8806f7891aa46a5a03966af7f0ebd38b9fe536cb154e6ad28f006d184b294525a7c4054b6bbb4be62d8b453b42db99bd.js" integrity="sha512-N9IJRoc3LaP3NDoiGkcPa4gG94kapGpaA5Zq9/Dr04uf5TbLFU5q0o8AbRhLKUUlp8QFS2u7S&#43;Yti0U7QtuZvQ=="></script>
+  <script src="/lib/zoom/zoom.min.fcbc7f7b3dcea96e3b5570cd322c5d7a12d5351c87f9889b1c31745a2cc711df58f6b70795a86d50e63813b236ade916668332c10a70a4ce26f7c0878f525fce.js" integrity="sha512-/Lx/ez3OqW47VXDNMixdehLVNRyH&#43;YibHDF0WizHEd9Y9rcHlahtUOY4E7I2rekWZoMywQpwpM4m98CHj1Jfzg=="></script>
   
   
   
@@ -69,21 +69,31 @@
   
   
   
-  <meta property="og:title" content="Streamlined Nextcloud With OpenID Connect Authentication" />
-<meta property="og:description" content="This article explains how to set up a fast and efficient Nextcloud as file management tool with OpenID Connect to Authelia.
-It is part of my series on creating a home server on an old laptop. I&rsquo;m assuming that you&rsquo;ve set up Docker, Caddy, and Authelia, as described in the first article of the series." />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://dominikbritz.com/posts/streamlined-nextcloud-with-openid-connect-authentication/" /><meta property="og:image" content="https://dominikbritz.com/posts/streamlined-nextcloud-with-openid-connect-authentication/featured.jpg" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2024-02-05T00:00:00+00:00" />
-<meta property="article:modified_time" content="2024-02-05T00:00:00+00:00" />
+  <meta property="og:url" content="https://dominikbritz.com/posts/streamlined-nextcloud-with-openid-connect-authentication/">
+  <meta property="og:site_name" content="DominikBritz.com">
+  <meta property="og:title" content="Streamlined Nextcloud With OpenID Connect Authentication">
+  <meta property="og:description" content="This article explains how to set up a fast and efficient Nextcloud as file management tool with OpenID Connect to Authelia.
+It is part of my series on creating a home server on an old laptop. I’m assuming that you’ve set up Docker, Caddy, and Authelia, as described in the first article of the series.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2024-02-05T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-02-05T00:00:00+00:00">
+    <meta property="article:tag" content="Home Server">
+    <meta property="article:tag" content="Nextcloud">
+    <meta property="article:tag" content="OpenID Connect">
+    <meta property="og:image" content="https://dominikbritz.com/posts/streamlined-nextcloud-with-openid-connect-authentication/featured.jpg">
+      <meta property="og:see_also" content="https://dominikbritz.com/posts/victoria-metrics-grafana/">
+      <meta property="og:see_also" content="https://dominikbritz.com/posts/secure-remote-access/">
+      <meta property="og:see_also" content="https://dominikbritz.com/posts/immich-self-hosted-photos-with-cloud-backup/">
+      <meta property="og:see_also" content="https://dominikbritz.com/posts/2024-01-22-laptop-home-server/">
 
-
-
-
-  <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:image" content="https://dominikbritz.com/posts/streamlined-nextcloud-with-openid-connect-authentication/featured.jpg" /><meta name="twitter:title" content="Streamlined Nextcloud With OpenID Connect Authentication"/>
-<meta name="twitter:description" content="This article explains how to set up a fast and efficient Nextcloud as file management tool with OpenID Connect to Authelia.
-It is part of my series on creating a home server on an old laptop. I&rsquo;m assuming that you&rsquo;ve set up Docker, Caddy, and Authelia, as described in the first article of the series."/>
+  
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://dominikbritz.com/posts/streamlined-nextcloud-with-openid-connect-authentication/featured.jpg">
+  <meta name="twitter:title" content="Streamlined Nextcloud With OpenID Connect Authentication">
+  <meta name="twitter:description" content="This article explains how to set up a fast and efficient Nextcloud as file management tool with OpenID Connect to Authelia.
+It is part of my series on creating a home server on an old laptop. I’m assuming that you’ve set up Docker, Caddy, and Authelia, as described in the first article of the series.">
 
   
   <script type="application/ld+json">
@@ -94,7 +104,7 @@ It is part of my series on creating a home server on an old laptop. I&rsquo;m as
     "name": "Streamlined Nextcloud With OpenID Connect Authentication",
     "headline": "Streamlined Nextcloud With OpenID Connect Authentication",
     
-    "abstract": "This article explains how to set up a fast and efficient Nextcloud as file management tool with OpenID Connect to Authelia.\nIt is part of my series on creating a home server on an old laptop. I\u0026rsquo;m assuming that you\u0026rsquo;ve set up Docker, Caddy, and Authelia, as described in the first article of the series.",
+    "abstract": "\u003cp\u003eThis article explains how to set up a fast and efficient Nextcloud as file management tool with OpenID Connect to Authelia.\u003c\/p\u003e\n\u003cp\u003eIt is part of my series on creating a home server on an old laptop. I\u0026rsquo;m assuming that you\u0026rsquo;ve set up Docker, Caddy, and Authelia, as described in the \u003ca href=\u0022https:\/\/dominikbritz.com\/posts\/2024-01-22-laptop-home-server\/\u0022 target=\u0022_blank\u0022\u003efirst article of the series\u003c\/a\u003e.\u003c\/p\u003e",
     "inLanguage": "en",
     "url" : "https:\/\/dominikbritz.com\/posts\/streamlined-nextcloud-with-openid-connect-authentication\/",
     "author" : {
@@ -110,7 +120,7 @@ It is part of my series on creating a home server on an old laptop. I&rsquo;m as
     "keywords": ["home server","nextcloud","OpenID Connect"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "2305"
+    "wordCount": "2381"
   }]
   </script>
 
@@ -136,7 +146,7 @@ It is part of my series on creating a home server on an old laptop. I&rsquo;m as
   
   
 
-<script src="/lib/jquery/jquery.slim.min.b0dca576e87d7eaa5850ae4e61759c065786cdb6489d68fcc82240539eebd5da522bdb4fda085ffd245808c8fe2acb2516408eb774ef26b5f6015fc6737c0ea8.js" integrity="sha512-sNylduh9fqpYUK5OYXWcBleGzbZInWj8yCJAU57r1dpSK9tP2ghf/SRYCMj&#43;KsslFkCOt3TvJrX2AV/Gc3wOqA=="></script>
+<script src="/lib/jquery/jquery.slim.min.03cb160e3cfdb2667a2e2c80d283bebcf63ff8bbc4b629c9ab2babf6fae1d0c07ad470edae783efa4fabda2ac01c58d60e63b98b3c336be8208460f08f4354f5.js" integrity="sha512-A8sWDjz9smZ6LiyA0oO&#43;vPY/&#43;LvEtinJqyur9vrh0MB61HDtrng&#43;&#43;k&#43;r2irAHFjWDmO5izwza&#43;gghGDwj0NU9Q=="></script>
 
 
 
@@ -213,7 +223,7 @@ It is part of my series on creating a home server on an old laptop. I&rsquo;m as
             
   <a href="/posts/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
     
-    <p class="text-base font-medium" title="">
+    <p class="text-base font-medium" title="Posts">
         Blog
     </p>
 </a>
@@ -224,7 +234,7 @@ It is part of my series on creating a home server on an old laptop. I&rsquo;m as
             
   <a href="/tags/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
     
-    <p class="text-base font-medium" title="">
+    <p class="text-base font-medium" title="Tags">
         Tags
     </p>
 </a>
@@ -379,7 +389,7 @@ It is part of my series on creating a home server on an old laptop. I&rsquo;m as
   <li class="mt-1">
     <a href="/posts/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
         
-        <p class="text-bg font-bg" title="">
+        <p class="text-bg font-bg" title="Posts">
             Blog
         </p>
     </a>
@@ -394,7 +404,7 @@ It is part of my series on creating a home server on an old laptop. I&rsquo;m as
   <li class="mt-1">
     <a href="/tags/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
         
-        <p class="text-bg font-bg" title="">
+        <p class="text-bg font-bg" title="Tags">
             Tags
         </p>
     </a>
@@ -472,7 +482,7 @@ It is part of my series on creating a home server on an old laptop. I&rsquo;m as
 
     
     <div class="fixed inset-x-0 top-0 h-[800px] single_hero_background nozoom"
-    style="background-image:url(/posts/streamlined-nextcloud-with-openid-connect-authentication/featured_hu5459c0360c2b0cb7a147d2df0eb350ca_245093_1200x0_resize_q75_box.jpg);">
+    style="background-image:url(/posts/streamlined-nextcloud-with-openid-connect-authentication/featured_hu5960582665492205391.jpg);">
     
 
 
@@ -543,7 +553,7 @@ It is part of my series on creating a home server on an old laptop. I&rsquo;m as
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2024-02-05T00:00:00&#43;00:00">5 February 2024</time><span class="px-2 text-primary-500">&middot;</span><span>2305 words</span><span class="px-2 text-primary-500">&middot;</span>
+  <time datetime="2024-02-05T00:00:00&#43;00:00">5 February 2024</time><span class="px-2 text-primary-500">&middot;</span><span>2381 words</span><span class="px-2 text-primary-500">&middot;</span>
 
 
 <script type="text/javascript" src="/js/zen-mode.min.eea5245cf9244ecbdf2c150d1c8833226c1541cadf6e98f63a7c9192b1a3676df2c3ec603b14f4cfaaa53971fd9d8955640c0f405bf3de2b43ee7a5fb29ae721.js" integrity="sha512-7qUkXPkkTsvfLBUNHIgzImwVQcrfbpj2OnyRkrGjZ23yw&#43;xgOxT0z6qlOXH9nYlVZAwPQFvz3itD7npfsprnIQ=="></script>
@@ -707,6 +717,7 @@ It is part of my series on creating a home server on an old laptop. I&rsquo;m as
             <li><a href="#authelia-configuration-file">Authelia Configuration File</a></li>
             <li><a href="#restart-authelia">Restart Authelia</a></li>
             <li><a href="#nextcloud-configuration-file">Nextcloud Configuration File</a></li>
+            <li><a href="#troubleshooting-sso">Troubleshooting SSO</a></li>
           </ul>
         </li>
         <li><a href="#memory-cache">Memory Cache</a></li>
@@ -781,6 +792,7 @@ It is part of my series on creating a home server on an old laptop. I&rsquo;m as
             <li><a href="#authelia-configuration-file">Authelia Configuration File</a></li>
             <li><a href="#restart-authelia">Restart Authelia</a></li>
             <li><a href="#nextcloud-configuration-file">Nextcloud Configuration File</a></li>
+            <li><a href="#troubleshooting-sso">Troubleshooting SSO</a></li>
           </ul>
         </li>
         <li><a href="#memory-cache">Memory Cache</a></li>
@@ -1338,7 +1350,7 @@ It is part of my series on creating a home server on an old laptop. I&rsquo;m as
     <figure>
       
       
-      <img class="my-0 rounded-md" src="/posts/streamlined-nextcloud-with-openid-connect-authentication/images/nextcloud-welcome_hu79cb77860fcd8cd8030f958777cc99e7_831705_2000x0_resize_q50_h2_box_3.webp" />
+      <img class="my-0 rounded-md" src="/posts/streamlined-nextcloud-with-openid-connect-authentication/images/nextcloud-welcome_hu15771263517771922121.webp" />
       
       <figcaption>Nextcloud setup</figcaption>
     </figure>
@@ -1544,7 +1556,7 @@ It is part of my series on creating a home server on an old laptop. I&rsquo;m as
     <figure>
       
       
-      <img class="my-0 rounded-md" src="/posts/streamlined-nextcloud-with-openid-connect-authentication/images/nextcloud-sso_hu8bbb8ad9921ce8c074f9d5784b3f23e6_271126_2000x0_resize_q50_h2_box_3.webp" />
+      <img class="my-0 rounded-md" src="/posts/streamlined-nextcloud-with-openid-connect-authentication/images/nextcloud-sso_hu5296747320235092625.webp" />
       
       <figcaption>New SSO button</figcaption>
     </figure>
@@ -1573,13 +1585,28 @@ It is part of my series on creating a home server on an old laptop. I&rsquo;m as
     <figure>
       
       
-      <img class="my-0 rounded-md" src="/posts/streamlined-nextcloud-with-openid-connect-authentication/images/nextcloud-sso-warning_hu943f552aa837873704cff107ae180b19_38454_2000x0_resize_q50_h2_box_3.webp" />
+      <img class="my-0 rounded-md" src="/posts/streamlined-nextcloud-with-openid-connect-authentication/images/nextcloud-sso-warning_hu17341648741286243986.webp" />
       
       <figcaption>Ugly warning message</figcaption>
     </figure>
   
 
 </p>
+
+
+<h3 class="relative group">Troubleshooting SSO 
+    <div id="troubleshooting-sso" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#troubleshooting-sso" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+<p>After upgrading to Nextcloud 31, I had issues with the SSO login. The login page would not show the SSO button. The update had marked the SSO app as incompatible. Enabling the app manually in the Nextcloud UI was not possible. I had to enable it via the command line.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo docker <span class="nb">exec</span> -it nextcloud occ app:enable oidc_login
+</span></span></code></pre></div><p>After enabling the app, the SSO button appeared again.</p>
 
 
 <h2 class="relative group">Memory Cache 
@@ -1645,7 +1672,7 @@ It is part of my series on creating a home server on an old laptop. I&rsquo;m as
     <figure>
       
       
-      <img class="my-0 rounded-md" src="/posts/streamlined-nextcloud-with-openid-connect-authentication/images/nextcloud-external-storage_hu2124962f88da9e6b1c9cb9c3485e99e8_82357_2000x0_resize_q50_h2_box_3.webp" />
+      <img class="my-0 rounded-md" src="/posts/streamlined-nextcloud-with-openid-connect-authentication/images/nextcloud-external-storage_hu4846182855527548104.webp" />
       
       <figcaption>External storage in Nextcloud</figcaption>
     </figure>
@@ -1678,7 +1705,7 @@ It is part of my series on creating a home server on an old laptop. I&rsquo;m as
     <figure>
       
       
-      <img class="my-0 rounded-md" src="/posts/streamlined-nextcloud-with-openid-connect-authentication/images/nextcloud-group-folders_hu381838d406b67fe5766224d93981fab7_35146_2000x0_resize_q50_h2_box_3.webp" />
+      <img class="my-0 rounded-md" src="/posts/streamlined-nextcloud-with-openid-connect-authentication/images/nextcloud-group-folders_hu3860034799673922998.webp" />
       
       <figcaption>Group folders in Nextcloud</figcaption>
     </figure>
@@ -1698,6 +1725,7 @@ It is part of my series on creating a home server on an old laptop. I&rsquo;m as
     
 </h2>
 <ul>
+<li><strong>2025-03-01</strong>: added the section <strong>Troubleshooting SSO</strong>.</li>
 <li><strong>2024-02-08</strong>: added the <code>creates</code> parameter to the Nextcloud playbook in the <a href="#files-and-folders">files and folders section</a>.</li>
 </ul>
 
@@ -1933,12 +1961,12 @@ It is part of my series on creating a home server on an old laptop. I&rsquo;m as
           
         
       <script>
-        var oid = "views_posts\/Streamlined Nextcloud With OpenID Connect Authentication\/index.md"
-        var oid_likes = "likes_posts\/Streamlined Nextcloud With OpenID Connect Authentication\/index.md"
+        var oid = "views_posts\\Streamlined Nextcloud With OpenID Connect Authentication\\index.md"
+        var oid_likes = "likes_posts\\Streamlined Nextcloud With OpenID Connect Authentication\\index.md"
       </script>
       
       
-      <script type="text/javascript" src="/js/page.min.b06a29d42a4ed16787978e2eee1e8c797b7698db2bc14ccee78f5c80ac566fc996190a73ad80a5e987558474b20b96fa38f7d85b405f165ff72b7b163c5ad11b.js" integrity="sha512-sGop1CpO0WeHl44u7h6MeXt2mNsrwUzO549cgKxWb8mWGQpzrYCl6YdVhHSyC5b6OPfYW0BfFl/3K3sWPFrRGw=="></script>
+      <script type="text/javascript" src="/js/page.min.0860cf4e04fa2d72cc33ddba263083464d48f67de06114529043cb4623319efed4f484fd7f1730df5abea0e2da6f3538855634081d02f2d6e920b956f063e823.js" integrity="sha512-CGDPTgT6LXLMM926JjCDRk1I9n3gYRRSkEPLRiMxnv7U9IT9fxcw31q&#43;oOLabzU4hVY0CB0C8tbpILlW8GPoIw=="></script>
       
   
     </section>
@@ -2071,7 +2099,7 @@ It is part of my series on creating a home server on an old laptop. I&rsquo;m as
   </script>
   
   
-  <script type="text/javascript" src="/js/process.min.62060bb247f4de2b6dde45903668fefb68d792f365587605177b1227c0cf43588701edaca0cb40e2c8e2789bd5ce67c1d2a215b9fb258c3496a7cd25e7cb5fdf.js" integrity="sha512-YgYLskf03itt3kWQNmj&#43;&#43;2jXkvNlWHYFF3sSJ8DPQ1iHAe2soMtA4sjieJvVzmfB0qIVufsljDSWp80l58tf3w=="></script>
+  <script type="text/javascript" src="/js/process.min.ee03488f19c93c2efb199e2e3014ea5f3cb2ce7d45154adb3399a158cac27ca52831db249ede5bb602700ef87eb02434139de0858af1818ab0fb4182472204a4.js" integrity="sha512-7gNIjxnJPC77GZ4uMBTqXzyyzn1FFUrbM5mhWMrCfKUoMdsknt5btgJwDvh&#43;sCQ0E53ghYrxgYqw&#43;0GCRyIEpA=="></script>
   
   
 </footer>

@@ -15,8 +15,8 @@
       <pubDate>Sun, 24 Mar 2024 00:00:00 +0000</pubDate>
       
       <guid>https://dominikbritz.com/posts/immich-self-hosted-photos-with-cloud-backup/</guid>
-      <description>This article explains how to set up a self-hosted photo gallery with Immich including cloud backup and OpenID Connect to Authelia.
-It is part of my series on creating a home server on an old laptop. I’m assuming that you’ve set up Docker, Caddy, and Authelia, as described in the first article of the series.</description>
+      <description>&lt;p&gt;This article explains how to set up a self-hosted photo gallery with Immich including cloud backup and OpenID Connect to Authelia.&lt;/p&gt;
+&lt;p&gt;It is part of my series on creating a home server on an old laptop. I’m assuming that you’ve set up Docker, Caddy, and Authelia, as described in the &lt;a href=&#34;https://dominikbritz.com/posts/2024-01-22-laptop-home-server/&#34; target=&#34;_blank&#34;&gt;first article of the series&lt;/a&gt;.&lt;/p&gt;</description>
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://dominikbritz.com/posts/immich-self-hosted-photos-with-cloud-backup/featured.jpg" />
     </item>
     
