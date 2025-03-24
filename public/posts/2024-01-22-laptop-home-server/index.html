@@ -48,8 +48,8 @@
   
   
   
-  <script defer type="text/javascript" id="script-bundle" src="/js/main.bundle.min.0c424ab1c6aafe2039f09c49da59e609e9c3639b293d752971a3f96bb967114eb9719493d28e382b62527c185812ddc2c5a3664a3a21d0cbab06dafccbf685e4.js"
-    integrity="sha512-DEJKscaq/iA58JxJ2lnmCenDY5spPXUpcaP5a7lnEU65cZST0o44K2JSfBhYEt3CxaNmSjoh0MurBtr8y/aF5A==" data-copy="" data-copied=""></script>
+  <script defer type="text/javascript" id="script-bundle" src="/js/main.bundle.min.83d4bde2d1e3cbe675a39f04cd797186d47f5c0af768ddd88b7a1e20a4b69bc5b12bedd76e2e4c3bad19a96d477bb652f80eb98656bf7a2c410381172847d7af.js"
+    integrity="sha512-g9S94tHjy&#43;Z1o58EzXlxhtR/XAr3aN3Yi3oeIKS2m8WxK&#43;3Xbi5MO60ZqW1He7ZS&#43;A65hla/eixBA4EXKEfXrw==" data-copy="" data-copied=""></script>
   
   
   
@@ -123,7 +123,7 @@ Bye Bye Synology, Hello Ubuntu #TL;DR #Synology has a great ecosystem, but one
     "keywords": ["home server","docker","Caddy","Ansible","Ubuntu","restic","Unbound"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "3106"
+    "wordCount": "3096"
   }]
   </script>
 
@@ -556,7 +556,7 @@ Bye Bye Synology, Hello Ubuntu #TL;DR #Synology has a great ecosystem, but one
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2024-01-23T00:00:00&#43;00:00">23 January 2024</time><span class="px-2 text-primary-500">&middot;</span><span>3106 words</span><span class="px-2 text-primary-500">&middot;</span>
+  <time datetime="2024-01-23T00:00:00&#43;00:00">23 January 2024</time><span class="px-2 text-primary-500">&middot;</span><span>3096 words</span><span class="px-2 text-primary-500">&middot;</span>
 
 
 <script type="text/javascript" src="/js/zen-mode.min.eea5245cf9244ecbdf2c150d1c8833226c1541cadf6e98f63a7c9192b1a3676df2c3ec603b14f4cfaaa53971fd9d8955640c0f405bf3de2b43ee7a5fb29ae721.js" integrity="sha512-7qUkXPkkTsvfLBUNHIgzImwVQcrfbpj2OnyRkrGjZ23yw&#43;xgOxT0z6qlOXH9nYlVZAwPQFvz3itD7npfsprnIQ=="></script>
@@ -751,7 +751,6 @@ Bye Bye Synology, Hello Ubuntu #TL;DR #Synology has a great ecosystem, but one
         <li><a href="#install-and-configure-the-server">Install And Configure the Server</a>
           <ul>
             <li><a href="#operating-system">Operating System</a></li>
-            <li><a href="#generate-a-new-ssh-key-for-remote-management">Generate a New SSH Key For Remote Management</a></li>
             <li><a href="#run-with-ansible-pull">Run With Ansible Pull</a></li>
           </ul>
         </li>
@@ -825,7 +824,6 @@ Bye Bye Synology, Hello Ubuntu #TL;DR #Synology has a great ecosystem, but one
         <li><a href="#install-and-configure-the-server">Install And Configure the Server</a>
           <ul>
             <li><a href="#operating-system">Operating System</a></li>
-            <li><a href="#generate-a-new-ssh-key-for-remote-management">Generate a New SSH Key For Remote Management</a></li>
             <li><a href="#run-with-ansible-pull">Run With Ansible Pull</a></li>
           </ul>
         </li>
@@ -1705,22 +1703,9 @@ Bye Bye Synology, Hello Ubuntu #TL;DR #Synology has a great ecosystem, but one
 <p>I won&rsquo;t cover the installation of Ubuntu, as there are hundreds of guides on the Internet. Just some aspects:</p>
 <ul>
 <li>You want to go with the Ubuntu LTS server edition without a graphical interface for maximum performance and stability.</li>
+<li>Create an ssh key for remote management from you WSL client. Add the public key to the server&rsquo;s <code>~/.ssh/authorized_keys</code> file.</li>
 <li>Set the hostname to <code>home</code>.</li>
 </ul>
-
-
-<h3 class="relative group">Generate a New SSH Key For Remote Management 
-    <div id="generate-a-new-ssh-key-for-remote-management" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#generate-a-new-ssh-key-for-remote-management" aria-label="Anchor">#</a>
-    </span>        
-    
-</h3>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">ssh-keygen -t ed25519 -C <span class="s2">&#34;remote management&#34;</span>
-</span></span></code></pre></div><p>Store the private key in your WSL environment on your client. You can now close the lid of your laptop home server and hopefully never touch it again.</p>
 
 
 <h3 class="relative group">Run With Ansible Pull 
@@ -1939,7 +1924,10 @@ COPY --from=builder /usr/bin/caddy /usr/bin/caddy
     </span>        
     
 </h2>
-<p>-<strong>2024-01-31</strong>: added section about changes to the <a href="#automatic-https-certificates-for-services-on-internal-home-network">Dockerfile for Caddy</a></p>
+<ul>
+<li><strong>2025-03-24</strong>: moved the instructions for remote server management to the OS install section</li>
+<li><strong>2024-01-31</strong>: added section about changes to the <a href="#automatic-https-certificates-for-services-on-internal-home-network">Dockerfile for Caddy</a></li>
+</ul>
 
           
           

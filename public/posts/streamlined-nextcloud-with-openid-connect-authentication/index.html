@@ -48,8 +48,8 @@
   
   
   
-  <script defer type="text/javascript" id="script-bundle" src="/js/main.bundle.min.0c424ab1c6aafe2039f09c49da59e609e9c3639b293d752971a3f96bb967114eb9719493d28e382b62527c185812ddc2c5a3664a3a21d0cbab06dafccbf685e4.js"
-    integrity="sha512-DEJKscaq/iA58JxJ2lnmCenDY5spPXUpcaP5a7lnEU65cZST0o44K2JSfBhYEt3CxaNmSjoh0MurBtr8y/aF5A==" data-copy="" data-copied=""></script>
+  <script defer type="text/javascript" id="script-bundle" src="/js/main.bundle.min.83d4bde2d1e3cbe675a39f04cd797186d47f5c0af768ddd88b7a1e20a4b69bc5b12bedd76e2e4c3bad19a96d477bb652f80eb98656bf7a2c410381172847d7af.js"
+    integrity="sha512-g9S94tHjy&#43;Z1o58EzXlxhtR/XAr3aN3Yi3oeIKS2m8WxK&#43;3Xbi5MO60ZqW1He7ZS&#43;A65hla/eixBA4EXKEfXrw==" data-copy="" data-copied=""></script>
   
   
   
@@ -120,7 +120,7 @@ It is part of my series on creating a home server on an old laptop. I’m assumi
     "keywords": ["home server","nextcloud","OpenID Connect"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "2381"
+    "wordCount": "2441"
   }]
   </script>
 
@@ -553,7 +553,7 @@ It is part of my series on creating a home server on an old laptop. I’m assumi
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2024-02-05T00:00:00&#43;00:00">5 February 2024</time><span class="px-2 text-primary-500">&middot;</span><span>2381 words</span><span class="px-2 text-primary-500">&middot;</span>
+  <time datetime="2024-02-05T00:00:00&#43;00:00">5 February 2024</time><span class="px-2 text-primary-500">&middot;</span><span>2441 words</span><span class="px-2 text-primary-500">&middot;</span>
 
 
 <script type="text/javascript" src="/js/zen-mode.min.eea5245cf9244ecbdf2c150d1c8833226c1541cadf6e98f63a7c9192b1a3676df2c3ec603b14f4cfaaa53971fd9d8955640c0f405bf3de2b43ee7a5fb29ae721.js" integrity="sha512-7qUkXPkkTsvfLBUNHIgzImwVQcrfbpj2OnyRkrGjZ23yw&#43;xgOxT0z6qlOXH9nYlVZAwPQFvz3itD7npfsprnIQ=="></script>
@@ -1479,6 +1479,8 @@ It is part of my series on creating a home server on an old laptop. I’m assumi
 </span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="l">profile</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="l">email</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">userinfo_signing_algorithm</span><span class="p">:</span><span class="w"> </span><span class="l">none</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">require_pkce</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">pkce_challenge_method</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;S256&#39;</span><span class="w">
 </span></span></span></code></pre></div><p>Differing from the original guide I removed the <code>groups</code> scope, as it erased all group memberships in Nextcloud after every log off.</p>
 
 
@@ -1541,6 +1543,7 @@ It is part of my series on creating a home server on an old laptop. I’m assumi
 </span></span><span class="line"><span class="cl"><span class="s1">&#39;oidc_login_min_time_between_jwks_requests&#39;</span> <span class="o">=&gt;</span> <span class="mi">10</span><span class="p">,</span>
 </span></span><span class="line"><span class="cl"><span class="s1">&#39;oidc_login_well_known_caching_time&#39;</span> <span class="o">=&gt;</span> <span class="mi">86400</span><span class="p">,</span>
 </span></span><span class="line"><span class="cl"><span class="s1">&#39;oidc_login_update_avatar&#39;</span> <span class="o">=&gt;</span> <span class="k">false</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl"><span class="s1">&#39;oidc_login_code_challenge_method&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;S256&#39;</span>
 </span></span></code></pre></div><p>Start the stack through Dockge.</p>
 <p>Click on the new <strong>SSO</strong> button below the login field and log in with your user via Authelia. The account gets auto-provisioned in Nextcloud. Logout directly after that.</p>
 <p>
@@ -1725,6 +1728,7 @@ It is part of my series on creating a home server on an old laptop. I’m assumi
     
 </h2>
 <ul>
+<li><strong>2025-03-21</strong>: modified the Authelia setup. After updating to Authelia 4.39 I saw the message <code>Can not get identifier from provider</code> and I was unable to login. I had to add <code>require_pkce: true</code> and <code>pkce_challenge_method: 'S256'</code> to the Authelia configuration file. Also, I needed to add <code>'oidc_login_code_challenge_method' =&gt; 'S256'</code> to the Nextcloud configuration file.</li>
 <li><strong>2025-03-01</strong>: added the section <strong>Troubleshooting SSO</strong>.</li>
 <li><strong>2024-02-08</strong>: added the <code>creates</code> parameter to the Nextcloud playbook in the <a href="#files-and-folders">files and folders section</a>.</li>
 </ul>
