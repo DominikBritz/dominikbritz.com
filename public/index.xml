@@ -17,7 +17,6 @@
       <guid>https://dominikbritz.com/posts/how-to-create-this-blog/</guid>
       <description>&lt;p&gt;This article explains how to create this beautiful blog with the static site generator Hugo, the theme Blowfish, GitHub for storage, Giscus for comments, and Cloudflare for hosting. And the best thing: it doesn&amp;rsquo;t cost you a penny!&lt;/p&gt;
 
-
 &lt;h2 class=&#34;relative group&#34;&gt;My Blog Journey 
     &lt;div id=&#34;my-blog-journey&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
     
@@ -84,7 +83,6 @@
       <guid>https://dominikbritz.com/posts/2024-01-22-laptop-home-server/</guid>
       <description>&lt;p&gt;A guide to setting up an old laptop as your new home server, powered by Ubuntu, Ansible, and Docker. It securely hosts videos, files, and photos. Add HTTPS everywhere, cloud backup and performance monitoring.&lt;/p&gt;
 
-
 &lt;h2 class=&#34;relative group&#34;&gt;Bye Bye Synology, Hello Ubuntu 
     &lt;div id=&#34;bye-bye-synology-hello-ubuntu&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
     
@@ -95,7 +93,6 @@
     &lt;/span&gt;        
     
 &lt;/h2&gt;
-
 
 &lt;h3 class=&#34;relative group&#34;&gt;TL;DR 
     &lt;div id=&#34;tldr&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
@@ -167,7 +164,6 @@
     
 &lt;/h1&gt;
 
-
 &lt;h2 class=&#34;relative group&#34;&gt;Professional experience 
     &lt;div id=&#34;professional-experience&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
     
@@ -178,7 +174,6 @@
     &lt;/span&gt;        
     
 &lt;/h2&gt;
-
 
 &lt;h3 class=&#34;relative group&#34;&gt;Lead Product Manager 
     &lt;div id=&#34;lead-product-manager&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
@@ -212,21 +207,19 @@
     
 &lt;/h1&gt;
 
-
 &lt;h2 class=&#34;relative group&#34;&gt;Angaben gemäß § 5 TMG 
-    &lt;div id=&#34;angaben-gem%C3%A4%C3%9F--5-tmg&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
+    &lt;div id=&#34;angaben-gemäß--5-tmg&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
     
     &lt;span
         class=&#34;absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100&#34;&gt;
         &lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34;
-            style=&#34;text-decoration-line: none !important;&#34; href=&#34;#angaben-gem%C3%A4%C3%9F--5-tmg&#34; aria-label=&#34;Anchor&#34;&gt;#&lt;/a&gt;
+            style=&#34;text-decoration-line: none !important;&#34; href=&#34;#angaben-gem%c3%a4%c3%9f--5-tmg&#34; aria-label=&#34;Anchor&#34;&gt;#&lt;/a&gt;
     &lt;/span&gt;        
     
 &lt;/h2&gt;
 &lt;p&gt;Dominik Britz&lt;/p&gt;
 &lt;p&gt;Gengesfeld, 12&lt;/p&gt;
 &lt;p&gt;51688 Wipperfürth&lt;/p&gt;
-
 
 &lt;h2 class=&#34;relative group&#34;&gt;Kontakt 
     &lt;div id=&#34;kontakt&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
@@ -249,16 +242,15 @@
       
       <guid>https://dominikbritz.com/privacypolicy/</guid>
       <description>&lt;h1 class=&#34;relative group&#34;&gt;Datenschutzerklärung 
-    &lt;div id=&#34;datenschutzerkl%C3%A4rung&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
+    &lt;div id=&#34;datenschutzerklärung&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
     
     &lt;span
         class=&#34;absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100&#34;&gt;
         &lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34;
-            style=&#34;text-decoration-line: none !important;&#34; href=&#34;#datenschutzerkl%C3%A4rung&#34; aria-label=&#34;Anchor&#34;&gt;#&lt;/a&gt;
+            style=&#34;text-decoration-line: none !important;&#34; href=&#34;#datenschutzerkl%c3%a4rung&#34; aria-label=&#34;Anchor&#34;&gt;#&lt;/a&gt;
     &lt;/span&gt;        
     
 &lt;/h1&gt;
-
 
 &lt;h2 class=&#34;relative group&#34;&gt;Allgemeiner Hinweis und Pflichtinformationen 
     &lt;div id=&#34;allgemeiner-hinweis-und-pflichtinformationen&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
@@ -270,7 +262,6 @@
     &lt;/span&gt;        
     
 &lt;/h2&gt;
-
 
 &lt;h3 class=&#34;relative group&#34;&gt;Benennung der verantwortlichen Stelle 
     &lt;div id=&#34;benennung-der-verantwortlichen-stelle&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;

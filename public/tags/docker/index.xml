@@ -28,7 +28,6 @@
       <guid>https://dominikbritz.com/posts/2024-01-22-laptop-home-server/</guid>
       <description>&lt;p&gt;A guide to setting up an old laptop as your new home server, powered by Ubuntu, Ansible, and Docker. It securely hosts videos, files, and photos. Add HTTPS everywhere, cloud backup and performance monitoring.&lt;/p&gt;
 
-
 &lt;h2 class=&#34;relative group&#34;&gt;Bye Bye Synology, Hello Ubuntu 
     &lt;div id=&#34;bye-bye-synology-hello-ubuntu&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
     
@@ -39,7 +38,6 @@
     &lt;/span&gt;        
     
 &lt;/h2&gt;
-
 
 &lt;h3 class=&#34;relative group&#34;&gt;TL;DR 
     &lt;div id=&#34;tldr&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
