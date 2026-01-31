@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Restic on DominikBritz.com</title><link>https://dominikbritz.com/tags/restic/</link><description>Recent content in Restic on DominikBritz.com</description><generator>Hugo -- gohugo.io</generator><language>en</language><copyright>Copyright © 2026</copyright><lastBuildDate>Tue, 23 Jan 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://dominikbritz.com/tags/restic/index.xml" rel="self" type="application/rss+xml"/><item><title>Laptop Home Server Build</title><link>https://dominikbritz.com/posts/2024-01-22-laptop-home-server/</link><pubDate>Tue, 23 Jan 2024 00:00:00 +0000</pubDate><guid>https://dominikbritz.com/posts/2024-01-22-laptop-home-server/</guid><description>&lt;p&gt;A guide to setting up an old laptop as your new home server, powered by Ubuntu, Ansible, and Docker. It securely hosts videos, files, and photos. Add HTTPS everywhere, cloud backup and performance monitoring.&lt;/p&gt;
+
+&lt;h2 class="relative group"&gt;Bye Bye Synology, Hello Ubuntu
+ &lt;div id="bye-bye-synology-hello-ubuntu" class="anchor"&gt;&lt;/div&gt;
+ 
+ &lt;span
+ class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none"&gt;
+ &lt;a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#bye-bye-synology-hello-ubuntu" aria-label="Anchor"&gt;#&lt;/a&gt;
+ &lt;/span&gt;
+ 
+&lt;/h2&gt;
+
+&lt;h3 class="relative group"&gt;TL;DR
+ &lt;div id="tldr" class="anchor"&gt;&lt;/div&gt;
+ 
+ &lt;span
+ class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none"&gt;
+ &lt;a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#tldr" aria-label="Anchor"&gt;#&lt;/a&gt;
+ &lt;/span&gt;
+ 
+&lt;/h3&gt;
+&lt;p&gt;Synology has a great ecosystem, but one is locked in. I&amp;rsquo;m using Ubuntu LTS server now, as it gives full control and is focused on stability. I chose it over Proxmox for simplicity, as I don&amp;rsquo;t need virtual machines.&lt;/p&gt;</description><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://dominikbritz.com/posts/2024-01-22-laptop-home-server/featured.jpg"/></item></channel></rss>

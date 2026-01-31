@@ -1,0 +1,8 @@
+
+{{< mermaid >}}
+flowchart LR
+    a(Windows client\n#8226; WSL\n#8226; Git \n#8226; SSH) -->|Push| c(GitHub)
+    b("Home server\n#8226; Ansible\n#8226; Docker\n#8226; Unbound DNS\n#8226; restic Backup") -->|Pull| c
+    style a text-align:left
+    style b text-align:left
+{{< /mermaid >}}
