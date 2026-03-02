@@ -75,12 +75,12 @@
  
 &lt;/h2&gt;
 
-&lt;h3 class="relative group"&gt;Lead Consultant
- &lt;div id="lead-consultant" class="anchor"&gt;&lt;/div&gt;
+&lt;h3 class="relative group"&gt;Lead Observability Specialist
+ &lt;div id="lead-observability-specialist" class="anchor"&gt;&lt;/div&gt;
  
  &lt;span
  class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none"&gt;
- &lt;a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#lead-consultant" aria-label="Anchor"&gt;#&lt;/a&gt;
+ &lt;a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#lead-observability-specialist" aria-label="Anchor"&gt;#&lt;/a&gt;
  &lt;/span&gt;
  
 &lt;/h3&gt;
