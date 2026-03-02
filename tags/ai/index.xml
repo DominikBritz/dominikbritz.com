@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>AI on DominikBritz.com</title><link>https://dominikbritz.com/tags/ai/</link><description>Recent content in AI on DominikBritz.com</description><generator>Hugo -- gohugo.io</generator><language>en</language><copyright>Copyright © 2026</copyright><lastBuildDate>Sun, 01 Mar 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://dominikbritz.com/tags/ai/index.xml" rel="self" type="application/rss+xml"/><item><title>Build Your Own AI Assistant With Claude Code - Without Going Broke</title><link>https://dominikbritz.com/posts/build-your-own-ai-assistant-with-claude-code/</link><pubDate>Sun, 01 Mar 2026 00:00:00 +0000</pubDate><guid>https://dominikbritz.com/posts/build-your-own-ai-assistant-with-claude-code/</guid><description>&lt;p&gt;This article explains how I built a personal AI assistant on top of Claude Code CLI - using my regular Claude subscription instead of the expensive API - and why I believe everyone can build custom software now.&lt;/p&gt;
+
+&lt;h2 class="relative group"&gt;Why I Built My Own AI Assistant
+ &lt;div id="why-i-built-my-own-ai-assistant" class="anchor"&gt;&lt;/div&gt;
+ 
+ &lt;span
+ class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none"&gt;
+ &lt;a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#why-i-built-my-own-ai-assistant" aria-label="Anchor"&gt;#&lt;/a&gt;
+ &lt;/span&gt;
+ 
+&lt;/h2&gt;
+&lt;p&gt;I wanted to build a second brain. Not just a note-taking app or a bookmark manager - an actual system that knows my projects, remembers past decisions, and can act on its own through cron jobs and file system access. Something that grows with me over time.&lt;/p&gt;</description><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://dominikbritz.com/posts/build-your-own-ai-assistant-with-claude-code/featured.jpg"/></item></channel></rss>
