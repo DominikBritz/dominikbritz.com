@@ -64,28 +64,41 @@
  &lt;/span&gt;
  
 &lt;/h1&gt;
+&lt;div class="cv-photo"&gt;
+&lt;p&gt;
 
-&lt;h2 class="relative group"&gt;Professional experience
- &lt;div id="professional-experience" class="anchor"&gt;&lt;/div&gt;
+
+
+
+ 
+ 
+ 
+ 
+ 
+ &lt;figure&gt;
+ 
+ 
+ &lt;img class="my-0 rounded-md" src="https://dominikbritz.com/images/me_hu_43b35be72ed231fc.webp" /&gt;
+ 
+ 
+ &lt;/figure&gt;
+ 
+
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Dominik Britz&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Wipperfürth, Germany · &lt;a href="mailto:info@dominikbritz.com" &gt;info@dominikbritz.com&lt;/a&gt; · &lt;a href="https://www.linkedin.com/in/dominik-britz" target="_blank" rel="noreferrer"&gt;LinkedIn&lt;/a&gt; · &lt;a href="https://github.com/dominikbritz" target="_blank" rel="noreferrer"&gt;GitHub&lt;/a&gt; · &lt;a href="https://dominikbritz.com" target="_blank" rel="noreferrer"&gt;dominikbritz.com&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 class="relative group"&gt;Summary
+ &lt;div id="summary" class="anchor"&gt;&lt;/div&gt;
  
  &lt;span
  class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none"&gt;
- &lt;a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#professional-experience" aria-label="Anchor"&gt;#&lt;/a&gt;
+ &lt;a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#summary" aria-label="Anchor"&gt;#&lt;/a&gt;
  &lt;/span&gt;
  
 &lt;/h2&gt;
-
-&lt;h3 class="relative group"&gt;Lead Observability Specialist
- &lt;div id="lead-observability-specialist" class="anchor"&gt;&lt;/div&gt;
- 
- &lt;span
- class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none"&gt;
- &lt;a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#lead-observability-specialist" aria-label="Anchor"&gt;#&lt;/a&gt;
- &lt;/span&gt;
- 
-&lt;/h3&gt;
-&lt;p&gt;Cloud Software Group, Citrix
-&lt;em&gt;Aug. 2025 — Today&lt;/em&gt;&lt;/p&gt;</description></item><item><title/><link>https://dominikbritz.com/imprint/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dominikbritz.com/imprint/</guid><description>&lt;h1 class="relative group"&gt;Impressum
+&lt;p&gt;Lead Observability Specialist at Cloud Software Group (Citrix), with 15+ years in end user computing and digital experience monitoring. I run technical presales, proof-of-concept engagements, and workshops for enterprise customers across the full Citrix observability stack — Director/Monitor, Always-On Tracing, and uberAgent — spanning user experience monitoring, endpoint analytics, and security analytics. My path to this role went through Lead Product Manager for uberAgent and six years as a customer-facing engineer at vast limit GmbH, which means I bring deep technical grounding, product thinking, and real customer exposure to every engagement.&lt;/p&gt;</description></item><item><title/><link>https://dominikbritz.com/imprint/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dominikbritz.com/imprint/</guid><description>&lt;h1 class="relative group"&gt;Impressum
  &lt;div id="impressum" class="anchor"&gt;&lt;/div&gt;
  
  &lt;span
@@ -146,4 +159,25 @@
  &lt;/span&gt;
  
 &lt;/h3&gt;
-&lt;p&gt;Die verantwortliche Stelle für die Datenverarbeitung auf dieser Website ist:&lt;/p&gt;</description></item></channel></rss>
+&lt;p&gt;Die verantwortliche Stelle für die Datenverarbeitung auf dieser Website ist:&lt;/p&gt;</description></item><item><title/><link>https://dominikbritz.com/speaking/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dominikbritz.com/speaking/</guid><description>&lt;h1 class="relative group"&gt;Public speaking
+ &lt;div id="public-speaking" class="anchor"&gt;&lt;/div&gt;
+ 
+ &lt;span
+ class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none"&gt;
+ &lt;a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#public-speaking" aria-label="Anchor"&gt;#&lt;/a&gt;
+ &lt;/span&gt;
+ 
+&lt;/h1&gt;
+&lt;p&gt;I regularly share what I learn about observability, end-user computing, and uberAgent at community events and conferences. Reach out if you&amp;rsquo;d like me to speak at your event.&lt;/p&gt;
+
+&lt;h2 class="relative group"&gt;2026
+ &lt;div id="2026" class="anchor"&gt;&lt;/div&gt;
+ 
+ &lt;span
+ class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none"&gt;
+ &lt;a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#2026" aria-label="Anchor"&gt;#&lt;/a&gt;
+ &lt;/span&gt;
+ 
+&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;2026-04-22 — Cisco Public Day BW&lt;/strong&gt;
+&lt;em&gt;Datacenter Migration Komm.One: full visibility with Citrix uberAgent and Splunk&lt;/em&gt; · German&lt;/p&gt;</description></item></channel></rss>
