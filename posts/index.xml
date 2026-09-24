@@ -55,4 +55,172 @@
 &lt;li&gt;Only administrators should modify settings that should be valid for all users accessing a particular Splunk app. It needed to be configurable, but not for everyone. A poor man&amp;rsquo;s access control, so to say.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;I explain below how we achieved that by using Splunk anywhere examples. That&amp;rsquo;s probably easier to understand, and I don&amp;rsquo;t have to explain every bit of uberAgent here 😉&lt;/p&gt;</description><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://dominikbritz.com/posts/2020-11-02-using-lookups-as-token-input/featured.jpg"/></item><item><title>Introducing vlDeploy - Deploy Applications With PowerShell Remotely</title><link>https://dominikbritz.com/posts/2020-03-17-introducing-vldeploy/</link><pubDate>Tue, 17 Mar 2020 00:00:00 +0000</pubDate><guid>https://dominikbritz.com/posts/2020-03-17-introducing-vldeploy/</guid><description>&lt;p&gt;Managing applications on Windows in enterprises is complex and cumbersome. Admins are using a variety of tools to install, uninstall or reconfigure applications silently. The most popular tool is propably Microsoft&amp;rsquo;s ConfigMgr.&lt;/p&gt;
-&lt;p&gt;While ConfigMgr (and others) makes sense for mid to large enterprises, the management is too time-consuming for smaller firms. I work in such a smaller firm. We have a lab to test our own applications &lt;a href="https://uberagent.com" target="_blank" rel="noreferrer"&gt;uberAgent&lt;/a&gt; on several operating systems. These lab machines don&amp;rsquo;t only run uberAgent, of course, they also run standard applications like text editors, browsers, and more complex things.&lt;/p&gt;</description><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://dominikbritz.com/posts/2020-03-17-introducing-vldeploy/featured2.png"/></item></channel></rss>
+&lt;p&gt;While ConfigMgr (and others) makes sense for mid to large enterprises, the management is too time-consuming for smaller firms. I work in such a smaller firm. We have a lab to test our own applications &lt;a href="https://uberagent.com" target="_blank" rel="noreferrer"&gt;uberAgent&lt;/a&gt; on several operating systems. These lab machines don&amp;rsquo;t only run uberAgent, of course, they also run standard applications like text editors, browsers, and more complex things.&lt;/p&gt;</description><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://dominikbritz.com/posts/2020-03-17-introducing-vldeploy/featured2.png"/></item><item><title>Export And Import Citrix XenDesktop Published Apps</title><link>https://dominikbritz.com/posts/2016-06-02-export-and-import-citrix-xendesktop-published-apps/</link><pubDate>Thu, 02 Jun 2016 00:00:00 +0000</pubDate><guid>https://dominikbritz.com/posts/2016-06-02-export-and-import-citrix-xendesktop-published-apps/</guid><description>&lt;p&gt;In one of my last projects I needed an automated way to migrate published apps from a Citrix XenDesktop test site to a production site. There is no way to do so in Citrix Studio. Additionally the customer has many published apps configured with FTAs, categories and so on. I was sure I would have missed something if I had gone the manual way.&lt;/p&gt;</description><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://dominikbritz.com/posts/2016-06-02-export-and-import-citrix-xendesktop-published-apps/featured.jpg"/></item><item><title>How To - Install a PowerShell Module</title><link>https://dominikbritz.com/posts/2016-04-13-install-a-powershell-module/</link><pubDate>Wed, 13 Apr 2016 00:00:00 +0000</pubDate><guid>https://dominikbritz.com/posts/2016-04-13-install-a-powershell-module/</guid><description>&lt;p&gt;As I like to work with PowerShell modules instead of a collection of scripts, I decided to put this article up. It&amp;rsquo;s kind of a reference article for myself to not have to explain the needed steps to install a PowerShell module in various articles. Let&amp;rsquo;s begin&amp;hellip;&lt;/p&gt;
+&lt;p&gt;Basically there are two ways to install a PowerShell module:&lt;/p&gt;</description><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://dominikbritz.com/posts/2016-04-13-install-a-powershell-module/featured.jpg"/></item><item><title>CTXLogging Now With Support For Citrix StoreFront</title><link>https://dominikbritz.com/posts/2016-02-12-ctxlogging-now-with-support-for-citrix-storefront/</link><pubDate>Fri, 12 Feb 2016 00:00:00 +0000</pubDate><guid>https://dominikbritz.com/posts/2016-02-12-ctxlogging-now-with-support-for-citrix-storefront/</guid><description>&lt;p&gt;My PowerShell module to control logging of various Citrix components is now available in version 0.3. With it comes support to control Citrix StoreFront tracing.&lt;/p&gt;
+&lt;p&gt;If you have to troubleshoot Citrix StoreFront your first stop should be the &amp;ldquo;Citrix Delivery Services&amp;rdquo; event log. You will see tons of information there if something goes wrong. But if this is not enough, you can enable StoreFront tracing. This will produce several log files in &lt;code&gt;C:\Program Files\Citrix\Receiver StoreFront\Admin\Trace&lt;/code&gt;.&lt;/p&gt;</description><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://dominikbritz.com/posts/2016-02-12-ctxlogging-now-with-support-for-citrix-storefront/featured.jpg"/></item><item><title>CTXLogging Now With Support For Citrix Receiver</title><link>https://dominikbritz.com/posts/2016-01-15-ctxlogging-now-with-support-for-citrix-receiver/</link><pubDate>Fri, 15 Jan 2016 00:00:00 +0000</pubDate><guid>https://dominikbritz.com/posts/2016-01-15-ctxlogging-now-with-support-for-citrix-receiver/</guid><description>&lt;p&gt;My PowerShell module to control logging of various Citrix components is now available in version 0.2. With it comes support to control Citrix Receiver logging.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+ 
+ 
+ 
+ 
+ 
+ &lt;figure&gt;
+ 
+ 
+ &lt;img class="my-0 rounded-md" src="https://dominikbritz.com/posts/2016-01-15-ctxlogging-now-with-support-for-citrix-receiver/images/receiverlogging_hu_721c7ea882c58d7.webp" /&gt;
+ 
+ 
+ &lt;/figure&gt;
+ 
+
+&lt;/p&gt;
+&lt;p&gt;Citrix Receiver is not a single piece of software. Instead it consists of multiple components. You are able to control the logging of three components: General, Authentication Manager and SelfService-PlugIn. Logging of all components is disabled by default and is controlled by registry keys. More information is available here: &lt;a href="http://support.citrix.com/article/CTX132883" target="_blank" rel="noreferrer"&gt;CTX132883&lt;/a&gt;.&lt;/p&gt;</description><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://dominikbritz.com/posts/2016-01-15-ctxlogging-now-with-support-for-citrix-receiver/featured.jpg"/></item><item><title>Community PowerShell Module - CTXLogging</title><link>https://dominikbritz.com/posts/2015-12-04-community-powershell-module-ctxlogging/</link><pubDate>Fri, 04 Dec 2015 00:00:00 +0000</pubDate><guid>https://dominikbritz.com/posts/2015-12-04-community-powershell-module-ctxlogging/</guid><description>&lt;p&gt;When it comes to troubleshooting the communication between Citrix XenDesktop 7.x VDA and Controller you have to enable the logging of both components. Citrix once had a tool for this, the &amp;ldquo;Log Enabler Tool&amp;rdquo;. It seems that Citrix dropped the development on that tool as it is only supported for XenDesktop 5.x. Read about it &lt;a href="http://support.citrix.com/article/CTX117452" target="_blank" rel="noreferrer"&gt;here&lt;/a&gt; and &lt;a href="http://support.citrix.com/article/CTX127492" target="_blank" rel="noreferrer"&gt;here&lt;/a&gt;. Instead you have to edit config files manually - no one should edit config files manually. That is why I wrote the PowerShell module CTXLogging to automate the process.&lt;/p&gt;</description><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://dominikbritz.com/posts/2015-12-04-community-powershell-module-ctxlogging/featured.jpg"/></item><item><title>Automate Your Lab - Part 9 - MDT With Chocolatey Integration</title><link>https://dominikbritz.com/posts/2015-10-26-automate-your-lab-part-9-mdt-with-chocolatey-integration/</link><pubDate>Mon, 26 Oct 2015 00:00:00 +0000</pubDate><guid>https://dominikbritz.com/posts/2015-10-26-automate-your-lab-part-9-mdt-with-chocolatey-integration/</guid><description>&lt;p&gt;As you may have noticed while reading this blog series I like the idea of automation. It is possible to automate nearly everything in Windows with PowerShell but when it comes to automating the deployment of Windows itself you are tied to some other tools. There are plenty out there: Microsoft System Center Configuration Manager, RES, AppSense, Empirum from Matrix42 and so on. They&amp;rsquo;re probably good tools for a production environment but not for a lab: too complicated, too slow, too big. For my lab I prefer Microsoft Deployment Toolkit (MDT), it is very lightweight and it is fast - particularly when you compare it to its big brother Configuration Manager. In this post I describe how to automate the installation of MDT and Windows Deployment Services (WDS) to do PXE boot. On top there is a description on how to integrate Chocolatey into MDT.&lt;/p&gt;</description><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://dominikbritz.com/posts/2015-10-26-automate-your-lab-part-9-mdt-with-chocolatey-integration/featured.jpg"/></item><item><title>Automate Your Lab - Part 8 - SQL Server</title><link>https://dominikbritz.com/posts/2015-10-19-automate-your-lab-part-8-sql-server/</link><pubDate>Mon, 19 Oct 2015 00:00:00 +0000</pubDate><guid>https://dominikbritz.com/posts/2015-10-19-automate-your-lab-part-8-sql-server/</guid><description>&lt;p&gt;In my lab I need a MS SQL Server for various reasons: Citrix XenDesktop, VMware Composer, VMware AppVolumes and other products. The SQL setup is quite slow and you have to wait in front of it as the installation and configuration is not separated. So I automated this nasty but needed component for my lab with a PowerShell script.&lt;/p&gt;</description><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://dominikbritz.com/posts/2015-10-19-automate-your-lab-part-8-sql-server/featured.jpg"/></item><item><title>Automate Your Lab - Part 7 - Central GPO Store</title><link>https://dominikbritz.com/posts/2015-10-12-automate-your-lab-part-7-central-gpo-store/</link><pubDate>Mon, 12 Oct 2015 00:00:00 +0000</pubDate><guid>https://dominikbritz.com/posts/2015-10-12-automate-your-lab-part-7-central-gpo-store/</guid><description>&lt;p&gt;The &lt;a href="https://support.microsoft.com/en-us/kb/929841" target="_blank" rel="noreferrer"&gt;central GPO store&lt;/a&gt; is a folder where you put in all your .admx and .adml files which then get replicated to all other domain controllers. It&amp;rsquo;s an optional part when setting up your lab. But I like the idea of centralization and storing files only one time, that&amp;rsquo;s why I added it to my automation.&lt;/p&gt;</description><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://dominikbritz.com/posts/2015-10-12-automate-your-lab-part-7-central-gpo-store/featured.jpg"/></item><item><title>Automate Your Lab - Part 6 - WSUS</title><link>https://dominikbritz.com/posts/2015-10-05-automate-your-lab-part-6-wsus/</link><pubDate>Mon, 05 Oct 2015 00:00:00 +0000</pubDate><guid>https://dominikbritz.com/posts/2015-10-05-automate-your-lab-part-6-wsus/</guid><description>&lt;p&gt;I have a very slow internet connection at home and need a WSUS server in my lab to save bandwidth and time. To automate WSUS you need PowerShell and an executable.&lt;/p&gt;
+&lt;p&gt;As in all my scripts in this series you can customize the installation with variables. In order to install WSUS we need only two, one which specifies the partition and one for the folder where WSUS files should be stored. If the folder does not exist the script will create it for you. I recommend not to use the partition C: as WSUS needs a lot of space for saving all Windows update files.&lt;/p&gt;</description><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://dominikbritz.com/posts/2015-10-05-automate-your-lab-part-6-wsus/featured.jpg"/></item><item><title>Automate Your Lab - Part 5 - Certificate Authority</title><link>https://dominikbritz.com/posts/2015-09-28-automate-your-lab-part-5-certificate-authority/</link><pubDate>Mon, 28 Sep 2015 00:00:00 +0000</pubDate><guid>https://dominikbritz.com/posts/2015-09-28-automate-your-lab-part-5-certificate-authority/</guid><description>&lt;p&gt;I need a certificate authority (CA) for several things in my labs. E.g. for a SSL secured Citrix StoreFront base URL - load balanced by a NetScaler. Only a few PowerShell commands are necessary to set up an AD integrated CA with the web enrollment component.&lt;/p&gt;
+
+ 
+
+
+
+&lt;div
+ 
+ class="flex px-4 py-3 rounded-md shadow bg-primary-100 dark:bg-primary-900"
+ 
+ &gt;
+ &lt;span
+ 
+ class="text-primary-400 pe-3 flex items-center"
+ 
+ &gt;
+ &lt;span class="relative block icon"&gt;&lt;svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"&gt;&lt;path fill="currentColor" d="M256 0C114.6 0 0 114.6 0 256s114.6 256 256 256s256-114.6 256-256S397.4 0 256 0zM256 128c17.67 0 32 14.33 32 32c0 17.67-14.33 32-32 32S224 177.7 224 160C224 142.3 238.3 128 256 128zM296 384h-80C202.8 384 192 373.3 192 360s10.75-24 24-24h16v-64H224c-13.25 0-24-10.75-24-24S210.8 224 224 224h32c13.25 0 24 10.75 24 24v88h16c13.25 0 24 10.75 24 24S309.3 384 296 384z"/&gt;&lt;/svg&gt;
+&lt;/span&gt;
+ &lt;/span&gt;
+
+ &lt;span
+ 
+ class="dark:text-neutral-300"
+ 
+ &gt;Customize your CA with variables in the script. Find the explanations of the variables below.&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;code&gt;$CACommonName&lt;/code&gt; =&amp;gt; You have to give the CA a name, mine is &amp;ldquo;dominik-lab-CA&amp;rdquo;.&lt;/p&gt;</description><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://dominikbritz.com/posts/2015-09-28-automate-your-lab-part-5-certificate-authority/featured.jpg"/></item><item><title>Automate Your Lab - Part 4 - AD OUs, Groups And Users</title><link>https://dominikbritz.com/posts/2015-09-21-automate-your-lab-part-4-ad-ous-groups-and-users/</link><pubDate>Mon, 21 Sep 2015 00:00:00 +0000</pubDate><guid>https://dominikbritz.com/posts/2015-09-21-automate-your-lab-part-4-ad-ous-groups-and-users/</guid><description>&lt;p&gt;After you created all your infrastructure services like AD, DNS and DHCP in this part of the series we are going to add &amp;ldquo;life&amp;rdquo; to your Active Directory.
+At the moment you have an empty AD like this:&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+ 
+ 
+ 
+ 
+ 
+ &lt;figure&gt;
+ 
+ 
+ &lt;img class="my-0 rounded-md" src="https://dominikbritz.com/posts/2015-09-21-automate-your-lab-part-4-ad-ous-groups-and-users/images/ad1_hu_1c82bb1e5ad9561.webp" /&gt;
+ 
+ 
+ &lt;/figure&gt;
+ 
+
+&lt;/p&gt;
+&lt;p&gt;After running the script it will look like this:&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+ 
+ 
+ 
+ 
+ 
+ &lt;figure&gt;
+ 
+ 
+ &lt;img class="my-0 rounded-md" src="https://dominikbritz.com/posts/2015-09-21-automate-your-lab-part-4-ad-ous-groups-and-users/images/ad2_hu_3c7e7a350c019714.webp" /&gt;
+ 
+ 
+ &lt;/figure&gt;
+ 
+
+&lt;/p&gt;</description><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://dominikbritz.com/posts/2015-09-21-automate-your-lab-part-4-ad-ous-groups-and-users/featured.jpg"/></item><item><title>Automate Your Lab - Part 3 - DHCP</title><link>https://dominikbritz.com/posts/2015-09-17-automate-your-lab-part-3-dhcp/</link><pubDate>Thu, 17 Sep 2015 00:00:00 +0000</pubDate><guid>https://dominikbritz.com/posts/2015-09-17-automate-your-lab-part-3-dhcp/</guid><description>&lt;p&gt;The next step to your automated lab is to set up a DHCP server and to authorize it in your Active Directory. You can customize it completely with variables in the script.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+ 
+ 
+ 
+ 
+ 
+ &lt;figure&gt;
+ 
+ 
+ &lt;img class="my-0 rounded-md" src="https://dominikbritz.com/posts/2015-09-17-automate-your-lab-part-3-dhcp/images/dhcp_hu_e91cbb6b1ca009c9.webp" /&gt;
+ 
+ 
+ &lt;/figure&gt;
+ 
+
+&lt;/p&gt;
+&lt;p&gt;You can define a range for DHCP with the variables &lt;code&gt;$StartRange&lt;/code&gt; and &lt;code&gt;$EndRange&lt;/code&gt;. Only IPs in that range will be assigned to machines. I make use of that feature in order to have some free IPs for my NetScaler SNIP, load balancer and gateways and I don&amp;rsquo;t have to worry about double assigned addresses. On top I always use 192.168.137.0/24 because 192.168.137.1 is the default IP of the internal Hyper-V network adapter. &lt;a href="https://community.emc.com/docs/DOC-15875" target="_blank" rel="noreferrer"&gt;Follow this tutorial&lt;/a&gt; to set up internet access for Hyper-V VMs with an internal switch and NAT.&lt;/p&gt;</description><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://dominikbritz.com/posts/2015-09-17-automate-your-lab-part-3-dhcp/featured.jpg"/></item><item><title>Automated Shortcut Creation For Locally Installed Apps Via Citrix Receiver</title><link>https://dominikbritz.com/posts/2015-09-14-automated-shortcut-creation-for-locally-installed-apps-via-citrix-receiver/</link><pubDate>Mon, 14 Sep 2015 00:00:00 +0000</pubDate><guid>https://dominikbritz.com/posts/2015-09-14-automated-shortcut-creation-for-locally-installed-apps-via-citrix-receiver/</guid><description>&lt;p&gt;In the good old times we had Citrix PNAgent and with it a dead simple way to customize the start menu of our users with the apps they had access to. Things are changing with StoreFront and XenDesktop 7.x. Receiver still pushes icons of the users&amp;rsquo; apps into the start menu. But as apps and desktops can&amp;rsquo;t share a single session a second session is started when they click on an icon pushed by Receiver. Gladly there is a way to tell Receiver if it is able to find a local application then start this instead of a new Citrix session.
+To accomplish that you have to&lt;/p&gt;</description><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://dominikbritz.com/posts/2015-09-14-automated-shortcut-creation-for-locally-installed-apps-via-citrix-receiver/featured.jpg"/></item><item><title>Automate Your Lab - Part 2 - DNS</title><link>https://dominikbritz.com/posts/2015-09-11-automate-your-lab-part-2-dns/</link><pubDate>Fri, 11 Sep 2015 00:00:00 +0000</pubDate><guid>https://dominikbritz.com/posts/2015-09-11-automate-your-lab-part-2-dns/</guid><description>&lt;p&gt;This is part 2 of my series to automate your lab. In this part I will show you how to deploy an AD integrated DNS server with a forward and a reverse lookup zone.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+ 
+ 
+ 
+ 
+ 
+ &lt;figure&gt;
+ 
+ 
+ &lt;img class="my-0 rounded-md" src="https://dominikbritz.com/posts/2015-09-11-automate-your-lab-part-2-dns/images/dns_hu_7e4fa3ec0f52d64.webp" /&gt;
+ 
+ 
+ &lt;/figure&gt;
+ 
+
+&lt;/p&gt;
+&lt;p&gt;For the scripts to work I assume that you have a Windows Server 2012 R2 which will be your domain controller, DNS and DHCP server.&lt;/p&gt;</description><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://dominikbritz.com/posts/2015-09-11-automate-your-lab-part-2-dns/featured.jpg"/></item><item><title>Automate Your Lab - Part 1 - The Domain</title><link>https://dominikbritz.com/posts/2015-09-09-automate-your-lab-part-1-the-domain/</link><pubDate>Wed, 09 Sep 2015 00:00:00 +0000</pubDate><guid>https://dominikbritz.com/posts/2015-09-09-automate-your-lab-part-1-the-domain/</guid><description>&lt;p&gt;I have three labs. One on my business notebook, one at my company and one on my private workstation. And once a year it is time to rebuild from scratch, because I have destroyed everything 🙂&lt;/p&gt;
+&lt;p&gt;As I have no time (and/or because I&amp;rsquo;m lazy) to set up everything manually - three times!!! - I have written PowerShell scripts to set up my labs quickly. In this first part of the series I start with the domain.&lt;/p&gt;</description><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://dominikbritz.com/posts/2015-09-09-automate-your-lab-part-1-the-domain/featured.jpg"/></item><item><title>PVS Targets With Multiple IP Addresses</title><link>https://dominikbritz.com/posts/2015-09-08-pvs-targets-with-multiple-ip-addresses/</link><pubDate>Tue, 08 Sep 2015 00:00:00 +0000</pubDate><guid>https://dominikbritz.com/posts/2015-09-08-pvs-targets-with-multiple-ip-addresses/</guid><description>&lt;p&gt;Last week I had a problem where Citrix PVS targets got multiple IP addresses, one assigned from DHCP and the other one was the IP address of the master. Find my solution below.&lt;/p&gt;
+
+&lt;h2 class="relative group"&gt;Objective
+ &lt;div id="objective" class="anchor"&gt;&lt;/div&gt;
+ 
+ &lt;span
+ class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none"&gt;
+ &lt;a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#objective" aria-label="Anchor"&gt;#&lt;/a&gt;
+ &lt;/span&gt;
+ 
+&lt;/h2&gt;
+&lt;p&gt;My setup was:&lt;/p&gt;</description><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://dominikbritz.com/posts/2015-09-08-pvs-targets-with-multiple-ip-addresses/featured.jpg"/></item><item><title>Welcome</title><link>https://dominikbritz.com/posts/2015-08-30-welcome/</link><pubDate>Sun, 30 Aug 2015 00:00:00 +0000</pubDate><guid>https://dominikbritz.com/posts/2015-08-30-welcome/</guid><description>&lt;p&gt;Hello World! This is my first post, hopefully not the last.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+ 
+ 
+ 
+ 
+ 
+ &lt;figure&gt;
+ 
+ 
+ &lt;img class="my-0 rounded-md" src="https://dominikbritz.com/posts/2015-08-30-welcome/images/helloworld_hu_63c742dcfb49ee99.webp" /&gt;
+ 
+ 
+ &lt;/figure&gt;
+ 
+
+&lt;/p&gt;</description><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://dominikbritz.com/posts/2015-08-30-welcome/featured.jpg"/></item></channel></rss>

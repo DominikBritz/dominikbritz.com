@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Pki on DominikBritz.com</title><link>https://dominikbritz.com/tags/pki/</link><description>Recent content in Pki on DominikBritz.com</description><generator>Hugo -- gohugo.io</generator><language>en</language><copyright>Copyright © 2026</copyright><lastBuildDate>Mon, 28 Sep 2015 00:00:00 +0000</lastBuildDate><atom:link href="https://dominikbritz.com/tags/pki/index.xml" rel="self" type="application/rss+xml"/><item><title>Automate Your Lab - Part 5 - Certificate Authority</title><link>https://dominikbritz.com/posts/2015-09-28-automate-your-lab-part-5-certificate-authority/</link><pubDate>Mon, 28 Sep 2015 00:00:00 +0000</pubDate><guid>https://dominikbritz.com/posts/2015-09-28-automate-your-lab-part-5-certificate-authority/</guid><description>&lt;p&gt;I need a certificate authority (CA) for several things in my labs. E.g. for a SSL secured Citrix StoreFront base URL - load balanced by a NetScaler. Only a few PowerShell commands are necessary to set up an AD integrated CA with the web enrollment component.&lt;/p&gt;
+
+ 
+
+
+
+&lt;div
+ 
+ class="flex px-4 py-3 rounded-md shadow bg-primary-100 dark:bg-primary-900"
+ 
+ &gt;
+ &lt;span
+ 
+ class="text-primary-400 pe-3 flex items-center"
+ 
+ &gt;
+ &lt;span class="relative block icon"&gt;&lt;svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"&gt;&lt;path fill="currentColor" d="M256 0C114.6 0 0 114.6 0 256s114.6 256 256 256s256-114.6 256-256S397.4 0 256 0zM256 128c17.67 0 32 14.33 32 32c0 17.67-14.33 32-32 32S224 177.7 224 160C224 142.3 238.3 128 256 128zM296 384h-80C202.8 384 192 373.3 192 360s10.75-24 24-24h16v-64H224c-13.25 0-24-10.75-24-24S210.8 224 224 224h32c13.25 0 24 10.75 24 24v88h16c13.25 0 24 10.75 24 24S309.3 384 296 384z"/&gt;&lt;/svg&gt;
+&lt;/span&gt;
+ &lt;/span&gt;
+
+ &lt;span
+ 
+ class="dark:text-neutral-300"
+ 
+ &gt;Customize your CA with variables in the script. Find the explanations of the variables below.&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;code&gt;$CACommonName&lt;/code&gt; =&amp;gt; You have to give the CA a name, mine is &amp;ldquo;dominik-lab-CA&amp;rdquo;.&lt;/p&gt;</description><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://dominikbritz.com/posts/2015-09-28-automate-your-lab-part-5-certificate-authority/featured.jpg"/></item></channel></rss>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Active Directory on DominikBritz.com</title><link>https://dominikbritz.com/tags/active-directory/</link><description>Recent content in Active Directory on DominikBritz.com</description><generator>Hugo -- gohugo.io</generator><language>en</language><copyright>Copyright © 2026</copyright><lastBuildDate>Mon, 21 Sep 2015 00:00:00 +0000</lastBuildDate><atom:link href="https://dominikbritz.com/tags/active-directory/index.xml" rel="self" type="application/rss+xml"/><item><title>Automate Your Lab - Part 4 - AD OUs, Groups And Users</title><link>https://dominikbritz.com/posts/2015-09-21-automate-your-lab-part-4-ad-ous-groups-and-users/</link><pubDate>Mon, 21 Sep 2015 00:00:00 +0000</pubDate><guid>https://dominikbritz.com/posts/2015-09-21-automate-your-lab-part-4-ad-ous-groups-and-users/</guid><description>&lt;p&gt;After you created all your infrastructure services like AD, DNS and DHCP in this part of the series we are going to add &amp;ldquo;life&amp;rdquo; to your Active Directory.
+At the moment you have an empty AD like this:&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+ 
+ 
+ 
+ 
+ 
+ &lt;figure&gt;
+ 
+ 
+ &lt;img class="my-0 rounded-md" src="https://dominikbritz.com/posts/2015-09-21-automate-your-lab-part-4-ad-ous-groups-and-users/images/ad1_hu_1c82bb1e5ad9561.webp" /&gt;
+ 
+ 
+ &lt;/figure&gt;
+ 
+
+&lt;/p&gt;
+&lt;p&gt;After running the script it will look like this:&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+ 
+ 
+ 
+ 
+ 
+ &lt;figure&gt;
+ 
+ 
+ &lt;img class="my-0 rounded-md" src="https://dominikbritz.com/posts/2015-09-21-automate-your-lab-part-4-ad-ous-groups-and-users/images/ad2_hu_3c7e7a350c019714.webp" /&gt;
+ 
+ 
+ &lt;/figure&gt;
+ 
+
+&lt;/p&gt;</description><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://dominikbritz.com/posts/2015-09-21-automate-your-lab-part-4-ad-ous-groups-and-users/featured.jpg"/></item><item><title>Automate Your Lab - Part 1 - The Domain</title><link>https://dominikbritz.com/posts/2015-09-09-automate-your-lab-part-1-the-domain/</link><pubDate>Wed, 09 Sep 2015 00:00:00 +0000</pubDate><guid>https://dominikbritz.com/posts/2015-09-09-automate-your-lab-part-1-the-domain/</guid><description>&lt;p&gt;I have three labs. One on my business notebook, one at my company and one on my private workstation. And once a year it is time to rebuild from scratch, because I have destroyed everything 🙂&lt;/p&gt;
+&lt;p&gt;As I have no time (and/or because I&amp;rsquo;m lazy) to set up everything manually - three times!!! - I have written PowerShell scripts to set up my labs quickly. In this first part of the series I start with the domain.&lt;/p&gt;</description><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://dominikbritz.com/posts/2015-09-09-automate-your-lab-part-1-the-domain/featured.jpg"/></item></channel></rss>

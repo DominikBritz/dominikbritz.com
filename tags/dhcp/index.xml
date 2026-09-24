@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Dhcp on DominikBritz.com</title><link>https://dominikbritz.com/tags/dhcp/</link><description>Recent content in Dhcp on DominikBritz.com</description><generator>Hugo -- gohugo.io</generator><language>en</language><copyright>Copyright © 2026</copyright><lastBuildDate>Thu, 17 Sep 2015 00:00:00 +0000</lastBuildDate><atom:link href="https://dominikbritz.com/tags/dhcp/index.xml" rel="self" type="application/rss+xml"/><item><title>Automate Your Lab - Part 3 - DHCP</title><link>https://dominikbritz.com/posts/2015-09-17-automate-your-lab-part-3-dhcp/</link><pubDate>Thu, 17 Sep 2015 00:00:00 +0000</pubDate><guid>https://dominikbritz.com/posts/2015-09-17-automate-your-lab-part-3-dhcp/</guid><description>&lt;p&gt;The next step to your automated lab is to set up a DHCP server and to authorize it in your Active Directory. You can customize it completely with variables in the script.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+ 
+ 
+ 
+ 
+ 
+ &lt;figure&gt;
+ 
+ 
+ &lt;img class="my-0 rounded-md" src="https://dominikbritz.com/posts/2015-09-17-automate-your-lab-part-3-dhcp/images/dhcp_hu_e91cbb6b1ca009c9.webp" /&gt;
+ 
+ 
+ &lt;/figure&gt;
+ 
+
+&lt;/p&gt;
+&lt;p&gt;You can define a range for DHCP with the variables &lt;code&gt;$StartRange&lt;/code&gt; and &lt;code&gt;$EndRange&lt;/code&gt;. Only IPs in that range will be assigned to machines. I make use of that feature in order to have some free IPs for my NetScaler SNIP, load balancer and gateways and I don&amp;rsquo;t have to worry about double assigned addresses. On top I always use 192.168.137.0/24 because 192.168.137.1 is the default IP of the internal Hyper-V network adapter. &lt;a href="https://community.emc.com/docs/DOC-15875" target="_blank" rel="noreferrer"&gt;Follow this tutorial&lt;/a&gt; to set up internet access for Hyper-V VMs with an internal switch and NAT.&lt;/p&gt;</description><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://dominikbritz.com/posts/2015-09-17-automate-your-lab-part-3-dhcp/featured.jpg"/></item></channel></rss>

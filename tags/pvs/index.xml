@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Pvs on DominikBritz.com</title><link>https://dominikbritz.com/tags/pvs/</link><description>Recent content in Pvs on DominikBritz.com</description><generator>Hugo -- gohugo.io</generator><language>en</language><copyright>Copyright © 2026</copyright><lastBuildDate>Tue, 08 Sep 2015 00:00:00 +0000</lastBuildDate><atom:link href="https://dominikbritz.com/tags/pvs/index.xml" rel="self" type="application/rss+xml"/><item><title>PVS Targets With Multiple IP Addresses</title><link>https://dominikbritz.com/posts/2015-09-08-pvs-targets-with-multiple-ip-addresses/</link><pubDate>Tue, 08 Sep 2015 00:00:00 +0000</pubDate><guid>https://dominikbritz.com/posts/2015-09-08-pvs-targets-with-multiple-ip-addresses/</guid><description>&lt;p&gt;Last week I had a problem where Citrix PVS targets got multiple IP addresses, one assigned from DHCP and the other one was the IP address of the master. Find my solution below.&lt;/p&gt;
+
+&lt;h2 class="relative group"&gt;Objective
+ &lt;div id="objective" class="anchor"&gt;&lt;/div&gt;
+ 
+ &lt;span
+ class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none"&gt;
+ &lt;a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#objective" aria-label="Anchor"&gt;#&lt;/a&gt;
+ &lt;/span&gt;
+ 
+&lt;/h2&gt;
+&lt;p&gt;My setup was:&lt;/p&gt;</description><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://dominikbritz.com/posts/2015-09-08-pvs-targets-with-multiple-ip-addresses/featured.jpg"/></item></channel></rss>

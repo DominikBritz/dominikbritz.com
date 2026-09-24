@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Lab on DominikBritz.com</title><link>https://dominikbritz.com/tags/lab/</link><description>Recent content in Lab on DominikBritz.com</description><generator>Hugo -- gohugo.io</generator><language>en</language><copyright>Copyright © 2026</copyright><lastBuildDate>Mon, 26 Oct 2015 00:00:00 +0000</lastBuildDate><atom:link href="https://dominikbritz.com/tags/lab/index.xml" rel="self" type="application/rss+xml"/><item><title>Automate Your Lab - Part 9 - MDT With Chocolatey Integration</title><link>https://dominikbritz.com/posts/2015-10-26-automate-your-lab-part-9-mdt-with-chocolatey-integration/</link><pubDate>Mon, 26 Oct 2015 00:00:00 +0000</pubDate><guid>https://dominikbritz.com/posts/2015-10-26-automate-your-lab-part-9-mdt-with-chocolatey-integration/</guid><description>&lt;p&gt;As you may have noticed while reading this blog series I like the idea of automation. It is possible to automate nearly everything in Windows with PowerShell but when it comes to automating the deployment of Windows itself you are tied to some other tools. There are plenty out there: Microsoft System Center Configuration Manager, RES, AppSense, Empirum from Matrix42 and so on. They&amp;rsquo;re probably good tools for a production environment but not for a lab: too complicated, too slow, too big. For my lab I prefer Microsoft Deployment Toolkit (MDT), it is very lightweight and it is fast - particularly when you compare it to its big brother Configuration Manager. In this post I describe how to automate the installation of MDT and Windows Deployment Services (WDS) to do PXE boot. On top there is a description on how to integrate Chocolatey into MDT.&lt;/p&gt;</description><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://dominikbritz.com/posts/2015-10-26-automate-your-lab-part-9-mdt-with-chocolatey-integration/featured.jpg"/></item><item><title>Automate Your Lab - Part 8 - SQL Server</title><link>https://dominikbritz.com/posts/2015-10-19-automate-your-lab-part-8-sql-server/</link><pubDate>Mon, 19 Oct 2015 00:00:00 +0000</pubDate><guid>https://dominikbritz.com/posts/2015-10-19-automate-your-lab-part-8-sql-server/</guid><description>&lt;p&gt;In my lab I need a MS SQL Server for various reasons: Citrix XenDesktop, VMware Composer, VMware AppVolumes and other products. The SQL setup is quite slow and you have to wait in front of it as the installation and configuration is not separated. So I automated this nasty but needed component for my lab with a PowerShell script.&lt;/p&gt;</description><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://dominikbritz.com/posts/2015-10-19-automate-your-lab-part-8-sql-server/featured.jpg"/></item><item><title>Automate Your Lab - Part 7 - Central GPO Store</title><link>https://dominikbritz.com/posts/2015-10-12-automate-your-lab-part-7-central-gpo-store/</link><pubDate>Mon, 12 Oct 2015 00:00:00 +0000</pubDate><guid>https://dominikbritz.com/posts/2015-10-12-automate-your-lab-part-7-central-gpo-store/</guid><description>&lt;p&gt;The &lt;a href="https://support.microsoft.com/en-us/kb/929841" target="_blank" rel="noreferrer"&gt;central GPO store&lt;/a&gt; is a folder where you put in all your .admx and .adml files which then get replicated to all other domain controllers. It&amp;rsquo;s an optional part when setting up your lab. But I like the idea of centralization and storing files only one time, that&amp;rsquo;s why I added it to my automation.&lt;/p&gt;</description><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://dominikbritz.com/posts/2015-10-12-automate-your-lab-part-7-central-gpo-store/featured.jpg"/></item><item><title>Automate Your Lab - Part 6 - WSUS</title><link>https://dominikbritz.com/posts/2015-10-05-automate-your-lab-part-6-wsus/</link><pubDate>Mon, 05 Oct 2015 00:00:00 +0000</pubDate><guid>https://dominikbritz.com/posts/2015-10-05-automate-your-lab-part-6-wsus/</guid><description>&lt;p&gt;I have a very slow internet connection at home and need a WSUS server in my lab to save bandwidth and time. To automate WSUS you need PowerShell and an executable.&lt;/p&gt;
+&lt;p&gt;As in all my scripts in this series you can customize the installation with variables. In order to install WSUS we need only two, one which specifies the partition and one for the folder where WSUS files should be stored. If the folder does not exist the script will create it for you. I recommend not to use the partition C: as WSUS needs a lot of space for saving all Windows update files.&lt;/p&gt;</description><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://dominikbritz.com/posts/2015-10-05-automate-your-lab-part-6-wsus/featured.jpg"/></item><item><title>Automate Your Lab - Part 5 - Certificate Authority</title><link>https://dominikbritz.com/posts/2015-09-28-automate-your-lab-part-5-certificate-authority/</link><pubDate>Mon, 28 Sep 2015 00:00:00 +0000</pubDate><guid>https://dominikbritz.com/posts/2015-09-28-automate-your-lab-part-5-certificate-authority/</guid><description>&lt;p&gt;I need a certificate authority (CA) for several things in my labs. E.g. for a SSL secured Citrix StoreFront base URL - load balanced by a NetScaler. Only a few PowerShell commands are necessary to set up an AD integrated CA with the web enrollment component.&lt;/p&gt;
+
+ 
+
+
+
+&lt;div
+ 
+ class="flex px-4 py-3 rounded-md shadow bg-primary-100 dark:bg-primary-900"
+ 
+ &gt;
+ &lt;span
+ 
+ class="text-primary-400 pe-3 flex items-center"
+ 
+ &gt;
+ &lt;span class="relative block icon"&gt;&lt;svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"&gt;&lt;path fill="currentColor" d="M256 0C114.6 0 0 114.6 0 256s114.6 256 256 256s256-114.6 256-256S397.4 0 256 0zM256 128c17.67 0 32 14.33 32 32c0 17.67-14.33 32-32 32S224 177.7 224 160C224 142.3 238.3 128 256 128zM296 384h-80C202.8 384 192 373.3 192 360s10.75-24 24-24h16v-64H224c-13.25 0-24-10.75-24-24S210.8 224 224 224h32c13.25 0 24 10.75 24 24v88h16c13.25 0 24 10.75 24 24S309.3 384 296 384z"/&gt;&lt;/svg&gt;
+&lt;/span&gt;
+ &lt;/span&gt;
+
+ &lt;span
+ 
+ class="dark:text-neutral-300"
+ 
+ &gt;Customize your CA with variables in the script. Find the explanations of the variables below.&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;code&gt;$CACommonName&lt;/code&gt; =&amp;gt; You have to give the CA a name, mine is &amp;ldquo;dominik-lab-CA&amp;rdquo;.&lt;/p&gt;</description><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://dominikbritz.com/posts/2015-09-28-automate-your-lab-part-5-certificate-authority/featured.jpg"/></item><item><title>Automate Your Lab - Part 4 - AD OUs, Groups And Users</title><link>https://dominikbritz.com/posts/2015-09-21-automate-your-lab-part-4-ad-ous-groups-and-users/</link><pubDate>Mon, 21 Sep 2015 00:00:00 +0000</pubDate><guid>https://dominikbritz.com/posts/2015-09-21-automate-your-lab-part-4-ad-ous-groups-and-users/</guid><description>&lt;p&gt;After you created all your infrastructure services like AD, DNS and DHCP in this part of the series we are going to add &amp;ldquo;life&amp;rdquo; to your Active Directory.
+At the moment you have an empty AD like this:&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+ 
+ 
+ 
+ 
+ 
+ &lt;figure&gt;
+ 
+ 
+ &lt;img class="my-0 rounded-md" src="https://dominikbritz.com/posts/2015-09-21-automate-your-lab-part-4-ad-ous-groups-and-users/images/ad1_hu_1c82bb1e5ad9561.webp" /&gt;
+ 
+ 
+ &lt;/figure&gt;
+ 
+
+&lt;/p&gt;
+&lt;p&gt;After running the script it will look like this:&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+ 
+ 
+ 
+ 
+ 
+ &lt;figure&gt;
+ 
+ 
+ &lt;img class="my-0 rounded-md" src="https://dominikbritz.com/posts/2015-09-21-automate-your-lab-part-4-ad-ous-groups-and-users/images/ad2_hu_3c7e7a350c019714.webp" /&gt;
+ 
+ 
+ &lt;/figure&gt;
+ 
+
+&lt;/p&gt;</description><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://dominikbritz.com/posts/2015-09-21-automate-your-lab-part-4-ad-ous-groups-and-users/featured.jpg"/></item><item><title>Automate Your Lab - Part 3 - DHCP</title><link>https://dominikbritz.com/posts/2015-09-17-automate-your-lab-part-3-dhcp/</link><pubDate>Thu, 17 Sep 2015 00:00:00 +0000</pubDate><guid>https://dominikbritz.com/posts/2015-09-17-automate-your-lab-part-3-dhcp/</guid><description>&lt;p&gt;The next step to your automated lab is to set up a DHCP server and to authorize it in your Active Directory. You can customize it completely with variables in the script.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+ 
+ 
+ 
+ 
+ 
+ &lt;figure&gt;
+ 
+ 
+ &lt;img class="my-0 rounded-md" src="https://dominikbritz.com/posts/2015-09-17-automate-your-lab-part-3-dhcp/images/dhcp_hu_e91cbb6b1ca009c9.webp" /&gt;
+ 
+ 
+ &lt;/figure&gt;
+ 
+
+&lt;/p&gt;
+&lt;p&gt;You can define a range for DHCP with the variables &lt;code&gt;$StartRange&lt;/code&gt; and &lt;code&gt;$EndRange&lt;/code&gt;. Only IPs in that range will be assigned to machines. I make use of that feature in order to have some free IPs for my NetScaler SNIP, load balancer and gateways and I don&amp;rsquo;t have to worry about double assigned addresses. On top I always use 192.168.137.0/24 because 192.168.137.1 is the default IP of the internal Hyper-V network adapter. &lt;a href="https://community.emc.com/docs/DOC-15875" target="_blank" rel="noreferrer"&gt;Follow this tutorial&lt;/a&gt; to set up internet access for Hyper-V VMs with an internal switch and NAT.&lt;/p&gt;</description><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://dominikbritz.com/posts/2015-09-17-automate-your-lab-part-3-dhcp/featured.jpg"/></item><item><title>Automate Your Lab - Part 2 - DNS</title><link>https://dominikbritz.com/posts/2015-09-11-automate-your-lab-part-2-dns/</link><pubDate>Fri, 11 Sep 2015 00:00:00 +0000</pubDate><guid>https://dominikbritz.com/posts/2015-09-11-automate-your-lab-part-2-dns/</guid><description>&lt;p&gt;This is part 2 of my series to automate your lab. In this part I will show you how to deploy an AD integrated DNS server with a forward and a reverse lookup zone.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+ 
+ 
+ 
+ 
+ 
+ &lt;figure&gt;
+ 
+ 
+ &lt;img class="my-0 rounded-md" src="https://dominikbritz.com/posts/2015-09-11-automate-your-lab-part-2-dns/images/dns_hu_7e4fa3ec0f52d64.webp" /&gt;
+ 
+ 
+ &lt;/figure&gt;
+ 
+
+&lt;/p&gt;
+&lt;p&gt;For the scripts to work I assume that you have a Windows Server 2012 R2 which will be your domain controller, DNS and DHCP server.&lt;/p&gt;</description><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://dominikbritz.com/posts/2015-09-11-automate-your-lab-part-2-dns/featured.jpg"/></item><item><title>Automate Your Lab - Part 1 - The Domain</title><link>https://dominikbritz.com/posts/2015-09-09-automate-your-lab-part-1-the-domain/</link><pubDate>Wed, 09 Sep 2015 00:00:00 +0000</pubDate><guid>https://dominikbritz.com/posts/2015-09-09-automate-your-lab-part-1-the-domain/</guid><description>&lt;p&gt;I have three labs. One on my business notebook, one at my company and one on my private workstation. And once a year it is time to rebuild from scratch, because I have destroyed everything 🙂&lt;/p&gt;
+&lt;p&gt;As I have no time (and/or because I&amp;rsquo;m lazy) to set up everything manually - three times!!! - I have written PowerShell scripts to set up my labs quickly. In this first part of the series I start with the domain.&lt;/p&gt;</description><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://dominikbritz.com/posts/2015-09-09-automate-your-lab-part-1-the-domain/featured.jpg"/></item></channel></rss>
