@@ -1,2 +1,22 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Node Exporter on DominikBritz.com</title><link>https://dominikbritz.com/tags/node-exporter/</link><description>Recent content in Node Exporter on DominikBritz.com</description><generator>Hugo -- gohugo.io</generator><language>en</language><copyright>Copyright © 2026</copyright><lastBuildDate>Sat, 18 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://dominikbritz.com/tags/node-exporter/index.xml" rel="self" type="application/rss+xml"/><item><title>Docker Monitoring With Grafana and VictoriaMetrics</title><link>https://dominikbritz.com/posts/victoria-metrics-grafana/</link><pubDate>Sat, 18 Jan 2025 00:00:00 +0000</pubDate><guid>https://dominikbritz.com/posts/victoria-metrics-grafana/</guid><description>&lt;p&gt;This article describes how to monitor Docker containers and host performance as well as Docker logs with VictoriaMetrics, VictoriaLogs and Grafana.&lt;/p&gt;
-&lt;p&gt;It is part of my series on creating a home server on an old laptop. I’m assuming that you’ve set up Docker, Caddy, and Dockge, as described in the first article of the series.&lt;/p&gt;</description><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://dominikbritz.com/posts/victoria-metrics-grafana/featured.jpg"/></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Node Exporter on DominikBritz.com</title><link>https://dominikbritz.com/tags/node-exporter/</link><description>Recent content in Node Exporter on DominikBritz.com</description><generator>Hugo -- gohugo.io</generator><language>en</language><copyright>Copyright © 2026</copyright><lastBuildDate>Sat, 18 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://dominikbritz.com/tags/node-exporter/index.xml" rel="self" type="application/rss+xml"/><item><title>Docker Monitoring With Grafana and VictoriaMetrics</title><link>https://dominikbritz.com/posts/victoria-metrics-grafana/</link><pubDate>Sat, 18 Jan 2025 00:00:00 +0000</pubDate><guid>https://dominikbritz.com/posts/victoria-metrics-grafana/</guid><description>&lt;div
+ 
+ class="flex px-4 py-3 rounded-md shadow bg-primary-100 dark:bg-primary-900"
+ 
+ &gt;
+ &lt;span
+ 
+ class="text-primary-400 pe-3 flex items-center"
+ 
+ &gt;
+ &lt;span class="relative block icon"&gt;&lt;svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"&gt;&lt;path fill="currentColor" d="M256 0C114.6 0 0 114.6 0 256s114.6 256 256 256s256-114.6 256-256S397.4 0 256 0zM256 128c17.67 0 32 14.33 32 32c0 17.67-14.33 32-32 32S224 177.7 224 160C224 142.3 238.3 128 256 128zM296 384h-80C202.8 384 192 373.3 192 360s10.75-24 24-24h16v-64H224c-13.25 0-24-10.75-24-24S210.8 224 224 224h32c13.25 0 24 10.75 24 24v88h16c13.25 0 24 10.75 24 24S309.3 384 296 384z"/&gt;&lt;/svg&gt;
+&lt;/span&gt;
+ &lt;/span&gt;
+
+ &lt;span
+ 
+ class="dark:text-neutral-300"
+ 
+ &gt;&lt;strong&gt;Update 2026:&lt;/strong&gt; I dropped this monitoring stack. It was fun to build, but I never looked at it. Real-time stats and push alerts are all I need. See &lt;a href="https://dominikbritz.com/posts/my-ai-managed-home-server-in-2026/#lessons-learned" target="_blank" rel="noreferrer"&gt;My AI-Managed Home Server in 2026&lt;/a&gt;.&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;p&gt;This article describes how to monitor Docker containers and host performance as well as Docker logs with VictoriaMetrics, VictoriaLogs and Grafana.&lt;/p&gt;</description><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://dominikbritz.com/posts/victoria-metrics-grafana/featured.jpg"/></item></channel></rss>

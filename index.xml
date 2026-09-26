@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>DominikBritz.com</title><link>https://dominikbritz.com/</link><description>Recent content on DominikBritz.com</description><generator>Hugo -- gohugo.io</generator><language>en</language><copyright>Copyright © 2026</copyright><lastBuildDate>Sun, 01 Mar 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://dominikbritz.com/index.xml" rel="self" type="application/rss+xml"/><item><title>Build Your Own AI Assistant With Claude Code - Without Going Broke</title><link>https://dominikbritz.com/posts/build-your-own-ai-assistant-with-claude-code/</link><pubDate>Sun, 01 Mar 2026 00:00:00 +0000</pubDate><guid>https://dominikbritz.com/posts/build-your-own-ai-assistant-with-claude-code/</guid><description>&lt;p&gt;This article explains how I built a personal AI assistant on top of Claude Code CLI - using my regular Claude subscription instead of the expensive API - and why I believe everyone can build custom software now.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>DominikBritz.com</title><link>https://dominikbritz.com/</link><description>Recent content on DominikBritz.com</description><generator>Hugo -- gohugo.io</generator><language>en</language><copyright>Copyright © 2026</copyright><lastBuildDate>Sat, 26 Sep 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://dominikbritz.com/index.xml" rel="self" type="application/rss+xml"/><item><title>My AI-Managed Home Server in 2026</title><link>https://dominikbritz.com/posts/my-ai-managed-home-server-in-2026/</link><pubDate>Sat, 26 Sep 2026 00:00:00 +0000</pubDate><guid>https://dominikbritz.com/posts/my-ai-managed-home-server-in-2026/</guid><description>&lt;p&gt;Two and a half years ago, I turned an old laptop into a home server and documented everything in my &lt;a href="https://dominikbritz.com/posts/2024-01-22-laptop-home-server/" target="_blank" rel="noreferrer"&gt;Home Server series&lt;/a&gt;. This year, I rebuilt it from scratch. This article covers what changed, why it changed, and what I learned. It also kicks off a new series that goes deep on each part.&lt;/p&gt;</description><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://dominikbritz.com/posts/my-ai-managed-home-server-in-2026/featured.jpg"/></item><item><title>Build Your Own AI Assistant With Claude Code - Without Going Broke</title><link>https://dominikbritz.com/posts/build-your-own-ai-assistant-with-claude-code/</link><pubDate>Sun, 01 Mar 2026 00:00:00 +0000</pubDate><guid>https://dominikbritz.com/posts/build-your-own-ai-assistant-with-claude-code/</guid><description>&lt;p&gt;This article explains how I built a personal AI assistant on top of Claude Code CLI - using my regular Claude subscription instead of the expensive API - and why I believe everyone can build custom software now.&lt;/p&gt;
 
 &lt;h2 class="relative group"&gt;Why I Built My Own AI Assistant
  &lt;div id="why-i-built-my-own-ai-assistant" class="anchor"&gt;&lt;/div&gt;
@@ -21,32 +21,72 @@
  &lt;/span&gt;
  
 &lt;/h2&gt;
-&lt;p&gt;I&amp;rsquo;m blogging for more than 15 years now. During that time, I tested and used different blogging technologies and products. I started with a hosted service. While writing was okay, it lacked flexibility and personalization possibilities. I then moved to a self-hosted WordPress installation, which solved these problems. But, WordPress was slow, maintenance intensive, and I had to pay and maintain a virtual private server which was idling the majority of the time.&lt;/p&gt;</description><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://dominikbritz.com/posts/how-to-create-this-blog/featured.jpg"/></item><item><title>Docker Monitoring With Grafana and VictoriaMetrics</title><link>https://dominikbritz.com/posts/victoria-metrics-grafana/</link><pubDate>Sat, 18 Jan 2025 00:00:00 +0000</pubDate><guid>https://dominikbritz.com/posts/victoria-metrics-grafana/</guid><description>&lt;p&gt;This article describes how to monitor Docker containers and host performance as well as Docker logs with VictoriaMetrics, VictoriaLogs and Grafana.&lt;/p&gt;
-&lt;p&gt;It is part of my series on creating a home server on an old laptop. I’m assuming that you’ve set up Docker, Caddy, and Dockge, as described in the first article of the series.&lt;/p&gt;</description><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://dominikbritz.com/posts/victoria-metrics-grafana/featured.jpg"/></item><item><title>Secure Remote Home Server Access With mTLS and WireGuard</title><link>https://dominikbritz.com/posts/secure-remote-access/</link><pubDate>Wed, 18 Sep 2024 00:00:00 +0000</pubDate><guid>https://dominikbritz.com/posts/secure-remote-access/</guid><description>&lt;p&gt;This article explains how to securely access your home server and its services with mTLS and WireGuard.&lt;/p&gt;
-&lt;p&gt;It is part of my series on creating a home server on an old laptop. I’m assuming that you’ve set up Docker, Caddy, and Authelia, as described in the first article of the series.&lt;/p&gt;</description><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://dominikbritz.com/posts/secure-remote-access/featured.jpg"/></item><item><title>Immich: Self-Hosted Photo Gallery With Cloud Backup &amp; OpenID Connect</title><link>https://dominikbritz.com/posts/immich-self-hosted-photos-with-cloud-backup/</link><pubDate>Sun, 24 Mar 2024 00:00:00 +0000</pubDate><guid>https://dominikbritz.com/posts/immich-self-hosted-photos-with-cloud-backup/</guid><description>&lt;p&gt;This article explains how to set up a self-hosted photo gallery with Immich including cloud backup and OpenID Connect to Authelia.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;m blogging for more than 15 years now. During that time, I tested and used different blogging technologies and products. I started with a hosted service. While writing was okay, it lacked flexibility and personalization possibilities. I then moved to a self-hosted WordPress installation, which solved these problems. But, WordPress was slow, maintenance intensive, and I had to pay and maintain a virtual private server which was idling the majority of the time.&lt;/p&gt;</description><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://dominikbritz.com/posts/how-to-create-this-blog/featured.jpg"/></item><item><title>Docker Monitoring With Grafana and VictoriaMetrics</title><link>https://dominikbritz.com/posts/victoria-metrics-grafana/</link><pubDate>Sat, 18 Jan 2025 00:00:00 +0000</pubDate><guid>https://dominikbritz.com/posts/victoria-metrics-grafana/</guid><description>&lt;div
+ 
+ class="flex px-4 py-3 rounded-md shadow bg-primary-100 dark:bg-primary-900"
+ 
+ &gt;
+ &lt;span
+ 
+ class="text-primary-400 pe-3 flex items-center"
+ 
+ &gt;
+ &lt;span class="relative block icon"&gt;&lt;svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"&gt;&lt;path fill="currentColor" d="M256 0C114.6 0 0 114.6 0 256s114.6 256 256 256s256-114.6 256-256S397.4 0 256 0zM256 128c17.67 0 32 14.33 32 32c0 17.67-14.33 32-32 32S224 177.7 224 160C224 142.3 238.3 128 256 128zM296 384h-80C202.8 384 192 373.3 192 360s10.75-24 24-24h16v-64H224c-13.25 0-24-10.75-24-24S210.8 224 224 224h32c13.25 0 24 10.75 24 24v88h16c13.25 0 24 10.75 24 24S309.3 384 296 384z"/&gt;&lt;/svg&gt;
+&lt;/span&gt;
+ &lt;/span&gt;
+
+ &lt;span
+ 
+ class="dark:text-neutral-300"
+ 
+ &gt;&lt;strong&gt;Update 2026:&lt;/strong&gt; I dropped this monitoring stack. It was fun to build, but I never looked at it. Real-time stats and push alerts are all I need. See &lt;a href="https://dominikbritz.com/posts/my-ai-managed-home-server-in-2026/#lessons-learned" target="_blank" rel="noreferrer"&gt;My AI-Managed Home Server in 2026&lt;/a&gt;.&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;p&gt;This article describes how to monitor Docker containers and host performance as well as Docker logs with VictoriaMetrics, VictoriaLogs and Grafana.&lt;/p&gt;</description><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://dominikbritz.com/posts/victoria-metrics-grafana/featured.jpg"/></item><item><title>Secure Remote Home Server Access With mTLS and WireGuard</title><link>https://dominikbritz.com/posts/secure-remote-access/</link><pubDate>Wed, 18 Sep 2024 00:00:00 +0000</pubDate><guid>https://dominikbritz.com/posts/secure-remote-access/</guid><description>&lt;div
+ 
+ class="flex px-4 py-3 rounded-md shadow bg-primary-100 dark:bg-primary-900"
+ 
+ &gt;
+ &lt;span
+ 
+ class="text-primary-400 pe-3 flex items-center"
+ 
+ &gt;
+ &lt;span class="relative block icon"&gt;&lt;svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"&gt;&lt;path fill="currentColor" d="M256 0C114.6 0 0 114.6 0 256s114.6 256 256 256s256-114.6 256-256S397.4 0 256 0zM256 128c17.67 0 32 14.33 32 32c0 17.67-14.33 32-32 32S224 177.7 224 160C224 142.3 238.3 128 256 128zM296 384h-80C202.8 384 192 373.3 192 360s10.75-24 24-24h16v-64H224c-13.25 0-24-10.75-24-24S210.8 224 224 224h32c13.25 0 24 10.75 24 24v88h16c13.25 0 24 10.75 24 24S309.3 384 296 384z"/&gt;&lt;/svg&gt;
+&lt;/span&gt;
+ &lt;/span&gt;
+
+ &lt;span
+ 
+ class="dark:text-neutral-300"
+ 
+ &gt;&lt;strong&gt;Update 2026:&lt;/strong&gt; I no longer use mTLS. The technology is great, but it turned me into IT support for my family. My public services now sit behind CrowdSec and passkeys. See &lt;a href="https://dominikbritz.com/posts/my-ai-managed-home-server-in-2026/#a-public-edge-without-client-certificates" target="_blank" rel="noreferrer"&gt;My AI-Managed Home Server in 2026&lt;/a&gt;.&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;p&gt;This article explains how to securely access your home server and its services with mTLS and WireGuard.&lt;/p&gt;</description><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://dominikbritz.com/posts/secure-remote-access/featured.jpg"/></item><item><title>Immich: Self-Hosted Photo Gallery With Cloud Backup &amp; OpenID Connect</title><link>https://dominikbritz.com/posts/immich-self-hosted-photos-with-cloud-backup/</link><pubDate>Sun, 24 Mar 2024 00:00:00 +0000</pubDate><guid>https://dominikbritz.com/posts/immich-self-hosted-photos-with-cloud-backup/</guid><description>&lt;p&gt;This article explains how to set up a self-hosted photo gallery with Immich including cloud backup and OpenID Connect to Authelia.&lt;/p&gt;
 &lt;p&gt;It is part of my series on creating a home server on an old laptop. I’m assuming that you’ve set up Docker, Caddy, and Authelia, as described in the &lt;a href="https://dominikbritz.com/posts/2024-01-22-laptop-home-server/" target="_blank" rel="noreferrer"&gt;first article of the series&lt;/a&gt;.&lt;/p&gt;</description><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://dominikbritz.com/posts/immich-self-hosted-photos-with-cloud-backup/featured.jpg"/></item><item><title>Streamlined Nextcloud With OpenID Connect Authentication</title><link>https://dominikbritz.com/posts/streamlined-nextcloud-with-openid-connect-authentication/</link><pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate><guid>https://dominikbritz.com/posts/streamlined-nextcloud-with-openid-connect-authentication/</guid><description>&lt;p&gt;This article explains how to set up a fast and efficient Nextcloud as file management tool with OpenID Connect to Authelia.&lt;/p&gt;
-&lt;p&gt;It is part of my series on creating a home server on an old laptop. I&amp;rsquo;m assuming that you&amp;rsquo;ve set up Docker, Caddy, and Authelia, as described in the &lt;a href="https://dominikbritz.com/posts/2024-01-22-laptop-home-server/" target="_blank" rel="noreferrer"&gt;first article of the series&lt;/a&gt;.&lt;/p&gt;</description><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://dominikbritz.com/posts/streamlined-nextcloud-with-openid-connect-authentication/featured.jpg"/></item><item><title>Laptop Home Server Build</title><link>https://dominikbritz.com/posts/2024-01-22-laptop-home-server/</link><pubDate>Tue, 23 Jan 2024 00:00:00 +0000</pubDate><guid>https://dominikbritz.com/posts/2024-01-22-laptop-home-server/</guid><description>&lt;p&gt;A guide to setting up an old laptop as your new home server, powered by Ubuntu, Ansible, and Docker. It securely hosts videos, files, and photos. Add HTTPS everywhere, cloud backup and performance monitoring.&lt;/p&gt;
-
-&lt;h2 class="relative group"&gt;Bye Bye Synology, Hello Ubuntu
- &lt;div id="bye-bye-synology-hello-ubuntu" class="anchor"&gt;&lt;/div&gt;
+&lt;p&gt;It is part of my series on creating a home server on an old laptop. I&amp;rsquo;m assuming that you&amp;rsquo;ve set up Docker, Caddy, and Authelia, as described in the &lt;a href="https://dominikbritz.com/posts/2024-01-22-laptop-home-server/" target="_blank" rel="noreferrer"&gt;first article of the series&lt;/a&gt;.&lt;/p&gt;</description><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://dominikbritz.com/posts/streamlined-nextcloud-with-openid-connect-authentication/featured.jpg"/></item><item><title>Laptop Home Server Build</title><link>https://dominikbritz.com/posts/2024-01-22-laptop-home-server/</link><pubDate>Tue, 23 Jan 2024 00:00:00 +0000</pubDate><guid>https://dominikbritz.com/posts/2024-01-22-laptop-home-server/</guid><description>&lt;div
  
+ class="flex px-4 py-3 rounded-md shadow bg-primary-100 dark:bg-primary-900"
+ 
+ &gt;
  &lt;span
- class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none"&gt;
- &lt;a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#bye-bye-synology-hello-ubuntu" aria-label="Anchor"&gt;#&lt;/a&gt;
- &lt;/span&gt;
  
-&lt;/h2&gt;
+ class="text-primary-400 pe-3 flex items-center"
+ 
+ &gt;
+ &lt;span class="relative block icon"&gt;&lt;svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"&gt;&lt;path fill="currentColor" d="M256 0C114.6 0 0 114.6 0 256s114.6 256 256 256s256-114.6 256-256S397.4 0 256 0zM256 128c17.67 0 32 14.33 32 32c0 17.67-14.33 32-32 32S224 177.7 224 160C224 142.3 238.3 128 256 128zM296 384h-80C202.8 384 192 373.3 192 360s10.75-24 24-24h16v-64H224c-13.25 0-24-10.75-24-24S210.8 224 224 224h32c13.25 0 24 10.75 24 24v88h16c13.25 0 24 10.75 24 24S309.3 384 296 384z"/&gt;&lt;/svg&gt;
+&lt;/span&gt;
+ &lt;/span&gt;
 
-&lt;h3 class="relative group"&gt;TL;DR
- &lt;div id="tldr" class="anchor"&gt;&lt;/div&gt;
- 
  &lt;span
- class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none"&gt;
- &lt;a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#tldr" aria-label="Anchor"&gt;#&lt;/a&gt;
- &lt;/span&gt;
  
-&lt;/h3&gt;
-&lt;p&gt;Synology has a great ecosystem, but one is locked in. I&amp;rsquo;m using Ubuntu LTS server now, as it gives full control and is focused on stability. I chose it over Proxmox for simplicity, as I don&amp;rsquo;t need virtual machines.&lt;/p&gt;</description><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://dominikbritz.com/posts/2024-01-22-laptop-home-server/featured.jpg"/></item><item><title>PowerShell – Batch Convert URLs to PDF</title><link>https://dominikbritz.com/posts/2021-01-07-batch-convert-urls-to-pdf/</link><pubDate>Thu, 07 Jan 2021 00:00:00 +0000</pubDate><guid>https://dominikbritz.com/posts/2021-01-07-batch-convert-urls-to-pdf/</guid><description>&lt;p&gt;There are lots and lots of articles on the web describing how to save a whole webpage as PDF. They all use, more or less, the browser&amp;rsquo;s ability to print to PDF.&lt;/p&gt;
+ class="dark:text-neutral-300"
+ 
+ &gt;&lt;strong&gt;Update 2026:&lt;/strong&gt; this setup has been superseded. I rebuilt my home server with Proxmox, a fully Git-driven deployment, and AI agents doing most of the work. Read about it in &lt;a href="https://dominikbritz.com/posts/my-ai-managed-home-server-in-2026/" target="_blank" rel="noreferrer"&gt;My AI-Managed Home Server in 2026&lt;/a&gt;.&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;p&gt;A guide to setting up an old laptop as your new home server, powered by Ubuntu, Ansible, and Docker. It securely hosts videos, files, and photos. Add HTTPS everywhere, cloud backup and performance monitoring.&lt;/p&gt;</description><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://dominikbritz.com/posts/2024-01-22-laptop-home-server/featured.jpg"/></item><item><title>PowerShell – Batch Convert URLs to PDF</title><link>https://dominikbritz.com/posts/2021-01-07-batch-convert-urls-to-pdf/</link><pubDate>Thu, 07 Jan 2021 00:00:00 +0000</pubDate><guid>https://dominikbritz.com/posts/2021-01-07-batch-convert-urls-to-pdf/</guid><description>&lt;p&gt;There are lots and lots of articles on the web describing how to save a whole webpage as PDF. They all use, more or less, the browser&amp;rsquo;s ability to print to PDF.&lt;/p&gt;
 &lt;p&gt;I needed to convert many URLs at once. Doing that manually for every URL would have been cumbersome, and that&amp;rsquo;s why I automated the process.&lt;/p&gt;</description><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://dominikbritz.com/posts/2021-01-07-batch-convert-urls-to-pdf/featured.jpg"/></item><item><title>Running Splunk Saved Searches Powered by Tokens From Lookups</title><link>https://dominikbritz.com/posts/2020-11-02-using-lookups-as-token-input/</link><pubDate>Mon, 02 Nov 2020 00:00:00 +0000</pubDate><guid>https://dominikbritz.com/posts/2020-11-02-using-lookups-as-token-input/</guid><description>&lt;p&gt;For a new feature in version 6.0 of uberAgent, we needed to run a few saved searches to do some calculations but let users modify input values.&lt;/p&gt;
 &lt;p&gt;Our requirements in detail:&lt;/p&gt;
 &lt;ol&gt;
